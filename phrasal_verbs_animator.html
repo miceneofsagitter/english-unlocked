@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrasal Verbs for Animators</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e0e0e0;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background: none;
+            border: none;
+            font-size: 1em;
+            font-weight: bold;
+            color: #999;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 10px 18px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .stats {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .phrasal-verbs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .card.learned {
+            background: #e8f5e9;
+            border-color: #4caf50;
+        }
+
+        .card-category {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .illustration {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 3em;
+            min-height: 120px;
+        }
+
+        .phrasal-verb {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            accent-color: #4caf50;
+        }
+
+        .simple-verb {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 12px;
+            padding: 8px;
+            background: white;
+            border-left: 4px solid #ff9800;
+            border-radius: 4px;
+        }
+
+        .simple-verb strong {
+            color: #ff9800;
+        }
+
+        .simple-verb.hidden {
+            display: none;
+        }
+
+        .example {
+            background: white;
+            padding: 12px;
+            border-left: 4px solid #2196f3;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .example-label {
+            font-weight: bold;
+            color: #2196f3;
+            margin-bottom: 5px;
+            font-size: 0.85em;
+        }
+
+        .toggle-simple-btn {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-simple-btn:hover {
+            background: #f57c00;
+        }
+
+        .toggle-simple-btn.show {
+            background: #4caf50;
+        }
+
+        .toggle-simple-btn.show:hover {
+            background: #45a049;
+        }
+
+        .reset-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .reset-btn:hover {
+            background: #da190b;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+        }
+
+        .empty-state-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        /* Quiz Styles */
+        .quiz-container {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .quiz-category-selector {
+            margin-bottom: 25px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .quiz-category-btn {
+            padding: 10px 18px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-category-btn:hover,
+        .quiz-category-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .quiz-illustration {
+            font-size: 5em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .quiz-scenario {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 500;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .quiz-option {
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .quiz-option:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .quiz-option.selected {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+        }
+
+        .quiz-option.correct {
+            border-color: #4caf50;
+            background: #4caf50;
+            color: white;
+        }
+
+        .quiz-option.incorrect {
+            border-color: #f44336;
+            background: #f44336;
+            color: white;
+        }
+
+        .quiz-option:disabled {
+            cursor: not-allowed;
+        }
+
+        .quiz-feedback {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .quiz-feedback.show {
+            display: block;
+        }
+
+        .quiz-feedback.correct {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-left: 4px solid #4caf50;
+        }
+
+        .quiz-feedback.incorrect {
+            background: #ffebee;
+            color: #c62828;
+            border-left: 4px solid #f44336;
+        }
+
+        .quiz-explanation {
+            margin-top: 15px;
+            font-size: 0.95em;
+            color: #666;
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: left;
+        }
+
+        .quiz-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .quiz-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-btn-next {
+            background: #667eea;
+            color: white;
+        }
+
+        .quiz-btn-next:hover {
+            background: #5568d3;
+        }
+
+        .quiz-btn-next:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .quiz-btn-skip {
+            background: #999;
+            color: white;
+        }
+
+        .quiz-btn-skip:hover {
+            background: #777;
+        }
+
+        .quiz-progress {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .quiz-stats-display {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .quiz-stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quiz-stat-number {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .quiz-stat-label {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .quiz-no-category {
+            padding: 40px 20px;
+            text-align: center;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .phrasal-verbs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .category-btn {
+                width: 100%;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab-btn {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎭 Phrasal Verbs for Animators</h1>
+            <p>Master the phrasal verbs you'll use every day with kids and parents</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('learn')">📚 Phrasal Verbs</button>
+            <button class="tab-btn" onclick="switchTab('practice')">🎯 Practice PV</button>
+            <button class="tab-btn" onclick="switchTab('tenses')">⏰ Tenses</button>
+            <button class="tab-btn" onclick="switchTab('tenses-practice')">🎯 Practice Tenses</button>
+        </div>
+
+        <!-- LEARN TAB -->
+        <div id="learn" class="tab-content active">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-verbs">0</span>
+                    <span class="stat-label">Total Phrasal Verbs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="learned-verbs">0</span>
+                    <span class="stat-label">Learned</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="progress-percentage">0%</span>
+                    <span class="stat-label">Progress</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="category-btn active" onclick="filterCategory('all')">All Categories</button>
+                <button class="category-btn" onclick="filterCategory('movement')">🚶 Movement</button>
+                <button class="category-btn" onclick="filterCategory('organization')">🗂️ Organization</button>
+                <button class="category-btn" onclick="filterCategory('interaction')">🤝 Interaction</button>
+                <button class="category-btn" onclick="filterCategory('emotion')">😊 Emotion</button>
+            </div>
+
+            <div class="phrasal-verbs-grid" id="verbs-container"></div>
+
+            <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
+        </div>
+
+        <!-- PRACTICE TAB -->
+        <div id="practice" class="tab-content">
+            <div class="quiz-container">
+                <div class="quiz-category-selector" id="quiz-category-selector"></div>
+                <div id="quiz-content"></div>
+            </div>
+        </div>
+
+        <!-- TENSES LEARN TAB -->
+        <div id="tenses" class="tab-content">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-tenses">0</span>
+                    <span class="stat-label">Total Tenses</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="learned-tenses">0</span>
+                    <span class="stat-label">Learned</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="tenses-progress">0%</span>
+                    <span class="stat-label">Progress</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="category-btn active" onclick="filterTenseCategory('all')">All Tenses</button>
+                <button class="category-btn" onclick="filterTenseCategory('past')">⏮️ Past</button>
+                <button class="category-btn" onclick="filterTenseCategory('present')">⏱️ Present</button>
+                <button class="category-btn" onclick="filterTenseCategory('future')">⏭️ Future</button>
+                <button class="category-btn" onclick="filterTenseCategory('conditional')">❓ Conditional</button>
+            </div>
+
+            <div class="phrasal-verbs-grid" id="tenses-container"></div>
+
+            <button class="reset-btn" onclick="resetTensesProgress()">Reset Progress</button>
+        </div>
+
+        <!-- TENSES PRACTICE TAB -->
+        <div id="tenses-practice" class="tab-content">
+            <div class="quiz-container">
+                <div class="quiz-category-selector" id="tenses-quiz-category-selector"></div>
+                <div id="tenses-quiz-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const phrasalVerbs = [
+            // Movement & Actions
+            {
+                category: 'movement',
+                phrasal: 'Pick up',
+                illustration: '🫴',
+                simple: 'take / grab / collect',
+                example: '"Pick up your toys!" (instead of "Take your toys")',
+                context: 'Used constantly when asking kids to collect things'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Put down',
+                illustration: '📍',
+                simple: 'place / set / leave',
+                example: '"Put down the scissors, please!" (instead of "Place the scissors down")',
+                context: 'Safety-related instruction'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Sit down',
+                illustration: '🪑',
+                simple: 'be seated / rest',
+                example: '"Sit down for lunch time" (instead of "Be seated")',
+                context: 'Daily routine instruction'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Stand up',
+                illustration: '🧍',
+                simple: 'get up / rise',
+                example: '"Stand up for the game!" (instead of "Get up")',
+                context: 'Starting activities'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Come along',
+                illustration: '👥',
+                simple: 'follow / join / come with',
+                example: '"Come along, everyone! We\'re going to play outside" (instead of "Follow me")',
+                context: 'Gathering children for activities'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Run around',
+                illustration: '🏃',
+                simple: 'play / move freely',
+                example: '"Go run around the garden!" (instead of "Play freely")',
+                context: 'Physical activity time'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Go away',
+                illustration: '👋',
+                simple: 'leave / stop bothering',
+                example: '"The wasp will go away if we\'re quiet" (instead of "leave")',
+                context: 'Reassuring kids about insects/animals'
+            },
+            {
+                category: 'movement',
+                phrasal: 'Carry on',
+                illustration: '➡️',
+                simple: 'continue / keep going',
+                example: '"Carry on with your drawing" (instead of "Continue")',
+                context: 'Encouraging persistence in activities'
+            },
+
+            // Organization
+            {
+                category: 'organization',
+                phrasal: 'Set up',
+                illustration: '🛠️',
+                simple: 'prepare / arrange / organize',
+                example: '"Can you help me set up the game?" (instead of "prepare")',
+                context: 'Preparing activities and equipment'
+            },
+            {
+                category: 'organization',
+                phrasal: 'Clean up',
+                illustration: '🧹',
+                simple: 'tidy / organize / put away',
+                example: '"Time to clean up! Put the toys away" (instead of "tidy")',
+                context: 'End of activity, very important'
+            },
+            {
+                category: 'organization',
+                phrasal: 'Sort out',
+                illustration: '📂',
+                simple: 'organize / arrange / fix',
+                example: '"Let\'s sort out the colors by group" (instead of "organize")',
+                context: 'Organizing materials or children'
+            },
+            {
+                category: 'organization',
+                phrasal: 'Wrap up',
+                illustration: '🎁',
+                simple: 'finish / end / conclude',
+                example: '"We need to wrap up the activity in 5 minutes" (instead of "finish")',
+                context: 'Ending activities'
+            },
+            {
+                category: 'organization',
+                phrasal: 'Hand out',
+                illustration: '✋',
+                simple: 'distribute / give to everyone',
+                example: '"Hand out the coloring papers, please" (instead of "distribute")',
+                context: 'Distributing materials'
+            },
+            {
+                category: 'organization',
+                phrasal: 'Clear up',
+                illustration: '💧',
+                simple: 'clean / remove / tidy',
+                example: '"Clear up that spill before someone slips" (instead of "clean")',
+                context: 'Safety and cleanliness'
+            },
+
+            // Interaction
+            {
+                category: 'interaction',
+                phrasal: 'Look after',
+                illustration: '👀',
+                simple: 'take care of / watch / supervise',
+                example: '"Can you look after the group while I help Maria?" (instead of "watch")',
+                context: 'Core responsibility as animator'
+            },
+            {
+                category: 'interaction',
+                phrasal: 'Take care of',
+                illustration: '🤝',
+                simple: 'look after / handle / manage',
+                example: '"I\'ll take care of that situation" (instead of "handle")',
+                context: 'Managing problems'
+            },
+            {
+                category: 'interaction',
+                phrasal: 'Deal with',
+                illustration: '⚖️',
+                simple: 'handle / manage / solve',
+                example: '"How do we deal with kids who won\'t listen?" (instead of "handle")',
+                context: 'Problem-solving with other staff or parents'
+            },
+            {
+                category: 'interaction',
+                phrasal: 'Talk to',
+                illustration: '💬',
+                simple: 'speak with / communicate / discuss',
+                example: '"I need to talk to the parent about his allergies" (instead of "speak with")',
+                context: 'Communication with parents'
+            },
+            {
+                category: 'interaction',
+                phrasal: 'Listen to',
+                illustration: '👂',
+                simple: 'hear / pay attention / understand',
+                example: '"Listen to what Marco is saying" (instead of "pay attention")',
+                context: 'Teaching respect and communication'
+            },
+            {
+                category: 'interaction',
+                phrasal: 'Get on with',
+                illustration: '😊',
+                simple: 'have a good relationship / work well with',
+                example: '"The kids are getting on well with each other" (instead of "working well together")',
+                context: 'Observing group dynamics'
+            },
+            {
+                category: 'interaction',
+                phrasal: 'Check on',
+                illustration: '✅',
+                simple: 'verify / see how someone is / monitor',
+                example: '"Let me check on the kids in the other room" (instead of "see")',
+                context: 'Supervising multiple areas'
+            },
+
+            // Emotion & State
+            {
+                category: 'emotion',
+                phrasal: 'Calm down',
+                illustration: '🧘',
+                simple: 'relax / be peaceful / stop being upset',
+                example: '"Calm down, everything is okay" (instead of "relax")',
+                context: 'Very important for managing behavior'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Cheer up',
+                illustration: '😄',
+                simple: 'be happy / feel better / smile',
+                example: '"Cheer up! We\'re going to play your favorite game" (instead of "smile")',
+                context: 'Encouraging sad or upset kids'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Settle down',
+                illustration: '🤐',
+                simple: 'be quiet / calm / ready',
+                example: '"Settle down, everyone. Story time!" (instead of "be quiet")',
+                context: 'Transition between activities'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Get excited',
+                illustration: '🤩',
+                simple: 'be enthusiastic / feel happy',
+                example: '"Don\'t get too excited or you\'ll get tired" (instead of "be too enthusiastic")',
+                context: 'Managing energy levels'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Feel better',
+                illustration: '💪',
+                simple: 'recover / improve / heal',
+                example: '"I hope you feel better soon" (to a sick child)',
+                context: 'When kids are sick or hurt'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Break down',
+                illustration: '😭',
+                simple: 'cry / get upset / lose control',
+                example: '"One child broke down because he missed his mom" (instead of "got upset")',
+                context: 'Describing emotional situations to colleagues/parents'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Lighten up',
+                illustration: '😆',
+                simple: 'be less serious / relax / smile',
+                example: '"Lighten up! It\'s just a game" (instead of "don\'t be so serious")',
+                context: 'Encouraging kids not to worry too much'
+            },
+            {
+                category: 'emotion',
+                phrasal: 'Liven up',
+                illustration: '🎉',
+                simple: 'make more fun / add energy / make exciting',
+                example: '"Let\'s liven up this activity with some music" (instead of "make more fun")',
+                context: 'Making activities more engaging'
+            }
+        ];
+
+        let currentFilter = 'all';
+        let currentQuizCategory = null;
+        let currentQuizQuestion = 0;
+        let quizStats = { correct: 0, incorrect: 0 };
+        let learnedVerbs = JSON.parse(localStorage.getItem('learnedVerbs')) || [];
+        let currentTenseFilter = 'all';
+        let currentTenseQuizCategory = null;
+        let currentTenseQuizQuestion = 0;
+        let tenseQuizStats = { correct: 0, incorrect: 0 };
+        let learnedTenses = JSON.parse(localStorage.getItem('learnedTenses')) || [];
+
+        const verbTenses = [
+            // PAST TENSES
+            {
+                category: 'past',
+                name: 'Past Simple',
+                icon: '⏮️',
+                form: 'verb + -ed (regular) / irregular forms',
+                structure: 'Subject + verb (past) + object',
+                examples: [
+                    'I played with the kids yesterday',
+                    'She went to the park',
+                    'They watched a movie'
+                ],
+                whenToUse: 'For completed actions in the past - use this MOST for talking about what happened during the day',
+                practiceExample: 'Yesterday, the kids _____ (play) in the garden all afternoon',
+                practiceAnswer: 'played',
+                animator_context: 'When reporting to parents what kids did: "We played games, ate lunch, took a nap"'
+            },
+            {
+                category: 'past',
+                name: 'Present Perfect',
+                icon: '✅',
+                form: 'have/has + past participle',
+                structure: 'Subject + have/has + verb (past participle) + object',
+                examples: [
+                    'I have played with Mario (no time specified, recent)',
+                    'She has finished her lunch',
+                    'They have gone home'
+                ],
+                whenToUse: 'For actions that happened recently with relevance NOW. The action is finished but the result matters today.',
+                practiceExample: 'The kids _____ (eat) their snacks already',
+                practiceAnswer: 'have eaten',
+                animator_context: 'When a parent arrives and asks "How was my child?" - use this to connect past actions to now: "We have played, we have eaten, we have rested"'
+            },
+            {
+                category: 'past',
+                name: 'Past Continuous',
+                icon: '⏸️',
+                form: 'was/were + verb + -ing',
+                structure: 'Subject + was/were + verb (ing) + object',
+                examples: [
+                    'I was playing when you called',
+                    'She was sleeping when her mom arrived',
+                    'They were running around outside'
+                ],
+                whenToUse: 'For actions that were happening at a specific moment in the past. Often describes background action.',
+                practiceExample: 'When you arrived, the kids _____ (run) around the garden',
+                practiceAnswer: 'were running',
+                animator_context: 'Explaining what was happening when something interrupted: "I was helping Luigi with his shoes when Maria fell"'
+            },
+            {
+                category: 'past',
+                name: 'Past Perfect',
+                icon: '🔙',
+                form: 'had + past participle',
+                structure: 'Subject + had + verb (past participle) + object',
+                examples: [
+                    'I had finished lunch before they arrived',
+                    'She had already left when we called',
+                    'They had played for 2 hours before resting'
+                ],
+                whenToUse: 'For actions that finished BEFORE another past action. Shows the order of two past events.',
+                practiceExample: 'The kids _____ (eat) before we went to play games',
+                practiceAnswer: 'had eaten',
+                animator_context: 'Explaining sequence of events to parents: "When you arrived, we had already eaten, we had done crafts, and we had cleaned up"'
+            },
+
+            // PRESENT TENSES
+            {
+                category: 'present',
+                name: 'Present Simple',
+                icon: '⏱️',
+                form: 'verb (base form / +s for 3rd person)',
+                structure: 'Subject + verb + object',
+                examples: [
+                    'I work as an animator',
+                    'She plays with the kids',
+                    'They like pizza'
+                ],
+                whenToUse: 'For habits, routines, facts, things that are always true. Use for daily schedules.',
+                practiceExample: 'We _____ (have) lunch at 12 o\'clock every day',
+                practiceAnswer: 'have',
+                animator_context: 'Describing daily routines to parents: "We play games every morning, we eat at noon, we nap at 2pm"'
+            },
+            {
+                category: 'present',
+                name: 'Present Continuous',
+                icon: '⚡',
+                form: 'am/is/are + verb + -ing',
+                structure: 'Subject + am/is/are + verb (ing) + object',
+                examples: [
+                    'I am playing with the kids right now',
+                    'She is eating her snack',
+                    'They are running around'
+                ],
+                whenToUse: 'For actions happening RIGHT NOW or in this moment/period. What\'s going on today.',
+                practiceExample: 'Look! The kids _____ (have) so much fun!',
+                practiceAnswer: 'are having',
+                animator_context: 'What\'s happening now: "We are building a tower", "The kids are eating lunch", "I am helping with shoes"'
+            },
+            {
+                category: 'present',
+                name: 'Present Perfect Continuous',
+                icon: '🔄',
+                form: 'have/has + been + verb + -ing',
+                structure: 'Subject + have/has + been + verb (ing) + object',
+                examples: [
+                    'I have been working here for 2 years',
+                    'She has been playing all morning',
+                    'They have been waiting for 10 minutes'
+                ],
+                whenToUse: 'For actions that started in the past and are STILL happening now. Emphasizes duration.',
+                practiceExample: 'The kids _____ (play) in the garden since this morning',
+                practiceAnswer: 'have been playing',
+                animator_context: 'Describing how long something has been going on: "We have been playing games for 2 hours", "They have been having fun all day"'
+            },
+
+            // FUTURE TENSES
+            {
+                category: 'future',
+                name: 'Future Simple (will)',
+                icon: '⏭️',
+                form: 'will + verb (base form)',
+                structure: 'Subject + will + verb + object',
+                examples: [
+                    'I will play with you later',
+                    'She will eat her lunch soon',
+                    'They will go home at 5pm'
+                ],
+                whenToUse: 'For decisions made RIGHT NOW or predictions. Simple future plans.',
+                practiceExample: 'The kids _____ (have) a snack in 10 minutes',
+                practiceAnswer: 'will have',
+                animator_context: 'Telling parents what will happen: "We will have lunch soon", "They will go home at 5", "We will play games next"'
+            },
+            {
+                category: 'future',
+                name: 'Going to (Future Plans)',
+                icon: '🎯',
+                form: 'am/is/are + going to + verb (base form)',
+                structure: 'Subject + am/is/are + going to + verb + object',
+                examples: [
+                    'I am going to play with them now',
+                    'She is going to eat her snack',
+                    'They are going to go home soon'
+                ],
+                whenToUse: 'For plans already decided or things that will definitely happen very soon. More certain than "will".',
+                practiceExample: 'We _____ (go) to the park this afternoon',
+                practiceAnswer: 'are going to',
+                animator_context: 'Announcing plans: "We are going to do crafts now", "The kids are going to play outside soon"'
+            },
+            {
+                category: 'future',
+                name: 'Future Continuous',
+                icon: '⚙️',
+                form: 'will + be + verb + -ing',
+                structure: 'Subject + will + be + verb (ing) + object',
+                examples: [
+                    'I will be playing at 3pm tomorrow',
+                    'She will be sleeping when you arrive',
+                    'They will be eating lunch at noon'
+                ],
+                whenToUse: 'For actions that will be happening at a specific time in the future.',
+                practiceExample: 'At 2pm tomorrow, we _____ (rest) in the garden',
+                practiceAnswer: 'will be resting',
+                animator_context: 'Telling parents when activities will happen: "At 3pm we will be playing games", "At noon they will be eating lunch"'
+            },
+            {
+                category: 'future',
+                name: 'Future Perfect',
+                icon: '✔️',
+                form: 'will + have + past participle',
+                structure: 'Subject + will + have + verb (past participle) + object',
+                examples: [
+                    'I will have finished lunch by 1pm',
+                    'She will have gone home by 5pm',
+                    'They will have played for 2 hours by then'
+                ],
+                whenToUse: 'For actions that will be completed by a specific future time.',
+                practiceExample: 'By the time you arrive, we _____ (finish) lunch',
+                practiceAnswer: 'will have finished',
+                animator_context: 'Assuring parents about what will be done: "By 5pm we will have eaten, we will have played, we will have cleaned up"'
+            },
+
+            // CONDITIONAL TENSES
+            {
+                category: 'conditional',
+                name: 'Conditional Simple',
+                icon: '❓',
+                form: 'would + verb (base form)',
+                structure: 'Subject + would + verb + object',
+                examples: [
+                    'I would help if you asked',
+                    'She would play if she wasn\'t tired',
+                    'They would come if it wasn\'t raining'
+                ],
+                whenToUse: 'For imaginary or impossible situations. "If this happened, that would happen."',
+                practiceExample: 'If it rains, we _____ (play) inside',
+                practiceAnswer: 'would play',
+                animator_context: 'Talking about what you\'d do in different situations: "If a child was sick, we would call parents", "If it rained, we would play inside"'
+            },
+            {
+                category: 'conditional',
+                name: 'Second Conditional',
+                icon: '🔮',
+                form: 'if + past simple, would + verb',
+                structure: 'If subject + past verb, subject + would + verb',
+                examples: [
+                    'If I had time, I would help everyone',
+                    'If she wasn\'t tired, she would play',
+                    'If they had a ball, they would play'
+                ],
+                whenToUse: 'For imaginary situations in the present. Not true now, but imagine if it were.',
+                practiceExample: 'If the weather was nice, we _____ (go) to the park',
+                practiceAnswer: 'would go',
+                animator_context: 'Hypothetical scenarios: "If I had more staff, we would do more activities", "If the kids weren\'t tired, they would play more"'
+            },
+            {
+                category: 'conditional',
+                name: 'Third Conditional',
+                icon: '😔',
+                form: 'if + past perfect, would + have + past participle',
+                structure: 'If subject + had + past participle, subject + would + have + past participle',
+                examples: [
+                    'If I had known, I would have helped',
+                    'If she had arrived earlier, she would have played',
+                    'If they had asked, I would have explained'
+                ],
+                whenToUse: 'For impossible situations in the past. Talking about what COULD have happened but didn\'t.',
+                practiceExample: 'If I had known Maria was allergic, I _____ (not give) her that food',
+                practiceAnswer: 'would not have given',
+                animator_context: 'Explaining what could have been: "If I had known about the allergy, I would have avoided that food", "If you had called earlier, we would have prepared"'
+            }
+        ];
+
+        // LEARN MODE
+        function renderVerbs() {
+            const container = document.getElementById('verbs-container');
+            container.innerHTML = '';
+
+            const filtered = currentFilter === 'all' 
+                ? phrasalVerbs 
+                : phrasalVerbs.filter(v => v.category === currentFilter);
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><p>No phrasal verbs in this category</p></div>';
+                return;
+            }
+
+            filtered.forEach((verb) => {
+                const globalIndex = phrasalVerbs.indexOf(verb);
+                const isLearned = learnedVerbs.includes(globalIndex);
+                
+                const card = document.createElement('div');
+                card.className = `card ${isLearned ? 'learned' : ''}`;
+                
+                card.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <span class="card-category">${capitalizeCategory(verb.category)}</span>
+                        <input type="checkbox" class="checkbox" ${isLearned ? 'checked' : ''} 
+                               onchange="toggleLearned(${globalIndex}, this.checked)">
+                    </div>
+                    
+                    <div class="illustration">${verb.illustration}</div>
+                    
+                    <div class="phrasal-verb">
+                        <span>${verb.phrasal}</span>
+                    </div>
+                    
+                    <div class="simple-verb" id="simple-${globalIndex}">
+                        <strong>Simple alternative:</strong> ${verb.simple}
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example-label">💬 Example:</div>
+                        ${verb.example}
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example-label">🎯 Context:</div>
+                        ${verb.context}
+                    </div>
+                    
+                    <button class="toggle-simple-btn" onclick="toggleSimple(${globalIndex})">
+                        Hide Simple
+                    </button>
+                `;
+                
+                container.appendChild(card);
+            });
+
+            updateStats();
+        }
+
+        function capitalizeCategory(cat) {
+            const map = {
+                'movement': '🚶 Movement',
+                'organization': '🗂️ Organization',
+                'interaction': '🤝 Interaction',
+                'emotion': '😊 Emotion'
+            };
+            return map[cat] || cat;
+        }
+
+        function filterCategory(category) {
+            currentFilter = category;
+            
+            document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            renderVerbs();
+        }
+
+        function toggleSimple(index) {
+            const element = document.getElementById(`simple-${index}`);
+            const button = event.target;
+            
+            element.classList.toggle('hidden');
+            button.textContent = element.classList.contains('hidden') ? 'Show Simple' : 'Hide Simple';
+            button.classList.toggle('show');
+        }
+
+        function toggleLearned(index, isLearned) {
+            if (isLearned && !learnedVerbs.includes(index)) {
+                learnedVerbs.push(index);
+            } else if (!isLearned && learnedVerbs.includes(index)) {
+                learnedVerbs = learnedVerbs.filter(v => v !== index);
+            }
+            
+            localStorage.setItem('learnedVerbs', JSON.stringify(learnedVerbs));
+            renderVerbs();
+        }
+
+        function updateStats() {
+            document.getElementById('total-verbs').textContent = phrasalVerbs.length;
+            document.getElementById('learned-verbs').textContent = learnedVerbs.length;
+            
+            const percentage = Math.round((learnedVerbs.length / phrasalVerbs.length) * 100);
+            document.getElementById('progress-percentage').textContent = percentage + '%';
+        }
+
+        function resetProgress() {
+            if (confirm('Are you sure you want to reset your progress?')) {
+                learnedVerbs = [];
+                localStorage.setItem('learnedVerbs', JSON.stringify(learnedVerbs));
+                renderVerbs();
+            }
+        }
+
+        // PRACTICE MODE
+        function initializePractice() {
+            const selector = document.getElementById('quiz-category-selector');
+            selector.innerHTML = `
+                <button class="quiz-category-btn" onclick="startQuiz('movement')">🚶 Movement</button>
+                <button class="quiz-category-btn" onclick="startQuiz('organization')">🗂️ Organization</button>
+                <button class="quiz-category-btn" onclick="startQuiz('interaction')">🤝 Interaction</button>
+                <button class="quiz-category-btn" onclick="startQuiz('emotion')">😊 Emotion</button>
+            `;
+            
+            const content = document.getElementById('quiz-content');
+            content.innerHTML = '<div class="quiz-no-category"><p>Select a category to start practicing!</p></div>';
+        }
+
+        function startQuiz(category) {
+            currentQuizCategory = category;
+            currentQuizQuestion = 0;
+            quizStats = { correct: 0, incorrect: 0 };
+            
+            document.querySelectorAll('.quiz-category-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            showNextQuestion();
+        }
+
+        function showNextQuestion() {
+            const categoryVerbs = phrasalVerbs.filter(v => v.category === currentQuizCategory);
+            
+            if (currentQuizQuestion >= categoryVerbs.length) {
+                showQuizCompletion(categoryVerbs);
+                return;
+            }
+            
+            const currentVerb = categoryVerbs[currentQuizQuestion];
+            const wrongOptions = phrasalVerbs.filter(v => v.phrasal !== currentVerb.phrasal).slice(0, 3);
+            const allOptions = [currentVerb, ...wrongOptions].sort(() => Math.random() - 0.5);
+            
+            const progressPercent = Math.round((currentQuizQuestion / categoryVerbs.length) * 100);
+            
+            let html = `
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${progressPercent}%"></div>
+                    </div>
+                    <div class="progress-text">Question ${currentQuizQuestion + 1} of ${categoryVerbs.length}</div>
+                </div>
+                
+                <div class="quiz-stats-display">
+                    <div class="quiz-stat">
+                        <div class="quiz-stat-number" style="color: #4caf50;">${quizStats.correct}</div>
+                        <div class="quiz-stat-label">Correct</div>
+                    </div>
+                    <div class="quiz-stat">
+                        <div class="quiz-stat-number" style="color: #f44336;">${quizStats.incorrect}</div>
+                        <div class="quiz-stat-label">Incorrect</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <span class="quiz-illustration">${currentVerb.illustration}</span>
+                    <div class="quiz-scenario">${currentVerb.context}</div>
+                    
+                    <div class="quiz-options" id="quiz-options">
+            `;
+            
+            allOptions.forEach((option, idx) => {
+                const isCorrect = option.phrasal === currentVerb.phrasal;
+                html += `
+                    <button class="quiz-option" onclick="checkAnswer('${option.phrasal}', ${isCorrect})" id="option-${idx}">
+                        ${option.phrasal}
+                    </button>
+                `;
+            });
+            
+            html += `
+                    </div>
+                    
+                    <div class="quiz-feedback" id="feedback"></div>
+                    
+                    <div class="quiz-buttons" id="quiz-buttons" style="display: none;">
+                        <button class="quiz-btn quiz-btn-next" onclick="nextQuestion()">Next Question</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('quiz-content').innerHTML = html;
+        }
+
+        function checkAnswer(selected, isCorrect) {
+            const options = document.querySelectorAll('.quiz-option');
+            const feedback = document.getElementById('feedback');
+            const buttons = document.getElementById('quiz-buttons');
+            const categoryVerbs = phrasalVerbs.filter(v => v.category === currentQuizCategory);
+            const currentVerb = categoryVerbs[currentQuizQuestion];
+            
+            options.forEach(opt => {
+                opt.disabled = true;
+                if (opt.textContent.trim() === currentVerb.phrasal) {
+                    opt.classList.add('correct');
+                } else if (opt.textContent.trim() === selected && !isCorrect) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            if (isCorrect) {
+                quizStats.correct++;
+                feedback.className = 'quiz-feedback show correct';
+                feedback.innerHTML = `✅ Correct! "${currentVerb.phrasal}" means "${currentVerb.simple}"`;
+            } else {
+                quizStats.incorrect++;
+                feedback.className = 'quiz-feedback show incorrect';
+                feedback.innerHTML = `❌ Incorrect. The answer is "${currentVerb.phrasal}" which means "${currentVerb.simple}"`;
+            }
+            
+            feedback.innerHTML += `<div class="quiz-explanation">💡 ${currentVerb.example}</div>`;
+            
+            buttons.style.display = 'flex';
+        }
+
+        function nextQuestion() {
+            currentQuizQuestion++;
+            showNextQuestion();
+        }
+
+        function showQuizCompletion(categoryVerbs) {
+            const percentage = Math.round((quizStats.correct / categoryVerbs.length) * 100);
+            const message = percentage === 100 ? '🎉 Perfect!' : percentage >= 80 ? '👏 Great job!' : percentage >= 50 ? '😊 Good effort!' : '💪 Keep practicing!';
+            
+            const html = `
+                <div style="text-align: center; padding: 40px 20px;">
+                    <div style="font-size: 3em; margin-bottom: 20px;">${message}</div>
+                    <div class="quiz-stats-display">
+                        <div class="quiz-stat">
+                            <div class="quiz-stat-number" style="color: #4caf50;">${quizStats.correct}</div>
+                            <div class="quiz-stat-label">Correct</div>
+                        </div>
+                        <div class="quiz-stat">
+                            <div class="quiz-stat-number" style="color: #f44336;">${quizStats.incorrect}</div>
+                            <div class="quiz-stat-label">Incorrect</div>
+                        </div>
+                        <div class="quiz-stat">
+                            <div class="quiz-stat-number">${percentage}%</div>
+                            <div class="quiz-stat-label">Score</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <button class="quiz-btn quiz-btn-next" onclick="startQuiz('${currentQuizCategory}')">Try Again</button>
+                        <button class="quiz-btn quiz-btn-skip" onclick="initializePractice()" style="margin-left: 10px;">Choose Category</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('quiz-content').innerHTML = html;
+        }
+
+        // TENSES FUNCTIONS
+        function renderTenses() {
+            const container = document.getElementById('tenses-container');
+            container.innerHTML = '';
+
+            const filtered = currentTenseFilter === 'all' 
+                ? verbTenses
+                : verbTenses.filter(v => v.category === currentTenseFilter);
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">⏰</div><p>No tenses in this category</p></div>';
+                return;
+            }
+
+            filtered.forEach((tense) => {
+                const globalIndex = verbTenses.indexOf(tense);
+                const isLearned = learnedTenses.includes(globalIndex);
+                
+                const card = document.createElement('div');
+                card.className = `card ${isLearned ? 'learned' : ''}`;
+                
+                let examplesHtml = tense.examples.map(ex => `<li>${ex}</li>`).join('');
+                
+                card.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <span class="card-category">${tense.category.toUpperCase()}</span>
+                        <input type="checkbox" class="checkbox" ${isLearned ? 'checked' : ''} 
+                               onchange="toggleLearnedTense(${globalIndex}, this.checked)">
+                    </div>
+                    
+                    <div class="illustration" style="font-size: 2.5em;">${tense.icon}</div>
+                    
+                    <div class="phrasal-verb">
+                        <span>${tense.name}</span>
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example-label">📐 Form:</div>
+                        ${tense.form}
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example-label">🔧 Structure:</div>
+                        ${tense.structure}
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example-label">📝 Examples:</div>
+                        <ul style="text-align: left; margin-left: 20px; margin-top: 8px;">
+                            ${examplesHtml}
+                        </ul>
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example-label">⏰ When to use:</div>
+                        ${tense.whenToUse}
+                    </div>
+                    
+                    <div class="example" style="background: #e3f2fd; border-left-color: #1976d2;">
+                        <div class="example-label">🎭 As an animator:</div>
+                        ${tense.animator_context}
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+
+            updateTensesStats();
+        }
+
+        function filterTenseCategory(category) {
+            currentTenseFilter = category;
+            
+            document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            renderTenses();
+        }
+
+        function toggleLearnedTense(index, isLearned) {
+            if (isLearned && !learnedTenses.includes(index)) {
+                learnedTenses.push(index);
+            } else if (!isLearned && learnedTenses.includes(index)) {
+                learnedTenses = learnedTenses.filter(v => v !== index);
+            }
+            
+            localStorage.setItem('learnedTenses', JSON.stringify(learnedTenses));
+            renderTenses();
+        }
+
+        function updateTensesStats() {
+            document.getElementById('total-tenses').textContent = verbTenses.length;
+            document.getElementById('learned-tenses').textContent = learnedTenses.length;
+            
+            const percentage = Math.round((learnedTenses.length / verbTenses.length) * 100);
+            document.getElementById('tenses-progress').textContent = percentage + '%';
+        }
+
+        function resetTensesProgress() {
+            if (confirm('Are you sure you want to reset your progress?')) {
+                learnedTenses = [];
+                localStorage.setItem('learnedTenses', JSON.stringify(learnedTenses));
+                renderTenses();
+            }
+        }
+
+        // TENSES PRACTICE
+        function initializeTensesPractice() {
+            const selector = document.getElementById('tenses-quiz-category-selector');
+            selector.innerHTML = `
+                <button class="quiz-category-btn" onclick="startTensesQuiz('past')">⏮️ Past</button>
+                <button class="quiz-category-btn" onclick="startTensesQuiz('present')">⏱️ Present</button>
+                <button class="quiz-category-btn" onclick="startTensesQuiz('future')">⏭️ Future</button>
+                <button class="quiz-category-btn" onclick="startTensesQuiz('conditional')">❓ Conditional</button>
+            `;
+            
+            const content = document.getElementById('tenses-quiz-content');
+            content.innerHTML = '<div class="quiz-no-category"><p>Select a tense category to practice!</p></div>';
+        }
+
+        function startTensesQuiz(category) {
+            currentTenseQuizCategory = category;
+            currentTenseQuizQuestion = 0;
+            tenseQuizStats = { correct: 0, incorrect: 0 };
+            
+            document.querySelectorAll('#tenses-quiz-category-selector .quiz-category-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            showNextTenseQuestion();
+        }
+
+        function showNextTenseQuestion() {
+            const categoryTenses = verbTenses.filter(v => v.category === currentTenseQuizCategory);
+            
+            if (currentTenseQuizQuestion >= categoryTenses.length) {
+                showTensesQuizCompletion(categoryTenses);
+                return;
+            }
+            
+            const currentTense = categoryTenses[currentTenseQuizQuestion];
+            const progressPercent = Math.round((currentTenseQuizQuestion / categoryTenses.length) * 100);
+            
+            let html = `
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${progressPercent}%"></div>
+                    </div>
+                    <div class="progress-text">Question ${currentTenseQuizQuestion + 1} of ${categoryTenses.length}</div>
+                </div>
+                
+                <div class="quiz-stats-display">
+                    <div class="quiz-stat">
+                        <div class="quiz-stat-number" style="color: #4caf50;">${tenseQuizStats.correct}</div>
+                        <div class="quiz-stat-label">Correct</div>
+                    </div>
+                    <div class="quiz-stat">
+                        <div class="quiz-stat-number" style="color: #f44336;">${tenseQuizStats.incorrect}</div>
+                        <div class="quiz-stat-label">Incorrect</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <span class="quiz-illustration">${currentTense.icon}</span>
+                    <div class="quiz-scenario">${currentTense.practiceExample}</div>
+                    
+                    <input type="text" id="tense-answer" placeholder="Type your answer..." style="
+                        width: 100%;
+                        padding: 12px;
+                        margin: 20px 0;
+                        border: 2px solid #ddd;
+                        border-radius: 6px;
+                        font-size: 1em;
+                    " onkeypress="if(event.key === 'Enter') checkTenseAnswer()">
+                    
+                    <div class="quiz-feedback" id="tense-feedback"></div>
+                    
+                    <div class="quiz-buttons" id="tense-quiz-buttons" style="display: none;">
+                        <button class="quiz-btn quiz-btn-next" onclick="nextTenseQuestion()">Next Question</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('tenses-quiz-content').innerHTML = html;
+            setTimeout(() => document.getElementById('tense-answer').focus(), 100);
+        }
+
+        function checkTenseAnswer() {
+            const input = document.getElementById('tense-answer');
+            const answer = input.value.trim().toLowerCase();
+            const feedback = document.getElementById('tense-feedback');
+            const buttons = document.getElementById('tense-quiz-buttons');
+            const categoryTenses = verbTenses.filter(v => v.category === currentTenseQuizCategory);
+            const currentTense = categoryTenses[currentTenseQuizQuestion];
+            
+            input.disabled = true;
+            
+            // Simple check - normalize spaces
+            const correctAnswer = currentTense.practiceAnswer.toLowerCase().trim();
+            const isCorrect = answer === correctAnswer || answer.replace(/\s+/g, '') === correctAnswer.replace(/\s+/g, '');
+            
+            if (isCorrect) {
+                tenseQuizStats.correct++;
+                feedback.className = 'quiz-feedback show correct';
+                feedback.innerHTML = `✅ Correct! The answer is: <strong>${currentTense.practiceAnswer}</strong>`;
+            } else {
+                tenseQuizStats.incorrect++;
+                feedback.className = 'quiz-feedback show incorrect';
+                feedback.innerHTML = `❌ Incorrect. The correct answer is: <strong>${currentTense.practiceAnswer}</strong>`;
+            }
+            
+            feedback.innerHTML += `<div class="quiz-explanation">
+                <strong>${currentTense.name}:</strong><br>
+                Form: ${currentTense.form}<br>
+                When to use: ${currentTense.whenToUse}
+            </div>`;
+            
+            buttons.style.display = 'flex';
+        }
+
+        function nextTenseQuestion() {
+            currentTenseQuizQuestion++;
+            showNextTenseQuestion();
+        }
+
+        function showTensesQuizCompletion(categoryTenses) {
+            const percentage = Math.round((tenseQuizStats.correct / categoryTenses.length) * 100);
+            const message = percentage === 100 ? '🎉 Perfect!' : percentage >= 80 ? '👏 Great job!' : percentage >= 50 ? '😊 Good effort!' : '💪 Keep practicing!';
+            
+            const html = `
+                <div style="text-align: center; padding: 40px 20px;">
+                    <div style="font-size: 3em; margin-bottom: 20px;">${message}</div>
+                    <div class="quiz-stats-display">
+                        <div class="quiz-stat">
+                            <div class="quiz-stat-number" style="color: #4caf50;">${tenseQuizStats.correct}</div>
+                            <div class="quiz-stat-label">Correct</div>
+                        </div>
+                        <div class="quiz-stat">
+                            <div class="quiz-stat-number" style="color: #f44336;">${tenseQuizStats.incorrect}</div>
+                            <div class="quiz-stat-label">Incorrect</div>
+                        </div>
+                        <div class="quiz-stat">
+                            <div class="quiz-stat-number">${percentage}%</div>
+                            <div class="quiz-stat-label">Score</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <button class="quiz-btn quiz-btn-next" onclick="startTensesQuiz('${currentTenseQuizCategory}')">Try Again</button>
+                        <button class="quiz-btn quiz-btn-skip" onclick="initializeTensesPractice()" style="margin-left: 10px;">Choose Category</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('tenses-quiz-content').innerHTML = html;
+        }
+
+
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+            
+            if (tabName === 'practice') {
+                initializePractice();
+            } else if (tabName === 'tenses') {
+                renderTenses();
+            } else if (tabName === 'tenses-practice') {
+                initializeTensesPractice();
+            }
+        }
+
+        // Initial load
+        renderVerbs();
+    </script>
+</body>
+</html>
