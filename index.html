@@ -2495,6 +2495,12 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
         fr: '🔍  Cerca in italiano o in francese...',
       }
 
+      const QUIZ_SUBTITLE = {
+        en: 'Come si dice in inglese?',
+        es: 'Come si dice in spagnolo?',
+        fr: 'Come si dice in francese?',
+      }
+
       function updateFilterPills() {
         const pills = document.querySelectorAll('#vocabFilters .filter-pill')
         pills.forEach((pill) => {
@@ -5182,7 +5188,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           badge.textContent = '🇮🇹 Traduzione'
           document.getElementById('quizQuestion').textContent = quiz.q
           document.getElementById('quizSubtitle').textContent =
-            'Come si dice in inglese?'
+            QUIZ_SUBTITLE[currentLang] || QUIZ_SUBTITLE.en
         } else {
           badge.className = 'quiz-type-badge badge-fill'
           badge.textContent = '✏️ Fill in the blank'
