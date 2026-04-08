@@ -1,0 +1,152 @@
+      function renderVocabGrid(filter, search) {
+        const grid = document.getElementById('vocabGrid')
+        grid.innerHTML = ''
+        document.querySelectorAll('.vocab-pagination').forEach(el => el.remove())
+        let items =
+          filter === 'all'
+            ? ALL_VOCAB
+            : ALL_VOCAB.filter(
+                (v) => v.type === filter || (v.tags && v.tags.includes(filter)),
+              )
+        if (search) {
+          items = items.filter(
+            (v) =>
+              v.verb.toLowerCase().includes(search) ||
+              v.it.toLowerCase().includes(search) ||
+              (v.context_note && v.context_note.toLowerCase().includes(search)),
+          )
+        }
+        if (items.length === 0) {
+          grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:0.85rem">Nessun risultato per "<strong>${search}</strong>"</div>`
+          return
+        }
+
+        const totalPages = Math.ceil(items.length / VOCAB_PAGE_SIZE)
+        vocabPage = Math.min(vocabPage, Math.max(0, totalPages - 1))
+        const paged = items.slice(vocabPage * VOCAB_PAGE_SIZE, (vocabPage + 1) * VOCAB_PAGE_SIZE)
+
+        const colors = {
+          phrasal: 'var(--accent3)',
+          emotion: 'var(--accent2)',
+          opinion: 'var(--success)',
+          idiom: 'var(--accent)',
+          colloquial: '#a8ff78',
+          clarification: 'var(--muted)',
+        }
+        paged.forEach((item) => {
+          const idx = ALL_VOCAB.indexOf(item)
+          const isLearned = learned.has(idx)
+          const color = colors[item.type] || 'var(--text)'
+          const speakSrc = item.example_en || item.verb
+          const exampleHtml = item.example_en
+            ? `<div class="vc-example">${escHtml(item.example_en)}<br><span style="opacity:0.6;font-style:italic">${escHtml(item.example_it)}</span></div>`
+            : item.context_note
+              ? `<div class="vc-example" style="color:var(--muted);font-style:italic">${escHtml(item.context_note)}</div>`
+              : ''
+          const d = document.createElement('div')
+          d.className =
+            'vocab-card type-' + item.type + (isLearned ? ' learned' : '')
+          d.innerHTML = `
+      ${item.emoji ? `<div class="vc-emoji">${escHtml(item.emoji)}</div>` : ''}
+      <div class="vc-verb" style="color:${color}">${escHtml(item.verb)}</div>
+      ${item.simple ? `<div style="font-size:0.68rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-bottom:2px">≈ ${escHtml(item.simple)}</div>` : ''}
+      <div class="vc-it">${escHtml(item.it)}</div>
+      ${exampleHtml}
+      ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag">${escHtml(t)}</span>`).join('') + '</div>' : ''}
+      <div class="vc-actions">
+        <button class="btn btn-ghost btn-sm" onclick="speakText(this.dataset.t)" data-t="${escHtml(speakSrc)}">🔊</button>
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-left:4px">
+          <input type="checkbox" class="learned-check" ${isLearned ? 'checked' : ''} onchange="toggleLearned(${idx},this,event)"> imparata
+        </label>
+      </div>`
+          grid.appendChild(d)
+        })
+
+        if (totalPages > 1) {
+          const pagHTML = `
+            <button onclick="vocabGoPage(${vocabPage - 1})" ${vocabPage === 0 ? 'disabled' : ''}>←</button>
+            <span>${vocabPage + 1} / ${totalPages}</span>
+            <button onclick="vocabGoPage(${vocabPage + 1})" ${vocabPage >= totalPages - 1 ? 'disabled' : ''}>→</button>
+          `
+          const pagTop = document.createElement('div')
+          pagTop.className = 'vocab-pagination vocab-pagination-top'
+          pagTop.innerHTML = pagHTML
+          grid.insertAdjacentElement('beforebegin', pagTop)
+
+          const pagBottom = document.createElement('div')
+          pagBottom.className = 'vocab-pagination vocab-pagination-bottom'
+          pagBottom.innerHTML = pagHTML
+          grid.insertAdjacentElement('afterend', pagBottom)
+        }
+      }
+
+      function vocabGoPage(p) {
+        vocabPage = p
+        renderVocabGrid(activeFilter, activeSearch)
+        document.getElementById('panel-vocab').scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+
+      function filterVocab(f, btn) {
+        document
+          .querySelectorAll('.filter-pill')
+          .forEach((b) => b.classList.remove('active'))
+        btn.classList.add('active')
+        activeFilter = f
+        vocabPage = 0
+        renderVocabGrid(activeFilter, activeSearch)
+      }
+
+      function searchVocab(q) {
+        activeSearch = q.trim().toLowerCase()
+        vocabPage = 0
+        document.getElementById('searchClear').style.display = activeSearch
+          ? 'block'
+          : 'none'
+        renderVocabGrid(activeFilter, activeSearch)
+      }
+
+      function clearSearch() {
+        document.getElementById('vocabSearch').value = ''
+        searchVocab('')
+      }
+
+      function toggleLearned(idx, chk, e) {
+        e.stopPropagation()
+        if (chk.checked) learned.add(idx)
+        else learned.delete(idx)
+        saveLearned()
+        updateStatsUI()
+        const card = chk.closest('.vocab-card')
+        if (chk.checked) card.classList.add('learned')
+        else card.classList.remove('learned')
+        sbSyncLearned(idx, chk.checked)
+      }
+
+      const LANG_VOICE = { en: 'en-US', es: 'es-ES', fr: 'fr-FR' }
+
+      // Pre-carica voci per evitare silenzio al primo click
+      if (typeof speechSynthesis !== 'undefined') {
+        speechSynthesis.getVoices()
+        speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices()
+      }
+
+      function speakText(text, rate) {
+        if (typeof speechSynthesis === 'undefined') return
+        speechSynthesis.cancel()
+        const doSpeak = () => {
+          const u = new SpeechSynthesisUtterance(text)
+          u.lang = LANG_VOICE[currentLang] || 'en-US'
+          u.rate = rate || 0.9
+          const voices = speechSynthesis.getVoices()
+          const langCode = (LANG_VOICE[currentLang] || 'en-US').split('-')[0]
+          const voice = voices.find((v) => v.lang.startsWith(langCode)) || null
+          if (voice) u.voice = voice
+          speechSynthesis.speak(u)
+        }
+        if (speechSynthesis.getVoices().length === 0) {
+          setTimeout(doSpeak, 250)
+        } else {
+          doSpeak()
+        }
+      }
+
