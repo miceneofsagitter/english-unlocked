@@ -295,6 +295,24 @@
         box-shadow: 0 2px 12px rgba(255, 190, 11, 0.3);
       }
 
+      .pill-group {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .pill-group-label {
+        font-size: 0.65rem;
+        font-family: 'JetBrains Mono', monospace;
+        color: var(--muted);
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        min-width: 45px;
+        flex-shrink: 0;
+      }
+
       .vocab-card {
         background: linear-gradient(160deg, var(--surface2), var(--surface));
         border: 1.5px solid rgba(255, 190, 11, 0.12);
@@ -724,10 +742,15 @@
       }
 
       .match-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         gap: 10px;
         margin-top: 16px;
+      }
+      .match-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
       .match-btn {
         padding: 12px;
@@ -949,13 +972,29 @@
         display: none;
       }
 
+      /* Desktop: accordion toggle nascosto, panel sempre visibile */
+      .stats-accordion-toggle { display: none; }
+      #statsPanel { max-height: none !important; opacity: 1 !important; overflow: visible; }
+
       @media (max-width: 600px) {
         .quiz-options {
           grid-template-columns: 1fr;
         }
-        .match-grid {
-          grid-template-columns: 1fr;
+        /* pills: riga unica scrollabile */
+        #vocabFilters .pill-group {
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+          padding-bottom: 4px;
         }
+        #vocabFilters .pill-group::-webkit-scrollbar { display: none; }
+        #vocabFilters > div:first-child {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+        }
+        #vocabFilters > div:first-child::-webkit-scrollbar { display: none; }
         .nav-tabs {
           overflow-x: auto;
           flex-wrap: nowrap;
@@ -1034,8 +1073,73 @@
           font-size: 0.72rem;
           padding: 6px 10px;
         }
+        /* Accordion stats: attivo su mobile */
+        .stats-accordion-toggle { display: flex; }
+        #statsPanel { max-height: 0 !important; opacity: 0 !important; overflow: hidden; }
+        #statsPanel.open { max-height: 200px !important; opacity: 1 !important; }
+
         #vocabGrid {
           grid-template-columns: 1fr !important;
+        }
+        .vocab-pagination {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          margin: 12px 0;
+        }
+        .vocab-pagination button {
+          background: var(--surface2);
+          border: 1px solid rgba(255,255,255,0.1);
+          color: var(--text);
+          border-radius: 10px;
+          padding: 10px 20px;
+          font-size: 1rem;
+          cursor: pointer;
+          min-width: 48px;
+          min-height: 48px;
+        }
+        .vocab-pagination button:disabled {
+          opacity: 0.3;
+          cursor: default;
+        }
+        .vocab-pagination span {
+          font-size: 0.8rem;
+          color: var(--muted);
+          font-family: 'JetBrains Mono', monospace;
+        }
+        /* Accordion stats mobile */
+        .stats-accordion-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          background: var(--surface2);
+          border: 1px solid rgba(255,255,255,0.07);
+          border-radius: 12px;
+          padding: 10px 14px;
+          color: var(--text);
+          font-size: 0.8rem;
+          font-family: 'JetBrains Mono', monospace;
+          cursor: pointer;
+          margin-bottom: 8px;
+        }
+        .stats-accordion-toggle .arrow {
+          transition: transform 0.2s;
+          font-style: normal;
+        }
+        .stats-accordion-toggle.open .arrow {
+          transform: rotate(180deg);
+        }
+        #statsPanel {
+          overflow: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease;
+          max-height: 0;
+          opacity: 0;
+        }
+        #statsPanel.open {
+          max-height: 200px;
+          opacity: 1;
         }
         .speak-btn {
           width: 48px;
@@ -1104,6 +1208,37 @@
         box-shadow: 0 2px 12px rgba(255, 190, 11, 0.3);
       }
       .lang-btn:hover:not(.active) {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: rgba(255, 190, 11, 0.08);
+      }
+
+      /* ZOOM CONTROLS */
+      .zoom-controls {
+        display: flex;
+        gap: 4px;
+        margin-top: 12px;
+        flex-wrap: wrap;
+      }
+      .zoom-btn {
+        padding: 4px 10px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--muted);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.65rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .zoom-btn.active {
+        background: rgba(255, 190, 11, 0.2);
+        border-color: var(--accent);
+        color: var(--accent);
+        font-weight: 700;
+      }
+      .zoom-btn:hover:not(.active) {
         border-color: var(--accent);
         color: var(--accent);
         background: rgba(255, 190, 11, 0.08);
@@ -1553,68 +1688,83 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
               🇫🇷 FR
             </button>
           </div>
+          <div class="zoom-controls" id="zoomControls">
+            <button class="zoom-btn" onclick="setZoom(0.8)" title="80%">A−</button>
+            <button class="zoom-btn" onclick="setZoom(0.9)" title="90%">A−</button>
+            <button class="zoom-btn active" onclick="setZoom(1.0)" title="100%">A</button>
+            <button class="zoom-btn" onclick="setZoom(1.1)" title="110%">A+</button>
+            <button class="zoom-btn" onclick="setZoom(1.2)" title="120%">A+</button>
+            <button class="zoom-btn" onclick="setZoom(1.3)" title="130%">A++</button>
+          </div>
         </div>
       </header>
 
-      <!-- GLOBAL PROGRESS -->
-      <div style="margin-bottom: 20px">
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 6px;
-          "
-        >
-          <span
-            style="
-              font-size: 0.72rem;
-              font-family: 'JetBrains Mono', monospace;
-              color: var(--muted);
-              text-transform: uppercase;
-              letter-spacing: 0.1em;
-            "
-            >Vocabolario imparato</span
-          >
-          <span
-            id="learnedCount"
-            style="
-              font-size: 0.72rem;
-              font-family: 'JetBrains Mono', monospace;
-              color: var(--success);
-            "
-            >0 / 56</span
-          >
-        </div>
-        <div class="progress-bar">
-          <div class="progress-fill" id="globalFill" style="width: 0%"></div>
-        </div>
-      </div>
-
-      <!-- SESSION STATS -->
-      <div class="stats-row">
-        <div class="stat-box">
-          <div class="stat-num" id="stat-streak" style="color: var(--accent)">
-            0
-          </div>
+      <!-- GLOBAL PROGRESS + SESSION STATS (accordion su mobile) -->
+      <button class="stats-accordion-toggle" id="statsToggle" onclick="toggleStatsPanel()">
+        <span id="statsToggleSummary">📊 <span id="statsToggleLearned">0/0</span> · 🔥 <span id="statsToggleStreak">0</span> · ✅ <span id="statsToggleCorrect">0</span>/<span id="statsToggleTotal">0</span></span>
+        <i class="arrow">▼</i>
+      </button>
+      <div id="statsPanel">
+        <!-- GLOBAL PROGRESS -->
+        <div style="margin-bottom: 14px; padding: 0 2px">
           <div
-            class="stat-label"
-            style="animation: float 3s ease-in-out infinite"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 6px;
+            "
           >
-            Streak 🔥
+            <span
+              style="
+                font-size: 0.72rem;
+                font-family: 'JetBrains Mono', monospace;
+                color: var(--muted);
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+              "
+              >Vocabolario imparato</span
+            >
+            <span
+              id="learnedCount"
+              style="
+                font-size: 0.72rem;
+                font-family: 'JetBrains Mono', monospace;
+                color: var(--success);
+              "
+              >0 / 56</span
+            >
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="globalFill" style="width: 0%"></div>
           </div>
         </div>
-        <div class="stat-box">
-          <div class="stat-num" id="stat-correct" style="color: var(--success)">
-            0
+
+        <!-- SESSION STATS -->
+        <div class="stats-row" style="margin-bottom: 10px">
+          <div class="stat-box">
+            <div class="stat-num" id="stat-streak" style="color: var(--accent)">
+              0
+            </div>
+            <div
+              class="stat-label"
+              style="animation: float 3s ease-in-out infinite"
+            >
+              Streak 🔥
+            </div>
           </div>
-          <div class="stat-label">Corrette</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num" id="stat-total" style="color: var(--accent3)">
-            0
+          <div class="stat-box">
+            <div class="stat-num" id="stat-correct" style="color: var(--success)">
+              0
+            </div>
+            <div class="stat-label">Corrette</div>
           </div>
-          <div class="stat-label">Totale</div>
+          <div class="stat-box">
+            <div class="stat-num" id="stat-total" style="color: var(--accent3)">
+              0
+            </div>
+            <div class="stat-label">Totale</div>
+          </div>
         </div>
       </div>
 
@@ -1684,63 +1834,63 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
               ✕
             </button>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 8px;
-              flex-wrap: wrap;
-              margin-bottom: 20px;
-            "
-            id="vocabFilters"
-          >
-            <button
-              class="filter-pill active"
-              onclick="filterVocab('all', this)"
-            >
-              Tutti
-            </button>
-            <button class="filter-pill" onclick="filterVocab('phrasal', this)">
-              Phrasal
-            </button>
-            <button class="filter-pill" onclick="filterVocab('idiom', this)">
-              Idiomi
-            </button>
-            <button
-              class="filter-pill"
-              onclick="filterVocab('colloquial', this)"
-            >
-              Colloquiali
-            </button>
-            <button class="filter-pill" onclick="filterVocab('emotion', this)">
-              Emozioni
-            </button>
-            <button class="filter-pill" onclick="filterVocab('opinion', this)">
-              Opinioni
-            </button>
-            <button
-              class="filter-pill"
-              onclick="filterVocab('clarification', this)"
-            >
-              Chiarimento
-            </button>
-            <button class="filter-pill" onclick="filterVocab('bambini', this)">
-              Bambini
-            </button>
-            <button class="filter-pill" onclick="filterVocab('genitori', this)">
-              Genitori
-            </button>
-            <button class="filter-pill" onclick="filterVocab('evento', this)">
-              Evento
-            </button>
-            <button
-              class="filter-pill"
-              onclick="filterVocab('sicurezza', this)"
-            >
-              Sicurezza
-            </button>
-            <button class="filter-pill" onclick="filterVocab('mare', this)">
-              Mare 🏖️
-            </button>
+          <div id="vocabFilters" style="margin-bottom: 20px">
+            <div style="margin-bottom: 12px">
+              <button
+                class="filter-pill active"
+                onclick="filterVocab('all', this)"
+              >
+                Tutti
+              </button>
+            </div>
+            <div class="pill-group">
+              <span class="pill-group-label">Tipo</span>
+              <button class="filter-pill" onclick="filterVocab('phrasal', this)">
+                Phrasal
+              </button>
+              <button class="filter-pill" onclick="filterVocab('idiom', this)">
+                Idiomi
+              </button>
+              <button
+                class="filter-pill"
+                onclick="filterVocab('colloquial', this)"
+              >
+                Colloquiali
+              </button>
+              <button class="filter-pill" onclick="filterVocab('emotion', this)">
+                Emozioni
+              </button>
+              <button class="filter-pill" onclick="filterVocab('opinion', this)">
+                Opinioni
+              </button>
+              <button
+                class="filter-pill"
+                onclick="filterVocab('clarification', this)"
+              >
+                Chiarimento
+              </button>
+            </div>
+            <div class="pill-group">
+              <span class="pill-group-label">Tag</span>
+              <button class="filter-pill" onclick="filterVocab('bambini', this)">
+                Bambini
+              </button>
+              <button class="filter-pill" onclick="filterVocab('genitori', this)">
+                Genitori
+              </button>
+              <button class="filter-pill" onclick="filterVocab('evento', this)">
+                Evento
+              </button>
+              <button
+                class="filter-pill"
+                onclick="filterVocab('sicurezza', this)"
+              >
+                Sicurezza
+              </button>
+              <button class="filter-pill" onclick="filterVocab('mare', this)">
+                Mare 🏖️
+              </button>
+            </div>
           </div>
           <div
             id="vocabGrid"
@@ -2433,7 +2583,19 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           : []
       let activeFilter = 'all'
       let activeSearch = ''
+      let vocabPage = 0
+      const VOCAB_PAGE_SIZE = 6
       let tensesContrast = 'all'
+      let zoomLevel = parseFloat(localStorage.getItem('eu_zoom')) || 1.0
+      document.body.style.zoom = zoomLevel
+
+      function setZoom(level) {
+        zoomLevel = level
+        localStorage.setItem('eu_zoom', zoomLevel)
+        document.body.style.zoom = zoomLevel
+        document.querySelectorAll('.zoom-btn').forEach((btn) => btn.classList.remove('active'))
+        event.target.classList.add('active')
+      }
 
       function switchLang(lang) {
         if (quizRunning) {
@@ -4795,6 +4957,22 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
         document.getElementById('learnedCount').textContent = n + ' / ' + tot
         document.getElementById('globalFill').style.width =
           ((n / tot) * 100).toFixed(1) + '%'
+        // aggiorna summary accordion
+        const sl = document.getElementById('statsToggleLearned')
+        const ss = document.getElementById('statsToggleStreak')
+        const sc = document.getElementById('statsToggleCorrect')
+        const st = document.getElementById('statsToggleTotal')
+        if (sl) sl.textContent = n + '/' + tot
+        if (ss) ss.textContent = session.streak
+        if (sc) sc.textContent = session.correct
+        if (st) st.textContent = session.total
+      }
+
+      function toggleStatsPanel() {
+        const panel = document.getElementById('statsPanel')
+        const toggle = document.getElementById('statsToggle')
+        panel.classList.toggle('open')
+        toggle.classList.toggle('open')
       }
       updateStatsUI()
       updateFilterPills()
@@ -4836,6 +5014,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
       function renderVocabGrid(filter, search) {
         const grid = document.getElementById('vocabGrid')
         grid.innerHTML = ''
+        document.querySelectorAll('.vocab-pagination').forEach(el => el.remove())
         let items =
           filter === 'all'
             ? ALL_VOCAB
@@ -4855,6 +5034,10 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           return
         }
 
+        const totalPages = Math.ceil(items.length / VOCAB_PAGE_SIZE)
+        vocabPage = Math.min(vocabPage, Math.max(0, totalPages - 1))
+        const paged = items.slice(vocabPage * VOCAB_PAGE_SIZE, (vocabPage + 1) * VOCAB_PAGE_SIZE)
+
         const colors = {
           phrasal: 'var(--accent3)',
           emotion: 'var(--accent2)',
@@ -4863,7 +5046,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           colloquial: '#a8ff78',
           clarification: 'var(--muted)',
         }
-        items.forEach((item) => {
+        paged.forEach((item) => {
           const idx = ALL_VOCAB.indexOf(item)
           const isLearned = learned.has(idx)
           const color = colors[item.type] || 'var(--text)'
@@ -4891,6 +5074,29 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
       </div>`
           grid.appendChild(d)
         })
+
+        if (totalPages > 1) {
+          const pagHTML = `
+            <button onclick="vocabGoPage(${vocabPage - 1})" ${vocabPage === 0 ? 'disabled' : ''}>←</button>
+            <span>${vocabPage + 1} / ${totalPages}</span>
+            <button onclick="vocabGoPage(${vocabPage + 1})" ${vocabPage >= totalPages - 1 ? 'disabled' : ''}>→</button>
+          `
+          const pagTop = document.createElement('div')
+          pagTop.className = 'vocab-pagination vocab-pagination-top'
+          pagTop.innerHTML = pagHTML
+          grid.insertAdjacentElement('beforebegin', pagTop)
+
+          const pagBottom = document.createElement('div')
+          pagBottom.className = 'vocab-pagination vocab-pagination-bottom'
+          pagBottom.innerHTML = pagHTML
+          grid.insertAdjacentElement('afterend', pagBottom)
+        }
+      }
+
+      function vocabGoPage(p) {
+        vocabPage = p
+        renderVocabGrid(activeFilter, activeSearch)
+        document.getElementById('panel-vocab').scrollIntoView({ behavior: 'smooth', block: 'start' })
       }
 
       function filterVocab(f, btn) {
@@ -4899,11 +5105,13 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           .forEach((b) => b.classList.remove('active'))
         btn.classList.add('active')
         activeFilter = f
+        vocabPage = 0
         renderVocabGrid(activeFilter, activeSearch)
       }
 
       function searchVocab(q) {
         activeSearch = q.trim().toLowerCase()
+        vocabPage = 0
         document.getElementById('searchClear').style.display = activeSearch
           ? 'block'
           : 'none'
@@ -5260,6 +5468,13 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
         optsDiv.innerHTML = ''
         optsDiv.className = 'match-grid'
 
+        const verbCol = document.createElement('div')
+        verbCol.className = 'match-col'
+        const transCol = document.createElement('div')
+        transCol.className = 'match-col'
+        optsDiv.appendChild(verbCol)
+        optsDiv.appendChild(transCol)
+
         let selectedVerb = null
         let matched = 0
         const pairColors = ['pair-0', 'pair-1', 'pair-2', 'pair-3']
@@ -5279,7 +5494,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
             btn.classList.add('selected')
             selectedVerb = v
           }
-          optsDiv.appendChild(btn)
+          verbCol.appendChild(btn)
         })
 
         quiz.trans.forEach((t) => {
@@ -5342,7 +5557,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
               }, 600)
             }
           }
-          optsDiv.appendChild(btn)
+          transCol.appendChild(btn)
         })
       }
 
@@ -6413,6 +6628,14 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
       // Render Miniclub al cambio lingua
       document.addEventListener('DOMContentLoaded', () => {
         renderMiniclub()
+        // Init zoom button active state
+        const zoomBtns = document.querySelectorAll('.zoom-btn')
+        zoomBtns.forEach((btn) => {
+          const btnZoom = parseFloat(btn.getAttribute('onclick').match(/\d+\.?\d*/)[0])
+          if (Math.abs(btnZoom - zoomLevel) < 0.01) {
+            btn.classList.add('active')
+          }
+        })
       })
     </script>
   </body>
