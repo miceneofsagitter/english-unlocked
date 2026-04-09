@@ -65,6 +65,11 @@
 
         pillsEl.innerHTML = html
         pillsEl.style.display = 'block'
+        const pillsContainer = pillsEl.querySelector('.filter-pills')
+        const activeBtn = pillsEl.querySelector('.filter-pill.active')
+        if (pillsContainer && activeBtn) {
+          pillsContainer.scrollLeft = activeBtn.offsetLeft - pillsContainer.offsetWidth / 2 + activeBtn.offsetWidth / 2
+        }
       }
 
       function renderDialogueGroup(dialogues) {
@@ -121,6 +126,8 @@
           .querySelectorAll('#miniclub-dialogues-section > .filter-pills button')
           .forEach((b) => b.classList.remove('active'))
         btn.classList.add('active')
+        const c = btn.closest('.filter-pills')
+        if (c) c.scrollLeft = btn.offsetLeft - c.offsetWidth / 2 + btn.offsetWidth / 2
         renderScenarioPills()
         renderMiniclub()
       }
