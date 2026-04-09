@@ -1180,23 +1180,35 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
       <!-- ===== TAB 6: MINICLUB ===== -->
       <div id="panel-miniclub" class="panel">
         <div class="panel-header">
-          <h2>🎠 Miniclub — Dialoghi</h2>
+          <h2>🎠 Miniclub</h2>
           <p>Frasi pronte per genitori e bambini</p>
         </div>
         <div class="panel-content">
-          <div class="filter-pills" style="margin-bottom: 0.75rem">
-            <button class="filter-pill active" onclick="filterMiniclub('both', this)">
-              Tutti
-            </button>
-            <button class="filter-pill" onclick="filterMiniclub('parents', this)">
-              Genitori
-            </button>
-            <button class="filter-pill" onclick="filterMiniclub('kids', this)">
-              Bambini
-            </button>
+          <!-- Mode tabs -->
+          <div class="filter-pills" style="margin-bottom:1.25rem;">
+            <button class="filter-pill mc-mode-btn active" onclick="setMiniclubMode('dialogues', this)">💬 Dialoghi</button>
+            <button class="filter-pill mc-mode-btn" onclick="setMiniclubMode('practice', this)">🎧 Pratica</button>
           </div>
-          <div id="miniclub-scenario-pills" style="margin-bottom: 1.5rem; display:none;"></div>
-          <div id="miniclub-content"></div>
+
+          <!-- Dialogues section -->
+          <div id="miniclub-dialogues-section">
+            <div class="filter-pills" style="margin-bottom: 0.75rem">
+              <button class="filter-pill active" onclick="filterMiniclub('both', this)">
+                Tutti
+              </button>
+              <button class="filter-pill" onclick="filterMiniclub('parents', this)">
+                Genitori
+              </button>
+              <button class="filter-pill" onclick="filterMiniclub('kids', this)">
+                Bambini
+              </button>
+            </div>
+            <div id="miniclub-scenario-pills" style="margin-bottom: 1.5rem; display:none;"></div>
+            <div id="miniclub-content"></div>
+          </div>
+
+          <!-- Practice section -->
+          <div id="miniclub-practice-section" style="display:none;"></div>
         </div>
       </div>
     </div>

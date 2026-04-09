@@ -1,5 +1,9 @@
       let miniclubFilter = 'both'
       let miniclubScenario = 'all'
+      let miniclubMode = 'dialogues'
+      let practiceIdx = 0
+      let practiceRevealed = false
+      let practiceWho = 'both'
 
       function renderMiniclub() {
         const container = document.getElementById('miniclub-content')
@@ -66,10 +70,6 @@
       function renderDialogueGroup(dialogues) {
         let html = ''
         dialogues.forEach((d) => {
-          const bgColor =
-            d.audience === 'parents'
-              ? 'rgba(59,130,246,0.05)'
-              : 'rgba(249,115,22,0.05)'
           const borderColor =
             d.audience === 'parents' ? 'var(--accent)' : 'var(--accent2)'
 
@@ -78,14 +78,25 @@
 
           d.exchanges.forEach((ex) => {
             const text =
-              currentLang === 'en'
-                ? ex.en
-                : currentLang === 'es'
-                  ? ex.es
-                  : ex.fr
-            html += `<div style="margin-bottom:0.8rem;cursor:pointer;" onclick="copyMiniclubText('${text.replace(/'/g, "\\'")}', this)" title="Clicca per copiare">`
-            html += `<div style="font-size:0.85rem;color:var(--muted);margin-bottom:0.3rem;">${ex.it}</div>`
-            html += `<div style="font-size:1rem;padding:0.6rem;background:rgba(255,255,255,0.3);border-radius:6px;transition:all 0.2s;">${text}</div>`
+              currentLang === 'en' ? ex.en : currentLang === 'es' ? ex.es : ex.fr
+            const safeText = text.replace(/'/g, "\\'").replace(/"/g, '&quot;')
+
+            let variantsHtml = ''
+            if (ex.variants && ex.variants[currentLang] && ex.variants[currentLang].length) {
+              const vlist = ex.variants[currentLang]
+              const items = vlist.map(v => {
+                const sv = v.replace(/'/g, "\\'").replace(/"/g, '&quot;')
+                return `<div onclick="copyMiniclubText('${sv}', this)" class="mc-variant-item">↳ ${escHtml(v)}</div>`
+              }).join('')
+              variantsHtml = `
+                <div class="mc-variants-toggle" onclick="toggleVariants(this)">+ ${vlist.length} varianti ▼</div>
+                <div class="mc-variants" style="display:none;">${items}</div>`
+            }
+
+            html += `<div style="margin-bottom:0.8rem;">`
+            html += `<div style="font-size:0.85rem;color:var(--muted);margin-bottom:0.3rem;">${escHtml(ex.it)}</div>`
+            html += `<div onclick="copyMiniclubText('${safeText}', this)" style="font-size:1rem;padding:0.6rem;background:rgba(255,255,255,0.3);border-radius:6px;transition:all 0.2s;cursor:pointer;" title="Clicca per copiare">${escHtml(text)}</div>`
+            html += variantsHtml
             html += `</div>`
           })
 
@@ -94,11 +105,20 @@
         return html
       }
 
+      function toggleVariants(el) {
+        const list = el.nextElementSibling
+        const open = list.style.display !== 'none'
+        list.style.display = open ? 'none' : 'block'
+        el.textContent = open
+          ? el.textContent.replace('▲', '▼')
+          : el.textContent.replace('▼', '▲')
+      }
+
       function filterMiniclub(audience, btn) {
         miniclubFilter = audience
         miniclubScenario = 'all'
         document
-          .querySelectorAll('#panel-miniclub > .panel-content > .filter-pills button')
+          .querySelectorAll('#miniclub-dialogues-section > .filter-pills button')
           .forEach((b) => b.classList.remove('active'))
         btn.classList.add('active')
         renderScenarioPills()
@@ -111,6 +131,28 @@
         renderMiniclub()
       }
 
+      const _mcAudio = {}
+
+      function speakMiniclub(key) {
+        const text = _mcAudio[key]
+        if (!text || !window.speechSynthesis) return
+        const doSpeak = () => {
+          speechSynthesis.cancel()
+          const u = new SpeechSynthesisUtterance(text)
+          const targetLang = currentLang === 'es' ? 'es' : currentLang === 'fr' ? 'fr' : 'en'
+          const voices = speechSynthesis.getVoices()
+          const match = voices.find(v => v.lang.toLowerCase().startsWith(targetLang))
+          if (match) u.voice = match
+          u.rate = 0.9
+          speechSynthesis.speak(u)
+        }
+        if (speechSynthesis.getVoices().length) {
+          doSpeak()
+        } else {
+          speechSynthesis.onvoiceschanged = () => { speechSynthesis.onvoiceschanged = null; doSpeak() }
+        }
+      }
+
       function copyMiniclubText(text, el) {
         navigator.clipboard.writeText(text).then(() => {
           const orig = el.style.background
@@ -119,6 +161,137 @@
             el.style.background = orig
           }, 300)
         })
+      }
+
+      // ===== PRATICA FLASH CARD =====
+
+      function setMiniclubMode(mode, btn) {
+        miniclubMode = mode
+        document.querySelectorAll('.mc-mode-btn').forEach(b => b.classList.remove('active'))
+        btn.classList.add('active')
+
+        const dialogues = document.getElementById('miniclub-dialogues-section')
+        const practice = document.getElementById('miniclub-practice-section')
+
+        if (mode === 'dialogues') {
+          dialogues.style.display = 'block'
+          practice.style.display = 'none'
+        } else {
+          dialogues.style.display = 'none'
+          practice.style.display = 'block'
+          practiceIdx = 0
+          practiceRevealed = false
+          renderPracticeCard()
+        }
+      }
+
+      function getPracticeList() {
+        if (practiceWho === 'both') return MINICLUB_PRACTICE
+        return MINICLUB_PRACTICE.filter(c => c.who === practiceWho)
+      }
+
+      function filterPracticeWho(who, btn) {
+        practiceWho = who
+        practiceIdx = 0
+        practiceRevealed = false
+        document.querySelectorAll('.mc-practice-who-btn').forEach(b => b.classList.remove('active'))
+        btn.classList.add('active')
+        renderPracticeCard()
+      }
+
+      function renderPracticeCard() {
+        const section = document.getElementById('miniclub-practice-section')
+        if (!section) return
+
+        const whoFilterHtml = `
+          <div class="filter-pills" style="margin-bottom:1.25rem;">
+            <button class="filter-pill mc-practice-who-btn${practiceWho === 'both' ? ' active' : ''}" onclick="filterPracticeWho('both', this)">Tutti</button>
+            <button class="filter-pill mc-practice-who-btn${practiceWho === 'parents' ? ' active' : ''}" onclick="filterPracticeWho('parents', this)">👨‍👩‍👧‍👦 Genitori</button>
+            <button class="filter-pill mc-practice-who-btn${practiceWho === 'kids' ? ' active' : ''}" onclick="filterPracticeWho('kids', this)">👧 Bambini</button>
+          </div>`
+
+        const list = getPracticeList()
+        if (!list || list.length === 0) {
+          section.innerHTML = whoFilterHtml + '<p style="color:var(--muted);text-align:center;padding:2rem;">Nessuna scheda disponibile.</p>'
+          return
+        }
+
+        const card = list[practiceIdx]
+        const total = list.length
+        const parentText = card.parent_asks[currentLang] || card.parent_asks.en
+        const parentIt = card.parent_asks.it
+        const speakerLabel = card.who === 'kids' ? '👧 Il bambino dice:' : '🎧 Il genitore dice:'
+        _mcAudio.question = parentText
+
+        let replyHtml = ''
+        if (practiceRevealed) {
+          const replyText = card.you_reply[currentLang] || card.you_reply.en
+          const safeReply = replyText.replace(/'/g, "\\'").replace(/"/g, '&quot;')
+          _mcAudio.reply = replyText
+
+          let variantsHtml = ''
+          if (card.variants && card.variants[currentLang] && card.variants[currentLang].length) {
+            const vlist = card.variants[currentLang]
+            const items = vlist.map(v => {
+              const sv = v.replace(/'/g, "\\'").replace(/"/g, '&quot;')
+              return `<div onclick="copyMiniclubText('${sv}', this)" class="mc-variant-item" style="text-align:left;">↳ ${escHtml(v)}</div>`
+            }).join('')
+            variantsHtml = `
+              <div class="mc-variants-toggle" style="margin-top:0.75rem;" onclick="toggleVariants(this)">+ ${vlist.length} varianti ▼</div>
+              <div class="mc-variants" style="display:none;">${items}</div>`
+          }
+
+          replyHtml = `
+            <div style="margin-top:1.5rem;">
+              <div style="font-size:0.8rem;color:var(--muted);margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:0.05em;">Tu rispondi:</div>
+              <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <div onclick="copyMiniclubText('${safeReply}', this)"
+                  style="flex:1;font-size:1.05rem;padding:1rem;background:rgba(0,229,160,0.08);border:1px solid rgba(0,229,160,0.25);border-radius:10px;cursor:pointer;transition:all 0.2s;"
+                  title="Tap per copiare">${escHtml(replyText)}</div>
+                <button onclick="speakMiniclub('reply')" style="flex-shrink:0;background:none;border:none;font-size:1.4rem;cursor:pointer;padding:0.75rem 0 0;line-height:1;" title="Ascolta">🔊</button>
+              </div>
+              ${variantsHtml}
+            </div>`
+        } else {
+          replyHtml = `
+            <div style="margin-top:1.5rem;">
+              <button onclick="revealPracticeReply()" class="btn btn-accent" style="width:100%;padding:0.75rem;">
+                Mostra risposta ▼
+              </button>
+            </div>`
+        }
+
+        section.innerHTML = whoFilterHtml + `
+          <div style="max-width:520px;margin:0 auto;">
+            <div style="font-size:0.8rem;color:var(--muted);text-align:right;margin-bottom:1rem;">${practiceIdx + 1} / ${total}</div>
+            <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;">
+              <div style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem;text-transform:uppercase;letter-spacing:0.05em;">${speakerLabel}</div>
+              <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <div style="flex:1;font-size:1.25rem;font-weight:700;line-height:1.4;">${escHtml(parentText)}</div>
+                <button onclick="speakMiniclub('question')" style="flex-shrink:0;background:none;border:none;font-size:1.4rem;cursor:pointer;padding:0;line-height:1;" title="Ascolta">🔊</button>
+              </div>
+              <div style="font-size:0.85rem;color:var(--muted);margin-top:0.4rem;font-style:italic;">${escHtml(parentIt)}</div>
+              ${replyHtml}
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1.25rem;">
+              <button onclick="navigatePractice(-1)" class="filter-pill" ${practiceIdx === 0 ? 'disabled style="opacity:0.3;"' : ''}>← Prec</button>
+              <button onclick="navigatePractice(1)" class="filter-pill" ${practiceIdx === total - 1 ? 'disabled style="opacity:0.3;"' : ''}>Pross →</button>
+            </div>
+          </div>`
+      }
+
+      function revealPracticeReply() {
+        practiceRevealed = true
+        renderPracticeCard()
+      }
+
+      function navigatePractice(dir) {
+        const list = getPracticeList()
+        const newIdx = practiceIdx + dir
+        if (newIdx < 0 || newIdx >= list.length) return
+        practiceIdx = newIdx
+        practiceRevealed = false
+        renderPracticeCard()
       }
 
       // Render Miniclub al cambio lingua
