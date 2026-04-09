@@ -82,6 +82,10 @@
         document
           .querySelectorAll('.lang-btn')
           .forEach((b) => b.classList.toggle('active', b.dataset.lang === lang))
+        // Update lang toggle text (mobile)
+        const flags = { en: '🇬🇧 EN', es: '🇪🇸 ES', fr: '🇫🇷 FR' }
+        const togText = document.getElementById('langToggleText')
+        if (togText) togText.textContent = flags[lang] || lang
       }
 
       const SEARCH_PLACEHOLDER = {
@@ -800,6 +804,34 @@
           document.getElementById('quizEndCard').style.display = 'none'
         }
       }
+
+      // ============================================================
+      // LANGUAGE DROPDOWN (mobile)
+      // ============================================================
+      function toggleLangDropdown() {
+        const toggle = document.getElementById('langToggle')
+        const dropdown = document.getElementById('langDropdown')
+        toggle.classList.toggle('open')
+        dropdown.classList.toggle('open')
+      }
+
+      function selectLang(lang) {
+        switchLang(lang)
+        document.getElementById('langToggle').classList.remove('open')
+        document.getElementById('langDropdown').classList.remove('open')
+        const flags = { en: '🇬🇧 EN', es: '🇪🇸 ES', fr: '🇫🇷 FR' }
+        document.getElementById('langToggleText').textContent = flags[lang] || lang
+      }
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        const toggle = document.getElementById('langToggle')
+        const dropdown = document.getElementById('langDropdown')
+        if (toggle && dropdown && !toggle.contains(e.target) && !dropdown.contains(e.target)) {
+          toggle.classList.remove('open')
+          dropdown.classList.remove('open')
+        }
+      })
 
       // ============================================================
       // TAB 1: VOCABOLARIO

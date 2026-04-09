@@ -2,10 +2,10 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>EnglishUnlocked — Il tuo trainer personale</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -15,7 +15,7 @@
   <body>
     <div class="app">
       <button class="settings-btn" onclick="openSettings()">
-        ⚙ Impostazioni
+        <span class="settings-icon">⚙</span><span class="settings-btn-label"> Impostazioni</span>
       </button>
 
       <!-- SETTINGS OVERLAY -->
@@ -302,20 +302,21 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
         <div class="header-text">
           <h1>English<span>Unlocked</span></h1>
           <p>// trainer per animatori · bambini · genitori · eventi</p>
-          <div class="lang-selector" id="langSelector">
-            <button
-              class="lang-btn active"
-              data-lang="en"
-              onclick="switchLang('en')"
-            >
-              🇬🇧 EN
+          <div class="lang-selector-wrapper">
+            <button class="lang-toggle" id="langToggle" onclick="toggleLangDropdown()">
+              <span id="langToggleText">🇬🇧 EN</span>
+              <span class="dropdown-arrow">▼</span>
             </button>
-            <button class="lang-btn" data-lang="es" onclick="switchLang('es')">
-              🇪🇸 ES
-            </button>
-            <button class="lang-btn" data-lang="fr" onclick="switchLang('fr')">
-              🇫🇷 FR
-            </button>
+            <div class="lang-dropdown" id="langDropdown">
+              <button class="lang-option" data-lang="en" onclick="selectLang('en')">🇬🇧 English</button>
+              <button class="lang-option" data-lang="es" onclick="selectLang('es')">🇪🇸 Español</button>
+              <button class="lang-option" data-lang="fr" onclick="selectLang('fr')">🇫🇷 Français</button>
+            </div>
+            <div class="lang-selector" id="langSelector">
+              <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">🇬🇧 EN</button>
+              <button class="lang-btn" data-lang="es" onclick="switchLang('es')">🇪🇸 ES</button>
+              <button class="lang-btn" data-lang="fr" onclick="switchLang('fr')">🇫🇷 FR</button>
+            </div>
           </div>
           <div class="zoom-controls" id="zoomControls">
             <button class="zoom-btn" onclick="setZoom(0.8)" title="80%">A−</button>
