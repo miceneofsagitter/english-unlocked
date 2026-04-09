@@ -1,3 +1,11 @@
+      function escHtml(s) {
+        return String(s || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+      }
+
       // ============================================================
       // VOCABOLARIO — caricato da src/data/vocabulary.js
       // ============================================================
@@ -797,7 +805,7 @@
       // TAB 1: VOCABOLARIO
       // ============================================================
       document.addEventListener('DOMContentLoaded', () => {
-        renderMiniclub()
+        switchLang(currentLang)
         // Init zoom button active state
         const zoomBtns = document.querySelectorAll('.zoom-btn')
         zoomBtns.forEach((btn) => {
