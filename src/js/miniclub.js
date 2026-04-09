@@ -56,7 +56,7 @@
           (d) => d.audience === miniclubFilter
         )
 
-        let html = `<div class="filter-pills" style="flex-wrap:wrap;">`
+        let html = `<div class="filter-pills" style="overflow-x:auto; display:flex; flex-wrap:nowrap;">`
         html += `<button class="filter-pill${miniclubScenario === 'all' ? ' active' : ''}" onclick="filterMiniclubScenario('all')">Tutti</button>`
         scenarios.forEach((d) => {
           html += `<button class="filter-pill${miniclubScenario === d.scenario ? ' active' : ''}" onclick="filterMiniclubScenario('${d.scenario}')">${d.label}</button>`

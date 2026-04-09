@@ -321,7 +321,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           <div class="zoom-controls" id="zoomControls">
             <button class="zoom-btn" onclick="setZoom(0.8)" title="80%">A−</button>
             <button class="zoom-btn" onclick="setZoom(0.9)" title="90%">A−</button>
-            <button class="zoom-btn active" onclick="setZoom(1.0)" title="100%">A</button>
+            <button class="zoom-btn" onclick="setZoom(1.0)" title="100%">A</button>
             <button class="zoom-btn" onclick="setZoom(1.1)" title="110%">A+</button>
             <button class="zoom-btn" onclick="setZoom(1.2)" title="120%">A+</button>
             <button class="zoom-btn" onclick="setZoom(1.3)" title="130%">A++</button>
@@ -1185,14 +1185,14 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
         </div>
         <div class="panel-content">
           <!-- Mode tabs -->
-          <div class="filter-pills" style="margin-bottom:1.25rem;">
+          <div class="filter-pills" style="margin-bottom:1.25rem; overflow-x:auto; display:flex; flex-wrap:nowrap;">
             <button class="filter-pill mc-mode-btn active" onclick="setMiniclubMode('dialogues', this)">💬 Dialoghi</button>
             <button class="filter-pill mc-mode-btn" onclick="setMiniclubMode('practice', this)">🎧 Pratica</button>
           </div>
 
           <!-- Dialogues section -->
           <div id="miniclub-dialogues-section">
-            <div class="filter-pills" style="margin-bottom: 0.75rem">
+            <div class="filter-pills" style="margin-bottom: 0.75rem; overflow-x:auto; display:flex; flex-wrap:nowrap;">
               <button class="filter-pill active" onclick="filterMiniclub('both', this)">
                 Tutti
               </button>

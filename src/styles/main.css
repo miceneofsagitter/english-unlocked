@@ -271,6 +271,13 @@
         text-transform: uppercase;
       }
 
+      .filter-pills {
+        scrollbar-width: none;
+      }
+      .filter-pills::-webkit-scrollbar {
+        display: none;
+      }
+
       .filter-pill {
         padding: 8px 14px;
         min-height: 40px;
