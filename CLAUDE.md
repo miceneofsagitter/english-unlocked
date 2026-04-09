@@ -12,6 +12,14 @@ Quando si parla di "aggiungere vocabolo", si intende aggiungere espressioni util
 **Contesto Miniclub**: Stefano lavora in un miniclub estivo (genitori che lasciano i bambini, attività con i bambini).
 Tab Miniclub = dialoghi rapidi pronti all'uso per comunicare con genitori anglofoni/ispanofoni/francofoni e gestire i bambini durante la giornata.
 
+### Routine giornata Miniclub
+- Arrivo bambini con genitori → spiegare programma della giornata e programma settimanale
+- Comunicare orario pranzo e se il bambino mangia con il miniclub
+- **Pensione completa** → pasto incluso / **Mezza pensione** → costo addebitato sulla stanza a fine vacanza
+- Comunicare orari entrata/uscita
+- Raccogliere info: allergie, vegetariani/vegani, intolleranze
+- Importante: i genitori possono portare/riprendere i bambini in qualsiasi momento della giornata
+
 ## ARCHITETTURA ATTUALE
 
 ### Come eseguire
