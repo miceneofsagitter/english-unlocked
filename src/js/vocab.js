@@ -36,6 +36,8 @@
           colloquial: '#a8ff78',
           clarification: 'var(--muted)',
         }
+        const FLAGS = { en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷' }
+        const ALL_LANGS = ['en', 'es', 'fr']
         paged.forEach((item) => {
           const idx = ALL_VOCAB.indexOf(item)
           const isLearned = learned.has(idx)
@@ -47,23 +49,6 @@
             : item.context_note
               ? `<div class="vc-example" style="color:var(--muted);font-style:italic">${escHtml(item.context_note)}</div>`
               : ''
-          // Widget cross-language
-          const FLAGS = { en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷' }
-          const ALL_LANGS = ['en', 'es', 'fr']
-          let crossLangHtml = ''
-          if (item.concept && typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined') {
-            const availLangs = ALL_LANGS.filter(lang =>
-              lang !== currentLang &&
-              ALL_VOCAB_FOR_EXERCISES.some(v => v.concept === item.concept && v.language === lang)
-            )
-            if (availLangs.length > 0) {
-              const btns = availLangs.map(lang =>
-                `<button class="vc-cl-btn" onclick="navigateToLangConcept('${escHtml(item.concept)}','${lang}')" title="Vedi equivalente in ${lang.toUpperCase()}">${FLAGS[lang]}</button>`
-              ).join('')
-              crossLangHtml = `<div class="vc-crosslang"><span class="vc-cl-label">Vedi in:</span>${btns}</div>`
-            }
-          }
-
           // Widget connessioni cross-lingua via campo 'it' (collegamento principale)
           let itRelatedHtml = ''
           if (item.it && typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined') {
@@ -120,7 +105,6 @@
       <div class="vc-it">${escHtml(item.it)}</div>
       ${exampleHtml}
       ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag" style="cursor:pointer" onclick="filterByTag('${t}')" title="Filtra: ${t}">${escHtml(t)}</span>`).join('') + '</div>' : ''}
-      ${crossLangHtml}
       ${itRelatedHtml || enRelatedHtml}
       <div class="vc-actions">
         <button class="btn btn-ghost btn-sm" onclick="speakText(this.dataset.t)" data-t="${escHtml(speakSrc)}">🔊</button>
@@ -130,13 +114,6 @@
       </div>`
           grid.appendChild(d)
         })
-
-        // Highlight card se siamo arrivati qui tramite navigateToLangConcept
-        if (_pendingConcept) {
-          const pc = _pendingConcept
-          _pendingConcept = null
-          _highlightConceptCard(pc)
-        }
 
         // Highlight card se siamo arrivati qui tramite navigateToLangVerb
         if (_pendingVerb) {
@@ -167,43 +144,6 @@
         vocabPage = p
         renderVocabGrid(activeFilter, activeSearch)
         document.getElementById('panel-vocab').scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-
-      function navigateToLangConcept(concept, targetLang) {
-        if (currentLang !== targetLang) {
-          _pendingConcept = concept
-          switchLang(targetLang)
-          // switchLang → renderVocabGrid → rileva _pendingConcept → evidenzia card
-          return
-        }
-        // Stessa lingua: trova la posizione e vai alla pagina giusta
-        const targetItem = ALL_VOCAB.find(v => v.concept === concept)
-        if (!targetItem) return
-        const itemIndex = ALL_VOCAB.indexOf(targetItem)
-        if (itemIndex === -1) return
-        const targetPage = Math.floor(itemIndex / VOCAB_PAGE_SIZE)
-        if (vocabPage !== targetPage) {
-          vocabPage = targetPage
-          renderVocabGrid(activeFilter, activeSearch)
-        } else {
-          _highlightConceptCard(concept)
-        }
-      }
-
-      function _highlightConceptCard(concept) {
-        requestAnimationFrame(() => {
-          const targetItem = ALL_VOCAB.find(v => v.concept === concept)
-          if (!targetItem) return
-          const displayVerb = targetItem.verb || targetItem[targetItem.language] || targetItem.en
-          document.querySelectorAll('.vocab-card').forEach(card => {
-            const verbEl = card.querySelector('.vc-verb')
-            if (verbEl && verbEl.textContent.trim() === displayVerb.trim()) {
-              card.classList.add('vc-highlight')
-              card.scrollIntoView({ behavior: 'smooth', block: 'center' })
-              setTimeout(() => card.classList.remove('vc-highlight'), 2000)
-            }
-          })
-        })
       }
 
       function navigateToLangVerb(targetLang, targetVerb) {
