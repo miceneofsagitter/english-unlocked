@@ -11,6 +11,23 @@
       let quizStartCorrect = 0
       let quizStartTotal = 0
 
+      function _v(vocab, field) {
+        if (field === 'verb') {
+          if (currentLang === 'en') return vocab.verb || ''
+          if (currentLang === 'es') return vocab.es || vocab.verb || ''
+          if (currentLang === 'fr') return vocab.fr || vocab.verb || ''
+        }
+        if (field === 'example') {
+          if (currentLang === 'en') return vocab.example_en || ''
+          if (currentLang === 'es') return vocab.example_es || ''
+          if (currentLang === 'fr') return vocab.example_fr || ''
+        }
+        if (field === 'example_it') {
+          return vocab.example_it || vocab.it || ''
+        }
+        return vocab[field] || ''
+      }
+
       function setQuizMax(n, btn) {
         quizMaxQ = n
         document
@@ -69,8 +86,9 @@
       }
 
       function generateTranslationQuiz(target) {
+        const correctVerb = _v(target, 'verb')
         const pool = ALL_VOCAB.filter(
-          (v) => v.type === target.type && v.verb !== target.verb,
+          (v) => _v(v, 'verb') !== correctVerb && v.type === target.type,
         )
           .sort(() => Math.random() - 0.5)
           .slice(0, 3)
@@ -79,44 +97,47 @@
           type: 'translation',
           q: target.it,
           sub: '',
-          correct: target.verb,
-          opts: opts.map((o) => o.verb),
+          correct: correctVerb,
+          opts: opts.map((o) => _v(o, 'verb')),
         }
       }
 
       function generateFillBlankQuiz(target) {
-        if (!target.example_en) return generateTranslationQuiz(target) // fallback: no example
-        const blank = target.example_en.replace(
-          new RegExp(target.verb.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'),
+        const ex = _v(target, 'example')
+        const correctVerb = _v(target, 'verb')
+        if (!ex) return generateTranslationQuiz(target)
+        const blank = ex.replace(
+          new RegExp(correctVerb.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'),
           '___',
         )
-        if (blank === target.example_en) return generateTranslationQuiz(target) // verb not found in example
+        if (blank === ex) return generateTranslationQuiz(target)
         const pool = ALL_VOCAB.filter(
-          (v) => v.type === target.type && v.verb !== target.verb,
+          (v) => _v(v, 'verb') !== correctVerb && v.type === target.type,
         )
           .sort(() => Math.random() - 0.5)
           .slice(0, 3)
-          .map((v) => v.verb)
-        const opts = [target.verb, ...pool].sort(() => Math.random() - 0.5)
+          .map((v) => _v(v, 'verb'))
+        const opts = [correctVerb, ...pool].sort(() => Math.random() - 0.5)
         return {
           type: 'fill',
           q: blank,
-          sub: target.example_it,
-          correct: target.verb,
+          sub: _v(target, 'example_it'),
+          correct: correctVerb,
           opts,
         }
       }
 
       function generateMatchQuiz() {
-        let pool = ALL_VOCAB.filter((v) => v.type === 'phrasal')
+        const isPhrasal = ALL_VOCAB.some((v) => v.type === 'phrasal')
+        let pool = isPhrasal
+          ? ALL_VOCAB.filter((v) => v.type === 'phrasal')
+          : ALL_VOCAB
         if (pool.length < 4) pool = ALL_VOCAB
         pool = pool.sort(() => Math.random() - 0.5).slice(0, 4)
-        const verbs = [...pool]
-          .sort(() => Math.random() - 0.5)
-          .map((v) => v.verb)
+        const verbs = [...pool].sort(() => Math.random() - 0.5).map((v) => _v(v, 'verb'))
         const trans = [...pool].sort(() => Math.random() - 0.5).map((v) => v.it)
         const pairs = {}
-        pool.forEach((v) => (pairs[v.verb] = v.it))
+        pool.forEach((v) => (pairs[_v(v, 'verb')] = v.it))
         return { type: 'match', verbs, trans, pairs }
       }
 
