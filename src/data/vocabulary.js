@@ -1721,6 +1721,35 @@ const EXPRESSIONS_IDIOM = [
     emoji: '🥒',
     it: 'Nei guai / In una situazione difficile',
     context: 'situazione complicata',
+    concept: 'in_trouble',
+  },
+  {
+    en: 'To have your head in the clouds',
+    emoji: '☁️',
+    it: 'Avere la testa tra le nuvole',
+    context: 'essere distratto o perso nei propri pensieri',
+    concept: 'daydreaming',
+  },
+  {
+    en: 'To cost an arm and a leg',
+    emoji: '💸',
+    it: 'Costare un occhio della testa',
+    context: 'qualcosa di molto caro',
+    concept: 'expensive',
+  },
+  {
+    en: "To get one's act together",
+    emoji: '🔋',
+    it: 'Darsi una mossa / attivarsi',
+    context: 'iniziare a impegnarsi o reagire',
+    concept: 'get_moving',
+  },
+  {
+    en: "To put one's foot in it",
+    emoji: '🦶',
+    it: 'Fare una gaffe / sbagliare',
+    context: 'fare o dire qualcosa fuori luogo',
+    concept: 'blunder',
   },
   {
     en: 'It slipped my mind',
@@ -1763,6 +1792,13 @@ const EXPRESSIONS_IDIOM = [
     emoji: '✨',
     it: "Senza intoppi / liscio come l'olio",
     context: 'evento o attività che va tutto perfettamente',
+  },
+  {
+    en: 'The jig is up',
+    emoji: '🥕',
+    it: 'È tutto finito / non c\'è più nulla da fare',
+    context: "situazione senza via d'uscita, tutto è perduto",
+    concept: 'game_over',
   },
   {
     en: 'Take something for granted',
@@ -1811,6 +1847,7 @@ const EXPRESSIONS_IDIOM = [
     emoji: '🌧️',
     it: 'Non sentirsi bene / stare male',
     context: 'malessere, malattia lieve',
+    concept: 'not_feeling_well',
   },
   {
     en: "Hurl into the lion's den",
@@ -1847,6 +1884,7 @@ const EXPRESSIONS_IDIOM = [
     emoji: '💸',
     it: 'In rosso / con debiti',
     context: 'essere in perdita finanziaria',
+    concept: 'in_debt',
   },
   {
     en: 'See red',
@@ -1859,6 +1897,7 @@ const EXPRESSIONS_IDIOM = [
     emoji: '💙',
     it: 'Sentirsi triste / melanconico',
     context: 'tristezza, malinconia',
+    concept: 'feeling_down',
   },
   {
     en: 'Once in a blue moon',
@@ -1953,6 +1992,13 @@ const EXPRESSIONS_IDIOM = [
       'evitare di arrivare al punto, parlare di tutto tranne che del problema',
   },
   {
+    en: 'Get a move on',
+    emoji: '⚡',
+    it: 'Darsi una mossa / sbrigarsi',
+    context: 'incoraggiamento ad agire con urgenza',
+    concept: 'get_moving',
+  },
+  {
     en: 'Break a leg',
     emoji: '🦵',
     it: 'In bocca al lupo! / buona fortuna!',
@@ -2001,11 +2047,18 @@ const EXPRESSIONS_IDIOM = [
     context: 'essere molto geloso o invidioso di qualcuno',
   },
   {
-    en: 'The grass is always greener',
+    en: "The grass is always greener",
     emoji: '🌱',
     it: "L'erba del vicino è sempre più verde",
     context:
       'credere che la situazione degli altri sia sempre migliore della propria',
+  },
+  {
+    en: 'Every cloud has a silver lining',
+    emoji: '🌈',
+    it: 'Non tutto il male vien per nuocere',
+    context: 'ottimismo di fronte alle difficoltà',
+    concept: 'silver_lining',
   },
   {
     en: 'No hard feelings',
@@ -2028,12 +2081,14 @@ const EXPRESSIONS_CLARIFICATION = [
     emoji: '🔁',
     it: 'Puoi ripetere, per favore?',
     context: 'chiedere ripetizione (semplice)',
+    concept: 'clarif_repeat',
   },
   {
     en: 'Could you speak up, please?',
     emoji: '📢',
     it: 'Puoi alzare la voce, per favore?',
     context: 'chiedere di parlare più forte',
+    concept: 'clarif_louder',
   },
   {
     en: 'Say that again, please?',
@@ -2052,6 +2107,7 @@ const EXPRESSIONS_CLARIFICATION = [
     emoji: '🗣️',
     it: 'Puoi spiegarlo in modo diverso?',
     context: 'chiedere spiegazione alternativa',
+    concept: 'clarif_rephrase',
   },
   {
     en: 'Can you say it in another way, please?',
@@ -2076,12 +2132,14 @@ const EXPRESSIONS_CLARIFICATION = [
     emoji: '✅',
     it: 'Ho capito bene che...?',
     context: 'confermare comprensione',
+    concept: 'clarif_confirm',
   },
   {
     en: "Sorry, I didn't catch that.",
     emoji: '👂',
     it: 'Scusa, non ho capito.',
     context: 'non aver sentito/capito (comune)',
+    concept: 'clarif_didnt_understand',
   },
   {
     en: 'What did you just say?',
@@ -2337,6 +2395,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '👌',
     it: 'Nessun problema / Non è niente di che',
     context: 'minimizzare qualcosa',
+    concept: 'no_big_deal',
   },
   {
     en: 'Kind of',
@@ -2355,6 +2414,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '🚪',
     it: 'Passo / Non ci sto',
     context: 'ritirarsi da qualcosa',
+    concept: 'no_way_mild',
   },
   {
     en: 'Just kidding',
@@ -2391,6 +2451,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '🤷',
     it: 'A chi importa / chi se ne frega',
     context: 'disinteresse o liberarsi dal giudizio altrui',
+    concept: 'who_cares',
   },
   {
     en: 'Give me a break',
@@ -2453,6 +2514,20 @@ const EXPRESSIONS_COLLOQUIAL = [
     context: 'usato per enfatizzare (spesso in modo colloquiale/esagerato)',
   },
   {
+    en: 'Not at all',
+    emoji: '🚫',
+    it: 'Per niente / assolutamente no',
+    context: 'negazione enfatica',
+    concept: 'not_at_all',
+  },
+  {
+    en: 'Nah',
+    emoji: '😂',
+    it: 'Macché! / Ma no!',
+    context: 'negazione informale e leggera',
+    concept: 'no_way_mild',
+  },
+  {
     en: "I'm down",
     emoji: '👍',
     it: 'Mi sto bene / va bene per me',
@@ -2475,6 +2550,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '🤝',
     it: 'Va bene / è giusto',
     context: 'accordo o accettazione ragionevole',
+    concept: 'fair_enough',
   },
   {
     en: 'You bet',
@@ -2505,6 +2581,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '😤',
     it: 'Dai! / Vai!',
     context: 'incoraggiamento o incredulità',
+    concept: 'come_on',
   },
   // ── Slang relazioni da @kamithepolyglot ──────────────────
   {
@@ -2512,6 +2589,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '💘',
     it: 'Mi piaci (romanticamente)',
     context: 'attrazione romantica per qualcuno',
+    concept: 'love_at_first_sight',
   },
   {
     en: "I'm catching feelings",
@@ -2605,12 +2683,28 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '🕊️',
     it: 'Lascia andare / non pensarci più',
     context: 'smettere di pensare a qualcosa che fa stare male',
+    concept: 'let_it_go',
   },
   {
     en: 'Beats me',
     emoji: '🤷',
     it: 'Non ne ho idea / boh / chi lo sa',
     context: 'risposta informale per dire che non si sa qualcosa',
+    concept: 'dunno',
+  },
+  {
+    en: "Whatever you say",
+    emoji: '🙄',
+    it: 'Come vuoi / quel che dici tu',
+    context: 'accordo ironico o rassegnato',
+    concept: 'whatever_you_say',
+  },
+  {
+    en: "That's right",
+    emoji: '✅',
+    it: "È così / esatto",
+    context: 'conferma di quanto detto da un altro',
+    concept: 'thats_right',
   },
   {
     en: 'Give it a shot',
@@ -2894,6 +2988,7 @@ const EXPRESSIONS_COLLOQUIAL = [
     emoji: '😌',
     it: 'Nessun problema',
     context: 'rassicurazione informale',
+    concept: 'no_worries',
   },
   {
     en: 'All good',
@@ -2927,18 +3022,63 @@ const EXPRESSIONS_EMOTION = [
     emoji: '😱',
     it: 'Ma dai! / Impossibile!',
     context: 'sorpresa o incredulità',
+    concept: 'disbelief',
+  },
+  {
+    en: 'Hold your horses!',
+    emoji: '🐴',
+    it: 'Pazienza! / Piano!',
+    context: 'invito a calmarsi o rallentare',
+    concept: 'calm_down',
+  },
+  {
+    en: "Don't lose your head!",
+    emoji: '🧠',
+    it: 'Non perdere la testa!',
+    context: 'invito a mantenere il controllo',
+    concept: 'calm_down',
+  },
+  {
+    en: "I've had it up to here",
+    emoji: '✋',
+    it: "Ne ho fin sopra i capelli",
+    context: 'frustrazione totale, non se ne può più',
+    concept: 'fed_up',
+  },
+  {
+    en: "It's not the end of the world",
+    emoji: '🌍',
+    it: "Non è la fine del mondo",
+    context: 'minimizzare una situazione negativa',
+    concept: 'no_big_deal',
+  },
+  {
+    en: "I'm at my wits' end",
+    emoji: '😵',
+    it: 'Non so più che fare',
+    context: 'disperazione per la frustrazione',
+    concept: 'fed_up',
   },
   {
     en: "That's insane!",
     emoji: '🤯',
     it: 'È assurdo! / È pazzesco!',
     context: 'reazione forte',
+    concept: 'surprise_strong',
+  },
+  {
+    en: "That's mental!",
+    emoji: '🧠',
+    it: 'È pazzesco! / È assurdo!',
+    context: 'reazione forte (UK slang)',
+    concept: 'surprise_strong',
   },
   {
     en: "That's awesome!",
     emoji: '🤩',
     it: 'È fantastico!',
     context: 'entusiasmo',
+    concept: 'joy_intense',
   },
   { en: 'Oh my God!', emoji: '😮', it: 'Oddio!', context: 'sorpresa' },
   {
@@ -2952,24 +3092,28 @@ const EXPRESSIONS_EMOTION = [
     emoji: '🤦',
     it: 'Che casino!',
     context: 'situazione caotica',
+    concept: 'chaos_mess',
   },
   {
     en: 'That sucks!',
     emoji: '😞',
     it: 'Che schifo! / Che peccato!',
     context: 'disappunto',
+    concept: 'disappointment',
   },
   {
     en: 'No kidding!',
     emoji: '😲',
     it: 'Ma davvero?!',
     context: 'incredulità ironica',
+    concept: 'ironic_surprise',
   },
   {
     en: 'Are you serious?!',
     emoji: '😤',
     it: 'Ma sei serio?!',
     context: 'incredulità',
+    concept: 'shocked_question',
   },
   {
     en: 'This is wild!',
@@ -2982,12 +3126,14 @@ const EXPRESSIONS_EMOTION = [
     emoji: '🫢',
     it: 'Ma va?!',
     context: 'sorpresa ironica',
+    concept: 'ironic_surprise',
   },
   {
     en: "That's sick!",
     emoji: '🔥',
     it: 'È fortissimo! / È pazzesco!',
     context: 'slang positivo',
+    concept: 'slang_awesome',
   },
   {
     en: 'This is annoying',
@@ -3000,6 +3146,7 @@ const EXPRESSIONS_EMOTION = [
     emoji: '😩',
     it: 'Sono stufo/a',
     context: 'stanchezza/noia accumulata',
+    concept: 'exhaustion_fed_up',
   },
   {
     en: "I've had enough",
@@ -3140,6 +3287,7 @@ const EXPRESSIONS_EMOTION = [
     emoji: '🙋',
     it: 'Lo voglio',
     context: 'desiderio diretto',
+    concept: 'desire',
   },
   {
     en: 'I don\'t like it',
@@ -3155,12 +3303,14 @@ const EXPRESSIONS_OPINION = [
     emoji: '💭',
     it: 'Secondo me',
     context: 'opinione formale',
+    concept: 'opinion_formal',
   },
   {
     en: 'As far as I know',
     emoji: '🔭',
     it: 'Per quanto ne so',
     context: 'incertezza educata',
+    concept: 'opinion_limited_knowledge',
   },
   {
     en: 'If you ask me',
@@ -3179,36 +3329,42 @@ const EXPRESSIONS_OPINION = [
     emoji: '💫',
     it: "Ho l'impressione che...",
     context: 'sensazione personale',
+    concept: 'opinion_impression',
   },
   {
     en: 'Personally speaking',
     emoji: '👤',
     it: 'Personalmente',
     context: 'opinione personale',
+    concept: 'opinion_personal',
   },
   {
     en: 'The way I see it...',
     emoji: '👁️',
     it: 'Per come la vedo io...',
     context: 'punto di vista',
+    concept: 'opinion_pov',
   },
   {
     en: "I'd say...",
     emoji: '💬',
     it: 'Direi che...',
     context: 'opinione cauta',
+    concept: 'opinion_tentative',
   },
   {
     en: "I'm pretty sure...",
     emoji: '🎯',
     it: 'Sono abbastanza sicuro che...',
     context: 'quasi certezza',
+    concept: 'opinion_confident',
   },
   {
     en: 'To be honest...',
     emoji: '💯',
     it: 'Ad essere onesto...',
     context: 'franchezza',
+    concept: 'honesty_marker',
   },
   // ── Preferences da @kamithepolyglot ─────────────────────
   {
@@ -3216,6 +3372,7 @@ const EXPRESSIONS_OPINION = [
     emoji: '🔥',
     it: 'Mi piace un sacco / mi appassiona',
     context: 'interesse entusiasta',
+    concept: 'pref_into_it',
   },
   {
     en: 'I dig it',
@@ -3228,6 +3385,7 @@ const EXPRESSIONS_OPINION = [
     emoji: '⭐',
     it: 'Ne sono fan',
     context: 'preferenza dichiarata',
+    concept: 'pref_fan_of',
   },
   {
     en: 'I\'m really into that',
@@ -3672,6 +3830,7 @@ const FR_EXPRESSIONS_COLLOQUIAL = [
     emoji: '😷',
     it: 'Non mi sento bene.',
     context: 'affermazione di sentirsi male fisicamente o emotivamente',
+    concept: 'not_feeling_well',
   },
   {
     en: 'Avec plaisir.',
@@ -3695,12 +3854,14 @@ const FR_EXPRESSIONS_EMOTION = [
     emoji: '😡',
     it: 'Mi fa arrabbiare! / Che rabbia!',
     context: 'frustrazione o irritazione intensa',
+    concept: 'disappointment',
   },
   {
     en: 'Je suis trop content.e !',
     emoji: '😁',
     it: 'Sono contentissimo/a!',
     context: 'gioia e soddisfazione molto intense',
+    concept: 'joy_intense',
   },
   {
     en: "C'est nul !",
@@ -3713,6 +3874,7 @@ const FR_EXPRESSIONS_EMOTION = [
     emoji: '😩',
     it: 'Ne ho abbastanza! / Sono stufo/a!',
     context: 'stanchezza e frustrazione accumulata',
+    concept: 'exhaustion_fed_up',
   },
   {
     en: 'Je suis désolé(e).',
@@ -3727,6 +3889,56 @@ const FR_EXPRESSIONS_EMOTION = [
     context:
       'risposta disinvolta per accettare un suggerimento, molto usata nel parlato',
   },
+  // ── Nuove voci per cross-language linking ──────────────────
+  {
+    en: "C'est dingue !",
+    emoji: '🤯',
+    it: 'È pazzesco! / È assurdo!',
+    context: "sorpresa forte, equivalente a 'That's insane'",
+    concept: 'surprise_strong',
+  },
+  {
+    en: 'Sans blague !',
+    emoji: '🫢',
+    it: 'Ma dai?! / Senza scherzo!',
+    context: 'sorpresa ironica',
+    concept: 'ironic_surprise',
+  },
+  {
+    en: 'Quel bordel !',
+    emoji: '🤦',
+    it: 'Che casino!',
+    context: 'situazione caotica (informale)',
+    concept: 'chaos_mess',
+  },
+  {
+    en: "C'est trop bien !",
+    emoji: '🔥',
+    it: 'È fantasticissimo! / Troppo forte!',
+    context: 'slang giovanile per approvazione entusiasta',
+    concept: 'slang_awesome',
+  },
+  {
+    en: 'Tant mieux !',
+    emoji: '🎉',
+    it: 'Tanto meglio! / Ottimo!',
+    context: 'reazione positiva a una buona notizia',
+    concept: 'relief_good_news',
+  },
+  {
+    en: 'Pas possible !',
+    emoji: '😱',
+    it: 'Non è possibile! / Impossibile!',
+    context: 'incredulità forte',
+    concept: 'disbelief',
+  },
+  {
+    en: 'Franchement !',
+    emoji: '😤',
+    it: 'Ma insomma! / Davvero?!',
+    context: 'incredulità o indignazione',
+    concept: 'shocked_question',
+  },
 ]
 
 // ============================================================
@@ -3739,18 +3951,21 @@ const ES_EXPRESSIONS_EMOTION = [
     emoji: '🤩',
     it: 'Che roba! / Fantastico!',
     context: 'stupore entusiasta per qualcosa di eccezionale',
+    concept: 'joy_intense',
   },
   {
     en: '¡Madre mía!',
     emoji: '😱',
     it: 'Madonna! / Oddio!',
     context: 'sorpresa forte, sia positiva che negativa',
+    concept: 'disbelief',
   },
   {
     en: 'No me lo puedo creer',
     emoji: '🤯',
     it: 'Non ci posso credere',
     context: 'incredulità intensa',
+    concept: 'surprise_strong',
   },
   {
     en: '¡Qué alegría!',
@@ -3763,6 +3978,7 @@ const ES_EXPRESSIONS_EMOTION = [
     emoji: '😨',
     it: 'Che orrore! / Che schifo!',
     context: 'disappunto o disgusto forte',
+    concept: 'disappointment',
   },
   {
     en: '¡Qué vergüenza!',
@@ -3781,6 +3997,7 @@ const ES_EXPRESSIONS_EMOTION = [
     emoji: '😩',
     it: 'Non ce la faccio più',
     context: 'limite fisico o emotivo raggiunto',
+    concept: 'exhaustion_fed_up',
   },
   {
     en: '¡Qué rollo!',
@@ -3818,6 +4035,42 @@ const ES_EXPRESSIONS_EMOTION = [
     it: 'Sono distrutto/a / esausto/a',
     context: 'stanchezza estrema fisica o emotiva',
   },
+  // ── Nuove voci per cross-language linking ──────────────────
+  {
+    en: '¡Qué fuerte!',
+    emoji: '💪',
+    it: 'Pazzesco! / Non ci credo!',
+    context: 'sorpresa intensa o situazione estrema',
+    concept: 'surprise_strong',
+  },
+  {
+    en: '¡No me digas!',
+    emoji: '🫢',
+    it: 'Ma dai?! / Non mi dire!',
+    context: 'sorpresa ironica',
+    concept: 'ironic_surprise',
+  },
+  {
+    en: '¡Menudo lío!',
+    emoji: '🤦',
+    it: 'Che casino! / Che pasticcio!',
+    context: 'situazione caotica',
+    concept: 'chaos_mess',
+  },
+  {
+    en: 'Me ha molado mogollón',
+    emoji: '🔥',
+    it: 'Mi è piaciuto da morire / è stato fortissimo',
+    context: 'slang positivo giovanile forte',
+    concept: 'slang_awesome',
+  },
+  {
+    en: '¿En serio?',
+    emoji: '😲',
+    it: 'Sul serio? / Davvero?',
+    context: 'incredulità — richiesta di conferma con sorpresa',
+    concept: 'shocked_question',
+  },
 ]
 
 const ES_EXPRESSIONS_COLLOQUIAL = [
@@ -3826,6 +4079,7 @@ const ES_EXPRESSIONS_COLLOQUIAL = [
     emoji: '👋',
     it: 'Dai! / Suvvia! / Arrivederci!',
     context: "versatile: accordo, incoraggiamento, o saluto all'uscita",
+    concept: 'come_on',
   },
   {
     en: '¡Venga ya!',
@@ -3862,24 +4116,21 @@ const ES_EXPRESSIONS_COLLOQUIAL = [
     emoji: '👌',
     it: 'Nessun problema',
     context: 'rassicurazione o accordo informale',
+    concept: 'no_worries',
   },
   {
     en: 'Me da igual',
     emoji: '😐',
     it: 'Per me è lo stesso / non mi importa',
     context: 'indifferenza tra due opzioni',
+    concept: 'who_cares',
   },
   {
     en: 'Bueno, vale',
     emoji: '✅',
     it: "Ok, va bene / d'accordo",
     context: "accettazione spesso un po' riluttante o conclusiva",
-  },
-  {
-    en: '¿En serio?',
-    emoji: '😲',
-    it: 'Sul serio? / Davvero?',
-    context: 'richiesta di conferma con sorpresa',
+    concept: 'fair_enough',
   },
   {
     en: 'Tío / Tía',
@@ -3905,6 +4156,42 @@ const ES_EXPRESSIONS_COLLOQUIAL = [
     it: 'Fantastico! / Ottimo!',
     context: "approvazione entusiasta, più formale di 'guay'",
   },
+  // ── Nuove voci per cross-language linking ──────────────────
+  {
+    en: 'Para nada',
+    emoji: '🚫',
+    it: 'Per niente / assolutamente no',
+    context: 'negazione enfatica informale',
+    concept: 'not_at_all',
+  },
+  {
+    en: 'No pasa nada',
+    emoji: '😌',
+    it: 'Non fa niente / non preoccuparti',
+    context: 'rassicurazione informale',
+    concept: 'no_worries',
+  },
+  {
+    en: 'Yo qué sé',
+    emoji: '🤷',
+    it: 'Boh / che ne so io',
+    context: 'incertezza totale, molto colloquiale',
+    concept: 'dunno',
+  },
+  {
+    en: 'Qué va',
+    emoji: '😂',
+    it: 'Macché! / Ma no!',
+    context: 'negazione informale e leggera',
+    concept: 'no_way_mild',
+  },
+  {
+    en: 'Lo que tú digas',
+    emoji: '🙄',
+    it: 'Come vuoi / quel che dici tu',
+    context: 'accordo ironico o rassegnato',
+    concept: 'whatever_you_say',
+  },
 ]
 
 const ES_EXPRESSIONS_OPINION = [
@@ -3913,60 +4200,84 @@ const ES_EXPRESSIONS_OPINION = [
     emoji: '💭',
     it: 'Secondo me / a mio parere',
     context: 'opinione personale, formale',
+    concept: 'opinion_formal',
   },
   {
     en: 'Yo creo que...',
     emoji: '🧠',
     it: 'Io credo che...',
     context: 'opinione personale, neutra e comune',
+    concept: 'opinion_impression',
   },
   {
     en: 'Me parece que...',
     emoji: '💫',
     it: "Mi sembra che... / ho l'impressione che...",
     context: 'sensazione o impressione personale',
+    concept: 'opinion_impression',
   },
   {
     en: 'A mi modo de ver',
     emoji: '👁️',
     it: 'Per come la vedo io',
     context: 'punto di vista soggettivo',
+    concept: 'opinion_pov',
   },
   {
     en: 'Que yo sepa',
     emoji: '🔭',
     it: 'Per quanto ne so',
     context: 'incertezza educata, ammettere i propri limiti',
+    concept: 'opinion_limited_knowledge',
   },
   {
     en: 'Personalmente',
     emoji: '👤',
     it: 'Personalmente',
     context: 'sottolineare che è una posizione individuale',
+    concept: 'opinion_personal',
   },
   {
     en: 'Diría que...',
     emoji: '💬',
     it: 'Direi che...',
     context: 'opinione cauta o ipotetica',
+    concept: 'opinion_tentative',
   },
   {
     en: 'Estoy bastante seguro/a de que...',
     emoji: '🎯',
     it: 'Sono abbastanza sicuro/a che...',
     context: 'quasi certezza',
+    concept: 'opinion_confident',
   },
   {
     en: 'La verdad es que...',
     emoji: '💯',
     it: 'La verità è che...',
     context: 'introdurre una verità o ammissione onesta',
+    concept: 'honesty_marker',
   },
   {
     en: 'Por lo visto',
     emoji: '🕵️',
     it: 'A quanto pare / sembrerebbe che',
     context: 'informazione di seconda mano, non confermata di persona',
+  },
+  // ── Nuove voci per cross-language linking ──────────────────
+  {
+    en: 'Me mola mucho',
+    emoji: '🔥',
+    it: 'Mi piace tantissimo / mi appassiona',
+    context: 'interesse entusiasta informale',
+    concept: 'pref_into_it',
+  },
+  {
+    en: 'Soy fan de...',
+    emoji: '⭐',
+    it: 'Sono fan di...',
+    context: 'preferenza dichiarata',
+    concept: 'pref_fan_of',
   },
 ]
 
@@ -3976,24 +4287,28 @@ const ES_EXPRESSIONS_CLARIFICATION = [
     emoji: '🔁',
     it: 'Puoi ripetere, per favore?',
     context: 'richiesta di ripetizione educata',
+    concept: 'clarif_repeat',
   },
   {
     en: '¿Puedes hablar más despacio?',
     emoji: '🐢',
     it: 'Puoi parlare più lentamente?',
     context: 'chiedere di rallentare il ritmo del parlato',
+    concept: 'clarif_slow_down',
   },
   {
     en: 'No te he entendido',
     emoji: '❓',
     it: 'Non ti ho capito',
     context: 'ammettere la mancata comprensione, diretto',
+    concept: 'clarif_didnt_understand',
   },
   {
     en: '¿Cómo?',
     emoji: '😕',
     it: 'Come? / Prego?',
     context: 'richiesta di ripetizione, molto comune e breve',
+    concept: 'clarif_short_repeat',
   },
   {
     en: '¿Qué has dicho?',
@@ -4006,6 +4321,7 @@ const ES_EXPRESSIONS_CLARIFICATION = [
     emoji: '🔄',
     it: 'Me lo puoi spiegare in un altro modo?',
     context: 'chiedere una riformulazione',
+    concept: 'clarif_rephrase',
   },
   {
     en: 'No he pillado',
@@ -4018,12 +4334,14 @@ const ES_EXPRESSIONS_CLARIFICATION = [
     emoji: '✅',
     it: 'Ho capito bene che...?',
     context: 'verificare di aver compreso correttamente',
+    concept: 'clarif_confirm',
   },
   {
     en: '¿Puedes hablar más alto?',
     emoji: '📢',
     it: 'Puoi parlare più forte?',
     context: 'chiedere di alzare la voce',
+    concept: 'clarif_louder',
   },
   {
     en: 'Perdona, ¿qué?',
@@ -4039,30 +4357,35 @@ const ES_EXPRESSIONS_IDIOM = [
     emoji: '☁️',
     it: 'Avere la testa tra le nuvole',
     context: 'essere distratto o perso nei propri pensieri',
+    concept: 'daydreaming',
   },
   {
     en: 'Costar un ojo de la cara',
     emoji: '💸',
     it: 'Costare un occhio della testa',
     context: 'qualcosa di molto caro',
+    concept: 'expensive',
   },
   {
     en: 'Ponerse las pilas',
     emoji: '🔋',
     it: 'Darsi una mossa / attivarsi',
     context: 'iniziare a impegnarsi o reagire',
+    concept: 'get_moving',
   },
   {
     en: 'No hay mal que por bien no venga',
     emoji: '🌈',
     it: 'Non tutto il male vien per nuocere',
     context: 'ottimismo di fronte alle difficoltà',
+    concept: 'silver_lining',
   },
   {
     en: 'Meter la pata',
     emoji: '🦶',
     it: 'Fare una gaffe / sbagliare',
     context: 'fare o dire qualcosa fuori luogo',
+    concept: 'blunder',
   },
   {
     en: 'No hay dos sin tres',
@@ -4100,12 +4423,14 @@ const FR_EXPRESSIONS_OPINION = [
     emoji: '💭',
     it: 'A mio parere / secondo me',
     context: 'opinione personale, molto comune',
+    concept: 'opinion_formal',
   },
   {
     en: 'Je pense que...',
     emoji: '🧠',
     it: 'Penso che...',
     context: 'opinione personale diretta',
+    concept: 'opinion_impression',
   },
   {
     en: 'Il me semble que...',
@@ -4118,42 +4443,69 @@ const FR_EXPRESSIONS_OPINION = [
     emoji: '🔭',
     it: 'Per quanto ne so',
     context: 'incertezza educata',
+    concept: 'opinion_limited_knowledge',
   },
   {
     en: 'Personnellement',
     emoji: '👤',
     it: 'Personalmente',
     context: 'sottolineare punto di vista individuale',
+    concept: 'opinion_personal',
   },
   {
     en: 'Je dirais que...',
     emoji: '💬',
     it: 'Direi che...',
     context: 'opinione cauta o ipotetica',
+    concept: 'opinion_tentative',
   },
   {
     en: 'Je suis assez sûr(e) que...',
     emoji: '🎯',
     it: 'Sono abbastanza sicuro/a che...',
     context: 'quasi certezza',
+    concept: 'opinion_confident',
   },
   {
     en: 'À ma façon de voir',
     emoji: '👁️',
     it: 'Per come la vedo io',
     context: 'punto di vista soggettivo',
+    concept: 'opinion_pov',
   },
   {
     en: 'Honnêtement...',
     emoji: '💯',
     it: 'Onestamente...',
     context: 'introdurre una verità con franchezza',
+    concept: 'honesty_marker',
   },
   {
     en: 'Apparemment',
     emoji: '🕵️',
     it: 'A quanto pare',
     context: 'informazione indiretta, non verificata',
+  },
+  // ── Nuove voci per cross-language linking ──────────────────
+  {
+    en: "J'adore ça",
+    emoji: '🔥',
+    it: 'Lo adoro / mi piace tantissimo',
+    context: 'preferenza forte e informale',
+    concept: 'pref_into_it',
+  },
+  {
+    en: 'Je suis fan de...',
+    emoji: '⭐',
+    it: 'Sono fan di...',
+    context: 'preferenza dichiarata',
+    concept: 'pref_fan_of',
+  },
+  {
+    en: 'À vrai dire...',
+    emoji: '💯',
+    it: 'A dire il vero... / Per essere sincero...',
+    context: "franchezza, simile a 'To be honest'",
   },
 ]
 
@@ -4163,24 +4515,28 @@ const FR_EXPRESSIONS_CLARIFICATION = [
     emoji: '🔁',
     it: 'Può ripetere, per favore?',
     context: 'richiesta di ripetizione formale',
+    concept: 'clarif_repeat',
   },
   {
     en: 'Vous pouvez parler plus lentement ?',
     emoji: '🐢',
     it: 'Può parlare più lentamente?',
     context: 'chiedere di rallentare il parlato',
+    concept: 'clarif_slow_down',
   },
   {
     en: "Je n'ai pas compris",
     emoji: '❓',
     it: 'Non ho capito',
     context: 'ammettere la mancata comprensione, diretto',
+    concept: 'clarif_didnt_understand',
   },
   {
     en: 'Comment ?',
     emoji: '😕',
     it: 'Come? / Prego?',
     context: 'richiesta di ripetizione, breve e comune',
+    concept: 'clarif_short_repeat',
   },
   {
     en: "Qu'est-ce que vous avez dit ?",
@@ -4193,6 +4549,7 @@ const FR_EXPRESSIONS_CLARIFICATION = [
     emoji: '🔄',
     it: 'Può spiegarlo in un altro modo?',
     context: 'chiedere riformulazione',
+    concept: 'clarif_rephrase',
   },
   {
     en: "Je n'ai pas saisi",
@@ -4205,6 +4562,7 @@ const FR_EXPRESSIONS_CLARIFICATION = [
     emoji: '✅',
     it: 'Ho capito bene che...?',
     context: 'verificare la comprensione',
+    concept: 'clarif_confirm',
   },
   {
     en: 'Pardon ?',
@@ -4217,6 +4575,7 @@ const FR_EXPRESSIONS_CLARIFICATION = [
     emoji: '📢',
     it: 'Può parlare più forte?',
     context: 'chiedere di alzare la voce',
+    concept: 'clarif_louder',
   },
 ]
 
@@ -4226,6 +4585,7 @@ const FR_EXPRESSIONS_IDIOM_2 = [
     emoji: '🪳',
     it: 'Essere giù di corda / avere la malinconia',
     context: 'sentirsi tristi o depressi',
+    concept: 'feeling_down',
   },
   {
     en: 'Poser un lapin',
@@ -4250,18 +4610,21 @@ const FR_EXPRESSIONS_IDIOM_2 = [
     emoji: '🦶',
     it: 'Fare una gaffe / dire una cosa fuori luogo',
     context: 'dire o fare qualcosa di inopportuno',
+    concept: 'blunder',
   },
   {
     en: 'Les carottes sont cuites',
     emoji: '🥕',
     it: 'È tutto finito / siamo fritti',
     context: "situazione senza via d'uscita, tutto è perduto",
+    concept: 'game_over',
   },
   {
     en: 'Avoir le coup de foudre',
     emoji: '⚡',
     it: 'Colpo di fulmine',
     context: 'innamorarsi a prima vista',
+    concept: 'love_at_first_sight',
   },
   {
     en: 'Il ne faut pas pousser mémé dans les orties',
@@ -4295,18 +4658,21 @@ const FR_EXPRESSIONS_COLLOQUIAL_2 = [
     emoji: '🤷',
     it: 'Non è un problema / non fa niente',
     context: 'minimizzare qualcosa',
+    concept: 'no_big_deal',
   },
   {
     en: 'Ça marche !',
     emoji: '✅',
     it: 'Ok! / Va bene! / Affare fatto!',
     context: 'accordo o conferma pratica',
+    concept: 'fair_enough',
   },
   {
     en: "T'inquiète !",
     emoji: '😌',
     it: 'Non preoccuparti!',
     context: 'rassicurazione informale, molto comune',
+    concept: 'no_worries',
   },
   {
     en: 'Trop bien !',
@@ -4325,18 +4691,21 @@ const FR_EXPRESSIONS_COLLOQUIAL_2 = [
     emoji: '🚀',
     it: 'Si parte! / Dai, andiamo!',
     context: "segnale di inizio di un'attività o azione",
+    concept: 'come_on',
   },
   {
     en: 'Laisse tomber',
     emoji: '🕊️',
     it: 'Lascia perdere / lascia stare',
     context: 'suggerire di non insistere su qualcosa',
+    concept: 'let_it_go',
   },
   {
     en: "Je m'en fous",
     emoji: '😑',
     it: 'Non me ne importa / me ne frego',
     context: 'disinteresse totale, abbastanza informale',
+    concept: 'who_cares',
   },
   {
     en: 'Oh là là !',
@@ -4355,6 +4724,35 @@ const FR_EXPRESSIONS_COLLOQUIAL_2 = [
     emoji: '😒',
     it: 'È una rottura / è fastidioso',
     context: "qualcosa o qualcuno di noioso o fastidioso (verlan di 'lourd')",
+  },
+  // ── Nuove voci per cross-language linking ──────────────────
+  {
+    en: 'Pas du tout',
+    emoji: '🚫',
+    it: 'Per niente / assolutamente no',
+    context: 'negazione enfatica',
+    concept: 'not_at_all',
+  },
+  {
+    en: "J'en sais rien",
+    emoji: '🤷',
+    it: 'Non lo so / boh',
+    context: 'incertezza totale, colloquiale',
+    concept: 'dunno',
+  },
+  {
+    en: 'Comme tu veux',
+    emoji: '🙄',
+    it: 'Come vuoi',
+    context: 'indifferenza o accordo riluttante',
+    concept: 'whatever_you_say',
+  },
+  {
+    en: "C'est ça",
+    emoji: '✅',
+    it: 'Esatto / è così',
+    context: 'conferma di quanto detto da un altro',
+    concept: 'thats_right',
   },
 ]
 
@@ -5061,6 +5459,7 @@ function _mapExpr(arr, language, type, tag) {
     example_it: '',
     tags: e.tags || [tag],
     context_note: e.context || '',
+    ...(e.concept ? { concept: e.concept } : {}),
   }));
 }
 

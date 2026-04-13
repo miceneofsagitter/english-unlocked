@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="src/data/vocabulary.js"></script>
     <link rel="stylesheet" href="src/styles/main.css">
   </head>
   <body>
@@ -502,6 +501,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
             </div>
             <div class="pill-group">
               <span class="pill-group-label">Tag</span>
+              <button class="filter-pill" onclick="filterVocab('base', this)">
+                Base ⭐
+              </button>
               <button class="filter-pill" onclick="filterVocab('bambini', this)">
                 Bambini
               </button>
@@ -1216,6 +1218,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
 
 
     <!-- Data -->
+    <script src="src/data/vocabulary.js"></script>
     <script src="src/data/sentences-data.js"></script>
     <script src="src/data/miniclub-data.js"></script>
     <script src="src/data/tenses-data.js"></script>

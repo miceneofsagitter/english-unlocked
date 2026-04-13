@@ -17,6 +17,8 @@
       let activeFilter = 'all'
       let activeSearch = ''
       let vocabPage = 0
+      let _pendingConcept = null  // usato da navigateToLangConcept per highlight post-switchLang
+      let _pendingVerb = null     // usato da navigateToLangVerb per highlight post-switchLang
       const VOCAB_PAGE_SIZE = 6
       let tensesContrast = 'all'
       let zoomLevel = parseFloat(localStorage.getItem('eu_zoom')) || 1.0

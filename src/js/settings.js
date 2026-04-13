@@ -124,7 +124,7 @@
             ? ALL_VOCAB_FOR_EXERCISES
             : ALL_VOCAB
         const rows = source.map((v) => ({
-          verb: v.verb,
+          verb: v.verb || v.en,
           type: v.type,
           language: v.language || 'en',
           it: v.it,
