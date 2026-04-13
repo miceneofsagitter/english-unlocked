@@ -1861,15 +1861,7 @@ const ES_COMMON_VERBS = [
     example_it: 'Vai via!',
     tags: ['bambini'],
   },
-  {
-    es: 'continuar',
-    emoji: '➡️',
-    it: 'continuare / andare avanti',
-    en: 'carry on',
-    example_es: 'Continúa trabajando.',
-    example_it: 'Continua a lavorare.',
-    tags: ['base'],
-  },
+
   {
     es: 'limpiar',
     emoji: '🧹',
@@ -1924,15 +1916,7 @@ const ES_COMMON_VERBS = [
     example_it: 'Ascolta con attenzione.',
     tags: ['bambini', 'base'],
   },
-  {
-    es: 'calmarse',
-    emoji: '😌',
-    it: ' calmarsi / stare tranquillo',
-    en: 'settle down',
-    example_es: '¡Calmaos! Es hora de escuchar.',
-    example_it: 'Calmatevi! È ora di ascoltare.',
-    tags: ['bambini'],
-  },
+
   {
     es: 'sentirse mejor',
     emoji: '😊',
@@ -2149,14 +2133,7 @@ const ES_COMMON_VERBS = [
     example_it: 'Ti aggiorno.',
     tags: ['base'],
   },
-  {
-    es: 'investigar',
-    emoji: '🔬',
-    it: 'indagare / esaminare',
-    en: 'look into',
-    example_es: 'Investiga el caso.',
-    example_it: 'Indaga il caso.',
-  },
+
   {
     es: 'salir',
     emoji: '🚪',
@@ -2310,15 +2287,7 @@ const ES_COMMON_VERBS = [
     example_it: 'Guardati intorno.',
     tags: ['bambini'],
   },
-  {
-    es: 'volver',
-    emoji: '🔙',
-    it: 'tornare indietro',
-    en: 'go back',
-    example_es: 'Vuelve al principio.',
-    example_it: 'Torna all\'inizio.',
-    tags: ['bambini'],
-  },
+
   {
     es: 'cavar',
     emoji: '⛏️',
@@ -2784,12 +2753,12 @@ const FR_COMMON_VERBS = [
   },
   {
     fr: 'continuer',
-    emoji: '💪',
-    it: 'continuare',
-    en: 'keep on',
-    example_fr: 'Continue à essayer, tu vas y arriver!',
-    example_it: 'Continue à essayer, tu vas y arriver!',
-    tags: ['bambini', 'attività'],
+    emoji: '➡️',
+    it: 'continuare / andare avanti',
+    en: 'carry on',
+    example_fr: 'Continue à travailler.',
+    example_it: 'Continua a lavorare.',
+    tags: ['base'],
   },
   {
     fr: 's\'occuper de',
@@ -3097,15 +3066,7 @@ const FR_COMMON_VERBS = [
     example_it: 'Concludiamo l\'attività.',
     tags: ['base'],
   },
-  {
-    fr: 's\'occuper de',
-    emoji: '🛡️',
-    it: 'occuparsi di',
-    en: 'take care of',
-    example_fr: 'Je m\'occupe des enfants.',
-    example_it: 'Mi occupo dei bambini.',
-    tags: ['bambini', 'genitori'],
-  },
+
   {
     fr: 'gérer',
     emoji: '🤝',
@@ -3133,15 +3094,7 @@ const FR_COMMON_VERBS = [
     example_it: 'Ascolta bene.',
     tags: ['bambini', 'base'],
   },
-  {
-    fr: 'se calmer',
-    emoji: '😌',
-    it: 'calmarsi / stare tranquillo',
-    en: 'settle down',
-    example_fr: 'Calmez-vous! C\'est l\'heure d\'écouter.',
-    example_it: 'Calmatevi! È ora di ascoltare.',
-    tags: ['bambini'],
-  },
+
   {
     fr: 'se sentir mieux',
     emoji: '😊',

@@ -133,6 +133,16 @@
           ? ALL_VOCAB.filter((v) => v.type === 'phrasal')
           : ALL_VOCAB
         if (pool.length < 4) pool = ALL_VOCAB
+        
+        // Remove duplicates by verb field - keep first occurrence
+        const seen = new Set()
+        pool = pool.filter((v) => {
+          const verb = _v(v, 'verb')
+          if (seen.has(verb)) return false
+          seen.add(verb)
+          return true
+        })
+        
         pool = pool.sort(() => Math.random() - 0.5).slice(0, 4)
         const verbs = [...pool].sort(() => Math.random() - 0.5).map((v) => _v(v, 'verb'))
         const trans = [...pool].sort(() => Math.random() - 0.5).map((v) => v.it)
