@@ -426,6 +426,23 @@
         st.textContent = '✓ ' + rows.length + ' voci sincronizzate.'
       }
 
+      // ── Diagnosi voci ─────────────────────────────────────────────
+      function diagnoseVoices() {
+        const out = document.getElementById('voice-diag')
+        if (!out) return
+        const voices = speechSynthesis.getVoices()
+        if (!voices.length) { out.textContent = '⚠ Nessuna voce caricata ancora — riprova fra 1s'; return }
+        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
+        const relevant = voices.filter(v => v.lang.startsWith(cfg.prefix))
+        const best = getBestVoice()
+        const lines = [`Lingua: ${currentLang} | prefix: ${cfg.prefix} | totale: ${voices.length} | rilevanti: ${relevant.length}`, `→ MIGLIORE: ${best ? best.name + ' [' + best.lang + ']' : 'nessuna'}`, '']
+        relevant.forEach(v => {
+          const mark = best && v.name === best.name ? '★ ' : '  '
+          lines.push(mark + v.name + ' [' + v.lang + ']' + (v.localService ? ' LOCAL' : ' NETWORK'))
+        })
+        out.textContent = lines.join('\n')
+      }
+
       // ============================================================
       // CLAUDE API
       // ============================================================

@@ -305,6 +305,12 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
             </button>
             <div class="settings-status" id="reset-status"></div>
           </div>
+
+          <div class="settings-section">
+            <h3 class="settings-section-title">🔊 Diagnosi voci</h3>
+            <button class="btn btn-ghost btn-sm" onclick="diagnoseVoices()">Mostra voci disponibili</button>
+            <div id="voice-diag" style="margin-top:8px;font-size:0.7rem;font-family:'JetBrains Mono',monospace;color:var(--muted);white-space:pre-wrap;max-height:200px;overflow-y:auto"></div>
+          </div>
         </div>
       </div>
 

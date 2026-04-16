@@ -90,24 +90,24 @@
           const key = cfg.keys.find(k => v.lang.startsWith(k))
           if (key && !seen.has(key)) { seen.add(key); picks.push({ key, v }) }
         }
-        // Anche con 1 sola voce: setta selectedVoice (senza mostrare pill)
+        // selectedVoice rimane null → getBestVoice() sceglie Enhanced automaticamente
+        // Le pill sono solo override manuale accent (US/GB/AU), non qualità
         if (picks.length === 0) { row.innerHTML = ''; return }
-        if (picks.length === 1) { selectedVoice = picks[0].v; row.innerHTML = ''; return }
+        if (picks.length === 1) { row.innerHTML = ''; return }
         row.innerHTML = ''
         const lbl = document.createElement('span')
         lbl.style.cssText = 'font-size:0.65rem;font-family:"JetBrains Mono",monospace;color:var(--muted);align-self:center'
         lbl.textContent = 'VOCE:'
         row.appendChild(lbl)
-        picks.forEach(({ key, v }, i) => {
+        picks.forEach(({ key, v }) => {
           const btn = document.createElement('button')
-          btn.className = 'voice-pill' + (i === 0 ? ' active' : '')
+          btn.className = 'voice-pill'
           btn.textContent = (cfg.flags[key] || '🌐') + ' ' + key
           btn.onclick = () => {
             selectedVoice = v
             row.querySelectorAll('.voice-pill').forEach(b => b.classList.remove('active'))
             btn.classList.add('active')
           }
-          if (i === 0) selectedVoice = v
           row.appendChild(btn)
         })
       }
