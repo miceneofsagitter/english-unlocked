@@ -150,6 +150,18 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
               ↑ Sync vocabolario
             </button>
             <div class="import-status" id="import-status"></div>
+            <button
+              class="btn btn-ghost"
+              onclick="pullVocabFromSupabase()"
+              style="
+                color: var(--accent);
+                border-color: var(--accent);
+                margin-bottom: 8px;
+              "
+            >
+              ↓ Pull da Supabase
+            </button>
+            <div class="import-status" id="pull-status"></div>
 
             <div
               style="height: 1px; background: var(--border); margin: 20px 0"
@@ -497,6 +509,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
                 onclick="filterVocab('clarification', this)"
               >
                 Chiarimento
+              </button>
+              <button class="filter-pill" onclick="filterVocab('verb', this)">
+                Verbi
               </button>
             </div>
             <div class="pill-group">

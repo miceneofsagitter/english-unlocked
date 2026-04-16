@@ -1301,6 +1301,9 @@
       .vocab-card.type-clarification::before {
         background: var(--muted);
       }
+      .vocab-card.type-verb::before {
+        background: #60a5fa;
+      }
 
       /* EMOJI ILLUSTRAZIONE */
       .vc-emoji {

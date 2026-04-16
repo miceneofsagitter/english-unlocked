@@ -16,7 +16,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_calm_down"
   },
   {
     "language": "en",
@@ -65,7 +65,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_mess_up"
   },
   {
     "language": "en",
@@ -97,7 +97,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_give_up"
   },
   {
     "language": "en",
@@ -191,7 +191,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_come_up_with"
   },
   {
     "language": "en",
@@ -222,7 +222,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_show_up"
   },
   {
     "language": "en",
@@ -253,7 +253,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_pick_up"
   },
   {
     "language": "en",
@@ -315,7 +315,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_reach_out"
   },
   {
     "language": "en",
@@ -363,7 +363,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_get_along_with"
   },
   {
     "language": "en",
@@ -378,7 +378,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_catch_up"
   },
   {
     "language": "en",
@@ -454,7 +454,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_work_out"
   },
   {
     "language": "en",
@@ -486,7 +486,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_check_out"
   },
   {
     "language": "en",
@@ -501,7 +501,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_think_over"
   },
   {
     "language": "en",
@@ -517,7 +517,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_break_down"
   },
   {
     "language": "en",
@@ -548,7 +548,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_chill_out"
   },
   {
     "language": "en",
@@ -564,7 +564,7 @@ const EN_VOCAB = [
       "evento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_break_off"
   },
   {
     "language": "en",
@@ -580,7 +580,7 @@ const EN_VOCAB = [
       "evento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_figure_out"
   },
   {
     "language": "en",
@@ -611,7 +611,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_go_down_drain"
   },
   {
     "language": "en",
@@ -628,7 +628,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_put_down"
   },
   {
     "language": "en",
@@ -678,7 +678,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_come_along"
   },
   {
     "language": "en",
@@ -694,7 +694,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_run_around"
   },
   {
     "language": "en",
@@ -709,7 +709,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_go_away"
   },
   {
     "language": "en",
@@ -741,7 +741,7 @@ const EN_VOCAB = [
       "evento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_clean_up"
   },
   {
     "language": "en",
@@ -773,7 +773,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_clear_up"
   },
   {
     "language": "en",
@@ -789,7 +789,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_take_care_of"
   },
   {
     "language": "en",
@@ -835,7 +835,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_listen_to"
   },
   {
     "language": "en",
@@ -851,7 +851,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_get_on_with"
   },
   {
     "language": "en",
@@ -867,7 +867,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_check_on"
   },
   {
     "language": "en",
@@ -898,7 +898,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_feel_better"
   },
   {
     "language": "en",
@@ -913,7 +913,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_lighten_up"
   },
   {
     "language": "en",
@@ -929,7 +929,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_liven_up"
   },
   {
     "language": "en",
@@ -945,7 +945,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_launch_into"
   },
   {
     "language": "en",
@@ -961,7 +961,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_rule_out"
   },
   {
     "language": "en",
@@ -977,7 +977,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_go_off"
   },
   {
     "language": "en",
@@ -993,7 +993,7 @@ const EN_VOCAB = [
       "divertimento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_pig_out"
   },
   {
     "language": "en",
@@ -1010,7 +1010,7 @@ const EN_VOCAB = [
       "organizzazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_line_up"
   },
   {
     "language": "en",
@@ -1026,7 +1026,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_waltz_into"
   },
   {
     "language": "en",
@@ -1042,7 +1042,7 @@ const EN_VOCAB = [
       "quotidiano"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_take_away"
   },
   {
     "language": "en",
@@ -1058,7 +1058,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_horse_around"
   },
   {
     "language": "en",
@@ -1073,7 +1073,7 @@ const EN_VOCAB = [
       "abitudini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_cut_down_on"
   },
   {
     "language": "en",
@@ -1104,7 +1104,7 @@ const EN_VOCAB = [
       "quotidiano"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_get_by"
   },
   {
     "language": "en",
@@ -1119,7 +1119,7 @@ const EN_VOCAB = [
       "quotidiano"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_try_on"
   },
   {
     "language": "en",
@@ -1134,7 +1134,7 @@ const EN_VOCAB = [
       "quotidiano"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_come_across"
   },
   {
     "language": "en",
@@ -1149,7 +1149,7 @@ const EN_VOCAB = [
       "relazioni"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_make_up"
   },
   {
     "language": "en",
@@ -1164,7 +1164,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_talk_over"
   },
   {
     "language": "en",
@@ -1179,7 +1179,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_come_up_against"
   },
   {
     "language": "en",
@@ -1194,7 +1194,7 @@ const EN_VOCAB = [
       "relazioni"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_break_up"
   },
   {
     "language": "en",
@@ -1209,7 +1209,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_chicken_out"
   },
   {
     "language": "en",
@@ -1224,7 +1224,7 @@ const EN_VOCAB = [
       "movimento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_run_away"
   },
   {
     "language": "en",
@@ -1240,7 +1240,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_run_over"
   },
   {
     "language": "en",
@@ -1256,7 +1256,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_run_through"
   },
   {
     "language": "en",
@@ -1271,7 +1271,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_make_out"
   },
   {
     "language": "en",
@@ -1287,7 +1287,7 @@ const EN_VOCAB = [
       "quotidiano"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_make_up_for"
   },
   {
     "language": "en",
@@ -1303,7 +1303,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_bug_out"
   },
   {
     "language": "en",
@@ -1318,7 +1318,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_fill_in"
   },
   {
     "language": "en",
@@ -1456,7 +1456,7 @@ const EN_VOCAB = [
       "outdoor"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_go_out"
   },
   {
     "language": "en",
@@ -1472,7 +1472,7 @@ const EN_VOCAB = [
       "tempo"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_come_back"
   },
   {
     "language": "en",
@@ -1538,7 +1538,7 @@ const EN_VOCAB = [
       "movimento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_get_in"
   },
   {
     "language": "en",
@@ -1572,7 +1572,7 @@ const EN_VOCAB = [
       "movimento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_get_on"
   },
   {
     "language": "en",
@@ -1588,7 +1588,7 @@ const EN_VOCAB = [
       "movimento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_get_off"
   },
   {
     "language": "en",
@@ -1605,7 +1605,7 @@ const EN_VOCAB = [
       "nutrizione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_eat_up"
   },
   {
     "language": "en",
@@ -1637,7 +1637,7 @@ const EN_VOCAB = [
       "tavola"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_dig_in"
   },
   {
     "language": "en",
@@ -1654,7 +1654,7 @@ const EN_VOCAB = [
       "tavola"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_clear_away"
   },
   {
     "language": "en",
@@ -1670,7 +1670,7 @@ const EN_VOCAB = [
       "pulizia"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_wipe_down"
   },
   {
     "language": "en",
@@ -1739,7 +1739,7 @@ const EN_VOCAB = [
       "laboratorio"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_color_in"
   },
   {
     "language": "en",
@@ -1756,7 +1756,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_tidy_up"
   },
   {
     "language": "en",
@@ -1855,7 +1855,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_dig_up"
   },
   {
     "language": "en",
@@ -1905,7 +1905,7 @@ const EN_VOCAB = [
       "orto"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_water_down"
   },
   {
     "language": "en",
@@ -1922,7 +1922,7 @@ const EN_VOCAB = [
       "crescita"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_grow_up"
   },
   {
     "language": "en",
@@ -1938,7 +1938,7 @@ const EN_VOCAB = [
       "orto"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_cut_back"
   },
   {
     "language": "en",
@@ -1955,7 +1955,7 @@ const EN_VOCAB = [
       "pulizia"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_clear_out"
   },
   {
     "language": "en",
@@ -2021,7 +2021,7 @@ const EN_VOCAB = [
       "igiene"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_dry_off"
   },
   {
     "language": "en",
@@ -2054,7 +2054,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_hold_on"
   },
   {
     "language": "en",
@@ -2088,7 +2088,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_stay_away"
   },
   {
     "language": "en",
@@ -2105,7 +2105,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_share_out"
   },
   {
     "language": "en",
@@ -2121,7 +2121,7 @@ const EN_VOCAB = [
       "laboratorio"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_glue_down"
   },
   {
     "language": "en",
@@ -2137,7 +2137,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_call_back"
   },
   {
     "language": "en",
@@ -2153,7 +2153,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_hang_up"
   },
   {
     "language": "en",
@@ -2169,7 +2169,7 @@ const EN_VOCAB = [
       "tempo libero"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_hang_out"
   },
   {
     "language": "en",
@@ -2200,7 +2200,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_turn_up"
   },
   {
     "language": "en",
@@ -2215,7 +2215,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_turn_down"
   },
   {
     "language": "en",
@@ -2231,7 +2231,7 @@ const EN_VOCAB = [
       "scuola"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_look_up"
   },
   {
     "language": "en",
@@ -2247,7 +2247,7 @@ const EN_VOCAB = [
       "scuola"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_write_down"
   },
   {
     "language": "en",
@@ -2279,7 +2279,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_cant_seem_to"
   },
   {
     "language": "en",
@@ -2327,7 +2327,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_look_over"
   },
   {
     "language": "en",
@@ -2343,7 +2343,7 @@ const EN_VOCAB = [
       "tempo libero"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_look_through"
   },
   {
     "language": "en",
@@ -2359,7 +2359,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "situazione complicata",
-    "concept": ""
+    "concept": "idiom_in_pickle"
   },
   {
     "language": "en",
@@ -2374,7 +2374,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "essere distratto o perso nei propri pensieri",
-    "concept": ""
+    "concept": "idiom_in_clouds"
   },
   {
     "language": "en",
@@ -2389,7 +2389,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "qualcosa di molto caro",
-    "concept": ""
+    "concept": "idiom_arm_leg"
   },
   {
     "language": "en",
@@ -2404,7 +2404,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "iniziare a impegnarsi o reagire",
-    "concept": ""
+    "concept": "idiom_get_act_together"
   },
   {
     "language": "en",
@@ -2419,7 +2419,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "fare o dire qualcosa fuori luogo",
-    "concept": ""
+    "concept": "idiom_foot_in_mouth"
   },
   {
     "language": "en",
@@ -2434,7 +2434,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "dimenticare qualcosa",
-    "concept": ""
+    "concept": "idiom_slipped_mind"
   },
   {
     "language": "en",
@@ -2449,7 +2449,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "ascolto attento",
-    "concept": ""
+    "concept": "idiom_all_ears"
   },
   {
     "language": "en",
@@ -2464,7 +2464,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "improvvisare, essere flessibili",
-    "concept": ""
+    "concept": "idiom_by_ear"
   },
   {
     "language": "en",
@@ -2479,7 +2479,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dire qualcosa che non si doveva",
-    "concept": ""
+    "concept": "idiom_spill_beans"
   },
   {
     "language": "en",
@@ -2494,7 +2494,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "essere d'accordo, capirsi",
-    "concept": ""
+    "concept": "idiom_same_page"
   },
   {
     "language": "en",
@@ -2509,7 +2509,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "quando qualcosa smette improvvisamente di funzionare",
-    "concept": ""
+    "concept": "idiom_chaos"
   },
   {
     "language": "en",
@@ -2524,7 +2524,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "evento o attività che va tutto perfettamente",
-    "concept": ""
+    "concept": "without_a_hitch"
   },
   {
     "language": "en",
@@ -2539,7 +2539,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "situazione senza via d'uscita, tutto è perduto",
-    "concept": ""
+    "concept": "idiom_jig_is_up"
   },
   {
     "language": "en",
@@ -2554,7 +2554,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "non apprezzare ciò che si ha, considerarlo ovvio",
-    "concept": ""
+    "concept": "idiom_granted"
   },
   {
     "language": "en",
@@ -2569,7 +2569,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "gestire o risolvere attivamente una difficoltà",
-    "concept": ""
+    "concept": "idiom_tackle"
   },
   {
     "language": "en",
@@ -2584,7 +2584,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "includere un fattore nel ragionamento o nella decisione",
-    "concept": ""
+    "concept": "idiom_take_account"
   },
   {
     "language": "en",
@@ -2599,7 +2599,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "forzare o spingere qualcuno a fare qualcosa",
-    "concept": ""
+    "concept": "idiom_pressure"
   },
   {
     "language": "en",
@@ -2614,7 +2614,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "essere bravo/a naturalmente in qualcosa",
-    "concept": ""
+    "concept": "idiom_knack"
   },
   {
     "language": "en",
@@ -2629,7 +2629,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "apparenza o impressione iniziale",
-    "concept": ""
+    "concept": "idiom_looks_like"
   },
   {
     "language": "en",
@@ -2644,7 +2644,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "qualcosa di bellissimo e gradevole",
-    "concept": ""
+    "concept": "idiom_sight_sore_eyes"
   },
   {
     "language": "en",
@@ -2659,7 +2659,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "malessere, malattia lieve",
-    "concept": ""
+    "concept": "idiom_under_weather"
   },
   {
     "language": "en",
@@ -2674,7 +2674,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "affrontare una situazione pericolosa o difficile",
-    "concept": ""
+    "concept": "idiom_lions_den"
   },
   {
     "language": "en",
@@ -2689,7 +2689,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rischiare tutto su una sola cosa",
-    "concept": ""
+    "concept": "idiom_eggs_basket"
   },
   {
     "language": "en",
@@ -2704,7 +2704,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "vivere avventure giovanili senza freni",
-    "concept": ""
+    "concept": "idiom_wild_oats"
   },
   {
     "language": "en",
@@ -2719,7 +2719,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "ricevere un'accoglienza importante e speciale",
-    "concept": ""
+    "concept": "idiom_red_carpet"
   },
   {
     "language": "en",
@@ -2734,7 +2734,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "complessità burocratiche e iter amministrativi lunghi",
-    "concept": ""
+    "concept": "idiom_red_tape"
   },
   {
     "language": "en",
@@ -2749,7 +2749,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "essere in perdita finanziaria",
-    "concept": ""
+    "concept": "idiom_in_red"
   },
   {
     "language": "en",
@@ -2764,7 +2764,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "arrabbiarsi moltissimo",
-    "concept": ""
+    "concept": "idiom_see_red"
   },
   {
     "language": "en",
@@ -2779,7 +2779,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "tristezza, malinconia",
-    "concept": ""
+    "concept": "idiom_feeling_down"
   },
   {
     "language": "en",
@@ -2794,7 +2794,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "evento che accade molto raramente",
-    "concept": ""
+    "concept": "idiom_blue_moon"
   },
   {
     "language": "en",
@@ -2809,7 +2809,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "essere di famiglia nobile o aristocratica",
-    "concept": ""
+    "concept": "idiom_blue_blood"
   },
   {
     "language": "en",
@@ -2824,7 +2824,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "accadimento improvviso e sorprendente",
-    "concept": ""
+    "concept": "idiom_out_of_blue"
   },
   {
     "language": "en",
@@ -2839,7 +2839,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "situazione che fa arrabbiare dopo molto tempo",
-    "concept": ""
+    "concept": "idiom_last_straw"
   },
   {
     "language": "en",
@@ -2854,7 +2854,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "non capire il senso di quello che viene detto",
-    "concept": ""
+    "concept": "idiom_miss_point"
   },
   {
     "language": "en",
@@ -2869,7 +2869,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "persona estremamente ricca, in modo quasi osceno",
-    "concept": ""
+    "concept": "idiom_filthy_rich"
   },
   {
     "language": "en",
@@ -2884,7 +2884,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "mettere soldi da parte per emergenze future",
-    "concept": ""
+    "concept": "idiom_rainy_day"
   },
   {
     "language": "en",
@@ -2899,7 +2899,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "spendere soldi in modo eccessivo e irresponsabile",
-    "concept": ""
+    "concept": "idiom_money_water"
   },
   {
     "language": "en",
@@ -2914,7 +2914,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "partire, iniziare un viaggio o andarsene",
-    "concept": ""
+    "concept": "idiom_hit_road"
   },
   {
     "language": "en",
@@ -2929,7 +2929,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "andare a dormire, specialmente quando si è stanchi",
-    "concept": ""
+    "concept": "idiom_hit_sack"
   },
   {
     "language": "en",
@@ -2944,7 +2944,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "riassumere qualcosa brevemente",
-    "concept": ""
+    "concept": "idiom_nutshell"
   },
   {
     "language": "en",
@@ -2960,7 +2960,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "monitorare o fare attenzione a qualcosa o qualcuno",
-    "concept": ""
+    "concept": "idiom_eye_on"
   },
   {
     "language": "en",
@@ -2975,7 +2975,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rivelare accidentalmente qualcosa che doveva restare segreto",
-    "concept": ""
+    "concept": "idiom_cat_bag"
   },
   {
     "language": "en",
@@ -2990,7 +2990,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "lasciarsi sfuggire un'opportunità",
-    "concept": ""
+    "concept": "idiom_miss_boat"
   },
   {
     "language": "en",
@@ -3005,7 +3005,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "evitare di arrivare al punto, parlare di tutto tranne che del problema",
-    "concept": ""
+    "concept": "idiom_beat_bush"
   },
   {
     "language": "en",
@@ -3020,7 +3020,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incoraggiamento ad agire con urgenza",
-    "concept": ""
+    "concept": "idiom_get_move_on"
   },
   {
     "language": "en",
@@ -3035,7 +3035,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "augurio di buona fortuna, specie prima di uno spettacolo o esame",
-    "concept": ""
+    "concept": "idiom_break_leg"
   },
   {
     "language": "en",
@@ -3050,7 +3050,7 @@ const EN_VOCAB = [
       "attività"
     ],
     "context_note": "decidere di fermarsi e riprendere un'altra volta",
-    "concept": ""
+    "concept": "call_it_a_day_idiom"
   },
   {
     "language": "en",
@@ -3065,7 +3065,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sperare che le cose vadano bene",
-    "concept": ""
+    "concept": "idiom_cross_fingers"
   },
   {
     "language": "en",
@@ -3080,7 +3080,7 @@ const EN_VOCAB = [
       "comunicazione"
     ],
     "context_note": "smetttere di girare intorno e dire subito la cosa importante",
-    "concept": ""
+    "concept": "idiom_cut_chase"
   },
   {
     "language": "en",
@@ -3095,7 +3095,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "ciò che si ottiene facilmente si perde altrettanto facilmente",
-    "concept": ""
+    "concept": "idiom_easy_come"
   },
   {
     "language": "en",
@@ -3110,7 +3110,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "accettare la punizione o le conseguenze delle proprie azioni",
-    "concept": ""
+    "concept": "idiom_face_music"
   },
   {
     "language": "en",
@@ -3125,7 +3125,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "perdere coraggio prima di fare qualcosa di importante",
-    "concept": ""
+    "concept": "idiom_cold_feet"
   },
   {
     "language": "en",
@@ -3140,7 +3140,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "essere molto geloso o invidioso di qualcuno",
-    "concept": ""
+    "concept": "idiom_green_envy"
   },
   {
     "language": "en",
@@ -3155,7 +3155,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "credere che la situazione degli altri sia sempre migliore della propria",
-    "concept": ""
+    "concept": "idiom_grass_greener"
   },
   {
     "language": "en",
@@ -3170,7 +3170,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "ottimismo di fronte alle difficoltà",
-    "concept": ""
+    "concept": "idiom_silver_lining"
   },
   {
     "language": "en",
@@ -3185,7 +3185,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dire che non si è arrabbiati nonostante quanto è successo",
-    "concept": ""
+    "concept": "idiom_no_hard_feelings"
   },
   {
     "language": "en",
@@ -3200,7 +3200,7 @@ const EN_VOCAB = [
       "problemi"
     ],
     "context_note": "essere in seri guai o in una situazione problematica",
-    "concept": ""
+    "concept": "idiom_hot_water"
   },
   {
     "language": "en",
@@ -3381,7 +3381,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "chiedere ripetizione (informale)",
-    "concept": ""
+    "concept": "what_did_you_say"
   },
   {
     "language": "en",
@@ -3396,7 +3396,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "confermare quello che si è sentito",
-    "concept": ""
+    "concept": "did_i_hear_right"
   },
   {
     "language": "en",
@@ -3411,7 +3411,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "connettore di causa base",
-    "concept": ""
+    "concept": "connector_because"
   },
   {
     "language": "en",
@@ -3426,7 +3426,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "causa con sfumatura temporale",
-    "concept": ""
+    "concept": "connector_since"
   },
   {
     "language": "en",
@@ -3441,7 +3441,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "causa formale",
-    "concept": ""
+    "concept": "connector_as"
   },
   {
     "language": "en",
@@ -3456,7 +3456,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "causa formale scritta",
-    "concept": ""
+    "concept": "connector_due_to"
   },
   {
     "language": "en",
@@ -3471,7 +3471,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "causa formale/B2",
-    "concept": ""
+    "concept": "connector_in_view_of"
   },
   {
     "language": "en",
@@ -3486,7 +3486,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "causa logica",
-    "concept": ""
+    "concept": "connector_given_that"
   },
   {
     "language": "en",
@@ -3501,7 +3501,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "causa formale",
-    "concept": ""
+    "concept": "connector_owing_to"
   },
   {
     "language": "en",
@@ -3516,7 +3516,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "causa positiva",
-    "concept": ""
+    "concept": "connector_thanks_to"
   },
   {
     "language": "en",
@@ -3531,7 +3531,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "connettore conseguenza",
-    "concept": ""
+    "concept": "connector_for_this_reason"
   },
   {
     "language": "en",
@@ -3546,7 +3546,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "causa argomentativa",
-    "concept": ""
+    "concept": "connector_considering_that"
   },
   {
     "language": "en",
@@ -3561,7 +3561,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "semplificare un concetto",
-    "concept": ""
+    "concept": "discourse_basically"
   },
   {
     "language": "en",
@@ -3576,7 +3576,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "correggere o precisare",
-    "concept": ""
+    "concept": "discourse_actually"
   },
   {
     "language": "en",
@@ -3591,7 +3591,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rafforzare un'affermazione",
-    "concept": ""
+    "concept": "discourse_in_fact"
   },
   {
     "language": "en",
@@ -3606,7 +3606,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "introdurre un esempio",
-    "concept": ""
+    "concept": "discourse_for_instance"
   },
   {
     "language": "en",
@@ -3621,7 +3621,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "elencare esempi",
-    "concept": ""
+    "concept": "discourse_such_as"
   },
   {
     "language": "en",
@@ -3636,7 +3636,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "riformulare un concetto",
-    "concept": ""
+    "concept": "discourse_in_other_words"
   },
   {
     "language": "en",
@@ -3651,7 +3651,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "equivalente di \"ovvero\"",
-    "concept": ""
+    "concept": "discourse_that_is"
   },
   {
     "language": "en",
@@ -3666,7 +3666,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "semplificare un concetto",
-    "concept": ""
+    "concept": "discourse_put_simply"
   },
   {
     "language": "en",
@@ -3681,7 +3681,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "aggiungere un punto più forte",
-    "concept": ""
+    "concept": "connector_moreover"
   },
   {
     "language": "en",
@@ -3696,7 +3696,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "rinforzo formale",
-    "concept": ""
+    "concept": "connector_furthermore"
   },
   {
     "language": "en",
@@ -3711,7 +3711,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "aggiunta neutra",
-    "concept": ""
+    "concept": "connector_in_addition"
   },
   {
     "language": "en",
@@ -3726,7 +3726,7 @@ const EN_VOCAB = [
       "lavoro"
     ],
     "context_note": "aggiunta formale scritta",
-    "concept": ""
+    "concept": "connector_additionally"
   },
   {
     "language": "en",
@@ -3741,7 +3741,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "aggiunta base",
-    "concept": ""
+    "concept": "connector_also"
   },
   {
     "language": "en",
@@ -3756,7 +3756,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "aggiunta informale a fine frase",
-    "concept": ""
+    "concept": "connector_as_well"
   },
   {
     "language": "en",
@@ -3771,7 +3771,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "escludere qualcosa di ancora più estremo",
-    "concept": ""
+    "concept": "connector_let_alone"
   },
   {
     "language": "en",
@@ -3786,7 +3786,7 @@ const EN_VOCAB = [
       "base"
     ],
     "context_note": "aggiunta con sfumatura",
-    "concept": ""
+    "concept": "connector_besides"
   },
   {
     "language": "en",
@@ -3801,7 +3801,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "aggiunta con enfasi",
-    "concept": ""
+    "concept": "connector_whats_more"
   },
   {
     "language": "en",
@@ -3816,7 +3816,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incomprensione diretta",
-    "concept": ""
+    "concept": "i_dont_understand"
   },
   {
     "language": "en",
@@ -3831,7 +3831,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "confusione su qualcosa",
-    "concept": ""
+    "concept": "doesnt_make_sense"
   },
   {
     "language": "en",
@@ -3846,7 +3846,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "stato di confusione",
-    "concept": ""
+    "concept": "im_confused"
   },
   {
     "language": "en",
@@ -3861,7 +3861,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "perdere il filo del discorso",
-    "concept": ""
+    "concept": "cant_follow"
   },
   {
     "language": "en",
@@ -3876,7 +3876,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "comprensione raggiunta",
-    "concept": ""
+    "concept": "i_get_it"
   },
   {
     "language": "en",
@@ -3891,7 +3891,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "comprensione progressiva",
-    "concept": ""
+    "concept": "i_see_clarif"
   },
   {
     "language": "en",
@@ -3906,7 +3906,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "conferma comprensione",
-    "concept": ""
+    "concept": "that_makes_sense"
   },
   {
     "language": "en",
@@ -3921,7 +3921,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "comprensione esplicita",
-    "concept": ""
+    "concept": "i_understand_it"
   },
   {
     "language": "en",
@@ -3936,7 +3936,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "interrompere brevemente",
-    "concept": ""
+    "concept": "wait_a_minute"
   },
   {
     "language": "en",
@@ -3951,7 +3951,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "pausa nella conversazione",
-    "concept": ""
+    "concept": "hold_on_pause"
   },
   {
     "language": "en",
@@ -3966,7 +3966,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "pausa breve",
-    "concept": ""
+    "concept": "just_a_second"
   },
   {
     "language": "en",
@@ -3996,7 +3996,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "risposta vaga o parziale",
-    "concept": ""
+    "concept": "kind_of"
   },
   {
     "language": "en",
@@ -4011,7 +4011,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "prima di dire qualcosa di scomodo",
-    "concept": ""
+    "concept": "no_offense"
   },
   {
     "language": "en",
@@ -4026,7 +4026,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "ritirarsi da qualcosa",
-    "concept": ""
+    "concept": "im_out"
   },
   {
     "language": "en",
@@ -4041,7 +4041,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dopo una battuta",
-    "concept": ""
+    "concept": "just_kidding"
   },
   {
     "language": "en",
@@ -4056,7 +4056,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "ammettere un errore in modo informale",
-    "concept": ""
+    "concept": "my_bad"
   },
   {
     "language": "en",
@@ -4071,7 +4071,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "assumersi la responsabilità di qualcosa",
-    "concept": ""
+    "concept": "thats_on_me"
   },
   {
     "language": "en",
@@ -4086,7 +4086,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sorpresa o reazione forte a qualcosa di inaspettato",
-    "concept": ""
+    "concept": "what_the_hell"
   },
   {
     "language": "en",
@@ -4101,7 +4101,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "invito a non forzare o spingere oltre",
-    "concept": ""
+    "concept": "dont_push_it"
   },
   {
     "language": "en",
@@ -4131,7 +4131,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incredulità o leggero fastidio",
-    "concept": ""
+    "concept": "give_me_a_break"
   },
   {
     "language": "en",
@@ -4146,7 +4146,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "risposta sarcastica a un'affermazione esagerata",
-    "concept": ""
+    "concept": "you_wish"
   },
   {
     "language": "en",
@@ -4161,7 +4161,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dire a qualcuno di smettere di essere arrogante",
-    "concept": ""
+    "concept": "get_over_yourself"
   },
   {
     "language": "en",
@@ -4176,7 +4176,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "introdurre una spiegazione, un problema o una riserva",
-    "concept": ""
+    "concept": "the_thing_is"
   },
   {
     "language": "en",
@@ -4191,7 +4191,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "riassumere il punto principale di un discorso",
-    "concept": ""
+    "concept": "the_point_is"
   },
   {
     "language": "en",
@@ -4206,7 +4206,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "aggiunta vaga a una lista di cose simili",
-    "concept": ""
+    "concept": "and_stuff"
   },
   {
     "language": "en",
@@ -4221,7 +4221,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "aggiungere un'alternativa vaga a fine frase",
-    "concept": ""
+    "concept": "or_something"
   },
   {
     "language": "en",
@@ -4236,7 +4236,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "usato nel parlato per riportare una reazione o pensiero",
-    "concept": ""
+    "concept": "i_was_like"
   },
   {
     "language": "en",
@@ -4251,7 +4251,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "cambiare argomento o tornare al punto principale",
-    "concept": ""
+    "concept": "anyway"
   },
   {
     "language": "en",
@@ -4266,7 +4266,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "usato per enfatizzare (spesso in modo colloquiale/esagerato)",
-    "concept": ""
+    "concept": "literally"
   },
   {
     "language": "en",
@@ -4296,7 +4296,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "negazione informale e leggera",
-    "concept": ""
+    "concept": "nah"
   },
   {
     "language": "en",
@@ -4311,7 +4311,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "accordo o disponibilità",
-    "concept": ""
+    "concept": "im_down"
   },
   {
     "language": "en",
@@ -4326,7 +4326,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "risposta positiva, non ho bisogno di nulla",
-    "concept": ""
+    "concept": "im_good"
   },
   {
     "language": "en",
@@ -4341,7 +4341,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incoraggiamento a fare qualcosa",
-    "concept": ""
+    "concept": "go_for_it"
   },
   {
     "language": "en",
@@ -4371,7 +4371,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "accordo entusiasta",
-    "concept": ""
+    "concept": "you_bet"
   },
   {
     "language": "en",
@@ -4386,7 +4386,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "enfatizzare che si dice la verità",
-    "concept": ""
+    "concept": "i_meant_it"
   },
   {
     "language": "en",
@@ -4401,7 +4401,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "risposta che non è netta",
-    "concept": ""
+    "concept": "it_depends"
   },
   {
     "language": "en",
@@ -4416,7 +4416,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "chiedere di ripetere",
-    "concept": ""
+    "concept": "come_again"
   },
   {
     "language": "en",
@@ -4446,7 +4446,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "attrazione romantica per qualcuno",
-    "concept": ""
+    "concept": "have_a_crush"
   },
   {
     "language": "en",
@@ -4461,7 +4461,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "iniziare a sviluppare sentimenti romantici per qualcuno",
-    "concept": ""
+    "concept": "catching_feelings"
   },
   {
     "language": "en",
@@ -4476,7 +4476,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "amore intenso e travolgente",
-    "concept": ""
+    "concept": "head_over_heels"
   },
   {
     "language": "en",
@@ -4491,7 +4491,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "attrazione romantica o interesse verso qualcuno",
-    "concept": ""
+    "concept": "im_into_you"
   },
   {
     "language": "en",
@@ -4506,7 +4506,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "interrompere ogni contatto senza dare spiegazioni",
-    "concept": ""
+    "concept": "ghost_someone"
   },
   {
     "language": "en",
@@ -4521,7 +4521,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "relazione romantica breve e non seria",
-    "concept": ""
+    "concept": "have_a_fling"
   },
   {
     "language": "en",
@@ -4536,7 +4536,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incontro romantico o sessuale occasionale",
-    "concept": ""
+    "concept": "hook_up"
   },
   {
     "language": "en",
@@ -4551,7 +4551,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "fare il primo passo romanticamente, rischiare",
-    "concept": ""
+    "concept": "shoot_your_shot"
   },
   {
     "language": "en",
@@ -4566,7 +4566,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sparire lentamente dalla vita di qualcuno senza dirlo direttamente",
-    "concept": ""
+    "concept": "slow_fade"
   },
   {
     "language": "en",
@@ -4581,7 +4581,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "perdere i sentimenti romantici per qualcuno nel tempo",
-    "concept": ""
+    "concept": "fall_out_of_love"
   },
   {
     "language": "en",
@@ -4596,7 +4596,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "approccio romantico o flirty verso qualcuno",
-    "concept": ""
+    "concept": "hit_on_someone"
   },
   {
     "language": "en",
@@ -4611,7 +4611,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "non avere soldi, essere senza un euro",
-    "concept": ""
+    "concept": "im_broke"
   },
   {
     "language": "en",
@@ -4626,7 +4626,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "invito a mantenere i contatti dopo un saluto",
-    "concept": ""
+    "concept": "keep_in_touch"
   },
   {
     "language": "en",
@@ -4641,7 +4641,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dire a qualcuno di smettere di fare qualcosa di fastidioso",
-    "concept": ""
+    "concept": "knock_it_off"
   },
   {
     "language": "en",
@@ -4656,7 +4656,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "chiedere di ricevere aggiornamenti su qualcosa",
-    "concept": ""
+    "concept": "keep_posted"
   },
   {
     "language": "en",
@@ -4731,7 +4731,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "tentare qualcosa anche senza certezze",
-    "concept": ""
+    "concept": "give_it_a_shot"
   },
   {
     "language": "en",
@@ -4746,7 +4746,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "divertirsi moltissimo",
-    "concept": ""
+    "concept": "have_a_blast"
   },
   {
     "language": "en",
@@ -4761,7 +4761,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "iniziare a dubitare di una decisione già presa",
-    "concept": ""
+    "concept": "second_thoughts"
   },
   {
     "language": "en",
@@ -4776,7 +4776,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dire a qualcuno di controllarsi e smettere di farsi prendere dal panico",
-    "concept": ""
+    "concept": "get_a_grip"
   },
   {
     "language": "en",
@@ -4791,7 +4791,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "chi è a proprio agio in qualsiasi contesto sociale",
-    "concept": ""
+    "concept": "social_butterfly"
   },
   {
     "language": "en",
@@ -4806,7 +4806,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "persona attraente o oggetto molto bello visivamente",
-    "concept": ""
+    "concept": "eye_candy"
   },
   {
     "language": "en",
@@ -4821,7 +4821,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "saluto informale",
-    "concept": ""
+    "concept": "hows_it_going"
   },
   {
     "language": "en",
@@ -4836,7 +4836,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "saluto dopo un po'",
-    "concept": ""
+    "concept": "how_have_you_been"
   },
   {
     "language": "en",
@@ -4851,7 +4851,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "saluto curioso",
-    "concept": ""
+    "concept": "whats_new"
   },
   {
     "language": "en",
@@ -4866,7 +4866,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "saluto super informale / slang",
-    "concept": ""
+    "concept": "sup"
   },
   {
     "language": "en",
@@ -4881,7 +4881,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "saluto informale americano",
-    "concept": ""
+    "concept": "whats_up"
   },
   {
     "language": "en",
@@ -4896,7 +4896,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "saluto neutro informale",
-    "concept": ""
+    "concept": "hey_there"
   },
   {
     "language": "en",
@@ -4911,7 +4911,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "incontro dopo lungo tempo",
-    "concept": ""
+    "concept": "long_time_no_see"
   },
   {
     "language": "en",
@@ -4926,7 +4926,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "incontro piacevole",
-    "concept": ""
+    "concept": "nice_to_see_you"
   },
   {
     "language": "en",
@@ -4941,7 +4941,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "calore nel salutare",
-    "concept": ""
+    "concept": "good_to_see_you"
   },
   {
     "language": "en",
@@ -4956,7 +4956,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "curiosità o sorpresa",
-    "concept": ""
+    "concept": "whats_the_deal"
   },
   {
     "language": "en",
@@ -4971,7 +4971,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rassegnazione ironica",
-    "concept": ""
+    "concept": "here_we_go_again"
   },
   {
     "language": "en",
@@ -4986,7 +4986,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sarcasmo bonario",
-    "concept": ""
+    "concept": "that_figures"
   },
   {
     "language": "en",
@@ -5001,7 +5001,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "indifferenza / lasciare libertà",
-    "concept": ""
+    "concept": "suit_yourself"
   },
   {
     "language": "en",
@@ -5016,7 +5016,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "bloccare una discussione",
-    "concept": ""
+    "concept": "dont_even"
   },
   {
     "language": "en",
@@ -5031,7 +5031,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rimandare la decisione all'altro",
-    "concept": ""
+    "concept": "thats_your_call"
   },
   {
     "language": "en",
@@ -5046,7 +5046,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "scetticismo",
-    "concept": ""
+    "concept": "i_doubt_it"
   },
   {
     "language": "en",
@@ -5061,7 +5061,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "compassione ironica o sincera",
-    "concept": ""
+    "concept": "poor_you"
   },
   {
     "language": "en",
@@ -5076,7 +5076,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "difendersi da qualcuno invadente",
-    "concept": ""
+    "concept": "back_off"
   },
   {
     "language": "en",
@@ -5091,7 +5091,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "complimento su look/stile (slang Gen Z)",
-    "concept": ""
+    "concept": "snatched"
   },
   {
     "language": "en",
@@ -5106,7 +5106,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "essere suscettibile o risentito",
-    "concept": ""
+    "concept": "salty"
   },
   {
     "language": "en",
@@ -5121,7 +5121,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "enfatizzare la verità (slang)",
-    "concept": ""
+    "concept": "no_cap"
   },
   {
     "language": "en",
@@ -5136,7 +5136,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "intensificare un'affermazione (slang)",
-    "concept": ""
+    "concept": "high_key"
   },
   {
     "language": "en",
@@ -5151,7 +5151,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "congedo informale urgente",
-    "concept": ""
+    "concept": "i_gotta_go"
   },
   {
     "language": "en",
@@ -5166,7 +5166,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "saluto informale",
-    "concept": ""
+    "concept": "catch_you_later"
   },
   {
     "language": "en",
@@ -5181,7 +5181,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "congedo al telefono o chat",
-    "concept": ""
+    "concept": "talk_to_you_later"
   },
   {
     "language": "en",
@@ -5196,7 +5196,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "congedo gentile",
-    "concept": ""
+    "concept": "ill_get_going"
   },
   {
     "language": "en",
@@ -5211,7 +5211,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "saluto vago",
-    "concept": ""
+    "concept": "see_you_around"
   },
   {
     "language": "en",
@@ -5226,7 +5226,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "congedo diretto",
-    "concept": ""
+    "concept": "im_off"
   },
   {
     "language": "en",
@@ -5241,7 +5241,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "fine attività/lavoro",
-    "concept": ""
+    "concept": "call_it_a_day"
   },
   {
     "language": "en",
@@ -5256,7 +5256,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "congedo informale",
-    "concept": ""
+    "concept": "ill_head_out"
   },
   {
     "language": "en",
@@ -5271,7 +5271,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "saluto affettuoso",
-    "concept": ""
+    "concept": "take_care_coll"
   },
   {
     "language": "en",
@@ -5286,7 +5286,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "congedo con senso temporale",
-    "concept": ""
+    "concept": "time_to_head_out"
   },
   {
     "language": "en",
@@ -5301,7 +5301,7 @@ const EN_VOCAB = [
       "genitori"
     ],
     "context_note": "rimandare a più tardi",
-    "concept": ""
+    "concept": "catch_up_later"
   },
   {
     "language": "en",
@@ -5316,7 +5316,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disponibilità",
-    "concept": ""
+    "concept": "im_ready"
   },
   {
     "language": "en",
@@ -5331,7 +5331,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disponibilità entusiasta",
-    "concept": ""
+    "concept": "good_to_go"
   },
   {
     "language": "en",
@@ -5346,7 +5346,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disponibilità formale",
-    "concept": ""
+    "concept": "im_prepared"
   },
   {
     "language": "en",
@@ -5361,7 +5361,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disponibilità con energia",
-    "concept": ""
+    "concept": "im_geared_up"
   },
   {
     "language": "en",
@@ -5376,7 +5376,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "minimizzare o rassicurare",
-    "concept": ""
+    "concept": "its_fine"
   },
   {
     "language": "en",
@@ -5391,7 +5391,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rassicurazione informale",
-    "concept": ""
+    "concept": "no_worries"
   },
   {
     "language": "en",
@@ -5406,7 +5406,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "tutto ok",
-    "concept": ""
+    "concept": "all_good"
   },
   {
     "language": "en",
@@ -5421,7 +5421,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rassicurazione",
-    "concept": ""
+    "concept": "its_alright"
   },
   {
     "language": "en",
@@ -5436,7 +5436,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "rassicurare qualcuno",
-    "concept": ""
+    "concept": "dont_worry_about_it"
   },
   {
     "language": "en",
@@ -5451,7 +5451,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "minimizzare",
-    "concept": ""
+    "concept": "its_nothing"
   },
   {
     "language": "en",
@@ -5481,7 +5481,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "invito a calmarsi o rallentare",
-    "concept": ""
+    "concept": "hold_horses"
   },
   {
     "language": "en",
@@ -5496,7 +5496,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "invito a mantenere il controllo",
-    "concept": ""
+    "concept": "dont_lose_head"
   },
   {
     "language": "en",
@@ -5511,7 +5511,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "frustrazione totale, non se ne può più",
-    "concept": ""
+    "concept": "had_it_up_to_here"
   },
   {
     "language": "en",
@@ -5526,7 +5526,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "minimizzare una situazione negativa",
-    "concept": ""
+    "concept": "not_end_of_world"
   },
   {
     "language": "en",
@@ -5541,7 +5541,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disperazione per la frustrazione",
-    "concept": ""
+    "concept": "at_wits_end"
   },
   {
     "language": "en",
@@ -5556,7 +5556,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "reazione forte",
-    "concept": ""
+    "concept": "thats_insane"
   },
   {
     "language": "en",
@@ -5571,7 +5571,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "reazione forte (UK slang)",
-    "concept": ""
+    "concept": "thats_mental"
   },
   {
     "language": "en",
@@ -5601,7 +5601,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sorpresa",
-    "concept": ""
+    "concept": "oh_my_god"
   },
   {
     "language": "en",
@@ -5616,7 +5616,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sorpresa o reazione",
-    "concept": ""
+    "concept": "thats_crazy"
   },
   {
     "language": "en",
@@ -5691,7 +5691,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "stupore",
-    "concept": ""
+    "concept": "this_is_wild"
   },
   {
     "language": "en",
@@ -5706,7 +5706,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sorpresa ironica",
-    "concept": ""
+    "concept": "you_dont_say"
   },
   {
     "language": "en",
@@ -5736,7 +5736,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "fastidio lieve",
-    "concept": ""
+    "concept": "this_is_annoying"
   },
   {
     "language": "en",
@@ -5766,7 +5766,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "limite raggiunto",
-    "concept": ""
+    "concept": "ive_had_enough"
   },
   {
     "language": "en",
@@ -5781,7 +5781,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "frustrazione forte",
-    "concept": ""
+    "concept": "this_is_unbearable"
   },
   {
     "language": "en",
@@ -5796,7 +5796,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "frustrazione ripetuta",
-    "concept": ""
+    "concept": "im_sick_of_this"
   },
   {
     "language": "en",
@@ -5811,7 +5811,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "frustrazione massima",
-    "concept": ""
+    "concept": "driving_me_crazy"
   },
   {
     "language": "en",
@@ -5826,7 +5826,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "frustrazione intensa, situazione sopraffacente",
-    "concept": ""
+    "concept": "cant_deal_with_this"
   },
   {
     "language": "en",
@@ -5841,7 +5841,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "stanchezza e voglia di andare avanti",
-    "concept": ""
+    "concept": "im_over_it"
   },
   {
     "language": "en",
@@ -5856,7 +5856,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "reazione di frustrazione o incredulità",
-    "concept": ""
+    "concept": "this_is_ridiculous"
   },
   {
     "language": "en",
@@ -5871,7 +5871,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "frustrazione al massimo, non se ne può più",
-    "concept": ""
+    "concept": "im_at_my_limit"
   },
   {
     "language": "en",
@@ -5886,7 +5886,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "qualcosa di ripetutamente fastidioso",
-    "concept": ""
+    "concept": "on_my_nerves"
   },
   {
     "language": "en",
@@ -5916,7 +5916,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "qualcosa che ha fatto arrabbiare molto (informale)",
-    "concept": ""
+    "concept": "pissed_me_off"
   },
   {
     "language": "en",
@@ -5931,7 +5931,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "nervosismo, tensione, difficoltà a rilassarsi",
-    "concept": ""
+    "concept": "im_on_edge"
   },
   {
     "language": "en",
@@ -5946,7 +5946,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "tensione fisica e mentale",
-    "concept": ""
+    "concept": "im_tense"
   },
   {
     "language": "en",
@@ -5961,7 +5961,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "nervi logorati, tensione accumulata",
-    "concept": ""
+    "concept": "nerves_are_shot"
   },
   {
     "language": "en",
@@ -5976,7 +5976,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "panico o agitazione intensa",
-    "concept": ""
+    "concept": "im_freaking_out"
   },
   {
     "language": "en",
@@ -5991,7 +5991,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "agitazione che non si riesce a controllare",
-    "concept": ""
+    "concept": "cant_calm_down"
   },
   {
     "language": "en",
@@ -6006,7 +6006,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "perdere lucidità o controllo emotivo",
-    "concept": ""
+    "concept": "im_losing_it"
   },
   {
     "language": "en",
@@ -6021,7 +6021,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "dolore emotivo intenso, devastazione",
-    "concept": ""
+    "concept": "feel_crushed"
   },
   {
     "language": "en",
@@ -6036,7 +6036,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "emozione intensa che blocca la parola, vicino al pianto",
-    "concept": ""
+    "concept": "lump_in_throat"
   },
   {
     "language": "en",
@@ -6051,7 +6051,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "esaurimento emotivo dopo situazioni intense",
-    "concept": ""
+    "concept": "emotionally_drained"
   },
   {
     "language": "en",
@@ -6066,7 +6066,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "sensazione di voler piangere",
-    "concept": ""
+    "concept": "feel_like_crying"
   },
   {
     "language": "en",
@@ -6081,7 +6081,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "a un passo dal pianto",
-    "concept": ""
+    "concept": "on_verge_of_tears"
   },
   {
     "language": "en",
@@ -6096,7 +6096,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "desiderio diretto",
-    "concept": ""
+    "concept": "i_want_it"
   },
   {
     "language": "en",
@@ -6111,7 +6111,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disappunto / rifiuto",
-    "concept": ""
+    "concept": "i_dont_like_it"
   },
   {
     "language": "en",
@@ -6291,7 +6291,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "slang per esprimere entusiasmo",
-    "concept": ""
+    "concept": "i_dig_it"
   },
   {
     "language": "en",
@@ -6321,7 +6321,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "preferenza forte",
-    "concept": ""
+    "concept": "really_into_it"
   },
   {
     "language": "en",
@@ -6336,7 +6336,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "affinità personale",
-    "concept": ""
+    "concept": "its_my_thing"
   },
   {
     "language": "en",
@@ -6351,7 +6351,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incertezza",
-    "concept": ""
+    "concept": "im_not_sure"
   },
   {
     "language": "en",
@@ -6366,7 +6366,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "incertezza formale",
-    "concept": ""
+    "concept": "im_not_certain"
   },
   {
     "language": "en",
@@ -6381,7 +6381,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "scetticismo",
-    "concept": ""
+    "concept": "im_not_convinced"
   },
   {
     "language": "en",
@@ -6396,7 +6396,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "indecisione",
-    "concept": ""
+    "concept": "on_the_fence"
   },
   {
     "language": "en",
@@ -6411,7 +6411,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "risposta vaga",
-    "concept": ""
+    "concept": "hard_to_say"
   },
   {
     "language": "en",
@@ -6426,7 +6426,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "conclusione o bilancio",
-    "concept": ""
+    "concept": "all_in_all"
   },
   {
     "language": "en",
@@ -6441,7 +6441,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "bellezza",
-    "concept": ""
+    "concept": "beautiful"
   },
   {
     "language": "en",
@@ -6456,7 +6456,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "bellezza intensa",
-    "concept": ""
+    "concept": "gorgeous"
   },
   {
     "language": "en",
@@ -6471,7 +6471,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "bellezza sorprendente",
-    "concept": ""
+    "concept": "stunning"
   },
   {
     "language": "en",
@@ -6486,7 +6486,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "qualcosa di grazioso",
-    "concept": ""
+    "concept": "lovely"
   },
   {
     "language": "en",
@@ -6501,7 +6501,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "bellezza delicata",
-    "concept": ""
+    "concept": "pretty"
   },
   {
     "language": "en",
@@ -6516,7 +6516,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "attrazione estetica",
-    "concept": ""
+    "concept": "attractive"
   },
   {
     "language": "en",
@@ -6531,7 +6531,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "entusiasmo forte",
-    "concept": ""
+    "concept": "amazing"
   },
   {
     "language": "en",
@@ -6546,7 +6546,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "valutazione positiva base",
-    "concept": ""
+    "concept": "good_opinion"
   },
   {
     "language": "en",
@@ -6561,7 +6561,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "gradevolezza",
-    "concept": ""
+    "concept": "nice_opinion"
   },
   {
     "language": "en",
@@ -6576,7 +6576,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "entusiasmo colloquiale",
-    "concept": ""
+    "concept": "awesome"
   },
   {
     "language": "en",
@@ -6591,7 +6591,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "approvazione solida",
-    "concept": ""
+    "concept": "solid"
   },
   {
     "language": "en",
@@ -6606,7 +6606,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "approvazione moderata",
-    "concept": ""
+    "concept": "decent"
   },
   {
     "language": "en",
@@ -6621,7 +6621,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "valutazione alta",
-    "concept": ""
+    "concept": "excellent"
   },
   {
     "language": "en",
@@ -6636,7 +6636,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "qualcosa che colpisce",
-    "concept": ""
+    "concept": "impressive"
   },
   {
     "language": "en",
@@ -6651,7 +6651,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "valutazione negativa base",
-    "concept": ""
+    "concept": "bad_opinion"
   },
   {
     "language": "en",
@@ -6666,7 +6666,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "valutazione molto negativa",
-    "concept": ""
+    "concept": "terrible"
   },
   {
     "language": "en",
@@ -6681,7 +6681,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disgusto o forte disappunto",
-    "concept": ""
+    "concept": "awful"
   },
   {
     "language": "en",
@@ -6696,7 +6696,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "orrore o forte fastidio",
-    "concept": ""
+    "concept": "horrible"
   },
   {
     "language": "en",
@@ -6711,7 +6711,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "slang informale negativo",
-    "concept": ""
+    "concept": "sucks"
   },
   {
     "language": "en",
@@ -6726,7 +6726,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "assurdità",
-    "concept": ""
+    "concept": "ridiculous"
   },
   {
     "language": "en",
@@ -6741,7 +6741,7 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "disprezzo",
-    "concept": ""
+    "concept": "pathetic"
   },
   {
     "language": "en",
@@ -6756,7 +6756,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "invitare qualcuno ad entrare in acqua",
-    "concept": ""
+    "concept": "water_is_lovely"
   },
   {
     "language": "en",
@@ -6771,7 +6771,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "incoraggiare qualcuno a tuffarsi",
-    "concept": ""
+    "concept": "dive_in"
   },
   {
     "language": "en",
@@ -6786,7 +6786,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "grido scherzoso per spingere tutti in acqua",
-    "concept": ""
+    "concept": "last_one_in"
   },
   {
     "language": "en",
@@ -6801,7 +6801,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "prima di nuotare, attività fisica",
-    "concept": ""
+    "concept": "warm_up_first"
   },
   {
     "language": "en",
@@ -6817,7 +6817,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "sicurezza in mare, colori della bandiera",
-    "concept": ""
+    "concept": "check_flag"
   },
   {
     "language": "en",
@@ -6832,7 +6832,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "abituarsi all'acqua gradualmente",
-    "concept": ""
+    "concept": "wet_feet_first"
   },
   {
     "language": "en",
@@ -6848,7 +6848,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "sicurezza per chi non sa nuotare bene",
-    "concept": ""
+    "concept": "stay_shallow"
   },
   {
     "language": "en",
@@ -6864,7 +6864,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "regola di sicurezza fondamentale",
-    "concept": ""
+    "concept": "buddy_up"
   },
   {
     "language": "en",
@@ -6879,7 +6879,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "prima di esporsi al sole",
-    "concept": ""
+    "concept": "sunscreen_on"
   },
   {
     "language": "en",
@@ -6895,7 +6895,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "regola di sicurezza standard",
-    "concept": ""
+    "concept": "no_running_pool"
   },
   {
     "language": "en",
@@ -6910,7 +6910,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "regola classica, anche se discussa",
-    "concept": ""
+    "concept": "no_swim_after_eating"
   },
   {
     "language": "en",
@@ -6926,7 +6926,7 @@ const EN_VOCAB = [
       "sicurezza"
     ],
     "context_note": "avvertimento per i bambini in riva al mare",
-    "concept": ""
+    "concept": "watch_waves"
   },
   {
     "language": "en",
@@ -6941,7 +6941,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "avvisare sulle condizioni del mare",
-    "concept": ""
+    "concept": "sea_choppy"
   },
   {
     "language": "en",
@@ -6956,7 +6956,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "verificare che ci siano tutti prima di entrare",
-    "concept": ""
+    "concept": "head_count"
   },
   {
     "language": "en",
@@ -6971,7 +6971,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "sfida amichevole tra nuotatori",
-    "concept": ""
+    "concept": "race_to_buoy"
   },
   {
     "language": "en",
@@ -6986,7 +6986,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "gioco o sfida in acqua",
-    "concept": ""
+    "concept": "float_back"
   },
   {
     "language": "en",
@@ -7001,7 +7001,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "gioco d'acqua classico",
-    "concept": ""
+    "concept": "splash_fight"
   },
   {
     "language": "en",
@@ -7016,7 +7016,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "sfida apnea, gioco sott'acqua",
-    "concept": ""
+    "concept": "hold_breath"
   },
   {
     "language": "en",
@@ -7031,7 +7031,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "grido prima di tuffarsi a bomba",
-    "concept": ""
+    "concept": "cannonball"
   },
   {
     "language": "en",
@@ -7046,7 +7046,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "dopo il bagno, specialmente con i bambini",
-    "concept": ""
+    "concept": "towel_off"
   },
   {
     "language": "en",
@@ -7061,7 +7061,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "chiedere dopo il bagno",
-    "concept": ""
+    "concept": "how_was_water"
   },
   {
     "language": "en",
@@ -7076,7 +7076,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "dopo il bagno la crema si lava via",
-    "concept": ""
+    "concept": "reapply_sunscreen"
   },
   {
     "language": "en",
@@ -7091,7 +7091,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "notare che qualcuno si è scottato",
-    "concept": ""
+    "concept": "caught_sun"
   },
   {
     "language": "en",
@@ -7106,7 +7106,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "dopo il bagno in mare, togliere il sale",
-    "concept": ""
+    "concept": "rinse_shower"
   },
   {
     "language": "en",
@@ -7121,7 +7121,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "controllo oggetti dopo il bagno",
-    "concept": ""
+    "concept": "lost_something"
   },
   {
     "language": "en",
@@ -7136,7 +7136,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "domanda frequente al mare",
-    "concept": ""
+    "concept": "jellyfish_sting"
   },
   {
     "language": "en",
@@ -7151,7 +7151,7 @@ const EN_VOCAB = [
       "mare"
     ],
     "context_note": "dopo il bagno viene sempre fame",
-    "concept": ""
+    "concept": "hungry_after_swimming"
   },
   {
     "language": "en",
@@ -7217,7 +7217,7 @@ const EN_VOCAB = [
       "scherzo"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_fall_for_it"
   },
   {
     "language": "en",
@@ -7233,7 +7233,7 @@ const EN_VOCAB = [
       "scherzo"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "you_got_me"
   },
   {
     "language": "en",
@@ -7249,7 +7249,7 @@ const EN_VOCAB = [
       "apprezzamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "good_one"
   },
   {
     "language": "en",
@@ -7265,7 +7265,7 @@ const EN_VOCAB = [
       "comportamento"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "thats_not_funny"
   },
   {
     "language": "en",
@@ -7281,6 +7281,936 @@ const EN_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_pulling_leg"
   }
+,
+  {
+    "language": "en",
+    "type": "emotion",
+    "verb": "What a joy!",
+    "emoji": "😄",
+    "simple": "",
+    "it": "che gioia!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["emozioni"],
+    "context_note": "",
+    "concept": "what_joy"
+  },
+  {
+    "language": "en",
+    "type": "emotion",
+    "verb": "How embarrassing!",
+    "emoji": "😳",
+    "simple": "",
+    "it": "che imbarazzo!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["emozioni"],
+    "context_note": "",
+    "concept": "how_embarrassing"
+  },
+  {
+    "language": "en",
+    "type": "emotion",
+    "verb": "Come on, cheer up!",
+    "emoji": "💪",
+    "simple": "",
+    "it": "dai, su di giri!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["emozioni"],
+    "context_note": "",
+    "concept": "cheer_up_em"
+  },
+  {
+    "language": "en",
+    "type": "emotion",
+    "verb": "I'm sorry.",
+    "emoji": "😔",
+    "simple": "",
+    "it": "mi dispiace",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["emozioni"],
+    "context_note": "",
+    "concept": "im_sorry_em"
+  },
+  {
+    "language": "en",
+    "type": "emotion",
+    "verb": "Why not?",
+    "emoji": "🤷",
+    "simple": "",
+    "it": "perché no?",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["emozioni"],
+    "context_note": "",
+    "concept": "why_not_em"
+  },
+  {
+    "language": "en",
+    "type": "emotion",
+    "verb": "All the better!",
+    "emoji": "👍",
+    "simple": "",
+    "it": "meglio così!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["emozioni"],
+    "context_note": "",
+    "concept": "relief_good_news"
+  }
+,
+  {
+    "language": "en",
+    "type": "opinion",
+    "verb": "It seems to me...",
+    "emoji": "🤔",
+    "simple": "",
+    "it": "mi sembra che...",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["opinioni"],
+    "context_note": "",
+    "concept": "it_seems_to_me"
+  },
+  {
+    "language": "en",
+    "type": "opinion",
+    "verb": "To tell the truth...",
+    "emoji": "🗣️",
+    "simple": "",
+    "it": "a dire il vero...",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["opinioni"],
+    "context_note": "",
+    "concept": "to_tell_the_truth"
+  }
+,
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Come on!",
+    "emoji": "💪",
+    "simple": "",
+    "it": "dai!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "come_on_colloquial"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "How cool!",
+    "emoji": "😎",
+    "simple": "",
+    "it": "che fico!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "how_cool"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "That's really cool",
+    "emoji": "🔥",
+    "simple": "",
+    "it": "è davvero figo",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "really_cool"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Let me see...",
+    "emoji": "🤔",
+    "simple": "",
+    "it": "vediamo...",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "let_me_see"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "No idea",
+    "emoji": "🤷",
+    "simple": "",
+    "it": "nessuna idea",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "no_idea"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Dude / Mate",
+    "emoji": "🤙",
+    "simple": "",
+    "it": "amico / tipo",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "dude_mate"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Going all out",
+    "emoji": "🔥",
+    "simple": "",
+    "it": "andare a tutto gas",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "going_hard"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Watch out!",
+    "emoji": "⚠️",
+    "simple": "",
+    "it": "attenzione!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "watch_out_coll"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "No way",
+    "emoji": "🙅",
+    "simple": "",
+    "it": "manco per sogno",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "no_way_coll"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Oh really?",
+    "emoji": "😲",
+    "simple": "",
+    "it": "davvero?",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "really_now"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "I'm starving",
+    "emoji": "🍕",
+    "simple": "",
+    "it": "sto morendo di fame",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "im_starving"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "I'm exhausted",
+    "emoji": "😴",
+    "simple": "",
+    "it": "sono esausto/a",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "im_exhausted"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "You don't say!",
+    "emoji": "😮",
+    "simple": "",
+    "it": "figurati!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "you_dont_say_coll"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Screw it!",
+    "emoji": "💢",
+    "simple": "",
+    "it": "al diavolo!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "screw_it"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Cop (slang)",
+    "emoji": "👮",
+    "simple": "",
+    "it": "sbirro (slang)",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "cop_slang"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Do the cheek kiss",
+    "emoji": "💋",
+    "simple": "",
+    "it": "baciare sulla guancia",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "do_the_bise"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "I'm not feeling well",
+    "emoji": "🤒",
+    "simple": "",
+    "it": "non mi sento bene",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "not_feeling_well"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "With pleasure",
+    "emoji": "😊",
+    "simple": "",
+    "it": "con piacere",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "with_pleasure"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "With a smile",
+    "emoji": "😊",
+    "simple": "",
+    "it": "col sorriso",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "with_a_smile"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Absolutely",
+    "emoji": "💯",
+    "simple": "",
+    "it": "assolutamente",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "absolutely"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "What nonsense!",
+    "emoji": "🤯",
+    "simple": "",
+    "it": "che assurdità!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "what_nonsense"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Oh my goodness!",
+    "emoji": "😱",
+    "simple": "",
+    "it": "mamma mia!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "oh_la_la"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Meh",
+    "emoji": "😑",
+    "simple": "",
+    "it": "boh / così così",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "meh"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "It's a drag",
+    "emoji": "😤",
+    "simple": "",
+    "it": "è una seccatura",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "",
+    "concept": "its_annoying_coll"
+  }
+,
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Nail it / Hit the nail on the head",
+    "emoji": "🎯",
+    "simple": "",
+    "it": "cogliere nel segno",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "trovare esattamente la soluzione",
+    "concept": "idiom_hit_on_nail"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Be left speechless / Be dumbstruck",
+    "emoji": "😲",
+    "simple": "",
+    "it": "restare di stucco",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "restare senza parole per la sorpresa",
+    "concept": "idiom_thunderstruck"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "It's all over",
+    "emoji": "😱",
+    "simple": "",
+    "it": "è finita",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "situazione disperata senza più speranza",
+    "concept": "idiom_all_over"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "It was amazing!",
+    "emoji": "🤩",
+    "simple": "",
+    "it": "era fantastico!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "entusiasmo per qualcosa di straordinario",
+    "concept": "idiom_amazing"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "It's incredible!",
+    "emoji": "😲",
+    "simple": "",
+    "it": "è incredibile!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "stupore per qualcosa di incredibile",
+    "concept": "idiom_incredible"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "What a disaster!",
+    "emoji": "💥",
+    "simple": "",
+    "it": "che disastro!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "esclamazione di fronte a un disastro",
+    "concept": "idiom_what_a_mess"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "No way! / Out of the question!",
+    "emoji": "🚫",
+    "simple": "",
+    "it": "neanche per sogno!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "rifiuto categorico",
+    "concept": "idiom_no_way"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Have a good trip!",
+    "emoji": "✈️",
+    "simple": "",
+    "it": "buon viaggio!",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "augurare un buon viaggio",
+    "concept": "idiom_safe_trip"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "I've got to go / I need to go.",
+    "emoji": "🏃",
+    "simple": "",
+    "it": "devo andare",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "doversi congedare in modo educato",
+    "concept": "idiom_gotta_go"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "We need to talk.",
+    "emoji": "💬",
+    "simple": "",
+    "it": "dobbiamo parlare",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "avviare una conversazione seria",
+    "concept": "idiom_we_need_talk"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Stand someone up",
+    "emoji": "🐰",
+    "simple": "",
+    "it": "dare buca / piantare in asso",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "non presentarsi a un appuntamento",
+    "concept": "idiom_stand_up"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Pass out / Faint",
+    "emoji": "😵",
+    "simple": "",
+    "it": "svenire",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "svenire / perdere i sensi",
+    "concept": "idiom_faint"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Have bigger fish to fry",
+    "emoji": "🐟",
+    "simple": "",
+    "it": "avere di meglio da fare",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "avere cose più importanti di cui occuparsi",
+    "concept": "idiom_busy"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "It's all over / We're done for",
+    "emoji": "🥕",
+    "simple": "",
+    "it": "è fatta / siamo fritti",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "situazione senza più speranza, inevitabile",
+    "concept": "idiom_done_for"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Fall in love at first sight",
+    "emoji": "⚡",
+    "simple": "",
+    "it": "colpo di fulmine",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "innamorarsi all'improvviso / a prima vista",
+    "concept": "idiom_love_first_sight"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Don't push your luck",
+    "emoji": "⚠️",
+    "simple": "",
+    "it": "non esagerare",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "non esagerare / non approfittare della situazione",
+    "concept": "idiom_dont_push_it"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Give up trying to guess",
+    "emoji": "🐱",
+    "simple": "",
+    "it": "arrendersi a indovinare",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "arrendersi a trovare la risposta",
+    "concept": "idiom_give_up"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Have it both ways / Have your cake and eat it",
+    "emoji": "🧈",
+    "simple": "",
+    "it": "avere la botte piena e la moglie ubriaca",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "volere tutto senza dover scegliere",
+    "concept": "idiom_have_it_all"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Bad things come in threes",
+    "emoji": "3️⃣",
+    "simple": "",
+    "it": "non c'è due senza tre",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "le cose brutte tendono a ripetersi tre volte",
+    "concept": "idiom_no_two_no_three"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Adding insult to injury / It never rains but it pours",
+    "emoji": "🌧️",
+    "simple": "",
+    "it": "non c'è limite al peggio",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "quando le cose già brutte peggiorano",
+    "concept": "idiom_adding_insult"
+  }
+,
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Have your head in the clouds",
+    "emoji": "☁️",
+    "simple": "",
+    "it": "essere con la testa tra le nuvole",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "non stare attento alla realtà",
+    "concept": "daydreaming"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Cost an arm and a leg",
+    "emoji": "💸",
+    "simple": "",
+    "it": "costare un occhio della testa",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "costare moltissimo",
+    "concept": "expensive"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Get your act together",
+    "emoji": "💪",
+    "simple": "",
+    "it": "darsi una mossa / organizzarsi",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "darsi da fare / organizzarsi",
+    "concept": "get_moving"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Every setback has a silver lining",
+    "emoji": "🌤️",
+    "simple": "",
+    "it": "ogni avversità porta qualcosa di buono",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "trovare il lato positivo",
+    "concept": "silver_lining"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Be left speechless",
+    "emoji": "😲",
+    "simple": "",
+    "it": "restare senza parole",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "restare di stucco per la sorpresa",
+    "concept": "in_trouble"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Have the blues / Feel down",
+    "emoji": "😞",
+    "simple": "",
+    "it": "sentirsi giù / blues",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "sentirsi triste o depresso",
+    "concept": "feeling_down"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "It's all over / We're toast",
+    "emoji": "🥕",
+    "simple": "",
+    "it": "è fatta / siamo fritti",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "situazione senza più speranza",
+    "concept": "game_over"
+  },
+  {
+    "language": "en",
+    "type": "idiom",
+    "verb": "Love at first sight / Thunderstruck by love",
+    "emoji": "⚡",
+    "simple": "",
+    "it": "colpo di fulmine",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["idiomi"],
+    "context_note": "innamorarsi all'improvviso",
+    "concept": "love_at_first_sight"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Not at all / No way (mild)",
+    "emoji": "🙅",
+    "simple": "",
+    "it": "no di certo / macché",
+    "example_en": "",
+    "example_it": "",
+    "tags": ["colloquiale"],
+    "context_note": "negazione mild, non enfatica",
+    "concept": "no_way_mild"
+  },
+
+  // ── VERBI IRREGOLARI ──────────────────────────────────────
+  { language:"en", type:"verb", verb:"break",      emoji:"💥", it:"rompere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_break" },
+  { language:"en", type:"verb", verb:"tear",       emoji:"😢", it:"strappare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_tear" },
+  { language:"en", type:"verb", verb:"split",      emoji:"✂️", it:"dividere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_split" },
+  { language:"en", type:"verb", verb:"burst",      emoji:"💢", it:"scoppiare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_burst" },
+  { language:"en", type:"verb", verb:"shrink",     emoji:"🔽", it:"restringere",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_shrink" },
+  { language:"en", type:"verb", verb:"shake",      emoji:"🤝", it:"scuotere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_shake" },
+  { language:"en", type:"verb", verb:"strike",     emoji:"⚡", it:"colpire",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_strike" },
+  { language:"en", type:"verb", verb:"bleed",      emoji:"🩸", it:"sanguinare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bleed" },
+  { language:"en", type:"verb", verb:"grind",      emoji:"⚙️", it:"macinare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_grind" },
+  { language:"en", type:"verb", verb:"throw",      emoji:"🎯", it:"lanciare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_throw" },
+  { language:"en", type:"verb", verb:"catch",      emoji:"🫳", it:"prendere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_catch" },
+  { language:"en", type:"verb", verb:"hold",       emoji:"🤲", it:"tenere",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hold" },
+  { language:"en", type:"verb", verb:"cling",      emoji:"🧲", it:"aggrapparsi",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cling" },
+  { language:"en", type:"verb", verb:"stick",      emoji:"📌", it:"attaccarsi",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_stick" },
+  { language:"en", type:"verb", verb:"hang",       emoji:"🪝", it:"appendere",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hang" },
+  { language:"en", type:"verb", verb:"swing",      emoji:"🌊", it:"oscillare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_swing" },
+  { language:"en", type:"verb", verb:"bind",       emoji:"🔗", it:"legare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bind" },
+  { language:"en", type:"verb", verb:"fling",      emoji:"🚀", it:"scagliare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_fling" },
+  { language:"en", type:"verb", verb:"sling",      emoji:"🪃", it:"lanciare con fionda",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sling" },
+  { language:"en", type:"verb", verb:"thrust",     emoji:"👊", it:"spingere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_thrust" },
+  { language:"en", type:"verb", verb:"spill",      emoji:"💧", it:"versare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_spill" },
+  { language:"en", type:"verb", verb:"steal",      emoji:"🦹", it:"rubare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_steal" },
+  { language:"en", type:"verb", verb:"freeze",     emoji:"🧊", it:"congelare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_freeze" },
+  { language:"en", type:"verb", verb:"cut",        emoji:"✂️", it:"tagliare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cut" },
+  { language:"en", type:"verb", verb:"hit",        emoji:"🥊", it:"colpire",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hit" },
+  { language:"en", type:"verb", verb:"hurt",       emoji:"🤕", it:"ferire",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hurt" },
+  { language:"en", type:"verb", verb:"shut",       emoji:"🚪", it:"chiudere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_shut" },
+  { language:"en", type:"verb", verb:"put",        emoji:"📥", it:"mettere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_put" },
+  { language:"en", type:"verb", verb:"ride",       emoji:"🚴", it:"cavalcare / andare in",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_ride" },
+  { language:"en", type:"verb", verb:"drive",      emoji:"🚗", it:"guidare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_drive" },
+  { language:"en", type:"verb", verb:"fly",        emoji:"✈️", it:"volare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_fly" },
+  { language:"en", type:"verb", verb:"fall",       emoji:"🍂", it:"cadere",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_fall" },
+  { language:"en", type:"verb", verb:"rise",       emoji:"⬆️", it:"salire / sorgere",  simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_rise" },
+  { language:"en", type:"verb", verb:"sit",        emoji:"🪑", it:"sedersi",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sit" },
+  { language:"en", type:"verb", verb:"stand",      emoji:"🧍", it:"stare in piedi",    simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_stand" },
+  { language:"en", type:"verb", verb:"go",         emoji:"🚶", it:"andare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_go" },
+  { language:"en", type:"verb", verb:"come",       emoji:"🏃", it:"venire",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_come" },
+  { language:"en", type:"verb", verb:"run",        emoji:"🏃", it:"correre",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_run" },
+  { language:"en", type:"verb", verb:"sleep",      emoji:"😴", it:"dormire",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sleep" },
+  { language:"en", type:"verb", verb:"awake",      emoji:"⏰", it:"svegliarsi",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_awake" },
+  { language:"en", type:"verb", verb:"arise",      emoji:"🌅", it:"sorgere / emergere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_arise" },
+  { language:"en", type:"verb", verb:"wear",       emoji:"👕", it:"indossare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_wear" },
+  { language:"en", type:"verb", verb:"keep",       emoji:"🔒", it:"mantenere / tenere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_keep" },
+  { language:"en", type:"verb", verb:"leave",      emoji:"🚪", it:"lasciare / partire",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_leave" },
+  { language:"en", type:"verb", verb:"feel",       emoji:"❤️", it:"sentire / provare", simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_feel" },
+  { language:"en", type:"verb", verb:"deal",       emoji:"🤝", it:"gestire / trattare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_deal" },
+  { language:"en", type:"verb", verb:"eat",        emoji:"🍽️", it:"mangiare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_eat" },
+  { language:"en", type:"verb", verb:"drink",      emoji:"🥤", it:"bere",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_drink" },
+  { language:"en", type:"verb", verb:"spit",       emoji:"🤮", it:"sputare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_spit" },
+  { language:"en", type:"verb", verb:"swim",       emoji:"🏊", it:"nuotare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_swim" },
+  { language:"en", type:"verb", verb:"build",      emoji:"🏗️", it:"costruire",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_build" },
+  { language:"en", type:"verb", verb:"make",       emoji:"🔨", it:"fare / costruire",  simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_make" },
+  { language:"en", type:"verb", verb:"draw",       emoji:"✏️", it:"disegnare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_draw" },
+  { language:"en", type:"verb", verb:"grow",       emoji:"🌱", it:"crescere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_grow" },
+  { language:"en", type:"verb", verb:"buy",        emoji:"🛍️", it:"comprare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_buy" },
+  { language:"en", type:"verb", verb:"sell",       emoji:"💰", it:"vendere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sell" },
+  { language:"en", type:"verb", verb:"pay",        emoji:"💳", it:"pagare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_pay" },
+  { language:"en", type:"verb", verb:"lend",       emoji:"🤲", it:"prestare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lend" },
+  { language:"en", type:"verb", verb:"send",       emoji:"📨", it:"mandare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_send" },
+  { language:"en", type:"verb", verb:"spend",      emoji:"💸", it:"spendere / trascorrere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_spend" },
+  { language:"en", type:"verb", verb:"cost",       emoji:"🏷️", it:"costare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cost" },
+  { language:"en", type:"verb", verb:"take",       emoji:"🤏", it:"prendere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_take" },
+  { language:"en", type:"verb", verb:"give",       emoji:"🎁", it:"dare",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_give" },
+  { language:"en", type:"verb", verb:"bring",      emoji:"📦", it:"portare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bring" },
+  { language:"en", type:"verb", verb:"know",       emoji:"🧠", it:"sapere / conoscere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_know" },
+  { language:"en", type:"verb", verb:"think",      emoji:"💭", it:"pensare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_think" },
+  { language:"en", type:"verb", verb:"understand", emoji:"💡", it:"capire",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_understand" },
+  { language:"en", type:"verb", verb:"swear",      emoji:"🤬", it:"giurare / imprecare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_swear" },
+  { language:"en", type:"verb", verb:"seek",       emoji:"🔍", it:"cercare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_seek" },
+  { language:"en", type:"verb", verb:"find",       emoji:"🎯", it:"trovare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_find" },
+  { language:"en", type:"verb", verb:"lose",       emoji:"😞", it:"perdere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lose" },
+  { language:"en", type:"verb", verb:"win",        emoji:"🏆", it:"vincere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_win" },
+  { language:"en", type:"verb", verb:"meet",       emoji:"👋", it:"incontrare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_meet" },
+  { language:"en", type:"verb", verb:"learn",      emoji:"📚", it:"imparare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_learn" },
+  { language:"en", type:"verb", verb:"teach",      emoji:"👩‍🏫", it:"insegnare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_teach" },
+  { language:"en", type:"verb", verb:"mean",       emoji:"❓", it:"significare",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_mean" },
+  { language:"en", type:"verb", verb:"forgive",    emoji:"🕊️", it:"perdonare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_forgive" },
+  { language:"en", type:"verb", verb:"say",        emoji:"💬", it:"dire",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_say" },
+  { language:"en", type:"verb", verb:"tell",       emoji:"📢", it:"raccontare / dire", simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_tell" },
+  { language:"en", type:"verb", verb:"speak",      emoji:"🗣️", it:"parlare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_speak" },
+  { language:"en", type:"verb", verb:"hear",       emoji:"👂", it:"sentire / udire",   simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hear" },
+  { language:"en", type:"verb", verb:"begin",      emoji:"🚦", it:"iniziare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_begin" },
+  { language:"en", type:"verb", verb:"become",     emoji:"🦋", it:"diventare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_become" },
+  { language:"en", type:"verb", verb:"get",        emoji:"✅", it:"ottenere / diventare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_get" },
+  { language:"en", type:"verb", verb:"have",       emoji:"🏠", it:"avere",             simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_have" },
+  { language:"en", type:"verb", verb:"be",         emoji:"💫", it:"essere",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_be" },
+  { language:"en", type:"verb", verb:"do",         emoji:"✔️", it:"fare",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_do" },
+  { language:"en", type:"verb", verb:"show",       emoji:"🎭", it:"mostrare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_show" },
+  { language:"en", type:"verb", verb:"hide",       emoji:"🙈", it:"nascondere",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hide" },
+  { language:"en", type:"verb", verb:"choose",     emoji:"🎲", it:"scegliere",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_choose" },
+  { language:"en", type:"verb", verb:"forget",     emoji:"💭", it:"dimenticare",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_forget" },
+  { language:"en", type:"verb", verb:"lay",        emoji:"🛏️", it:"posare / deporre",  simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lay" },
+  { language:"en", type:"verb", verb:"lie",        emoji:"🛋️", it:"stendersi / mentire",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lie" },
+  { language:"en", type:"verb", verb:"light",      emoji:"💡", it:"accendere",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_light" },
+  { language:"en", type:"verb", verb:"set",        emoji:"⚙️", it:"impostare / fissare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_set" },
+  { language:"en", type:"verb", verb:"upset",      emoji:"😤", it:"turbare / sconvolgere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_upset" },
+  { language:"en", type:"verb", verb:"bet",        emoji:"🎰", it:"scommettere",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bet" },
+  { language:"en", type:"verb", verb:"cast",       emoji:"🎣", it:"gettare / lanciare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cast" },
+  { language:"en", type:"verb", verb:"overcome",   emoji:"💪", it:"superare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_overcome" },
+  { language:"en", type:"verb", verb:"overtake",   emoji:"🏎️", it:"sorpassare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_overtake" },
+  { language:"en", type:"verb", verb:"withdraw",   emoji:"🏧", it:"ritirare / prelevare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_withdraw" }
+,
+  {"language":"en","type":"colloquial","verb":"Anyone get stung by a jellyfish?","emoji":"📝","simple":"","it":"Qualcuno è stato punto da una medusa?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Buddy up — no one swims alone!","emoji":"📝","simple":"","it":"A coppie — nessuno nuota da solo!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Can you float on your back?","emoji":"📝","simple":"","it":"Sai fare il morto a galla?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Cannonball!","emoji":"📝","simple":"","it":"Bomba!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Check the flag before you go in!","emoji":"📝","simple":"","it":"Controlla la bandiera prima di entrare!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Did you lose anything in the water?","emoji":"📝","simple":"","it":"Hai perso qualcosa in acqua?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Dive in!","emoji":"📝","simple":"","it":"Buttati!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Don't run by the pool!","emoji":"📝","simple":"","it":"Non correre in piscina!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Hold your breath!","emoji":"📝","simple":"","it":"Tieni il respiro!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"How was the water?","emoji":"📝","simple":"","it":"Com'era l'acqua?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"How's good?","emoji":"📝","simple":"","it":"Come va?","example_en":"","example_it":"","tags":["colloquiale"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Last one in is a rotten egg!","emoji":"📝","simple":"","it":"L'ultimo che entra è un uovo marcio!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Let's do a head count!","emoji":"📝","simple":"","it":"Contiamoci tutti!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Let's rinse off in the shower!","emoji":"📝","simple":"","it":"Andiamo a sciacquarci alla doccia!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Let's warm up first!","emoji":"📝","simple":"","it":"Prima facciamo riscaldamento!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"No swimming right after eating!","emoji":"📝","simple":"","it":"Non nuotate subito dopo aver mangiato!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Put your sunscreen on!","emoji":"📝","simple":"","it":"Metti la crema solare!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Race you to the buoy!","emoji":"📝","simple":"","it":"Chi arriva primo al galleggiante!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Splash fight!","emoji":"📝","simple":"","it":"Battaglia d'acqua!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Stay in the shallow end!","emoji":"📝","simple":"","it":"Resta nella parte bassa!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"The sea is really choppy today.","emoji":"📝","simple":"","it":"Il mare è molto mosso oggi.","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"The water's lovely!","emoji":"📝","simple":"","it":"L'acqua è meravigliosa!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Time to reapply sunscreen!","emoji":"📝","simple":"","it":"Ora rimetti la crema solare!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Towel off before you catch a cold!","emoji":"📝","simple":"","it":"Asciugati o prendi il raffreddore!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Watch out for the waves!","emoji":"📝","simple":"","it":"Attenzione alle onde!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Wet your feet first!","emoji":"📝","simple":"","it":"Bagnati i piedi prima!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"Who's hungry after all that swimming?","emoji":"📝","simple":"","it":"Chi ha fame dopo tutta quella nuotata?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
+  {"language":"en","type":"colloquial","verb":"You've caught a bit of sun!","emoji":"📝","simple":"","it":"Ti sei preso un po' di sole!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""}
 ];

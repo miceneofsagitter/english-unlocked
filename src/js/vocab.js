@@ -35,6 +35,8 @@
           idiom: 'var(--accent)',
           colloquial: '#a8ff78',
           clarification: 'var(--muted)',
+          verb: '#60a5fa',
+          beach: '#22d3ee',
         }
         const FLAGS = { en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷' }
         const ALL_LANGS = ['en', 'es', 'fr']
@@ -49,49 +51,25 @@
             : item.context_note
               ? `<div class="vc-example" style="color:var(--muted);font-style:italic">${escHtml(item.context_note)}</div>`
               : ''
-          // Widget connessioni cross-lingua via campo 'it' (collegamento principale)
-          let itRelatedHtml = ''
-          if (item.it && typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined') {
-            const itRelated = []
-            ALL_LANGS.filter(lang => lang !== currentLang).forEach(lang => {
-              const matches = ALL_VOCAB_FOR_EXERCISES.filter(v => v.language === lang && v.it === item.it)
-              matches.forEach(m => {
-                const displayText = m.verb || m[m.language] || m.en || ''
-                if (displayText) itRelated.push({ lang, verb: displayText, match: m })
-              })
-            })
-            if (itRelated.length > 0) {
-              const badges = itRelated.map(r => {
-                const it = r.match && r.match.it === item.it ? '' : r.match.it || ''
-                return `<span class="vc-rel-badge" onclick="navigateToLangVerb('${r.lang}','${r.verb.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">${FLAGS[r.lang]} ${escHtml(r.verb)}${it ? `<span style="opacity:0.6;font-size:0.85em"> → ${escHtml(it)}</span>` : ''}</span>`
-              }).join(' · ')
-              itRelatedHtml = `<div class="vc-related">🔗 ${badges}</div>`
-            }
-          }
 
-          // Widget connessioni cross-lingua via campo 'en' (per phrasal EN ↔ verbi ES/FR, fallback)
-          let enRelatedHtml = ''
-          if (!itRelatedHtml && typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined') {
-            const related = []
-            if (currentLang === 'en' && item.type === 'phrasal') {
-              ALL_LANGS.filter(l => l !== 'en').forEach(lang => {
-                const match = ALL_VOCAB_FOR_EXERCISES.find(v => v.language === lang && v.en === item.verb)
-                if (match) related.push({ lang, verb: match[lang] || match.en, match })
-              })
-            } else if (currentLang !== 'en' && item.en) {
-              const enMatch = ALL_VOCAB_FOR_EXERCISES.find(v => v.language === 'en' && v.verb === item.en)
-              if (enMatch) related.push({ lang: 'en', verb: enMatch.verb, match: enMatch })
-              ALL_LANGS.filter(l => l !== currentLang && l !== 'en').forEach(lang => {
-                const match = ALL_VOCAB_FOR_EXERCISES.find(v => v.language === lang && v.en === item.en)
-                if (match) related.push({ lang, verb: match[lang] || match.en, match })
-              })
-            }
-            if (related.length > 0) {
-              const badges = related.map(r => {
-                const it = r.match ? r.match.it : ''
-                return `<span class="vc-rel-badge" onclick="navigateToLangVerb('${r.lang}','${r.verb.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">${FLAGS[r.lang]} ${escHtml(r.verb)} <span style="opacity:0.6;font-size:0.85em">${escHtml(it)}</span></span>`
-              }).join(' · ')
-              enRelatedHtml = `<div class="vc-related">🔗 ${badges}</div>`
+          // Widget connessioni cross-lingua via concept (priorità) o it (fallback)
+          let conceptRelatedHtml = ''
+          if (typeof CROSS_LANG_INDEX !== 'undefined') {
+            const key = (item.concept && item.concept.trim())
+              ? item.concept.trim().toLowerCase()
+              : (item.it ? item.it.trim().toLowerCase() : null)
+            if (key && CROSS_LANG_INDEX.has(key)) {
+              const _related = CROSS_LANG_INDEX.get(key).filter(v => v.language !== item.language)
+              const _seen = new Set()
+              const related = _related.filter(v => { if (_seen.has(v.language)) return false; _seen.add(v.language); return true })
+              if (related.length > 0) {
+                const pills = related.map(v => {
+                  const verb = v.verb || v[v.language] || v.en || ''
+                  const flag = FLAGS[v.language] || ''
+                  return `<button class="btn btn-ghost btn-sm" onclick="navigateToLangVerb('${v.language}','${escHtml(verb)}')" style="font-size:0.72rem;padding:2px 7px">${flag} ${escHtml(verb)}</button>`
+                }).join('')
+                conceptRelatedHtml = `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:4px;align-items:center"><span style="font-size:0.65rem;color:var(--muted);font-family:'JetBrains Mono',monospace">🔗</span>${pills}</div>`
+              }
             }
           }
 
@@ -105,7 +83,7 @@
       <div class="vc-it">${escHtml(item.it)}</div>
       ${exampleHtml}
       ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag" style="cursor:pointer" onclick="filterByTag('${t}')" title="Filtra: ${t}">${escHtml(t)}</span>`).join('') + '</div>' : ''}
-      ${itRelatedHtml || enRelatedHtml}
+      ${conceptRelatedHtml}
       <div class="vc-actions">
         <button class="btn btn-ghost btn-sm" onclick="speakText(this.dataset.t)" data-t="${escHtml(speakSrc)}">🔊</button>
         <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-left:4px">
