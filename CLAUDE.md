@@ -26,19 +26,31 @@ Tab Miniclub = dialoghi rapidi pronti all'uso per comunicare con genitori anglof
 Aprire `index.html` direttamente nel browser. Zero build, zero npm, zero server.
 
 ### File principali
-- `index.html` — app completa, tutto in un file (HTML + CSS + JS vanilla). ~2075 righe.
-- `src/data/vocabulary.js` — **unica fonte di verità** per il vocabolario. Si carica come `<script src>` normale (no ES modules, no build). Espone la variabile globale `ALL_VOCAB_FOR_EXERCISES`.
+- `index.html` — HTML + struttura tabs. ~1250 righe. Zero build, zero server.
+- `src/styles/main.css` — tutti gli stili
+- `src/data/vocab-en.js` / `vocab-es.js` / `vocab-fr.js` — vocabolario per lingua (`EN_VOCAB`, `ES_VOCAB`, `FR_VOCAB`)
+- `src/data/vocabulary.js` — orchestratore: unifica i tre in `ALL_VOCAB_FOR_EXERCISES` + `CROSS_LANG_INDEX`
+- `src/data/sentences-data.js` — frasi Listening (`ANIMATOR_SENTENCES`)
+- `src/data/miniclub-data.js` — dialoghi Miniclub (`MINICLUB_DIALOGUES`)
+- `src/data/tenses-data.js` — tempi verbali (`VERB_TENSES`, `TENSES_EX`)
+- `src/js/core.js` — stato globale, init, utilities
+- `src/js/vocab.js` / `quiz.js` / `tenses.js` / `listening.js` / `coach.js` / `miniclub.js` / `settings.js`
+- `sync-supabase-vocab.js` — script Node: pull Supabase → file locali con validazione anti-intrusi (`SUPABASE_URL=x SUPABASE_KEY=x node sync-supabase-vocab.js`)
 
 ### Struttura vocabulary.js
-Array separati per tipo, poi unificati in `ALL_VOCAB_FOR_EXERCISES`:
-- `PHRASAL_VERBS` — ha: verb, emoji, it, example_en, example_it, tags
-- `EXPRESSIONS_IDIOM` / `EXPRESSIONS_COLLOQUIAL` / `EXPRESSIONS_CLARIFICATION` / `EXPRESSIONS_EMOTION` / `EXPRESSIONS_OPINION` — hanno: en, emoji, it, context (NO example_en)
-- `ANIMATOR_SENTENCES` — frasi per il tab Listening
-- `ES_EXPRESSIONS_*` / `FR_EXPRESSIONS_*` — stessa struttura EN ma campo `en` invece di `verb`
-- `EN_EXPRESSIONS_BEACH` / `ES_EXPRESSIONS_BEACH` / `FR_EXPRESSIONS_BEACH` — vocaboli mare/piscina
-- `ALL_VOCAB_FOR_EXERCISES` — array piatto con `language` ('en'|'es'|'fr') e `type` su ogni voce
-- ⚠️ Naming: phrasal verbs → campo `verb`; expressions → campo `en` (usato come `e.en` nel map)
-- ⚠️ NON usa ES modules — carica come `<script src>` normale, espone `ALL_VOCAB_FOR_EXERCISES` come variabile globale
+Dati vocab nei file per lingua, vocabulary.js li unifica:
+- `EN_VOCAB` / `ES_VOCAB` / `FR_VOCAB` — ogni voce ha già `language` + `type`
+- `ALL_VOCAB_FOR_EXERCISES` = `[...EN_VOCAB, ...ES_VOCAB, ...FR_VOCAB]`
+- `CROSS_LANG_INDEX` = Map key=concept/it → voci in 2+ lingue (per collegamenti semantici)
+- ⚠️ Naming: tutti gli entry usano campo `verb` (non esiste campo `en`)
+- ⚠️ NON usa ES modules — carica come `<script src>` normale
+
+### Ordine caricamento script (critico)
+```
+vocab-en.js → vocab-es.js → vocab-fr.js → vocabulary.js
+→ sentences-data.js → miniclub-data.js → tenses-data.js
+→ core.js → vocab.js → tenses.js → quiz.js → listening.js → settings.js → coach.js → miniclub.js
+```
 
 ### Campi vocab card in index.html
 Ogni voce in ALL_VOCAB ha: `verb, emoji, it, type, language, example_en, example_it, tags[], context_note`
@@ -54,6 +66,8 @@ Ogni voce in ALL_VOCAB ha: `verb, emoji, it, type, language, example_en, example
 | idiom | giallo (--accent) | giallo |
 | colloquial | verde lime (#a8ff78) | verde lime |
 | clarification | grigio (--muted) | grigio |
+| verb | ciano (#22d3ee) | ciano |
+| beach | ciano (#22d3ee) | ciano |
 
 ### Supabase
 - Tabella `vocabulary`: verb, type, language, it, example_en, example_it, tags[]
@@ -80,7 +94,8 @@ vocabIds        // {idx: uuid} mapping per Supabase
 ```
 
 ### Come aggiungere nuovi vocaboli
-1. Aggiungi la voce in `vocabulary.js` nell'array giusto (con emoji!)
+1. Aggiungi la voce nel file della lingua: `vocab-en.js` / `vocab-es.js` / `vocab-fr.js` (con emoji!)
+   (`vocabulary.js` è orchestratore read-only — non modificarlo)
 2. Impostazioni → "Sync vocabolario" → fa upsert su Supabase
 Oppure direttamente da Impostazioni → form "Aggiungi nuovo vocabolo"
 
@@ -101,14 +116,25 @@ Oppure direttamente da Impostazioni → form "Aggiungi nuovo vocabolo"
 - **Tab Miniclub**: dialoghi botta-risposta EN/ES/FR per miniclub estivo
   - Filtri: Genitori (drop-off/pick-up, orari, info) · Bambini (benvenuto, attività, regole, pranzo, incoraggiamento)
   - Tap frase → copia negli appunti, IT piccolo sopra, lingua attiva grande sotto
-  - Array `MINICLUB_DIALOGUES` in index.html, rendering con `renderMiniclub()` + `filterMiniclub()`
+  - Array `MINICLUB_DIALOGUES` in `src/data/miniclub-data.js`, rendering con `renderMiniclub()` + `filterMiniclub()`
 - **Selettore lingua** (EN/ES/FR) in header — progressi separati per lingua, search si azzera al cambio
-- **Impostazioni**: credenziali Supabase/Anthropic, sync vocab (upsert), form aggiungi voce, SQL setup hint
+- **Impostazioni**: credenziali Supabase/Anthropic, sync vocab (upsert), pull da Supabase (tutte e 3 le lingue, con validazione anti-intrusi), form aggiungi voce, SQL setup hint
 
-### Vocabolario — conteggio approssimativo (EN)
-- Phrasal verbs: ~58 (inclusi batch @kamithepolyglot + da phrasal_verbs_animator.html)
-- Idiomi: 8 · Colloquiali: 20 · Emozioni: 21 · Opinioni: 10 · Chiarimento: 12
-- Totale EN: ~130 voci
+### Vocabolario — conteggio per lingua
+File locali (vocab-en/es/fr.js):
+| type | EN | ES | FR |
+|------|---:|---:|---:|
+| phrasal | 149 | 2 | 2 |
+| verb | 101 | 283 | 288 |
+| colloquial | 156 | 156 | 128 |
+| idiom | 87 | 84 | 80 |
+| clarification | 50 | 50 | 48 |
+| emotion | 50 | 49 | 47 |
+| opinion | 44 | 42 | 43 |
+| beach | 27 | 27 | 27 |
+| **TOTALE** | **664** | **693** | **663** |
+
+Supabase sincronizzato con i file locali (Apr 2026) — 2020 voci, tutti i campi example_en/example_it compilati.
 
 ### Fonte dati tempi verbali
-`VERB_TENSES` array in index.html (non in vocabulary.js) — 14 oggetti con: `grp, icon, color, name, form, when, examples[], animator, phonetic`
+`VERB_TENSES` array in `src/data/tenses-data.js` (non in index.html) — 14 oggetti con: `grp, icon, color, name, form, when, examples[], animator, phonetic`

@@ -71,54 +71,77 @@
         btn.textContent = '🔊'
       }
 
-      // ── Selettore voce ────────────────────────────────────────────
-      function initVoices() {
-        const render = () => {
-          const all = speechSynthesis
-            .getVoices()
-            .filter((v) => v.lang.startsWith('en'))
-          if (!all.length) return
-          const row = document.getElementById('voicePillRow')
-          const seen = new Set()
-          const picks = []
-          for (const v of all) {
-            const key = v.lang.startsWith('en-US')
-              ? 'en-US'
-              : v.lang.startsWith('en-GB')
-                ? 'en-GB'
-                : v.lang.startsWith('en-AU')
-                  ? 'en-AU'
-                  : null
-            if (key && !seen.has(key)) {
-              seen.add(key)
-              picks.push({ key, v })
-            }
-          }
-          if (picks.length < 2) return
-          row.innerHTML = ''
-          const lbl = document.createElement('span')
-          lbl.style.cssText =
-            'font-size:0.65rem;font-family:"JetBrains Mono",monospace;color:var(--muted);align-self:center'
-          lbl.textContent = 'VOCE:'
-          row.appendChild(lbl)
-          const flagOf = { 'en-US': '🇺🇸', 'en-GB': '🇬🇧', 'en-AU': '🇦🇺' }
-          picks.forEach(({ key, v }, i) => {
-            const btn = document.createElement('button')
-            btn.className = 'voice-pill' + (i === 0 ? ' active' : '')
-            btn.textContent = (flagOf[key] || '🌐') + ' ' + key
-            btn.onclick = () => {
-              selectedVoice = v
-              row
-                .querySelectorAll('.voice-pill')
-                .forEach((b) => b.classList.remove('active'))
-              btn.classList.add('active')
-            }
-            if (i === 0) selectedVoice = v
-            row.appendChild(btn)
-          })
+      // ── Config voci per lingua ────────────────────────────────────
+      const LANG_VOICE_CFG = {
+        en: { prefix: 'en', keys: ['en-US','en-GB','en-AU'], flags: {'en-US':'🇺🇸','en-GB':'🇬🇧','en-AU':'🇦🇺'}, fallback: 'en-US' },
+        es: { prefix: 'es', keys: ['es-ES','es-MX','es-US'], flags: {'es-ES':'🇪🇸','es-MX':'🇲🇽','es-US':'🇺🇸'}, fallback: 'es-ES' },
+        fr: { prefix: 'fr', keys: ['fr-FR','fr-CA','fr-BE'], flags: {'fr-FR':'🇫🇷','fr-CA':'🇨🇦','fr-BE':'🇧🇪'}, fallback: 'fr-FR' },
+      }
+      function getLangCode() {
+        return (LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en).fallback
+      }
+      function getBestVoice() {
+        if (selectedVoice) return selectedVoice
+        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
+        const voices = speechSynthesis.getVoices()
+        for (const key of cfg.keys) {
+          const v = voices.find(v => v.lang.startsWith(key))
+          if (v) return v
         }
-        speechSynthesis.onvoiceschanged = render
-        render()
+        return voices.find(v => v.lang.startsWith(cfg.prefix)) || null
+      }
+      function getSentences() {
+        return SENTENCES.filter(s => (s.lang || 'en') === currentLang)
+      }
+
+      // ── Selettore voce ────────────────────────────────────────────
+      function _renderVoicePills() {
+        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
+        const all = speechSynthesis.getVoices().filter(v => v.lang.startsWith(cfg.prefix))
+        const row = document.getElementById('voicePillRow')
+        if (!row) return
+        selectedVoice = null
+        const seen = new Set()
+        const picks = []
+        for (const v of all) {
+          const key = cfg.keys.find(k => v.lang.startsWith(k))
+          if (key && !seen.has(key)) { seen.add(key); picks.push({ key, v }) }
+        }
+        // Anche con 1 sola voce: setta selectedVoice (senza mostrare pill)
+        if (picks.length === 0) { row.innerHTML = ''; return }
+        if (picks.length === 1) { selectedVoice = picks[0].v; row.innerHTML = ''; return }
+        row.innerHTML = ''
+        const lbl = document.createElement('span')
+        lbl.style.cssText = 'font-size:0.65rem;font-family:"JetBrains Mono",monospace;color:var(--muted);align-self:center'
+        lbl.textContent = 'VOCE:'
+        row.appendChild(lbl)
+        picks.forEach(({ key, v }, i) => {
+          const btn = document.createElement('button')
+          btn.className = 'voice-pill' + (i === 0 ? ' active' : '')
+          btn.textContent = (cfg.flags[key] || '🌐') + ' ' + key
+          btn.onclick = () => {
+            selectedVoice = v
+            row.querySelectorAll('.voice-pill').forEach(b => b.classList.remove('active'))
+            btn.classList.add('active')
+          }
+          if (i === 0) selectedVoice = v
+          row.appendChild(btn)
+        })
+      }
+      function initVoices() {
+        speechSynthesis.onvoiceschanged = _renderVoicePills
+        _renderVoicePills()
+      }
+      function reinitVoices() {
+        sentenceIndex = -1
+        currentSentence = null
+        _renderVoicePills()
+        // aggiorna label "scrivi in ..."
+        const lbl = document.getElementById('listeningLangLabel')
+        if (lbl) {
+          const names = { en: 'inglese', es: 'spagnolo', fr: 'francese' }
+          lbl.textContent = 'scrivi in ' + (names[currentLang] || currentLang)
+        }
       }
 
       // ── Anteprima fonetica ────────────────────────────────────────
@@ -155,8 +178,13 @@
           isSpeakingMulti = false
           resetSpeakBtn()
         }
-        sentenceIndex = (sentenceIndex + 1) % SENTENCES.length
-        currentSentence = SENTENCES[sentenceIndex]
+        const pool = getSentences()
+        if (!pool.length) {
+          document.getElementById('sentCtx').textContent = '⚠️ Nessuna frase per questa lingua'
+          return
+        }
+        sentenceIndex = (sentenceIndex + 1) % pool.length
+        currentSentence = pool[sentenceIndex]
         const ctx = document.getElementById('sentCtx')
         ctx.textContent = '📍 ' + currentSentence.ctx
         ctx.style.display = 'block'
@@ -168,9 +196,9 @@
       function speakPromise(text, rate) {
         return new Promise((resolve) => {
           const u = new SpeechSynthesisUtterance(text)
-          u.lang = 'en-US'
+          u.lang = getLangCode()
           u.rate = rate
-          if (selectedVoice) u.voice = selectedVoice
+          const v = getBestVoice(); if (v) u.voice = v
           u.onend = resolve
           u.onerror = resolve
           speechSynthesis.speak(u)
@@ -241,7 +269,7 @@
         btn.classList.add('speaking')
         btn.textContent = '⏸'
         const u = new SpeechSynthesisUtterance(currentSentence.en)
-        u.lang = 'en-US'
+        u.lang = getLangCode()
         u.rate =
           currentSpeed === 'slow' ? 0.65 : currentSpeed === 'fast' ? 1.25 : 0.95
         if (selectedVoice) u.voice = selectedVoice

@@ -596,8 +596,8 @@ const ES_VOCAB = [
     "emoji": "🏁",
     "simple": "",
     "it": "finire per / ritrovarsi",
-    "example_en": "",
-    "example_it": "È finito per essere il leader del gruppo.",
+    "example_en": "¡Vamos a terminar!",
+    "example_it": "finire per!",
     "tags": [
       "base"
     ],
@@ -1882,8 +1882,8 @@ const ES_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "Che roba! / Fantastico!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué pasada!",
+    "example_it": "Che roba!",
     "tags": [
       "emotion"
     ],
@@ -1897,8 +1897,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "Madonna! / Oddio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Madre mía!",
+    "example_it": "Madonna!",
     "tags": [
       "emotion"
     ],
@@ -1912,8 +1912,8 @@ const ES_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "Non ci posso credere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy no me lo puedo creer hoy.",
+    "example_it": "Mi sento molto non ci posso credere oggi.",
     "tags": [
       "emotion"
     ],
@@ -1927,8 +1927,8 @@ const ES_VOCAB = [
     "emoji": "😁",
     "simple": "",
     "it": "Che gioia!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué alegría!",
+    "example_it": "Che gioia!",
     "tags": [
       "emotion"
     ],
@@ -1942,8 +1942,8 @@ const ES_VOCAB = [
     "emoji": "😨",
     "simple": "",
     "it": "Che orrore!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué horror!",
+    "example_it": "Che orrore!",
     "tags": [
       "emotion"
     ],
@@ -1957,8 +1957,8 @@ const ES_VOCAB = [
     "emoji": "😳",
     "simple": "",
     "it": "Che vergogna!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué vergüenza!",
+    "example_it": "Che vergogna!",
     "tags": [
       "emotion"
     ],
@@ -1972,8 +1972,8 @@ const ES_VOCAB = [
     "emoji": "🌀",
     "simple": "",
     "it": "Sono sbalordito/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy estoy alucinando hoy.",
+    "example_it": "Mi sento molto sono sbalordito oggi.",
     "tags": [
       "emotion"
     ],
@@ -1987,8 +1987,8 @@ const ES_VOCAB = [
     "emoji": "😩",
     "simple": "",
     "it": "Non ce la faccio più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy no puedo más hoy.",
+    "example_it": "Mi sento molto non ce la faccio più oggi.",
     "tags": [
       "emotion"
     ],
@@ -2002,8 +2002,8 @@ const ES_VOCAB = [
     "emoji": "😴",
     "simple": "",
     "it": "Che noia!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué rollo!",
+    "example_it": "Che noia!",
     "tags": [
       "emotion"
     ],
@@ -2017,8 +2017,8 @@ const ES_VOCAB = [
     "emoji": "😬",
     "simple": "",
     "it": "Mi mette in agitazione",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me pone nervioso hoy.",
+    "example_it": "Mi sento molto mi mette in agitazione oggi.",
     "tags": [
       "emotion"
     ],
@@ -2032,8 +2032,8 @@ const ES_VOCAB = [
     "emoji": "🤪",
     "simple": "",
     "it": "Sono sbalordito/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy estoy flipando hoy.",
+    "example_it": "Mi sento molto sono sbalordito oggi.",
     "tags": [
       "emotion"
     ],
@@ -2047,8 +2047,8 @@ const ES_VOCAB = [
     "emoji": "💔",
     "simple": "",
     "it": "Mi spezza il cuore",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me parte el alma hoy.",
+    "example_it": "Mi sento molto mi spezza il cuore oggi.",
     "tags": [
       "emotion"
     ],
@@ -2062,8 +2062,8 @@ const ES_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "Forza!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ánimo!",
+    "example_it": "Forza!",
     "tags": [
       "emotion"
     ],
@@ -2077,8 +2077,8 @@ const ES_VOCAB = [
     "emoji": "🪫",
     "simple": "",
     "it": "Sono distrutto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy estoy hecho hoy.",
+    "example_it": "Mi sento molto sono distrutto oggi.",
     "tags": [
       "emotion"
     ],
@@ -2092,8 +2092,8 @@ const ES_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "Pazzesco!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué fuerte!",
+    "example_it": "Pazzesco!",
     "tags": [
       "emotion"
     ],
@@ -2107,8 +2107,8 @@ const ES_VOCAB = [
     "emoji": "🫢",
     "simple": "",
     "it": "Ma dai?!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No me digas!",
+    "example_it": "Ma dai?!",
     "tags": [
       "emotion"
     ],
@@ -2122,8 +2122,8 @@ const ES_VOCAB = [
     "emoji": "🤦",
     "simple": "",
     "it": "Che casino!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Menudo lío!",
+    "example_it": "Che casino!",
     "tags": [
       "emotion"
     ],
@@ -2137,8 +2137,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "Mi è piaciuto da morire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me ha molado mogollón hoy.",
+    "example_it": "Mi sento molto mi è piaciuto da morire oggi.",
     "tags": [
       "emotion"
     ],
@@ -2152,8 +2152,8 @@ const ES_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "Sul serio?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿En serio?",
+    "example_it": "Sul serio?",
     "tags": [
       "emotion"
     ],
@@ -2167,8 +2167,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "Dai!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Venga!",
+    "example_it": "Dai!",
     "tags": [
       "colloquial"
     ],
@@ -2182,8 +2182,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "Ma dai!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Venga ya!",
+    "example_it": "Ma dai!",
     "tags": [
       "colloquial"
     ],
@@ -2197,8 +2197,8 @@ const ES_VOCAB = [
     "emoji": "😎",
     "simple": "",
     "it": "Che figata!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué guay!",
+    "example_it": "Che figata!",
     "tags": [
       "colloquial"
     ],
@@ -2212,8 +2212,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "Mi piace tantissimo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Mola mucho",
+    "example_it": "Mi piace tantissimo",
     "tags": [
       "colloquial"
     ],
@@ -2227,8 +2227,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "Vediamo...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "A ver...",
+    "example_it": "Vediamo...",
     "tags": [
       "colloquial"
     ],
@@ -2242,8 +2242,8 @@ const ES_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "Nessuna idea",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ni idea",
+    "example_it": "Nessuna idea",
     "tags": [
       "colloquial"
     ],
@@ -2257,8 +2257,8 @@ const ES_VOCAB = [
     "emoji": "👌",
     "simple": "",
     "it": "Nessun problema",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sin problema",
+    "example_it": "Nessun problema",
     "tags": [
       "colloquial"
     ],
@@ -2272,8 +2272,8 @@ const ES_VOCAB = [
     "emoji": "😐",
     "simple": "",
     "it": "Non mi importa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me da igual",
+    "example_it": "Non mi importa",
     "tags": [
       "colloquial"
     ],
@@ -2287,8 +2287,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Ok, va bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Bueno, vale",
+    "example_it": "Ok, va bene",
     "tags": [
       "colloquial"
     ],
@@ -2302,8 +2302,8 @@ const ES_VOCAB = [
     "emoji": "🧑",
     "simple": "",
     "it": "Amico / amica",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tío / Tía",
+    "example_it": "Amico",
     "tags": [
       "colloquial"
     ],
@@ -2317,8 +2317,8 @@ const ES_VOCAB = [
     "emoji": "🚀",
     "simple": "",
     "it": "Essere al massimo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar a tope",
+    "example_it": "Essere al massimo",
     "tags": [
       "colloquial"
     ],
@@ -2332,8 +2332,8 @@ const ES_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "Attenzione!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ojo!",
+    "example_it": "Attenzione!",
     "tags": [
       "colloquial"
     ],
@@ -2347,8 +2347,8 @@ const ES_VOCAB = [
     "emoji": "🌟",
     "simple": "",
     "it": "Fantastico!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Genial!",
+    "example_it": "Fantastico!",
     "tags": [
       "colloquial"
     ],
@@ -2362,8 +2362,8 @@ const ES_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "Per niente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Para nada",
+    "example_it": "Per niente",
     "tags": [
       "colloquial"
     ],
@@ -2377,8 +2377,8 @@ const ES_VOCAB = [
     "emoji": "😌",
     "simple": "",
     "it": "Non fa niente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No pasa nada",
+    "example_it": "Non fa niente",
     "tags": [
       "colloquial"
     ],
@@ -2392,8 +2392,8 @@ const ES_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "Boh",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Yo qué sé",
+    "example_it": "Boh",
     "tags": [
       "colloquial"
     ],
@@ -2407,8 +2407,8 @@ const ES_VOCAB = [
     "emoji": "😂",
     "simple": "",
     "it": "Macché!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Qué va",
+    "example_it": "Macché!",
     "tags": [
       "colloquial"
     ],
@@ -2422,8 +2422,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "Come vuoi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lo que tú digas",
+    "example_it": "Come vuoi",
     "tags": [
       "colloquial"
     ],
@@ -2437,8 +2437,8 @@ const ES_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "Secondo me",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En mi opinión, creo que es lo correcto.",
+    "example_it": "Secondo me, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2452,8 +2452,8 @@ const ES_VOCAB = [
     "emoji": "🧠",
     "simple": "",
     "it": "Io credo che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Yo creo que..., creo que es lo correcto.",
+    "example_it": "Io credo che..., credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2467,8 +2467,8 @@ const ES_VOCAB = [
     "emoji": "💫",
     "simple": "",
     "it": "Mi sembra che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me parece que..., creo que es lo correcto.",
+    "example_it": "Mi sembra che..., credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2482,8 +2482,8 @@ const ES_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "Per come la vedo io",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "A mi modo de ver, creo que es lo correcto.",
+    "example_it": "Per come la vedo io, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2497,8 +2497,8 @@ const ES_VOCAB = [
     "emoji": "🔭",
     "simple": "",
     "it": "Per quanto ne so",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Que yo sepa, creo que es lo correcto.",
+    "example_it": "Per quanto ne so, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2512,8 +2512,8 @@ const ES_VOCAB = [
     "emoji": "👤",
     "simple": "",
     "it": "Personalmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Personalmente, creo que es lo correcto.",
+    "example_it": "Personalmente, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2527,8 +2527,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "Direi che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Diría que..., creo que es lo correcto.",
+    "example_it": "Direi che..., credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2542,8 +2542,8 @@ const ES_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Sono abbastanza sicuro/a che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy bastante seguro/a de que..., creo que es lo correcto.",
+    "example_it": "Sono abbastanza sicuro, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2557,8 +2557,8 @@ const ES_VOCAB = [
     "emoji": "💯",
     "simple": "",
     "it": "La verità è che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "La verdad es que..., creo que es lo correcto.",
+    "example_it": "La verità è che..., credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2572,8 +2572,8 @@ const ES_VOCAB = [
     "emoji": "🕵️",
     "simple": "",
     "it": "A quanto pare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Por lo visto, creo que es lo correcto.",
+    "example_it": "A quanto pare, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2587,8 +2587,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "Mi piace tantissimo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me mola mucho, creo que es lo correcto.",
+    "example_it": "Mi piace tantissimo, credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2602,8 +2602,8 @@ const ES_VOCAB = [
     "emoji": "⭐",
     "simple": "",
     "it": "Sono fan di...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Soy fan de..., creo que es lo correcto.",
+    "example_it": "Sono fan di..., credo sia la cosa giusta.",
     "tags": [
       "opinion"
     ],
@@ -2617,8 +2617,8 @@ const ES_VOCAB = [
     "emoji": "🔁",
     "simple": "",
     "it": "Puoi ripetere?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Puedes repetir, por favor?",
+    "example_it": "Puoi ripetere?",
     "tags": [
       "clarification"
     ],
@@ -2632,8 +2632,8 @@ const ES_VOCAB = [
     "emoji": "🐢",
     "simple": "",
     "it": "Più lentamente?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Puedes hablar más despacio?",
+    "example_it": "Più lentamente?",
     "tags": [
       "clarification"
     ],
@@ -2647,8 +2647,8 @@ const ES_VOCAB = [
     "emoji": "❓",
     "simple": "",
     "it": "Non ti ho capito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No te he entendido, ¿entendido?",
+    "example_it": "Non ti ho capito, capito?",
     "tags": [
       "clarification"
     ],
@@ -2662,8 +2662,8 @@ const ES_VOCAB = [
     "emoji": "😕",
     "simple": "",
     "it": "Come?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Cómo?",
+    "example_it": "Come?",
     "tags": [
       "clarification"
     ],
@@ -2677,8 +2677,8 @@ const ES_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "Cosa hai detto?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Qué has dicho?",
+    "example_it": "Cosa hai detto?",
     "tags": [
       "clarification"
     ],
@@ -2692,8 +2692,8 @@ const ES_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "Altro modo?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Podrías explicarlo de otra forma?",
+    "example_it": "Altro modo?",
     "tags": [
       "clarification"
     ],
@@ -2707,8 +2707,8 @@ const ES_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "Vuoi dire che...?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Quieres decir que...?",
+    "example_it": "Vuoi dire che...?",
     "tags": [
       "clarification"
     ],
@@ -2722,8 +2722,8 @@ const ES_VOCAB = [
     "emoji": "🎣",
     "simple": "",
     "it": "Non ho capito (colloq.)",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No he pillado, ¿entendido?",
+    "example_it": "Non ho capito, capito?",
     "tags": [
       "clarification"
     ],
@@ -2737,8 +2737,8 @@ const ES_VOCAB = [
     "emoji": "📢",
     "simple": "",
     "it": "Puoi parlare più forte?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Puedes hablar más alto?",
+    "example_it": "Puoi parlare più forte?",
     "tags": [
       "clarification"
     ],
@@ -2752,8 +2752,8 @@ const ES_VOCAB = [
     "emoji": "🙉",
     "simple": "",
     "it": "Scusa, come?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Perdona, ¿qué?",
+    "example_it": "Scusa, come?",
     "tags": [
       "clarification"
     ],
@@ -2767,8 +2767,8 @@ const ES_VOCAB = [
     "emoji": "☁️",
     "simple": "",
     "it": "Testa tra le nuvole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar en las nubes — así son las cosas.",
+    "example_it": "Testa tra le nuvole — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2782,8 +2782,8 @@ const ES_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "Costare un occhio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Costar un ojo de la cara",
+    "example_it": "Costare un occhio",
     "tags": [
       "idiom"
     ],
@@ -2797,8 +2797,8 @@ const ES_VOCAB = [
     "emoji": "🔋",
     "simple": "",
     "it": "Darsi una mossa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ponerse las pilas — así son las cosas.",
+    "example_it": "Darsi una mossa — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2812,8 +2812,8 @@ const ES_VOCAB = [
     "emoji": "🌈",
     "simple": "",
     "it": "Non tutto il male...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No hay mal que por bien no venga",
+    "example_it": "Non tutto il male...",
     "tags": [
       "idiom"
     ],
@@ -2827,8 +2827,8 @@ const ES_VOCAB = [
     "emoji": "🦶",
     "simple": "",
     "it": "Fare una gaffe",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Meter la pata — así son las cosas.",
+    "example_it": "Fare una gaffe — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2842,8 +2842,8 @@ const ES_VOCAB = [
     "emoji": "3️⃣",
     "simple": "",
     "it": "Non c'è due senza tre",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No hay dos sin tres — así son las cosas.",
+    "example_it": "Non c'è due senza tre — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2857,8 +2857,8 @@ const ES_VOCAB = [
     "emoji": "🌧️",
     "simple": "",
     "it": "Non piove sul bagnato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Llueve sobre mojado — así son las cosas.",
+    "example_it": "Non piove sul bagnato — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2872,8 +2872,8 @@ const ES_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Centrare in pieno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dar en el clavo — así son las cosas.",
+    "example_it": "Centrare in pieno — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2887,8 +2887,8 @@ const ES_VOCAB = [
     "emoji": "🪨",
     "simple": "",
     "it": "Restare di sasso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Quedarse de piedra — así son las cosas.",
+    "example_it": "Restare di sasso — è così che stanno le cose.",
     "tags": [
       "idiom"
     ],
@@ -2902,8 +2902,8 @@ const ES_VOCAB = [
     "emoji": "💧",
     "simple": "",
     "it": "L'acqua è fantastica!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡El agua está genial!",
+    "example_it": "L'acqua è fantastica!",
     "tags": [
       "beach"
     ],
@@ -2917,8 +2917,8 @@ const ES_VOCAB = [
     "emoji": "🦆",
     "simple": "",
     "it": "Tutti in acqua!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Al agua, patos!",
+    "example_it": "Tutti in acqua!",
     "tags": [
       "beach"
     ],
@@ -2932,8 +2932,8 @@ const ES_VOCAB = [
     "emoji": "🥚",
     "simple": "",
     "it": "L'ultimo è un uovo marcio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡El último, huevo podrido!",
+    "example_it": "L'ultimo è un uovo marcio!",
     "tags": [
       "beach"
     ],
@@ -2947,8 +2947,8 @@ const ES_VOCAB = [
     "emoji": "🤸",
     "simple": "",
     "it": "Prima riscaldamento!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Primero vamos a calentar!",
+    "example_it": "Prima riscaldamento!",
     "tags": [
       "beach"
     ],
@@ -2962,8 +2962,8 @@ const ES_VOCAB = [
     "emoji": "🚩",
     "simple": "",
     "it": "Controlla la bandiera!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Comprueba la bandera!",
+    "example_it": "Controlla la bandiera!",
     "tags": [
       "beach"
     ],
@@ -2977,8 +2977,8 @@ const ES_VOCAB = [
     "emoji": "🦶",
     "simple": "",
     "it": "Bagnati i piedi!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Mójate los pies primero!",
+    "example_it": "Bagnati i piedi!",
     "tags": [
       "beach"
     ],
@@ -2992,8 +2992,8 @@ const ES_VOCAB = [
     "emoji": "📏",
     "simple": "",
     "it": "Resta nella parte bassa!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Quédate en la zona baja!",
+    "example_it": "Resta nella parte bassa!",
     "tags": [
       "beach"
     ],
@@ -3007,8 +3007,8 @@ const ES_VOCAB = [
     "emoji": "👫",
     "simple": "",
     "it": "A coppie!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Id de dos en dos!",
+    "example_it": "A coppie!",
     "tags": [
       "beach"
     ],
@@ -3022,8 +3022,8 @@ const ES_VOCAB = [
     "emoji": "🧴",
     "simple": "",
     "it": "Metti la protezione!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ponte el protector!",
+    "example_it": "Metti la protezione!",
     "tags": [
       "beach"
     ],
@@ -3037,8 +3037,8 @@ const ES_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "Non correre!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No corras por la piscina!",
+    "example_it": "Non correre!",
     "tags": [
       "beach"
     ],
@@ -3052,8 +3052,8 @@ const ES_VOCAB = [
     "emoji": "🍕",
     "simple": "",
     "it": "Non fare il bagno dopo mangiato!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No te bañes después de comer!",
+    "example_it": "Non fare il bagno dopo mangiato!",
     "tags": [
       "beach"
     ],
@@ -3067,8 +3067,8 @@ const ES_VOCAB = [
     "emoji": "🌊",
     "simple": "",
     "it": "Attenzione alle onde!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Cuidado con las olas!",
+    "example_it": "Attenzione alle onde!",
     "tags": [
       "beach"
     ],
@@ -3082,8 +3082,8 @@ const ES_VOCAB = [
     "emoji": "⛵",
     "simple": "",
     "it": "Il mare è mosso oggi.",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "El mar está muy picado hoy.",
+    "example_it": "Il mare è mosso oggi.",
     "tags": [
       "beach"
     ],
@@ -3097,8 +3097,8 @@ const ES_VOCAB = [
     "emoji": "🔢",
     "simple": "",
     "it": "Contiamoci!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a contarnos!",
+    "example_it": "Contiamoci!",
     "tags": [
       "beach"
     ],
@@ -3112,8 +3112,8 @@ const ES_VOCAB = [
     "emoji": "🏁",
     "simple": "",
     "it": "Gara al galleggiante?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Gara hasta la boya?",
+    "example_it": "Gara al galleggiante?",
     "tags": [
       "beach"
     ],
@@ -3127,8 +3127,8 @@ const ES_VOCAB = [
     "emoji": "🏊",
     "simple": "",
     "it": "Sai fare il morto?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Sabes hacer el muerto?",
+    "example_it": "Sai fare il morto?",
     "tags": [
       "beach"
     ],
@@ -3142,8 +3142,8 @@ const ES_VOCAB = [
     "emoji": "💦",
     "simple": "",
     "it": "Battaglia d'acqua!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Guerra de agua!",
+    "example_it": "Battaglia d'acqua!",
     "tags": [
       "beach"
     ],
@@ -3157,8 +3157,8 @@ const ES_VOCAB = [
     "emoji": "🤐",
     "simple": "",
     "it": "Tieni il respiro!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Aguanta la respiración!",
+    "example_it": "Tieni il respiro!",
     "tags": [
       "beach"
     ],
@@ -3172,8 +3172,8 @@ const ES_VOCAB = [
     "emoji": "💣",
     "simple": "",
     "it": "Bomba!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Bomba!",
+    "example_it": "Bomba!",
     "tags": [
       "beach"
     ],
@@ -3187,8 +3187,8 @@ const ES_VOCAB = [
     "emoji": "🏖️",
     "simple": "",
     "it": "Asciugati!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Sécate antes de resfriarte!",
+    "example_it": "Asciugati!",
     "tags": [
       "beach"
     ],
@@ -3202,8 +3202,8 @@ const ES_VOCAB = [
     "emoji": "❓",
     "simple": "",
     "it": "Com'era?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Cómo estaba el agua?",
+    "example_it": "Com'era?",
     "tags": [
       "beach"
     ],
@@ -3217,8 +3217,8 @@ const ES_VOCAB = [
     "emoji": "🧴",
     "simple": "",
     "it": "Rimetti crema!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vuelve a ponerte el protector!",
+    "example_it": "Rimetti crema!",
     "tags": [
       "beach"
     ],
@@ -3232,8 +3232,8 @@ const ES_VOCAB = [
     "emoji": "🔴",
     "simple": "",
     "it": "Ti sei scottato!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Te has puesto rojo!",
+    "example_it": "Ti sei scottato!",
     "tags": [
       "beach"
     ],
@@ -3247,8 +3247,8 @@ const ES_VOCAB = [
     "emoji": "🚿",
     "simple": "",
     "it": "Andiamo alla doccia!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a la ducha!",
+    "example_it": "Andiamo alla doccia!",
     "tags": [
       "beach"
     ],
@@ -3262,8 +3262,8 @@ const ES_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "Hai perso qualcosa?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Has perdido algo?",
+    "example_it": "Hai perso qualcosa?",
     "tags": [
       "beach"
     ],
@@ -3277,8 +3277,8 @@ const ES_VOCAB = [
     "emoji": "🪼",
     "simple": "",
     "it": "Meduse?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Medusas?",
+    "example_it": "Meduse?",
     "tags": [
       "beach"
     ],
@@ -3292,8 +3292,8 @@ const ES_VOCAB = [
     "emoji": "🍉",
     "simple": "",
     "it": "Chi ha fame?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Quién tiene hambre?",
+    "example_it": "Chi ha fame?",
     "tags": [
       "beach"
     ],
@@ -3374,8 +3374,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "perché",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Porque, ¿entendido?",
+    "example_it": "perché, capito?",
     "tags": [
       "connettori"
     ],
@@ -3389,8 +3389,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "dato che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ya que, ¿entendido?",
+    "example_it": "dato che, capito?",
     "tags": [
       "connettori"
     ],
@@ -3404,8 +3404,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "come / poiché",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Como, ¿entendido?",
+    "example_it": "come, capito?",
     "tags": [
       "connettori"
     ],
@@ -3419,8 +3419,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "a causa di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Debido a, ¿entendido?",
+    "example_it": "a causa di, capito?",
     "tags": [
       "connettori"
     ],
@@ -3434,8 +3434,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "in vista di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En vista de, ¿entendido?",
+    "example_it": "in vista di, capito?",
     "tags": [
       "connettori"
     ],
@@ -3449,8 +3449,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "dato che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dado que, ¿entendido?",
+    "example_it": "dato che, capito?",
     "tags": [
       "connettori"
     ],
@@ -3464,8 +3464,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "a causa di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "A causa de, ¿entendido?",
+    "example_it": "a causa di, capito?",
     "tags": [
       "connettori"
     ],
@@ -3479,8 +3479,8 @@ const ES_VOCAB = [
     "emoji": "🙏",
     "simple": "",
     "it": "grazie a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Gracias a, ¿entendido?",
+    "example_it": "grazie a, capito?",
     "tags": [
       "connettori"
     ],
@@ -3494,8 +3494,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "per questo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Por eso, ¿entendido?",
+    "example_it": "per questo, capito?",
     "tags": [
       "connettori"
     ],
@@ -3509,8 +3509,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "considerando che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Teniendo en cuenta que, ¿entendido?",
+    "example_it": "considerando che, capito?",
     "tags": [
       "connettori"
     ],
@@ -3524,8 +3524,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "fondamentalmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Básicamente, ¿entendido?",
+    "example_it": "fondamentalmente, capito?",
     "tags": [
       "connettori"
     ],
@@ -3539,8 +3539,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "in realtà",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En realidad, ¿entendido?",
+    "example_it": "in realtà, capito?",
     "tags": [
       "connettori"
     ],
@@ -3554,8 +3554,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "di fatto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "De hecho, ¿entendido?",
+    "example_it": "di fatto, capito?",
     "tags": [
       "connettori"
     ],
@@ -3569,8 +3569,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "per esempio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Por ejemplo, ¿entendido?",
+    "example_it": "per esempio, capito?",
     "tags": [
       "connettori"
     ],
@@ -3584,8 +3584,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "come ad esempio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Como por ejemplo, ¿entendido?",
+    "example_it": "come ad esempio, capito?",
     "tags": [
       "connettori"
     ],
@@ -3599,8 +3599,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "in altre parole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En otras palabras, ¿entendido?",
+    "example_it": "in altre parole, capito?",
     "tags": [
       "connettori"
     ],
@@ -3614,8 +3614,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "cioè",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es decir, ¿entendido?",
+    "example_it": "cioè, capito?",
     "tags": [
       "connettori"
     ],
@@ -3629,8 +3629,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "in parole povere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En pocas palabras, ¿entendido?",
+    "example_it": "in parole povere, capito?",
     "tags": [
       "connettori"
     ],
@@ -3644,8 +3644,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "inoltre",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Además, ¿entendido?",
+    "example_it": "inoltre, capito?",
     "tags": [
       "connettori"
     ],
@@ -3659,8 +3659,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "per di più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Asimismo, ¿entendido?",
+    "example_it": "per di più, capito?",
     "tags": [
       "connettori"
     ],
@@ -3674,8 +3674,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "in aggiunta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Además de eso, ¿entendido?",
+    "example_it": "in aggiunta, capito?",
     "tags": [
       "connettori"
     ],
@@ -3689,8 +3689,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "in aggiunta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Adicionalmente, ¿entendido?",
+    "example_it": "in aggiunta, capito?",
     "tags": [
       "connettori"
     ],
@@ -3704,8 +3704,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "anche",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "También, ¿entendido?",
+    "example_it": "anche, capito?",
     "tags": [
       "connettori"
     ],
@@ -3719,8 +3719,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "ugualmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Igualmente, ¿entendido?",
+    "example_it": "ugualmente, capito?",
     "tags": [
       "connettori"
     ],
@@ -3734,8 +3734,8 @@ const ES_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "per non dire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ni siquiera, ¿entendido?",
+    "example_it": "per non dire, capito?",
     "tags": [
       "connettori"
     ],
@@ -3749,8 +3749,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "per di più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Por otro lado, ¿entendido?",
+    "example_it": "per di più, capito?",
     "tags": [
       "connettori"
     ],
@@ -3764,8 +3764,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "anzi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es más, ¿entendido?",
+    "example_it": "anzi, capito?",
     "tags": [
       "connettori"
     ],
@@ -3779,8 +3779,8 @@ const ES_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "non capisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No entiendo, ¿entendido?",
+    "example_it": "non capisco, capito?",
     "tags": [
       "connettori"
     ],
@@ -3794,8 +3794,8 @@ const ES_VOCAB = [
     "emoji": "❓",
     "simple": "",
     "it": "non ha senso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No tiene sentido, ¿entendido?",
+    "example_it": "non ha senso, capito?",
     "tags": [
       "connettori"
     ],
@@ -3809,8 +3809,8 @@ const ES_VOCAB = [
     "emoji": "😵",
     "simple": "",
     "it": "sono confuso/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy confundido/a, ¿entendido?",
+    "example_it": "sono confuso, capito?",
     "tags": [
       "connettori"
     ],
@@ -3824,8 +3824,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "non ti seguo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No te sigo, ¿entendido?",
+    "example_it": "non ti seguo, capito?",
     "tags": [
       "connettori"
     ],
@@ -3839,8 +3839,8 @@ const ES_VOCAB = [
     "emoji": "💡",
     "simple": "",
     "it": "l'ho capito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lo pillo, ¿entendido?",
+    "example_it": "l'ho capito, capito?",
     "tags": [
       "connettori"
     ],
@@ -3854,8 +3854,8 @@ const ES_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "capisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ya veo, ¿entendido?",
+    "example_it": "capisco, capito?",
     "tags": [
       "connettori"
     ],
@@ -3869,8 +3869,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "ha senso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tiene sentido, ¿entendido?",
+    "example_it": "ha senso, capito?",
     "tags": [
       "connettori"
     ],
@@ -3884,8 +3884,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "lo capisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lo entiendo, ¿entendido?",
+    "example_it": "lo capisco, capito?",
     "tags": [
       "connettori"
     ],
@@ -3899,8 +3899,8 @@ const ES_VOCAB = [
     "emoji": "⏸️",
     "simple": "",
     "it": "un momento",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Un momento, ¿entendido?",
+    "example_it": "un momento, capito?",
     "tags": [
       "connettori"
     ],
@@ -3914,8 +3914,8 @@ const ES_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "aspetta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Espera, ¿entendido?",
+    "example_it": "aspetta, capito?",
     "tags": [
       "connettori"
     ],
@@ -3929,8 +3929,8 @@ const ES_VOCAB = [
     "emoji": "⏱️",
     "simple": "",
     "it": "un secondo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Un segundo, ¿entendido?",
+    "example_it": "un secondo, capito?",
     "tags": [
       "connettori"
     ],
@@ -3944,8 +3944,8 @@ const ES_VOCAB = [
     "emoji": "😔",
     "simple": "",
     "it": "mi dispiace",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy lo siento. hoy.",
+    "example_it": "Mi sento molto mi dispiace oggi.",
     "tags": [
       "emozioni"
     ],
@@ -3959,8 +3959,8 @@ const ES_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "perché no?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Por qué no?",
+    "example_it": "perché no?",
     "tags": [
       "emozioni"
     ],
@@ -3974,8 +3974,8 @@ const ES_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "meglio così!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Mejor así!",
+    "example_it": "meglio così!",
     "tags": [
       "emozioni"
     ],
@@ -3989,8 +3989,8 @@ const ES_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "aspetta / piano",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Para el carro!",
+    "example_it": "aspetta",
     "tags": [
       "emozioni"
     ],
@@ -4004,8 +4004,8 @@ const ES_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "non perdere la testa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No pierdas los nervios!",
+    "example_it": "non perdere la testa",
     "tags": [
       "emozioni"
     ],
@@ -4019,8 +4019,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "fino agli occhi / non ne posso più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Hasta las narices!",
+    "example_it": "fino agli occhi",
     "tags": [
       "emozioni"
     ],
@@ -4034,8 +4034,8 @@ const ES_VOCAB = [
     "emoji": "🌍",
     "simple": "",
     "it": "non è la fine del mondo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No es el fin del mundo.",
+    "example_it": "non è la fine del mondo",
     "tags": [
       "emozioni"
     ],
@@ -4049,8 +4049,8 @@ const ES_VOCAB = [
     "emoji": "😩",
     "simple": "",
     "it": "sono al limite",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy estoy al límite. hoy.",
+    "example_it": "Mi sento molto sono al limite oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4064,8 +4064,8 @@ const ES_VOCAB = [
     "emoji": "🤪",
     "simple": "",
     "it": "è una follia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Es una locura!",
+    "example_it": "è una follia",
     "tags": [
       "emozioni"
     ],
@@ -4079,8 +4079,8 @@ const ES_VOCAB = [
     "emoji": "😵",
     "simple": "",
     "it": "sei matto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Estás loco/a!",
+    "example_it": "sei matto",
     "tags": [
       "emozioni"
     ],
@@ -4094,8 +4094,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "Dio mio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Dios mío!",
+    "example_it": "Dio mio!",
     "tags": [
       "emozioni"
     ],
@@ -4109,8 +4109,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "non ne posso più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ya no puedo más!",
+    "example_it": "non ne posso più",
     "tags": [
       "emozioni"
     ],
@@ -4124,8 +4124,8 @@ const ES_VOCAB = [
     "emoji": "💢",
     "simple": "",
     "it": "è insopportabile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Esto es insoportable!",
+    "example_it": "è insopportabile",
     "tags": [
       "emozioni"
     ],
@@ -4139,8 +4139,8 @@ const ES_VOCAB = [
     "emoji": "🤢",
     "simple": "",
     "it": "sono stufo/a di questo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Estoy harto/a de esto!",
+    "example_it": "sono stufo",
     "tags": [
       "emozioni"
     ],
@@ -4154,8 +4154,8 @@ const ES_VOCAB = [
     "emoji": "🌀",
     "simple": "",
     "it": "mi sta facendo impazzire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Me está volviendo loco/a!",
+    "example_it": "mi sta facendo impazzire",
     "tags": [
       "emozioni"
     ],
@@ -4169,8 +4169,8 @@ const ES_VOCAB = [
     "emoji": "😣",
     "simple": "",
     "it": "non ce la faccio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy no puedo con esto. hoy.",
+    "example_it": "Mi sento molto non ce la faccio oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4184,8 +4184,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "ormai me ne frego",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy ya me da igual. hoy.",
+    "example_it": "Mi sento molto ormai me ne frego oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4199,8 +4199,8 @@ const ES_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "sono al limite delle forze",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy al límite de mis fuerzas.",
+    "example_it": "sono al limite delle forze",
     "tags": [
       "emozioni"
     ],
@@ -4214,8 +4214,8 @@ const ES_VOCAB = [
     "emoji": "😠",
     "simple": "",
     "it": "mi ha fatto incazzare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me ha cabreado. hoy.",
+    "example_it": "Mi sento molto mi ha fatto incazzare oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4229,8 +4229,8 @@ const ES_VOCAB = [
     "emoji": "😬",
     "simple": "",
     "it": "ho i nervi a fior di pelle",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy con los nervios de punta.",
+    "example_it": "ho i nervi a fior di pelle",
     "tags": [
       "emozioni"
     ],
@@ -4244,8 +4244,8 @@ const ES_VOCAB = [
     "emoji": "😰",
     "simple": "",
     "it": "sono teso/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy estoy tenso hoy.",
+    "example_it": "Mi sento molto sono teso oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4259,8 +4259,8 @@ const ES_VOCAB = [
     "emoji": "💥",
     "simple": "",
     "it": "ho i nervi a pezzi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy tengo los nervios destrozados. hoy.",
+    "example_it": "Mi sento molto ho i nervi a pezzi oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4274,8 +4274,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "sto andando nel panico",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me estoy poniendo histérico hoy.",
+    "example_it": "Mi sento molto sto andando nel panico oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4289,8 +4289,8 @@ const ES_VOCAB = [
     "emoji": "🌪️",
     "simple": "",
     "it": "non riesco a calmarmi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy no puedo calmarme. hoy.",
+    "example_it": "Mi sento molto non riesco a calmarmi oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4304,8 +4304,8 @@ const ES_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "sto perdendo la testa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me estoy volviendo loco hoy.",
+    "example_it": "Mi sento molto sto perdendo la testa oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4319,8 +4319,8 @@ const ES_VOCAB = [
     "emoji": "🥺",
     "simple": "",
     "it": "ho un nodo in gola",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tengo un nudo en la garganta.",
+    "example_it": "ho un nodo in gola",
     "tags": [
       "emozioni"
     ],
@@ -4334,8 +4334,8 @@ const ES_VOCAB = [
     "emoji": "😢",
     "simple": "",
     "it": "mi vien da piangere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy me dan ganas de llorar. hoy.",
+    "example_it": "Mi sento molto mi vien da piangere oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4349,8 +4349,8 @@ const ES_VOCAB = [
     "emoji": "😭",
     "simple": "",
     "it": "sono sul punto di piangere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy estoy a punto de llorar. hoy.",
+    "example_it": "Mi sento molto sono sul punto di piangere oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4364,8 +4364,8 @@ const ES_VOCAB = [
     "emoji": "✊",
     "simple": "",
     "it": "lo voglio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy lo quiero. hoy.",
+    "example_it": "Mi sento molto lo voglio oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4379,8 +4379,8 @@ const ES_VOCAB = [
     "emoji": "👎",
     "simple": "",
     "it": "non mi piace",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me siento muy no me gusta. hoy.",
+    "example_it": "Mi sento molto non mi piace oggi.",
     "tags": [
       "emozioni"
     ],
@@ -4394,8 +4394,8 @@ const ES_VOCAB = [
     "emoji": "😎",
     "simple": "",
     "it": "mi garba",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me mola., creo que es lo correcto.",
+    "example_it": "mi garba, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4409,8 +4409,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "ci sono molto dentro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy muy metido/a en esto., creo que es lo correcto.",
+    "example_it": "ci sono molto dentro, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4424,8 +4424,8 @@ const ES_VOCAB = [
     "emoji": "⭐",
     "simple": "",
     "it": "è la mia roba",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es lo mío., creo que es lo correcto.",
+    "example_it": "è la mia roba, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4439,8 +4439,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "non sono sicuro/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No estoy seguro/a., creo que es lo correcto.",
+    "example_it": "non sono sicuro, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4454,8 +4454,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "non sono del tutto sicuro/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No estoy del todo seguro/a., creo que es lo correcto.",
+    "example_it": "non sono del tutto sicuro, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4469,8 +4469,8 @@ const ES_VOCAB = [
     "emoji": "😐",
     "simple": "",
     "it": "non mi convince",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No me convence., creo que es lo correcto.",
+    "example_it": "non mi convince, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4484,8 +4484,8 @@ const ES_VOCAB = [
     "emoji": "⚖️",
     "simple": "",
     "it": "sono indeciso/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy indeciso/a., creo que es lo correcto.",
+    "example_it": "sono indeciso, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4499,8 +4499,8 @@ const ES_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "è difficile dirlo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es difícil decirlo., creo que es lo correcto.",
+    "example_it": "è difficile dirlo, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4514,8 +4514,8 @@ const ES_VOCAB = [
     "emoji": "📊",
     "simple": "",
     "it": "tutto sommato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En general., creo que es lo correcto.",
+    "example_it": "tutto sommato, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4529,8 +4529,8 @@ const ES_VOCAB = [
     "emoji": "😍",
     "simple": "",
     "it": "bello/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Bonito/a., creo que es lo correcto.",
+    "example_it": "bello, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4544,8 +4544,8 @@ const ES_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "magnifico/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Precioso/a., creo que es lo correcto.",
+    "example_it": "magnifico, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4559,8 +4559,8 @@ const ES_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "mozzafiato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Impresionante., creo que es lo correcto.",
+    "example_it": "mozzafiato, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4574,8 +4574,8 @@ const ES_VOCAB = [
     "emoji": "🥰",
     "simple": "",
     "it": "adorabile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Encantador/a., creo que es lo correcto.",
+    "example_it": "adorabile, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4589,8 +4589,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "carino/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Guapo/a., creo que es lo correcto.",
+    "example_it": "carino, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4604,8 +4604,8 @@ const ES_VOCAB = [
     "emoji": "✨",
     "simple": "",
     "it": "attraente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Atractivo/a., creo que es lo correcto.",
+    "example_it": "attraente, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4619,8 +4619,8 @@ const ES_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "incredibile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Alucinante., creo que es lo correcto.",
+    "example_it": "incredibile, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4634,8 +4634,8 @@ const ES_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "buono",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Bueno., creo que es lo correcto.",
+    "example_it": "buono, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4649,8 +4649,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "bello",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Bonito., creo que es lo correcto.",
+    "example_it": "bello, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4664,8 +4664,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "fantastico",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Genial., creo que es lo correcto.",
+    "example_it": "fantastico, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4679,8 +4679,8 @@ const ES_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "solido",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sólido., creo que es lo correcto.",
+    "example_it": "solido, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4694,8 +4694,8 @@ const ES_VOCAB = [
     "emoji": "👌",
     "simple": "",
     "it": "decente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Decente., creo que es lo correcto.",
+    "example_it": "decente, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4709,8 +4709,8 @@ const ES_VOCAB = [
     "emoji": "⭐",
     "simple": "",
     "it": "eccellente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Excelente., creo que es lo correcto.",
+    "example_it": "eccellente, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4724,8 +4724,8 @@ const ES_VOCAB = [
     "emoji": "👎",
     "simple": "",
     "it": "brutto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Malo., creo que es lo correcto.",
+    "example_it": "brutto, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4739,8 +4739,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "terribile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Terrible., creo que es lo correcto.",
+    "example_it": "terribile, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4754,8 +4754,8 @@ const ES_VOCAB = [
     "emoji": "🤮",
     "simple": "",
     "it": "orribile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Horrible., creo que es lo correcto.",
+    "example_it": "orribile, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4769,8 +4769,8 @@ const ES_VOCAB = [
     "emoji": "😖",
     "simple": "",
     "it": "orrendo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Horroroso., creo que es lo correcto.",
+    "example_it": "orrendo, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4784,8 +4784,8 @@ const ES_VOCAB = [
     "emoji": "💩",
     "simple": "",
     "it": "fa schifo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es una mierda., creo que es lo correcto.",
+    "example_it": "fa schifo, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4799,8 +4799,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "ridicolo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ridículo., creo que es lo correcto.",
+    "example_it": "ridicolo, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4814,8 +4814,8 @@ const ES_VOCAB = [
     "emoji": "😒",
     "simple": "",
     "it": "patetico",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Patético., creo que es lo correcto.",
+    "example_it": "patetico, credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4829,8 +4829,8 @@ const ES_VOCAB = [
     "emoji": "🗣️",
     "simple": "",
     "it": "a dire il vero...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "A decir verdad..., creo que es lo correcto.",
+    "example_it": "a dire il vero..., credo sia la cosa giusta.",
     "tags": [
       "opinioni"
     ],
@@ -4844,8 +4844,8 @@ const ES_VOCAB = [
     "emoji": "🤏",
     "simple": "",
     "it": "più o meno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Más o menos",
+    "example_it": "più o meno",
     "tags": [
       "colloquiale"
     ],
@@ -4859,8 +4859,8 @@ const ES_VOCAB = [
     "emoji": "🙏",
     "simple": "",
     "it": "senza offesa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sin ofender",
+    "example_it": "senza offesa",
     "tags": [
       "colloquiale"
     ],
@@ -4874,8 +4874,8 @@ const ES_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "me ne vado",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me voy",
+    "example_it": "me ne vado",
     "tags": [
       "colloquiale"
     ],
@@ -4889,8 +4889,8 @@ const ES_VOCAB = [
     "emoji": "😜",
     "simple": "",
     "it": "stavo scherzando",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es broma",
+    "example_it": "stavo scherzando",
     "tags": [
       "colloquiale"
     ],
@@ -4904,8 +4904,8 @@ const ES_VOCAB = [
     "emoji": "😅",
     "simple": "",
     "it": "colpa mia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ha sido culpa mía",
+    "example_it": "colpa mia",
     "tags": [
       "colloquiale"
     ],
@@ -4919,8 +4919,8 @@ const ES_VOCAB = [
     "emoji": "🙋",
     "simple": "",
     "it": "è colpa mia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es responsabilidad mía",
+    "example_it": "è colpa mia",
     "tags": [
       "colloquiale"
     ],
@@ -4934,8 +4934,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "ma che cavolo?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Qué narices?",
+    "example_it": "ma che cavolo?",
     "tags": [
       "colloquiale"
     ],
@@ -4949,8 +4949,8 @@ const ES_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "non esagerare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No te pases",
+    "example_it": "non esagerare",
     "tags": [
       "colloquiale"
     ],
@@ -4964,8 +4964,8 @@ const ES_VOCAB = [
     "emoji": "😩",
     "simple": "",
     "it": "ma va' là!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Anda ya!",
+    "example_it": "ma va' là!",
     "tags": [
       "colloquiale"
     ],
@@ -4979,8 +4979,8 @@ const ES_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "nei tuoi sogni!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡En tus sueños!",
+    "example_it": "nei tuoi sogni!",
     "tags": [
       "colloquiale"
     ],
@@ -4994,8 +4994,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "non ti esaltare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No te creas tanto",
+    "example_it": "non ti esaltare",
     "tags": [
       "colloquiale"
     ],
@@ -5009,8 +5009,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "il fatto è che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "El caso es que",
+    "example_it": "il fatto è che",
     "tags": [
       "colloquiale"
     ],
@@ -5024,8 +5024,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "il punto è che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "El punto es que",
+    "example_it": "il punto è che",
     "tags": [
       "colloquiale"
     ],
@@ -5039,8 +5039,8 @@ const ES_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "e roba del genere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Y eso...",
+    "example_it": "e roba del genere",
     "tags": [
       "colloquiale"
     ],
@@ -5054,8 +5054,8 @@ const ES_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "o qualcosa del genere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "O algo así",
+    "example_it": "o qualcosa del genere",
     "tags": [
       "colloquiale"
     ],
@@ -5069,8 +5069,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "io tipo...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Yo tipo...",
+    "example_it": "io tipo...",
     "tags": [
       "colloquiale"
     ],
@@ -5084,8 +5084,8 @@ const ES_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "comunque",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "De todas formas",
+    "example_it": "comunque",
     "tags": [
       "colloquiale"
     ],
@@ -5099,8 +5099,8 @@ const ES_VOCAB = [
     "emoji": "💯",
     "simple": "",
     "it": "letteralmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Literalmente",
+    "example_it": "letteralmente",
     "tags": [
       "colloquiale"
     ],
@@ -5114,8 +5114,8 @@ const ES_VOCAB = [
     "emoji": "✊",
     "simple": "",
     "it": "ci sto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me apunto",
+    "example_it": "ci sto",
     "tags": [
       "colloquiale"
     ],
@@ -5129,8 +5129,8 @@ const ES_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "sto bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy bien",
+    "example_it": "sto bene",
     "tags": [
       "colloquiale"
     ],
@@ -5144,8 +5144,8 @@ const ES_VOCAB = [
     "emoji": "🚀",
     "simple": "",
     "it": "vai!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Adelante!",
+    "example_it": "vai!",
     "tags": [
       "colloquiale"
     ],
@@ -5159,8 +5159,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "certo che sì!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ya lo creo!",
+    "example_it": "certo che sì!",
     "tags": [
       "colloquiale"
     ],
@@ -5174,8 +5174,8 @@ const ES_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "lo dico sul serio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lo digo en serio",
+    "example_it": "lo dico sul serio",
     "tags": [
       "colloquiale"
     ],
@@ -5189,8 +5189,8 @@ const ES_VOCAB = [
     "emoji": "⚖️",
     "simple": "",
     "it": "dipende",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Depende",
+    "example_it": "dipende",
     "tags": [
       "colloquiale"
     ],
@@ -5204,8 +5204,8 @@ const ES_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "come?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Cómo?",
+    "example_it": "come?",
     "tags": [
       "colloquiale"
     ],
@@ -5219,8 +5219,8 @@ const ES_VOCAB = [
     "emoji": "💕",
     "simple": "",
     "it": "mi piaci",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me gustas",
+    "example_it": "mi piaci",
     "tags": [
       "colloquiale"
     ],
@@ -5234,8 +5234,8 @@ const ES_VOCAB = [
     "emoji": "❤️",
     "simple": "",
     "it": "sto iniziando a innamorarmi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me estoy enamorando",
+    "example_it": "sto iniziando a innamorarmi",
     "tags": [
       "colloquiale"
     ],
@@ -5249,8 +5249,8 @@ const ES_VOCAB = [
     "emoji": "😍",
     "simple": "",
     "it": "sono pazzo/a di te",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy loco/a por ti",
+    "example_it": "sono pazzo",
     "tags": [
       "colloquiale"
     ],
@@ -5264,8 +5264,8 @@ const ES_VOCAB = [
     "emoji": "💘",
     "simple": "",
     "it": "mi piaci molto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me gustas mucho",
+    "example_it": "mi piaci molto",
     "tags": [
       "colloquiale"
     ],
@@ -5279,8 +5279,8 @@ const ES_VOCAB = [
     "emoji": "👻",
     "simple": "",
     "it": "sparire senza spiegazioni",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ghostear a alguien",
+    "example_it": "sparire senza spiegazioni",
     "tags": [
       "colloquiale"
     ],
@@ -5294,8 +5294,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "avere un flirt",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tener un rollo",
+    "example_it": "avere un flirt",
     "tags": [
       "colloquiale"
     ],
@@ -5309,8 +5309,8 @@ const ES_VOCAB = [
     "emoji": "😏",
     "simple": "",
     "it": "rimorchiare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Liarse",
+    "example_it": "rimorchiare",
     "tags": [
       "colloquiale"
     ],
@@ -5324,8 +5324,8 @@ const ES_VOCAB = [
     "emoji": "🏹",
     "simple": "",
     "it": "provarci",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tirar la caña",
+    "example_it": "provarci",
     "tags": [
       "colloquiale"
     ],
@@ -5339,8 +5339,8 @@ const ES_VOCAB = [
     "emoji": "🌅",
     "simple": "",
     "it": "sparire gradualmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Desaparecer poco a poco",
+    "example_it": "sparire gradualmente",
     "tags": [
       "colloquiale"
     ],
@@ -5354,8 +5354,8 @@ const ES_VOCAB = [
     "emoji": "💔",
     "simple": "",
     "it": "smettere di amare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dejar de querer",
+    "example_it": "smettere di amare",
     "tags": [
       "colloquiale"
     ],
@@ -5369,8 +5369,8 @@ const ES_VOCAB = [
     "emoji": "😘",
     "simple": "",
     "it": "fare il filo a qualcuno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ligar con alguien",
+    "example_it": "fare il filo a qualcuno",
     "tags": [
       "colloquiale"
     ],
@@ -5384,8 +5384,8 @@ const ES_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "sono al verde",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy sin blanca",
+    "example_it": "sono al verde",
     "tags": [
       "colloquiale"
     ],
@@ -5399,8 +5399,8 @@ const ES_VOCAB = [
     "emoji": "📱",
     "simple": "",
     "it": "tieniti in contatto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Mantente en contacto",
+    "example_it": "tieniti in contatto",
     "tags": [
       "colloquiale"
     ],
@@ -5414,8 +5414,8 @@ const ES_VOCAB = [
     "emoji": "🛑",
     "simple": "",
     "it": "smettila",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Para ya",
+    "example_it": "smettila",
     "tags": [
       "colloquiale"
     ],
@@ -5429,8 +5429,8 @@ const ES_VOCAB = [
     "emoji": "📢",
     "simple": "",
     "it": "tienimi aggiornato/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Mantenme informado/a",
+    "example_it": "tienimi aggiornato",
     "tags": [
       "colloquiale"
     ],
@@ -5444,8 +5444,8 @@ const ES_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "provaci",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Inténtalo",
+    "example_it": "provaci",
     "tags": [
       "colloquiale"
     ],
@@ -5459,8 +5459,8 @@ const ES_VOCAB = [
     "emoji": "🎉",
     "simple": "",
     "it": "divertirsi un sacco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Divertirte mogollón",
+    "example_it": "divertirsi un sacco",
     "tags": [
       "colloquiale"
     ],
@@ -5474,8 +5474,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "avere ripensamenti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tener dudas",
+    "example_it": "avere ripensamenti",
     "tags": [
       "colloquiale"
     ],
@@ -5489,8 +5489,8 @@ const ES_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "controllati",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Contrólate",
+    "example_it": "controllati",
     "tags": [
       "colloquiale"
     ],
@@ -5504,8 +5504,8 @@ const ES_VOCAB = [
     "emoji": "🦋",
     "simple": "",
     "it": "persona molto socievole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Persona muy sociable",
+    "example_it": "persona molto socievole",
     "tags": [
       "colloquiale"
     ],
@@ -5519,8 +5519,8 @@ const ES_VOCAB = [
     "emoji": "👀",
     "simple": "",
     "it": "caramella per gli occhi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tentación visual",
+    "example_it": "caramella per gli occhi",
     "tags": [
       "colloquiale"
     ],
@@ -5534,8 +5534,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "come va?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Cómo va todo?",
+    "example_it": "come va?",
     "tags": [
       "colloquiale"
     ],
@@ -5549,8 +5549,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "come stavi?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Cómo has estado?",
+    "example_it": "come stavi?",
     "tags": [
       "colloquiale"
     ],
@@ -5564,8 +5564,8 @@ const ES_VOCAB = [
     "emoji": "🆕",
     "simple": "",
     "it": "cosa c'è di nuovo?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Qué hay de nuevo?",
+    "example_it": "cosa c'è di nuovo?",
     "tags": [
       "colloquiale"
     ],
@@ -5579,8 +5579,8 @@ const ES_VOCAB = [
     "emoji": "🤙",
     "simple": "",
     "it": "cosa c'è?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Qué tal?",
+    "example_it": "cosa c'è?",
     "tags": [
       "colloquiale"
     ],
@@ -5594,8 +5594,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "cosa succede?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Qué pasa?",
+    "example_it": "cosa succede?",
     "tags": [
       "colloquiale"
     ],
@@ -5609,8 +5609,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "ciao!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Hola!",
+    "example_it": "ciao!",
     "tags": [
       "colloquiale"
     ],
@@ -5624,8 +5624,8 @@ const ES_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "quanto tempo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Cuánto tiempo!",
+    "example_it": "quanto tempo!",
     "tags": [
       "colloquiale"
     ],
@@ -5639,8 +5639,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "che bello vederti!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué alegría verte!",
+    "example_it": "che bello vederti!",
     "tags": [
       "colloquiale"
     ],
@@ -5654,8 +5654,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "sono contento/a di vederti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me alegra verte",
+    "example_it": "sono contento",
     "tags": [
       "colloquiale"
     ],
@@ -5669,8 +5669,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "che succede qui?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Qué pasa aquí?",
+    "example_it": "che succede qui?",
     "tags": [
       "colloquiale"
     ],
@@ -5684,8 +5684,8 @@ const ES_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "ci risiamo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Otra vez lo mismo!",
+    "example_it": "ci risiamo!",
     "tags": [
       "colloquiale"
     ],
@@ -5699,8 +5699,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "ci mancherebbe",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Normal",
+    "example_it": "ci mancherebbe",
     "tags": [
       "colloquiale"
     ],
@@ -5714,8 +5714,8 @@ const ES_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "come vuoi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Como quieras",
+    "example_it": "come vuoi",
     "tags": [
       "colloquiale"
     ],
@@ -5729,8 +5729,8 @@ const ES_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "non ci pensare nemmeno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ni se te ocurra",
+    "example_it": "non ci pensare nemmeno",
     "tags": [
       "colloquiale"
     ],
@@ -5744,8 +5744,8 @@ const ES_VOCAB = [
     "emoji": "👆",
     "simple": "",
     "it": "è una tua decisione",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es tu decisión",
+    "example_it": "è una tua decisione",
     "tags": [
       "colloquiale"
     ],
@@ -5759,8 +5759,8 @@ const ES_VOCAB = [
     "emoji": "🤨",
     "simple": "",
     "it": "ne dubito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lo dudo",
+    "example_it": "ne dubito",
     "tags": [
       "colloquiale"
     ],
@@ -5774,8 +5774,8 @@ const ES_VOCAB = [
     "emoji": "😢",
     "simple": "",
     "it": "poveretto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Pobrecito/a",
+    "example_it": "poveretto",
     "tags": [
       "colloquiale"
     ],
@@ -5789,8 +5789,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "levati dai piedi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Aléjate",
+    "example_it": "levati dai piedi",
     "tags": [
       "colloquiale"
     ],
@@ -5804,8 +5804,8 @@ const ES_VOCAB = [
     "emoji": "💅",
     "simple": "",
     "it": "perfettamente in forma",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En perfecto estado",
+    "example_it": "perfettamente in forma",
     "tags": [
       "colloquiale"
     ],
@@ -5819,8 +5819,8 @@ const ES_VOCAB = [
     "emoji": "😒",
     "simple": "",
     "it": "amaro/a / risentito/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Amargado/a",
+    "example_it": "amaro",
     "tags": [
       "colloquiale"
     ],
@@ -5834,8 +5834,8 @@ const ES_VOCAB = [
     "emoji": "🧢",
     "simple": "",
     "it": "senza bugie / sul serio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sin mentiras",
+    "example_it": "senza bugie",
     "tags": [
       "colloquiale"
     ],
@@ -5849,8 +5849,8 @@ const ES_VOCAB = [
     "emoji": "🔑",
     "simple": "",
     "it": "apertamente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Muy claramente",
+    "example_it": "apertamente",
     "tags": [
       "colloquiale"
     ],
@@ -5864,8 +5864,8 @@ const ES_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "devo andare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me tengo que ir",
+    "example_it": "devo andare",
     "tags": [
       "colloquiale"
     ],
@@ -5879,8 +5879,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "ci vediamo dopo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Hasta luego!",
+    "example_it": "ci vediamo dopo!",
     "tags": [
       "colloquiale"
     ],
@@ -5894,8 +5894,8 @@ const ES_VOCAB = [
     "emoji": "📞",
     "simple": "",
     "it": "ci sentiamo dopo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hablamos luego",
+    "example_it": "ci sentiamo dopo",
     "tags": [
       "colloquiale"
     ],
@@ -5909,8 +5909,8 @@ const ES_VOCAB = [
     "emoji": "🚶",
     "simple": "",
     "it": "mi avvio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me pongo en marcha",
+    "example_it": "mi avvio",
     "tags": [
       "colloquiale"
     ],
@@ -5924,8 +5924,8 @@ const ES_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "ci vediamo in giro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Nos vemos por aquí",
+    "example_it": "ci vediamo in giro",
     "tags": [
       "colloquiale"
     ],
@@ -5939,8 +5939,8 @@ const ES_VOCAB = [
     "emoji": "🚀",
     "simple": "",
     "it": "me ne vado",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me voy ya",
+    "example_it": "me ne vado",
     "tags": [
       "colloquiale"
     ],
@@ -5954,8 +5954,8 @@ const ES_VOCAB = [
     "emoji": "🌙",
     "simple": "",
     "it": "per oggi basta così",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dejémoslo aquí por hoy",
+    "example_it": "per oggi basta così",
     "tags": [
       "colloquiale"
     ],
@@ -5969,8 +5969,8 @@ const ES_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "me ne vado",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me marcho",
+    "example_it": "me ne vado",
     "tags": [
       "colloquiale"
     ],
@@ -5984,8 +5984,8 @@ const ES_VOCAB = [
     "emoji": "💚",
     "simple": "",
     "it": "prenditi cura",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Cuídate",
+    "example_it": "prenditi cura",
     "tags": [
       "colloquiale"
     ],
@@ -5999,8 +5999,8 @@ const ES_VOCAB = [
     "emoji": "⏰",
     "simple": "",
     "it": "è ora di andare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es hora de irme",
+    "example_it": "è ora di andare",
     "tags": [
       "colloquiale"
     ],
@@ -6014,8 +6014,8 @@ const ES_VOCAB = [
     "emoji": "📱",
     "simple": "",
     "it": "ti aggiornerò dopo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Te cuento luego",
+    "example_it": "ti aggiornerò dopo",
     "tags": [
       "colloquiale"
     ],
@@ -6029,8 +6029,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "sono pronto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy listo/a",
+    "example_it": "sono pronto",
     "tags": [
       "colloquiale"
     ],
@@ -6044,8 +6044,8 @@ const ES_VOCAB = [
     "emoji": "🟢",
     "simple": "",
     "it": "pronto a partire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Listo para empezar",
+    "example_it": "pronto a partire",
     "tags": [
       "colloquiale"
     ],
@@ -6059,8 +6059,8 @@ const ES_VOCAB = [
     "emoji": "📋",
     "simple": "",
     "it": "sono preparato/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy preparado/a",
+    "example_it": "sono preparato",
     "tags": [
       "colloquiale"
     ],
@@ -6074,8 +6074,8 @@ const ES_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "sono pronto al massimo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy a punto",
+    "example_it": "sono pronto al massimo",
     "tags": [
       "colloquiale"
     ],
@@ -6089,8 +6089,8 @@ const ES_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "va bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Está bien",
+    "example_it": "va bene",
     "tags": [
       "colloquiale"
     ],
@@ -6104,8 +6104,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "tutto bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Todo bien",
+    "example_it": "tutto bene",
     "tags": [
       "colloquiale"
     ],
@@ -6119,8 +6119,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "non preoccuparti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No te preocupes",
+    "example_it": "non preoccuparti",
     "tags": [
       "colloquiale"
     ],
@@ -6134,8 +6134,8 @@ const ES_VOCAB = [
     "emoji": "🤚",
     "simple": "",
     "it": "non è niente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No es nada",
+    "example_it": "non è niente",
     "tags": [
       "colloquiale"
     ],
@@ -6149,8 +6149,8 @@ const ES_VOCAB = [
     "emoji": "😂",
     "simple": "",
     "it": "mi hai beccato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Me has pillado",
+    "example_it": "mi hai beccato",
     "tags": [
       "colloquiale"
     ],
@@ -6164,8 +6164,8 @@ const ES_VOCAB = [
     "emoji": "😄",
     "simple": "",
     "it": "bella questa!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Buena esa",
+    "example_it": "bella questa!",
     "tags": [
       "colloquiale"
     ],
@@ -6179,8 +6179,8 @@ const ES_VOCAB = [
     "emoji": "😐",
     "simple": "",
     "it": "non fa ridere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No tiene gracia",
+    "example_it": "non fa ridere",
     "tags": [
       "colloquiale"
     ],
@@ -6194,8 +6194,8 @@ const ES_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "ah sì?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Ah sí?",
+    "example_it": "ah sì?",
     "tags": [
       "colloquiale"
     ],
@@ -6209,8 +6209,8 @@ const ES_VOCAB = [
     "emoji": "🍕",
     "simple": "",
     "it": "ho una fame da lupi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tengo un hambre que me muero",
+    "example_it": "ho una fame da lupi",
     "tags": [
       "colloquiale"
     ],
@@ -6224,8 +6224,8 @@ const ES_VOCAB = [
     "emoji": "😴",
     "simple": "",
     "it": "sono a pezzi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estoy reventado/a",
+    "example_it": "sono a pezzi",
     "tags": [
       "colloquiale"
     ],
@@ -6239,8 +6239,8 @@ const ES_VOCAB = [
     "emoji": "😮",
     "simple": "",
     "it": "non mi dire!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No me digas!",
+    "example_it": "non mi dire!",
     "tags": [
       "colloquiale"
     ],
@@ -6254,8 +6254,8 @@ const ES_VOCAB = [
     "emoji": "💢",
     "simple": "",
     "it": "che vada!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Y una mierda!",
+    "example_it": "che vada!",
     "tags": [
       "colloquiale"
     ],
@@ -6269,8 +6269,8 @@ const ES_VOCAB = [
     "emoji": "👮",
     "simple": "",
     "it": "sbirro (slang)",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Pasma",
+    "example_it": "sbirro",
     "tags": [
       "colloquiale"
     ],
@@ -6284,8 +6284,8 @@ const ES_VOCAB = [
     "emoji": "💋",
     "simple": "",
     "it": "dare un bacio sulla guancia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dar dos besos",
+    "example_it": "dare un bacio sulla guancia",
     "tags": [
       "colloquiale"
     ],
@@ -6299,8 +6299,8 @@ const ES_VOCAB = [
     "emoji": "🤒",
     "simple": "",
     "it": "non mi sento bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No me encuentro bien",
+    "example_it": "non mi sento bene",
     "tags": [
       "colloquiale"
     ],
@@ -6314,8 +6314,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "con piacere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Con mucho gusto",
+    "example_it": "con piacere",
     "tags": [
       "colloquiale"
     ],
@@ -6329,8 +6329,8 @@ const ES_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "col sorriso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Con una sonrisa",
+    "example_it": "col sorriso",
     "tags": [
       "colloquiale"
     ],
@@ -6344,8 +6344,8 @@ const ES_VOCAB = [
     "emoji": "💯",
     "simple": "",
     "it": "assolutamente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Desde luego",
+    "example_it": "assolutamente",
     "tags": [
       "colloquiale"
     ],
@@ -6359,8 +6359,8 @@ const ES_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "che assurdità!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Menuda tontería!",
+    "example_it": "che assurdità!",
     "tags": [
       "colloquiale"
     ],
@@ -6374,8 +6374,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "mamma mia!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Madre mía!",
+    "example_it": "mamma mia!",
     "tags": [
       "colloquiale"
     ],
@@ -6389,8 +6389,8 @@ const ES_VOCAB = [
     "emoji": "😑",
     "simple": "",
     "it": "boh / così così",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ni fu ni fa",
+    "example_it": "boh",
     "tags": [
       "colloquiale"
     ],
@@ -6404,8 +6404,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "è una seccatura",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Es un rollo",
+    "example_it": "è una seccatura",
     "tags": [
       "colloquiale"
     ],
@@ -6419,8 +6419,8 @@ const ES_VOCAB = [
     "emoji": "😬",
     "simple": "",
     "it": "fare un casino",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a meter la pata!",
+    "example_it": "fare un casino!",
     "tags": [
       "bambini",
       "attività"
@@ -6435,8 +6435,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "raccogliere / venire a prendere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a recoger!",
+    "example_it": "raccogliere!",
     "tags": [
       "bambini",
       "base"
@@ -6451,8 +6451,8 @@ const ES_VOCAB = [
     "emoji": "📞",
     "simple": "",
     "it": "contattare / scrivere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a contactar!",
+    "example_it": "contattare!",
     "tags": [
       "verbi"
     ],
@@ -6466,8 +6466,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "andare d'accordo con",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a llevarse bien con!",
+    "example_it": "andare d'accordo con!",
     "tags": [
       "bambini",
       "base"
@@ -6482,8 +6482,8 @@ const ES_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "aggiornarsi / recuperare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ponerse al día!",
+    "example_it": "aggiornarsi!",
     "tags": [
       "verbi"
     ],
@@ -6497,8 +6497,8 @@ const ES_VOCAB = [
     "emoji": "👀",
     "simple": "",
     "it": "dare un'occhiata",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a echar un vistazo!",
+    "example_it": "dare un'occhiata!",
     "tags": [
       "verbi"
     ],
@@ -6512,8 +6512,8 @@ const ES_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "pensarci su / riflettere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a pensar bien!",
+    "example_it": "pensarci su!",
     "tags": [
       "verbi"
     ],
@@ -6527,8 +6527,8 @@ const ES_VOCAB = [
     "emoji": "😎",
     "simple": "",
     "it": "rilassarsi / calmarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a relajarse!",
+    "example_it": "rilassarsi!",
     "tags": [
       "bambini",
       "comportamento"
@@ -6543,8 +6543,8 @@ const ES_VOCAB = [
     "emoji": "✂️",
     "simple": "",
     "it": "interrompere / troncare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a romper!",
+    "example_it": "interrompere!",
     "tags": [
       "verbi"
     ],
@@ -6558,8 +6558,8 @@ const ES_VOCAB = [
     "emoji": "💡",
     "simple": "",
     "it": "capire / trovare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a entender!",
+    "example_it": "capire!",
     "tags": [
       "verbi"
     ],
@@ -6573,8 +6573,8 @@ const ES_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "andare in fumo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a irse al garete!",
+    "example_it": "andare in fumo!",
     "tags": [
       "verbi"
     ],
@@ -6588,8 +6588,8 @@ const ES_VOCAB = [
     "emoji": "👇",
     "simple": "",
     "it": "mettere giù / umiliare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a dejar!",
+    "example_it": "mettere giù!",
     "tags": [
       "verbi"
     ],
@@ -6603,8 +6603,8 @@ const ES_VOCAB = [
     "emoji": "🚶",
     "simple": "",
     "it": "venire / accompagnare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a venir!",
+    "example_it": "venire!",
     "tags": [
       "bambini",
       "base"
@@ -6619,8 +6619,8 @@ const ES_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "correre qua e là",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a correr de aquí para allá!",
+    "example_it": "correre qua e là!",
     "tags": [
       "bambini",
       "attività"
@@ -6635,8 +6635,8 @@ const ES_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "andarsene / allontanarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a irse!",
+    "example_it": "andarsene!",
     "tags": [
       "base",
       "bambini"
@@ -6651,8 +6651,8 @@ const ES_VOCAB = [
     "emoji": "🧹",
     "simple": "",
     "it": "pulire / mettere in ordine",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a limpiar!",
+    "example_it": "pulire!",
     "tags": [
       "bambini",
       "attività"
@@ -6667,8 +6667,8 @@ const ES_VOCAB = [
     "emoji": "☀️",
     "simple": "",
     "it": "chiarire / sgomberare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a aclarar!",
+    "example_it": "chiarire!",
     "tags": [
       "verbi"
     ],
@@ -6682,8 +6682,8 @@ const ES_VOCAB = [
     "emoji": "💚",
     "simple": "",
     "it": "prendersi cura di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a cuidar de!",
+    "example_it": "prendersi cura di!",
     "tags": [
       "bambini",
       "base"
@@ -6698,8 +6698,8 @@ const ES_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "ascoltare / prestare attenzione",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a escuchar!",
+    "example_it": "ascoltare!",
     "tags": [
       "bambini",
       "comportamento"
@@ -6714,8 +6714,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "andare d'accordo / continuare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a llevarse bien!",
+    "example_it": "andare d'accordo!",
     "tags": [
       "verbi"
     ],
@@ -6729,8 +6729,8 @@ const ES_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "controllare / verificare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ver cómo está!",
+    "example_it": "controllare!",
     "tags": [
       "bambini",
       "base"
@@ -6745,8 +6745,8 @@ const ES_VOCAB = [
     "emoji": "😄",
     "simple": "",
     "it": "alleggerirsi / prenderla con più leggerezza",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a alegrarse!",
+    "example_it": "alleggerirsi!",
     "tags": [
       "verbi"
     ],
@@ -6760,8 +6760,8 @@ const ES_VOCAB = [
     "emoji": "🎉",
     "simple": "",
     "it": "animare / vivacizzare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a animar!",
+    "example_it": "animare!",
     "tags": [
       "verbi"
     ],
@@ -6775,8 +6775,8 @@ const ES_VOCAB = [
     "emoji": "🚀",
     "simple": "",
     "it": "lanciarsi in / cominciare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a lanzarse a!",
+    "example_it": "lanciarsi in!",
     "tags": [
       "verbi"
     ],
@@ -6790,8 +6790,8 @@ const ES_VOCAB = [
     "emoji": "❌",
     "simple": "",
     "it": "escludere / scartare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a descartar!",
+    "example_it": "escludere!",
     "tags": [
       "verbi"
     ],
@@ -6805,8 +6805,8 @@ const ES_VOCAB = [
     "emoji": "🔔",
     "simple": "",
     "it": "suonare / esplodere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a sonar!",
+    "example_it": "suonare!",
     "tags": [
       "verbi"
     ],
@@ -6820,8 +6820,8 @@ const ES_VOCAB = [
     "emoji": "🐷",
     "simple": "",
     "it": "abbuffarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "ponerse morado / comer como un cerdo",
+    "example_it": "abbuffarsi",
     "tags": [
       "verbi"
     ],
@@ -6835,8 +6835,8 @@ const ES_VOCAB = [
     "emoji": "📏",
     "simple": "",
     "it": "mettersi in fila",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "hacer fila / ponerse en fila",
+    "example_it": "mettersi in fila",
     "tags": [
       "bambini",
       "attività"
@@ -6851,8 +6851,8 @@ const ES_VOCAB = [
     "emoji": "💃",
     "simple": "",
     "it": "entrare come se niente fosse",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a entrar como si nada!",
+    "example_it": "entrare come se niente fosse!",
     "tags": [
       "verbi"
     ],
@@ -6866,8 +6866,8 @@ const ES_VOCAB = [
     "emoji": "🛍️",
     "simple": "",
     "it": "portare via / togliere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a llevarse!",
+    "example_it": "portare via!",
     "tags": [
       "bambini",
       "base"
@@ -6882,8 +6882,8 @@ const ES_VOCAB = [
     "emoji": "🐴",
     "simple": "",
     "it": "fare i bulli / fare il matto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a hacer el tonto!",
+    "example_it": "fare i bulli!",
     "tags": [
       "bambini",
       "comportamento"
@@ -6898,8 +6898,8 @@ const ES_VOCAB = [
     "emoji": "✂️",
     "simple": "",
     "it": "ridurre / diminuire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a reducir!",
+    "example_it": "ridurre!",
     "tags": [
       "verbi"
     ],
@@ -6913,8 +6913,8 @@ const ES_VOCAB = [
     "emoji": "🤞",
     "simple": "",
     "it": "arrangiarsi / cavarsela",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a apañárselas!",
+    "example_it": "arrangiarsi!",
     "tags": [
       "verbi"
     ],
@@ -6928,8 +6928,8 @@ const ES_VOCAB = [
     "emoji": "👗",
     "simple": "",
     "it": "provare / indossare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a probarse!",
+    "example_it": "provare!",
     "tags": [
       "verbi"
     ],
@@ -6943,8 +6943,8 @@ const ES_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "sembrare / imbattersi in",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a encontrar!",
+    "example_it": "sembrare!",
     "tags": [
       "verbi"
     ],
@@ -6958,8 +6958,8 @@ const ES_VOCAB = [
     "emoji": "💕",
     "simple": "",
     "it": "riconciliarsi / inventare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a reconciliarse!",
+    "example_it": "riconciliarsi!",
     "tags": [
       "base",
       "bambini"
@@ -6974,8 +6974,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "discutere / parlare di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a hablar de!",
+    "example_it": "discutere!",
     "tags": [
       "verbi"
     ],
@@ -6989,8 +6989,8 @@ const ES_VOCAB = [
     "emoji": "🥊",
     "simple": "",
     "it": "scontrarsi con / affrontare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a enfrentarse a!",
+    "example_it": "scontrarsi con!",
     "tags": [
       "verbi"
     ],
@@ -7004,8 +7004,8 @@ const ES_VOCAB = [
     "emoji": "💔",
     "simple": "",
     "it": "rompere / separarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a romper!",
+    "example_it": "rompere!",
     "tags": [
       "verbi"
     ],
@@ -7019,8 +7019,8 @@ const ES_VOCAB = [
     "emoji": "🐔",
     "simple": "",
     "it": "tirarsi indietro / avere paura",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a acobardarse!",
+    "example_it": "tirarsi indietro!",
     "tags": [
       "verbi"
     ],
@@ -7034,8 +7034,8 @@ const ES_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "scappare / fuggire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a huir!",
+    "example_it": "scappare!",
     "tags": [
       "bambini",
       "base"
@@ -7050,8 +7050,8 @@ const ES_VOCAB = [
     "emoji": "🚗",
     "simple": "",
     "it": "investire / rivedere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a atropellar!",
+    "example_it": "investire!",
     "tags": [
       "verbi"
     ],
@@ -7065,8 +7065,8 @@ const ES_VOCAB = [
     "emoji": "📋",
     "simple": "",
     "it": "ripassare / praticare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a repasar!",
+    "example_it": "ripassare!",
     "tags": [
       "verbi"
     ],
@@ -7080,8 +7080,8 @@ const ES_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "capire / distinguere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a distinguir!",
+    "example_it": "capire!",
     "tags": [
       "verbi"
     ],
@@ -7095,8 +7095,8 @@ const ES_VOCAB = [
     "emoji": "⚖️",
     "simple": "",
     "it": "compensare / recuperare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a compensar!",
+    "example_it": "compensare!",
     "tags": [
       "verbi"
     ],
@@ -7110,8 +7110,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "agitarsi / innervosirsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a flipar!",
+    "example_it": "agitarsi!",
     "tags": [
       "verbi"
     ],
@@ -7125,8 +7125,8 @@ const ES_VOCAB = [
     "emoji": "📢",
     "simple": "",
     "it": "aggiornare / informare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a poner al día!",
+    "example_it": "aggiornare!",
     "tags": [
       "verbi"
     ],
@@ -7140,8 +7140,8 @@ const ES_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "uscire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a salir!",
+    "example_it": "uscire!",
     "tags": [
       "verbi"
     ],
@@ -7155,8 +7155,8 @@ const ES_VOCAB = [
     "emoji": "🔙",
     "simple": "",
     "it": "tornare / ritornare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a volver!",
+    "example_it": "tornare!",
     "tags": [
       "bambini",
       "base"
@@ -7171,8 +7171,8 @@ const ES_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "entrare / salire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a entrar!",
+    "example_it": "entrare!",
     "tags": [
       "bambini",
       "base"
@@ -7187,8 +7187,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "salire / andare d'accordo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a subirse!",
+    "example_it": "salire!",
     "tags": [
       "verbi"
     ],
@@ -7202,8 +7202,8 @@ const ES_VOCAB = [
     "emoji": "🚌",
     "simple": "",
     "it": "scendere / togliere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a bajarse!",
+    "example_it": "scendere!",
     "tags": [
       "verbi"
     ],
@@ -7217,8 +7217,8 @@ const ES_VOCAB = [
     "emoji": "🍽️",
     "simple": "",
     "it": "mangiare tutto / finire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a comerse todo!",
+    "example_it": "mangiare tutto!",
     "tags": [
       "bambini",
       "pasti"
@@ -7233,8 +7233,8 @@ const ES_VOCAB = [
     "emoji": "🍴",
     "simple": "",
     "it": "attaccare / iniziare a mangiare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ponerse a comer!",
+    "example_it": "attaccare!",
     "tags": [
       "bambini",
       "pasti"
@@ -7249,8 +7249,8 @@ const ES_VOCAB = [
     "emoji": "🧹",
     "simple": "",
     "it": "sparecchiare / mettere via",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a quitar!",
+    "example_it": "sparecchiare!",
     "tags": [
       "bambini",
       "pasti"
@@ -7265,8 +7265,8 @@ const ES_VOCAB = [
     "emoji": "🧻",
     "simple": "",
     "it": "pulire / passare lo straccio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a limpiar!",
+    "example_it": "pulire!",
     "tags": [
       "bambini",
       "attività"
@@ -7281,8 +7281,8 @@ const ES_VOCAB = [
     "emoji": "🖍️",
     "simple": "",
     "it": "colorare / pitturare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a colorear!",
+    "example_it": "colorare!",
     "tags": [
       "bambini",
       "attività"
@@ -7297,8 +7297,8 @@ const ES_VOCAB = [
     "emoji": "📦",
     "simple": "",
     "it": "mettere in ordine / riordinare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ordenar!",
+    "example_it": "mettere in ordine!",
     "tags": [
       "bambini",
       "attività"
@@ -7313,8 +7313,8 @@ const ES_VOCAB = [
     "emoji": "⛏️",
     "simple": "",
     "it": "dissotterrare / trovare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a desenterrar!",
+    "example_it": "dissotterrare!",
     "tags": [
       "verbi"
     ],
@@ -7328,8 +7328,8 @@ const ES_VOCAB = [
     "emoji": "💧",
     "simple": "",
     "it": "annacquare / ammorbidire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a aguar!",
+    "example_it": "annacquare!",
     "tags": [
       "verbi"
     ],
@@ -7343,8 +7343,8 @@ const ES_VOCAB = [
     "emoji": "🌱",
     "simple": "",
     "it": "crescere / maturare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a crecer!",
+    "example_it": "crescere!",
     "tags": [
       "bambini",
       "base"
@@ -7359,8 +7359,8 @@ const ES_VOCAB = [
     "emoji": "✂️",
     "simple": "",
     "it": "ridurre / tagliare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a recortar!",
+    "example_it": "ridurre!",
     "tags": [
       "verbi"
     ],
@@ -7374,8 +7374,8 @@ const ES_VOCAB = [
     "emoji": "📦",
     "simple": "",
     "it": "svuotare / mettere in ordine",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a vaciar!",
+    "example_it": "svuotare!",
     "tags": [
       "bambini",
       "attività"
@@ -7390,8 +7390,8 @@ const ES_VOCAB = [
     "emoji": "🏖️",
     "simple": "",
     "it": "asciugarsi / asciugare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a secarse!",
+    "example_it": "asciugarsi!",
     "tags": [
       "bambini",
       "base"
@@ -7406,8 +7406,8 @@ const ES_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "aspettare / reggere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a esperar!",
+    "example_it": "aspettare!",
     "tags": [
       "bambini",
       "base"
@@ -7422,8 +7422,8 @@ const ES_VOCAB = [
     "emoji": "⛔",
     "simple": "",
     "it": "stare lontano / tenersi a distanza",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a mantenerse alejado!",
+    "example_it": "stare lontano!",
     "tags": [
       "bambini",
       "comportamento"
@@ -7438,8 +7438,8 @@ const ES_VOCAB = [
     "emoji": "🤲",
     "simple": "",
     "it": "distribuire / condividere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a repartir!",
+    "example_it": "distribuire!",
     "tags": [
       "bambini",
       "attività"
@@ -7454,8 +7454,8 @@ const ES_VOCAB = [
     "emoji": "🖊️",
     "simple": "",
     "it": "incollare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a pegar!",
+    "example_it": "incollare!",
     "tags": [
       "bambini",
       "attività"
@@ -7470,8 +7470,8 @@ const ES_VOCAB = [
     "emoji": "📵",
     "simple": "",
     "it": "riagganciare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a colgar!",
+    "example_it": "riagganciare!",
     "tags": [
       "verbi"
     ],
@@ -7485,8 +7485,8 @@ const ES_VOCAB = [
     "emoji": "😎",
     "simple": "",
     "it": "stare insieme / passare il tempo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a quedar!",
+    "example_it": "stare insieme!",
     "tags": [
       "verbi"
     ],
@@ -7500,8 +7500,8 @@ const ES_VOCAB = [
     "emoji": "🔊",
     "simple": "",
     "it": "apparire / alzare il volume",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a aparecer!",
+    "example_it": "apparire!",
     "tags": [
       "verbi"
     ],
@@ -7515,8 +7515,8 @@ const ES_VOCAB = [
     "emoji": "🔉",
     "simple": "",
     "it": "rifiutare / abbassare il volume",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a rechazar!",
+    "example_it": "rifiutare!",
     "tags": [
       "verbi"
     ],
@@ -7530,8 +7530,8 @@ const ES_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "cercare / migliorare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a buscar!",
+    "example_it": "cercare!",
     "tags": [
       "verbi"
     ],
@@ -7545,8 +7545,8 @@ const ES_VOCAB = [
     "emoji": "✏️",
     "simple": "",
     "it": "scrivere / annotare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a anotar!",
+    "example_it": "scrivere!",
     "tags": [
       "verbi"
     ],
@@ -7560,8 +7560,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "non riuscire a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a no lograr!",
+    "example_it": "non riuscire a!",
     "tags": [
       "verbi"
     ],
@@ -7575,8 +7575,8 @@ const ES_VOCAB = [
     "emoji": "📖",
     "simple": "",
     "it": "sfogliare / esaminare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a hojear!",
+    "example_it": "sfogliare!",
     "tags": [
       "verbi"
     ],
@@ -7590,8 +7590,8 @@ const ES_VOCAB = [
     "emoji": "🪤",
     "simple": "",
     "it": "cascarci / cadere nella trappola",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "picar / caer en la trampa",
+    "example_it": "cascarci",
     "tags": [
       "base",
       "bambini"
@@ -7606,8 +7606,8 @@ const ES_VOCAB = [
     "emoji": "😄",
     "simple": "",
     "it": "prendere in giro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a tomar el pelo!",
+    "example_it": "prendere in giro!",
     "tags": [
       "verbi"
     ],
@@ -7621,8 +7621,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "mi dai ai nervi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Me pones de los nervios!",
+    "example_it": "mi dai ai nervi",
     "tags": [
       "idiomi"
     ],
@@ -7636,8 +7636,8 @@ const ES_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "è finita / è tutto finito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Se acabó / Es el fin",
+    "example_it": "è finita",
     "tags": [
       "idiomi"
     ],
@@ -7651,8 +7651,8 @@ const ES_VOCAB = [
     "emoji": "🤞",
     "simple": "",
     "it": "andrà bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Saldrá bien — así son las cosas.",
+    "example_it": "andrà bene — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7666,8 +7666,8 @@ const ES_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "è stato incredibile!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Fue increíble!",
+    "example_it": "è stato incredibile!",
     "tags": [
       "idiomi"
     ],
@@ -7681,8 +7681,8 @@ const ES_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "è incredibile!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Es increíble!",
+    "example_it": "è incredibile!",
     "tags": [
       "idiomi"
     ],
@@ -7696,8 +7696,8 @@ const ES_VOCAB = [
     "emoji": "💥",
     "simple": "",
     "it": "che disastro!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué desastre!",
+    "example_it": "che disastro!",
     "tags": [
       "idiomi"
     ],
@@ -7711,8 +7711,8 @@ const ES_VOCAB = [
     "emoji": "🌀",
     "simple": "",
     "it": "che casino!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Qué lío!",
+    "example_it": "che casino!",
     "tags": [
       "idiomi"
     ],
@@ -7726,8 +7726,8 @@ const ES_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "neanche per sogno!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ni hablar!",
+    "example_it": "neanche per sogno!",
     "tags": [
       "idiomi"
     ],
@@ -7741,8 +7741,8 @@ const ES_VOCAB = [
     "emoji": "✈️",
     "simple": "",
     "it": "buon viaggio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Buen viaje!",
+    "example_it": "buon viaggio!",
     "tags": [
       "idiomi"
     ],
@@ -7756,8 +7756,8 @@ const ES_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "devo andare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tengo que irme. — así son las cosas.",
+    "example_it": "devo andare — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7771,8 +7771,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "dobbiamo parlare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tenemos que hablar. — así son las cosas.",
+    "example_it": "dobbiamo parlare — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7786,8 +7786,8 @@ const ES_VOCAB = [
     "emoji": "😞",
     "simple": "",
     "it": "sentirsi giù",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar con la moral baja / Estar deprimido/a",
+    "example_it": "sentirsi giù",
     "tags": [
       "idiomi"
     ],
@@ -7801,8 +7801,8 @@ const ES_VOCAB = [
     "emoji": "🐰",
     "simple": "",
     "it": "fare forca / dare buca",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dar plantón — así son las cosas.",
+    "example_it": "fare forca — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7816,8 +7816,8 @@ const ES_VOCAB = [
     "emoji": "😵",
     "simple": "",
     "it": "svenire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Desmayarse — así son las cosas.",
+    "example_it": "svenire — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7831,8 +7831,8 @@ const ES_VOCAB = [
     "emoji": "🐟",
     "simple": "",
     "it": "avere cose più importanti da fare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tener cosas más importantes que hacer",
+    "example_it": "avere cose più importanti da fare",
     "tags": [
       "idiomi"
     ],
@@ -7846,8 +7846,8 @@ const ES_VOCAB = [
     "emoji": "🥕",
     "simple": "",
     "it": "siamo fritti / è fatta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estamos fritos — así son las cosas.",
+    "example_it": "siamo fritti — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7861,8 +7861,8 @@ const ES_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "colpo di fulmine",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Amor a primera vista — así son las cosas.",
+    "example_it": "colpo di fulmine — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7876,8 +7876,8 @@ const ES_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "non esagerare troppo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No te pases de la raya",
+    "example_it": "non esagerare troppo",
     "tags": [
       "idiomi"
     ],
@@ -7891,8 +7891,8 @@ const ES_VOCAB = [
     "emoji": "🐱",
     "simple": "",
     "it": "arrendersi / non sapere la risposta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Rendirse / No saber la respuesta",
+    "example_it": "arrendersi",
     "tags": [
       "idiomi"
     ],
@@ -7906,8 +7906,8 @@ const ES_VOCAB = [
     "emoji": "🧈",
     "simple": "",
     "it": "volere tutto senza rinunciare a niente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Querer estar en misa y repicando",
+    "example_it": "volere tutto senza rinunciare a niente",
     "tags": [
       "idiomi"
     ],
@@ -7921,8 +7921,8 @@ const ES_VOCAB = [
     "emoji": "🥒",
     "simple": "",
     "it": "nei guai / in difficoltà",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En un aprieto — así son las cosas.",
+    "example_it": "nei guai — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7936,8 +7936,8 @@ const ES_VOCAB = [
     "emoji": "🧠",
     "simple": "",
     "it": "mi è scappato di mente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Se me ha ido de la cabeza",
+    "example_it": "mi è scappato di mente",
     "tags": [
       "idiomi"
     ],
@@ -7951,8 +7951,8 @@ const ES_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "sono tutt'orecchi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Soy todo oídos — así son las cosas.",
+    "example_it": "sono tutt'orecchi — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -7966,8 +7966,8 @@ const ES_VOCAB = [
     "emoji": "🎵",
     "simple": "",
     "it": "improvvisare / vedere come va",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Improvisar / Ver sobre la marcha",
+    "example_it": "improvvisare",
     "tags": [
       "idiomi"
     ],
@@ -7981,8 +7981,8 @@ const ES_VOCAB = [
     "emoji": "🫘",
     "simple": "",
     "it": "parlare / rivelare il segreto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Irse de la lengua / Contar el secreto",
+    "example_it": "parlare",
     "tags": [
       "idiomi"
     ],
@@ -7996,8 +7996,8 @@ const ES_VOCAB = [
     "emoji": "📄",
     "simple": "",
     "it": "sulla stessa lunghezza d'onda",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En la misma onda / De acuerdo",
+    "example_it": "sulla stessa lunghezza d'onda",
     "tags": [
       "idiomi"
     ],
@@ -8011,8 +8011,8 @@ const ES_VOCAB = [
     "emoji": "🎭",
     "simple": "",
     "it": "è finita la festa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Se acabó el juego / Te pillé",
+    "example_it": "è finita la festa",
     "tags": [
       "idiomi"
     ],
@@ -8026,8 +8026,8 @@ const ES_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "dare per scontato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dar por sentado — así son las cosas.",
+    "example_it": "dare per scontato — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8041,8 +8041,8 @@ const ES_VOCAB = [
     "emoji": "🏈",
     "simple": "",
     "it": "affrontare un problema",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Abordar un problema — así son las cosas.",
+    "example_it": "affrontare un problema — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8056,8 +8056,8 @@ const ES_VOCAB = [
     "emoji": "📊",
     "simple": "",
     "it": "tenere in considerazione",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tener en cuenta — así son las cosas.",
+    "example_it": "tenere in considerazione — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8071,8 +8071,8 @@ const ES_VOCAB = [
     "emoji": "⬇️",
     "simple": "",
     "it": "fare pressione su qualcuno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Presionar a alguien — así son las cosas.",
+    "example_it": "fare pressione su qualcuno — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8086,8 +8086,8 @@ const ES_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "avere il dono per",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tener don para / Ser bueno/a en",
+    "example_it": "avere il dono per",
     "tags": [
       "idiomi"
     ],
@@ -8101,8 +8101,8 @@ const ES_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "sembra che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Parece que — así son las cosas.",
+    "example_it": "sembra che — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8116,8 +8116,8 @@ const ES_VOCAB = [
     "emoji": "👀",
     "simple": "",
     "it": "un piacere per gli occhi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Un placer para la vista — así son las cosas.",
+    "example_it": "un piacere per gli occhi — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8131,8 +8131,8 @@ const ES_VOCAB = [
     "emoji": "🤒",
     "simple": "",
     "it": "non sentirsi bene / stare poco bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sentirse pachucho/a / No estar bien",
+    "example_it": "non sentirsi bene",
     "tags": [
       "idiomi"
     ],
@@ -8146,8 +8146,8 @@ const ES_VOCAB = [
     "emoji": "🦁",
     "simple": "",
     "it": "entrare nella tana del lupo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Meterse en la boca del lobo",
+    "example_it": "entrare nella tana del lupo",
     "tags": [
       "idiomi"
     ],
@@ -8161,8 +8161,8 @@ const ES_VOCAB = [
     "emoji": "🥚",
     "simple": "",
     "it": "mettere tutto in un unico paniere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Jugárselo todo a una carta — así son las cosas.",
+    "example_it": "mettere tutto in un unico paniere — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8176,8 +8176,8 @@ const ES_VOCAB = [
     "emoji": "🌾",
     "simple": "",
     "it": "fare le follie della gioventù",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hacer locuras de juventud — así son las cosas.",
+    "example_it": "fare le follie della gioventù — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8191,8 +8191,8 @@ const ES_VOCAB = [
     "emoji": "🎭",
     "simple": "",
     "it": "trattare con tutti gli onori",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tratar a alguien a cuerpo de rey / Con todos los honores",
+    "example_it": "trattare con tutti gli onori",
     "tags": [
       "idiomi"
     ],
@@ -8206,8 +8206,8 @@ const ES_VOCAB = [
     "emoji": "📋",
     "simple": "",
     "it": "burocrazia / scartoffie inutili",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Burocracia — así son las cosas.",
+    "example_it": "burocrazia — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8221,8 +8221,8 @@ const ES_VOCAB = [
     "emoji": "🔴",
     "simple": "",
     "it": "essere in rosso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar en números rojos / En deuda",
+    "example_it": "essere in rosso",
     "tags": [
       "idiomi"
     ],
@@ -8236,8 +8236,8 @@ const ES_VOCAB = [
     "emoji": "😡",
     "simple": "",
     "it": "vedere rosso / arrabbiarsi molto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ponerse hecho/a una fiera / Enfurecerse",
+    "example_it": "vedere rosso",
     "tags": [
       "idiomi"
     ],
@@ -8251,8 +8251,8 @@ const ES_VOCAB = [
     "emoji": "🌕",
     "simple": "",
     "it": "ogni morte di papa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "De vez en cuando / Muy raramente",
+    "example_it": "ogni morte di papa",
     "tags": [
       "idiomi"
     ],
@@ -8266,8 +8266,8 @@ const ES_VOCAB = [
     "emoji": "👑",
     "simple": "",
     "it": "sangue blu / nobile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sangre azul — así son las cosas.",
+    "example_it": "sangue blu — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8281,8 +8281,8 @@ const ES_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "all'improvviso / senza preavviso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "De repente / Sin previo aviso",
+    "example_it": "all'improvviso",
     "tags": [
       "idiomi"
     ],
@@ -8296,8 +8296,8 @@ const ES_VOCAB = [
     "emoji": "🥤",
     "simple": "",
     "it": "la goccia che fa traboccare il vaso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "El colmo / La gota que colmó el vaso",
+    "example_it": "la goccia che fa traboccare il vaso",
     "tags": [
       "idiomi"
     ],
@@ -8311,8 +8311,8 @@ const ES_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "non capire il punto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No entender de qué va / Perder el hilo",
+    "example_it": "non capire il punto",
     "tags": [
       "idiomi"
     ],
@@ -8326,8 +8326,8 @@ const ES_VOCAB = [
     "emoji": "🤑",
     "simple": "",
     "it": "ricco sfondato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Forrado/a / Estar podrido/a de dinero",
+    "example_it": "ricco sfondato",
     "tags": [
       "idiomi"
     ],
@@ -8341,8 +8341,8 @@ const ES_VOCAB = [
     "emoji": "🌧️",
     "simple": "",
     "it": "risparmiare per i tempi difficili",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ahorrar para los malos tiempos — así son las cosas.",
+    "example_it": "risparmiare per i tempi difficili — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8356,8 +8356,8 @@ const ES_VOCAB = [
     "emoji": "💧",
     "simple": "",
     "it": "spendere soldi come se piovessero",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Gastar dinero a manos llenas — así son las cosas.",
+    "example_it": "spendere soldi come se piovessero — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8371,8 +8371,8 @@ const ES_VOCAB = [
     "emoji": "🛣️",
     "simple": "",
     "it": "mettersi in viaggio / partire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ponerse en camino — así son las cosas.",
+    "example_it": "mettersi in viaggio — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8386,8 +8386,8 @@ const ES_VOCAB = [
     "emoji": "🛏️",
     "simple": "",
     "it": "andare a letto / coricarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Irse a la cama / Dormir",
+    "example_it": "andare a letto",
     "tags": [
       "idiomi"
     ],
@@ -8401,8 +8401,8 @@ const ES_VOCAB = [
     "emoji": "🌰",
     "simple": "",
     "it": "in poche parole / in breve",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "En pocas palabras / En resumen",
+    "example_it": "in poche parole",
     "tags": [
       "idiomi"
     ],
@@ -8416,8 +8416,8 @@ const ES_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "tenere d'occhio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Vigilar / No perder de vista",
+    "example_it": "tenere d'occhio",
     "tags": [
       "idiomi"
     ],
@@ -8431,8 +8431,8 @@ const ES_VOCAB = [
     "emoji": "🐱",
     "simple": "",
     "it": "rivelare il segreto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Irse de la lengua / Descubrir el pastel",
+    "example_it": "rivelare il segreto",
     "tags": [
       "idiomi"
     ],
@@ -8446,8 +8446,8 @@ const ES_VOCAB = [
     "emoji": "⛵",
     "simple": "",
     "it": "perdere l'occasione",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Perder el tren / Perder la oportunidad",
+    "example_it": "perdere l'occasione",
     "tags": [
       "idiomi"
     ],
@@ -8461,8 +8461,8 @@ const ES_VOCAB = [
     "emoji": "🌿",
     "simple": "",
     "it": "menare il can per l'aia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Andarse por las ramas — así son las cosas.",
+    "example_it": "menare il can per l'aia — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8476,8 +8476,8 @@ const ES_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "sbrigarsi / muoversi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Darse prisa — así son las cosas.",
+    "example_it": "sbrigarsi — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8491,8 +8491,8 @@ const ES_VOCAB = [
     "emoji": "🤞",
     "simple": "",
     "it": "in bocca al lupo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Mucha mierda! / ¡Mucha suerte!",
+    "example_it": "in bocca al lupo!",
     "tags": [
       "idiomi"
     ],
@@ -8506,8 +8506,8 @@ const ES_VOCAB = [
     "emoji": "🤞",
     "simple": "",
     "it": "incrociare le dita",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Cruzar los dedos — así son las cosas.",
+    "example_it": "incrociare le dita — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8521,8 +8521,8 @@ const ES_VOCAB = [
     "emoji": "✂️",
     "simple": "",
     "it": "andare al sodo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ir al grano — así son las cosas.",
+    "example_it": "andare al sodo — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8536,8 +8536,8 @@ const ES_VOCAB = [
     "emoji": "💨",
     "simple": "",
     "it": "quello che viene facilmente va facilmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lo que fácil viene, fácil se va",
+    "example_it": "quello che viene facilmente va facilmente",
     "tags": [
       "idiomi"
     ],
@@ -8551,8 +8551,8 @@ const ES_VOCAB = [
     "emoji": "🎵",
     "simple": "",
     "it": "affrontare le conseguenze",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Afrontar las consecuencias — así son las cosas.",
+    "example_it": "affrontare le conseguenze — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8566,8 +8566,8 @@ const ES_VOCAB = [
     "emoji": "🦶",
     "simple": "",
     "it": "avere paura / tirarsi indietro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Acobardarse — así son las cosas.",
+    "example_it": "avere paura — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8581,8 +8581,8 @@ const ES_VOCAB = [
     "emoji": "💚",
     "simple": "",
     "it": "verde di invidia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Comido por la envidia — así son las cosas.",
+    "example_it": "verde di invidia — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8596,8 +8596,8 @@ const ES_VOCAB = [
     "emoji": "🌿",
     "simple": "",
     "it": "l'erba del vicino è sempre più verde",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Siempre es mejor en el otro lado",
+    "example_it": "l'erba del vicino è sempre più verde",
     "tags": [
       "idiomi"
     ],
@@ -8611,8 +8611,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "senza rancori",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sin rencor — así son las cosas.",
+    "example_it": "senza rancori — è così che stanno le cose.",
     "tags": [
       "idiomi"
     ],
@@ -8626,8 +8626,8 @@ const ES_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "essere nei guai",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar en un aprieto / Metido/a en problemas",
+    "example_it": "essere nei guai",
     "tags": [
       "idiomi"
     ],
@@ -8641,8 +8641,8 @@ const ES_VOCAB = [
     "emoji": "😞",
     "simple": "",
     "it": "sentirsi giù / depresso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar con el bajón / Estar triste",
+    "example_it": "sentirsi giù",
     "tags": [
       "idiomi"
     ],
@@ -8656,8 +8656,8 @@ const ES_VOCAB = [
     "emoji": "🥕",
     "simple": "",
     "it": "siamo fritti / è finita",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estamos fritos / Se acabó el juego",
+    "example_it": "siamo fritti",
     "tags": [
       "idiomi"
     ],
@@ -8671,8 +8671,8 @@ const ES_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "colpo di fulmine",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Amor a primera vista / Un flechazo",
+    "example_it": "colpo di fulmine",
     "tags": [
       "idiomi"
     ],
@@ -8686,8 +8686,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "senza problemi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sin ningún problema / Sin contratiempos",
+    "example_it": "senza problemi",
     "tags": [
       "idiomi"
     ],
@@ -8701,8 +8701,8 @@ const ES_VOCAB = [
     "emoji": "🌙",
     "simple": "",
     "it": "chiudiamo qui per oggi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dejémoslo por hoy / Terminar la jornada",
+    "example_it": "chiudiamo qui per oggi",
     "tags": [
       "colloquiale"
     ],
@@ -8716,8 +8716,8 @@ const ES_VOCAB = [
     "emoji": "💥",
     "it": "rompere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a romper!",
+    "example_it": "rompere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8731,8 +8731,8 @@ const ES_VOCAB = [
     "emoji": "😢",
     "it": "strappare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a rasgar!",
+    "example_it": "strappare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8746,8 +8746,8 @@ const ES_VOCAB = [
     "emoji": "✂️",
     "it": "dividere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a dividir!",
+    "example_it": "dividere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8761,8 +8761,8 @@ const ES_VOCAB = [
     "emoji": "💢",
     "it": "scoppiare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a estallar!",
+    "example_it": "scoppiare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8776,8 +8776,8 @@ const ES_VOCAB = [
     "emoji": "🔽",
     "it": "restringere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a encoger!",
+    "example_it": "restringere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8791,8 +8791,8 @@ const ES_VOCAB = [
     "emoji": "🤝",
     "it": "scuotere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a sacudir!",
+    "example_it": "scuotere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8806,8 +8806,8 @@ const ES_VOCAB = [
     "emoji": "⚡",
     "it": "colpire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a golpear!",
+    "example_it": "colpire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8821,8 +8821,8 @@ const ES_VOCAB = [
     "emoji": "🩸",
     "it": "sanguinare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a sangrar!",
+    "example_it": "sanguinare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8836,8 +8836,8 @@ const ES_VOCAB = [
     "emoji": "⚙️",
     "it": "macinare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a moler!",
+    "example_it": "macinare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8851,8 +8851,8 @@ const ES_VOCAB = [
     "emoji": "🎯",
     "it": "lanciare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a lanzar!",
+    "example_it": "lanciare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8866,8 +8866,8 @@ const ES_VOCAB = [
     "emoji": "🫳",
     "it": "prendere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a atrapar!",
+    "example_it": "prendere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8881,8 +8881,8 @@ const ES_VOCAB = [
     "emoji": "🤲",
     "it": "tenere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a sostener!",
+    "example_it": "tenere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8896,8 +8896,8 @@ const ES_VOCAB = [
     "emoji": "🧲",
     "it": "aggrapparsi",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a aferrarse!",
+    "example_it": "aggrapparsi!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8911,8 +8911,8 @@ const ES_VOCAB = [
     "emoji": "📌",
     "it": "attaccarsi",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a pegarse!",
+    "example_it": "attaccarsi!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8926,8 +8926,8 @@ const ES_VOCAB = [
     "emoji": "🌊",
     "it": "oscillare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a columpiarse!",
+    "example_it": "oscillare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8941,8 +8941,8 @@ const ES_VOCAB = [
     "emoji": "🔗",
     "it": "legare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a atar!",
+    "example_it": "legare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8956,8 +8956,8 @@ const ES_VOCAB = [
     "emoji": "🚀",
     "it": "scagliare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a arrojar!",
+    "example_it": "scagliare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8971,8 +8971,8 @@ const ES_VOCAB = [
     "emoji": "🪃",
     "it": "lanciare con fionda",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a hondear!",
+    "example_it": "lanciare con fionda!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -8986,8 +8986,8 @@ const ES_VOCAB = [
     "emoji": "👊",
     "it": "spingere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a empujar!",
+    "example_it": "spingere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9001,8 +9001,8 @@ const ES_VOCAB = [
     "emoji": "💧",
     "it": "versare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a derramar!",
+    "example_it": "versare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9016,8 +9016,8 @@ const ES_VOCAB = [
     "emoji": "🦹",
     "it": "rubare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a robar!",
+    "example_it": "rubare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9031,8 +9031,8 @@ const ES_VOCAB = [
     "emoji": "🧊",
     "it": "congelare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a congelar!",
+    "example_it": "congelare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9046,8 +9046,8 @@ const ES_VOCAB = [
     "emoji": "🤕",
     "it": "ferire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a herir!",
+    "example_it": "ferire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9061,8 +9061,8 @@ const ES_VOCAB = [
     "emoji": "🚪",
     "it": "chiudere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a cerrar!",
+    "example_it": "chiudere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9076,8 +9076,8 @@ const ES_VOCAB = [
     "emoji": "📥",
     "it": "mettere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a poner!",
+    "example_it": "mettere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9091,8 +9091,8 @@ const ES_VOCAB = [
     "emoji": "🚴",
     "it": "cavalcare / andare in",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a montar!",
+    "example_it": "cavalcare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9106,8 +9106,8 @@ const ES_VOCAB = [
     "emoji": "🚗",
     "it": "guidare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a conducir!",
+    "example_it": "guidare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9121,8 +9121,8 @@ const ES_VOCAB = [
     "emoji": "✈️",
     "it": "volare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a volar!",
+    "example_it": "volare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9136,8 +9136,8 @@ const ES_VOCAB = [
     "emoji": "🍂",
     "it": "cadere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a caer!",
+    "example_it": "cadere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9151,8 +9151,8 @@ const ES_VOCAB = [
     "emoji": "🧍",
     "it": "alzarsi",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ponerse de pie!",
+    "example_it": "alzarsi!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9166,8 +9166,8 @@ const ES_VOCAB = [
     "emoji": "🚶",
     "it": "andare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ir!",
+    "example_it": "andare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9181,8 +9181,8 @@ const ES_VOCAB = [
     "emoji": "😴",
     "it": "dormire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a dormir!",
+    "example_it": "dormire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9196,8 +9196,8 @@ const ES_VOCAB = [
     "emoji": "🌅",
     "it": "sorgere / emergere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a surgir!",
+    "example_it": "sorgere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9211,8 +9211,8 @@ const ES_VOCAB = [
     "emoji": "👕",
     "it": "indossare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a llevar!",
+    "example_it": "indossare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9226,8 +9226,8 @@ const ES_VOCAB = [
     "emoji": "🔒",
     "it": "mantenere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a mantener!",
+    "example_it": "mantenere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9241,8 +9241,8 @@ const ES_VOCAB = [
     "emoji": "❤️",
     "it": "sentire / provare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a sentir!",
+    "example_it": "sentire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9256,8 +9256,8 @@ const ES_VOCAB = [
     "emoji": "🍽️",
     "it": "mangiare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a comer!",
+    "example_it": "mangiare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9271,8 +9271,8 @@ const ES_VOCAB = [
     "emoji": "🥤",
     "it": "bere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a beber!",
+    "example_it": "bere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9286,8 +9286,8 @@ const ES_VOCAB = [
     "emoji": "🤮",
     "it": "sputare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a escupir!",
+    "example_it": "sputare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9301,8 +9301,8 @@ const ES_VOCAB = [
     "emoji": "🏊",
     "it": "nuotare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a nadar!",
+    "example_it": "nuotare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9316,8 +9316,8 @@ const ES_VOCAB = [
     "emoji": "🏗️",
     "it": "costruire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a construir!",
+    "example_it": "costruire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9331,8 +9331,8 @@ const ES_VOCAB = [
     "emoji": "🔨",
     "it": "fare / costruire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a hacer!",
+    "example_it": "fare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9346,8 +9346,8 @@ const ES_VOCAB = [
     "emoji": "✏️",
     "it": "disegnare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a dibujar!",
+    "example_it": "disegnare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9361,8 +9361,8 @@ const ES_VOCAB = [
     "emoji": "🛍️",
     "it": "comprare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a comprar!",
+    "example_it": "comprare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9376,8 +9376,8 @@ const ES_VOCAB = [
     "emoji": "💰",
     "it": "vendere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a vender!",
+    "example_it": "vendere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9391,8 +9391,8 @@ const ES_VOCAB = [
     "emoji": "💳",
     "it": "pagare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a pagar!",
+    "example_it": "pagare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9406,8 +9406,8 @@ const ES_VOCAB = [
     "emoji": "🤲",
     "it": "prestare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a prestar!",
+    "example_it": "prestare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9421,8 +9421,8 @@ const ES_VOCAB = [
     "emoji": "📨",
     "it": "mandare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a enviar!",
+    "example_it": "mandare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9436,8 +9436,8 @@ const ES_VOCAB = [
     "emoji": "💸",
     "it": "spendere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a gastar!",
+    "example_it": "spendere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9451,8 +9451,8 @@ const ES_VOCAB = [
     "emoji": "🏷️",
     "it": "costare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a costar!",
+    "example_it": "costare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9466,8 +9466,8 @@ const ES_VOCAB = [
     "emoji": "🤏",
     "it": "prendere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a tomar!",
+    "example_it": "prendere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9481,8 +9481,8 @@ const ES_VOCAB = [
     "emoji": "🎁",
     "it": "dare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a dar!",
+    "example_it": "dare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9496,8 +9496,8 @@ const ES_VOCAB = [
     "emoji": "📦",
     "it": "portare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a traer!",
+    "example_it": "portare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9511,8 +9511,8 @@ const ES_VOCAB = [
     "emoji": "🧠",
     "it": "sapere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a saber!",
+    "example_it": "sapere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9526,8 +9526,8 @@ const ES_VOCAB = [
     "emoji": "💭",
     "it": "pensare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a pensar!",
+    "example_it": "pensare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9541,8 +9541,8 @@ const ES_VOCAB = [
     "emoji": "💡",
     "it": "capire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a entender!",
+    "example_it": "capire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9556,8 +9556,8 @@ const ES_VOCAB = [
     "emoji": "🤬",
     "it": "giurare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a jurar!",
+    "example_it": "giurare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9571,8 +9571,8 @@ const ES_VOCAB = [
     "emoji": "😞",
     "it": "perdere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a perder!",
+    "example_it": "perdere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9586,8 +9586,8 @@ const ES_VOCAB = [
     "emoji": "🏆",
     "it": "vincere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ganar!",
+    "example_it": "vincere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9601,8 +9601,8 @@ const ES_VOCAB = [
     "emoji": "📚",
     "it": "imparare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a aprender!",
+    "example_it": "imparare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9616,8 +9616,8 @@ const ES_VOCAB = [
     "emoji": "👩‍🏫",
     "it": "insegnare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a enseñar!",
+    "example_it": "insegnare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9631,8 +9631,8 @@ const ES_VOCAB = [
     "emoji": "❓",
     "it": "significare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a significar!",
+    "example_it": "significare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9646,8 +9646,8 @@ const ES_VOCAB = [
     "emoji": "🕊️",
     "it": "perdonare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a perdonar!",
+    "example_it": "perdonare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9661,8 +9661,8 @@ const ES_VOCAB = [
     "emoji": "💬",
     "it": "dire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a decir!",
+    "example_it": "dire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9676,8 +9676,8 @@ const ES_VOCAB = [
     "emoji": "📢",
     "it": "raccontare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a contar!",
+    "example_it": "raccontare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9691,8 +9691,8 @@ const ES_VOCAB = [
     "emoji": "🗣️",
     "it": "parlare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a hablar!",
+    "example_it": "parlare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9706,8 +9706,8 @@ const ES_VOCAB = [
     "emoji": "👂",
     "it": "sentire / udire",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a oír!",
+    "example_it": "sentire!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9721,8 +9721,8 @@ const ES_VOCAB = [
     "emoji": "🚦",
     "it": "iniziare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a empezar!",
+    "example_it": "iniziare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9736,8 +9736,8 @@ const ES_VOCAB = [
     "emoji": "🦋",
     "it": "diventare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a convertirse!",
+    "example_it": "diventare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9751,8 +9751,8 @@ const ES_VOCAB = [
     "emoji": "✅",
     "it": "ottenere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a conseguir!",
+    "example_it": "ottenere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9766,8 +9766,8 @@ const ES_VOCAB = [
     "emoji": "🏠",
     "it": "avere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a tener!",
+    "example_it": "avere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9781,8 +9781,8 @@ const ES_VOCAB = [
     "emoji": "💫",
     "it": "essere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a ser!",
+    "example_it": "essere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9796,8 +9796,8 @@ const ES_VOCAB = [
     "emoji": "🎭",
     "it": "mostrare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a mostrar!",
+    "example_it": "mostrare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9811,8 +9811,8 @@ const ES_VOCAB = [
     "emoji": "🙈",
     "it": "nascondere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a esconder!",
+    "example_it": "nascondere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9826,8 +9826,8 @@ const ES_VOCAB = [
     "emoji": "🎲",
     "it": "scegliere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a elegir!",
+    "example_it": "scegliere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9841,8 +9841,8 @@ const ES_VOCAB = [
     "emoji": "💭",
     "it": "dimenticare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a olvidar!",
+    "example_it": "dimenticare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9856,8 +9856,8 @@ const ES_VOCAB = [
     "emoji": "🛏️",
     "it": "posare / deporre",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a depositar!",
+    "example_it": "posare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9871,8 +9871,8 @@ const ES_VOCAB = [
     "emoji": "🛋️",
     "it": "stendersi",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a tumbarse!",
+    "example_it": "stendersi!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9886,8 +9886,8 @@ const ES_VOCAB = [
     "emoji": "⚙️",
     "it": "fissare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a fijar!",
+    "example_it": "fissare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9901,8 +9901,8 @@ const ES_VOCAB = [
     "emoji": "😤",
     "it": "turbare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a molestar!",
+    "example_it": "turbare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9916,8 +9916,8 @@ const ES_VOCAB = [
     "emoji": "🎰",
     "it": "scommettere",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a apostar!",
+    "example_it": "scommettere!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9931,8 +9931,8 @@ const ES_VOCAB = [
     "emoji": "🏎️",
     "it": "sorpassare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a adelantar!",
+    "example_it": "sorpassare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9946,8 +9946,8 @@ const ES_VOCAB = [
     "emoji": "🏧",
     "it": "ritirare",
     "simple": "",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a retirar!",
+    "example_it": "ritirare!",
     "tags": [
       "verbi-irregolari"
     ],
@@ -9961,8 +9961,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Ho capito bene che...?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿He entendido bien que...?",
+    "example_it": "Ho capito bene che...?",
     "tags": [
       "chiarimento"
     ],
@@ -9976,8 +9976,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Me lo puoi spiegare in un altro modo?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Me lo puedes explicar de otra manera?",
+    "example_it": "Me lo puoi spiegare in un altro modo?",
     "tags": [
       "chiarimento"
     ],
@@ -9991,8 +9991,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Tieni il respiro!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Aguanta la respiración!",
+    "example_it": "Tieni il respiro!",
     "tags": [
       "mare"
     ],
@@ -10006,8 +10006,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Tutti in acqua!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Al agua, patos!",
+    "example_it": "Tutti in acqua!",
     "tags": [
       "mare"
     ],
@@ -10021,8 +10021,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Bomba!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Bomba!",
+    "example_it": "Bomba!",
     "tags": [
       "mare"
     ],
@@ -10036,8 +10036,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Controlla la bandiera prima di entrare!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Comprueba la bandera antes de entrar!",
+    "example_it": "Controlla la bandiera prima di entrare!",
     "tags": [
       "mare"
     ],
@@ -10051,8 +10051,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Attenzione alle onde!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Cuidado con las olas!",
+    "example_it": "Attenzione alle onde!",
     "tags": [
       "mare"
     ],
@@ -10066,8 +10066,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "L'acqua è fantastica!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡El agua está genial!",
+    "example_it": "L'acqua è fantastica!",
     "tags": [
       "mare"
     ],
@@ -10081,8 +10081,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "L'ultimo è un uovo marcio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡El último, huevo podrido!",
+    "example_it": "L'ultimo è un uovo marcio!",
     "tags": [
       "mare"
     ],
@@ -10096,8 +10096,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Battaglia d'acqua!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Guerra de agua!",
+    "example_it": "Battaglia d'acqua!",
     "tags": [
       "mare"
     ],
@@ -10111,8 +10111,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "A coppie, nessuno nuota da solo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Id de dos en dos, nadie nada solo!",
+    "example_it": "A coppie, nessuno nuota da solo!",
     "tags": [
       "mare"
     ],
@@ -10126,8 +10126,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Bagnati prima i piedi!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Mójate los pies primero!",
+    "example_it": "Bagnati prima i piedi!",
     "tags": [
       "mare"
     ],
@@ -10141,8 +10141,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Non correre in piscina!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No corras por la piscina!",
+    "example_it": "Non correre in piscina!",
     "tags": [
       "mare"
     ],
@@ -10156,8 +10156,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Non fare il bagno appena dopo aver mangiato!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡No te bañes nada más comer!",
+    "example_it": "Non fare il bagno appena dopo aver mangiato!",
     "tags": [
       "mare"
     ],
@@ -10171,8 +10171,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Metti la protezione solare!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Ponte el protector solar!",
+    "example_it": "Metti la protezione solare!",
     "tags": [
       "mare"
     ],
@@ -10186,8 +10186,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Prima facciamo un po' di riscaldamento!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Primero vamos a calentar un poco!",
+    "example_it": "Prima facciamo un po' di riscaldamento!",
     "tags": [
       "mare"
     ],
@@ -10201,8 +10201,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Resta nella parte bassa!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Quédate en la zona baja!",
+    "example_it": "Resta nella parte bassa!",
     "tags": [
       "mare"
     ],
@@ -10216,8 +10216,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Asciugati prima di prendere freddo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Sécate antes de que te resfríes!",
+    "example_it": "Asciugati prima di prendere freddo!",
     "tags": [
       "mare"
     ],
@@ -10231,8 +10231,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Ti sei scottato/a un po'!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Te has puesto un poco rojo/a!",
+    "example_it": "Ti sei scottato",
     "tags": [
       "mare"
     ],
@@ -10246,8 +10246,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Contiamoci tutti!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a contarnos todos!",
+    "example_it": "Contiamoci tutti!",
     "tags": [
       "mare"
     ],
@@ -10261,8 +10261,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Andiamo a sciacquarci alla doccia!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vamos a enjuagarnos en la ducha!",
+    "example_it": "Andiamo a sciacquarci alla doccia!",
     "tags": [
       "mare"
     ],
@@ -10276,8 +10276,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Rimetti la protezione solare!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¡Vuelve a ponerte el protector!",
+    "example_it": "Rimetti la protezione solare!",
     "tags": [
       "mare"
     ],
@@ -10291,8 +10291,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Qualcuno ha visto una medusa?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Alguien ha visto alguna medusa?",
+    "example_it": "Qualcuno ha visto una medusa?",
     "tags": [
       "mare"
     ],
@@ -10306,8 +10306,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Com'era l'acqua?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Cómo estaba el agua?",
+    "example_it": "Com'era l'acqua?",
     "tags": [
       "mare"
     ],
@@ -10321,8 +10321,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Gara fino al galleggiante?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Echamos una carrera hasta la boya?",
+    "example_it": "Gara fino al galleggiante?",
     "tags": [
       "mare"
     ],
@@ -10336,8 +10336,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Sul serio? / Davvero?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿En serio?",
+    "example_it": "Sul serio?",
     "tags": [
       "colloquiale"
     ],
@@ -10351,8 +10351,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Hai perso qualcosa in acqua?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Has perdido algo en el agua?",
+    "example_it": "Hai perso qualcosa in acqua?",
     "tags": [
       "mare"
     ],
@@ -10366,8 +10366,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Chi ha fame dopo tanta nuotata?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Quién tiene hambre después de tanto nadar?",
+    "example_it": "Chi ha fame dopo tanta nuotata?",
     "tags": [
       "mare"
     ],
@@ -10381,8 +10381,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Sai fare il morto a galla?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "¿Sabes hacer el muerto?",
+    "example_it": "Sai fare il morto a galla?",
     "tags": [
       "mare"
     ],
@@ -10396,8 +10396,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Il mare è molto mosso oggi.",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "El mar está muy picado hoy.",
+    "example_it": "Il mare è molto mosso oggi.",
     "tags": [
       "mare"
     ],
@@ -10411,8 +10411,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Darsi una mossa / impegnarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ponerse las pilas",
+    "example_it": "Darsi una mossa",
     "tags": [
       "colloquiale"
     ],
@@ -10426,8 +10426,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Ormai è tardi / bella forza ora",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "A buenas horas, mangas verdes — así son las cosas.",
+    "example_it": "Ormai è tardi — è così che stanno le cose.",
     "tags": [
       "idioma"
     ],
@@ -10441,8 +10441,8 @@ const ES_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Essere a pezzi / distrutto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Estar hecho polvo — así son las cosas.",
+    "example_it": "Essere a pezzi — è così che stanno le cose.",
     "tags": [
       "idioma"
     ],

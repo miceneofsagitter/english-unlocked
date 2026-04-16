@@ -91,14 +91,16 @@
           fr: {
             pp: 'Passé Composé vs Imparfait',
             cont: 'Présent vs Présent Continu',
+            used: 'Habitudes passées (Imparfait)',
             future: 'Futur',
-            cond: 'Conditionnel',
+            cond: 'Conditionnel / Subjonctif',
           },
           es: {
             pp: 'Indefinido vs Imperfecto',
             cont: 'Presente vs Estar + Gerundio',
+            used: 'Hábitos pasados (Imperfecto)',
             future: 'Futuro',
-            cond: 'Condicional',
+            cond: 'Condicional / Subjuntivo',
           },
         }
         const pool =

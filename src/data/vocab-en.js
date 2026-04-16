@@ -2352,8 +2352,8 @@ const EN_VOCAB = [
     "emoji": "🥒",
     "simple": "",
     "it": "Nei guai / In una situazione difficile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm totally in a pickle — help!",
+    "example_it": "Sono totalmente nei guai — aiuto!",
     "tags": [
       "bambini",
       "problemi"
@@ -2368,8 +2368,8 @@ const EN_VOCAB = [
     "emoji": "☁️",
     "simple": "",
     "it": "Avere la testa tra le nuvole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "To have your head in the clouds",
+    "example_it": "Avere la testa tra le nuvole",
     "tags": [
       "bambini"
     ],
@@ -2383,8 +2383,8 @@ const EN_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "Costare un occhio della testa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "To cost an arm and a leg",
+    "example_it": "Costare un occhio della testa",
     "tags": [
       "base"
     ],
@@ -2398,8 +2398,8 @@ const EN_VOCAB = [
     "emoji": "🔋",
     "simple": "",
     "it": "Darsi una mossa / attivarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Come on, get your act together!",
+    "example_it": "Dai, datti una mossa!",
     "tags": [
       "bambini"
     ],
@@ -2413,8 +2413,8 @@ const EN_VOCAB = [
     "emoji": "🦶",
     "simple": "",
     "it": "Fare una gaffe / sbagliare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "To put one's foot in it",
+    "example_it": "Fare una gaffe",
     "tags": [
       "bambini"
     ],
@@ -2428,8 +2428,8 @@ const EN_VOCAB = [
     "emoji": "🧠",
     "simple": "",
     "it": "Mi è sfuggito di mente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sorry, it completely slipped my mind!",
+    "example_it": "Scusa, mi è completamente sfuggito di mente!",
     "tags": [
       "base"
     ],
@@ -2443,8 +2443,8 @@ const EN_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "Sono tutt'orecchi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Tell me what happened — I'm all ears.",
+    "example_it": "Dimmi cosa è successo — sono tutt'orecchi.",
     "tags": [
       "bambini"
     ],
@@ -2458,8 +2458,8 @@ const EN_VOCAB = [
     "emoji": "🎵",
     "simple": "",
     "it": "Decidere sul momento / Vedere come va",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's play it by ear and see.",
+    "example_it": "Decidiamo sul momento e vediamo.",
     "tags": [
       "bambini"
     ],
@@ -2473,8 +2473,8 @@ const EN_VOCAB = [
     "emoji": "🫘",
     "simple": "",
     "it": "Rivelare un segreto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Come on, spill the beans — what happened?",
+    "example_it": "Dai, spilla il sacco — cosa è successo?",
     "tags": [
       "bambini"
     ],
@@ -2488,8 +2488,8 @@ const EN_VOCAB = [
     "emoji": "📖",
     "simple": "",
     "it": "Sulla stessa lunghezza d'onda",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Are we all on the same page?",
+    "example_it": "Siamo tutti sulla stessa lunghezza d'onda?",
     "tags": [
       "bambini"
     ],
@@ -2503,8 +2503,8 @@ const EN_VOCAB = [
     "emoji": "🌀",
     "simple": "",
     "it": "Andare in tilt / non funzionare più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The schedule went completely haywire today.",
+    "example_it": "Il programma è andato completamente in tilt oggi.",
     "tags": [
       "problemi"
     ],
@@ -2518,8 +2518,8 @@ const EN_VOCAB = [
     "emoji": "✨",
     "simple": "",
     "it": "Senza intoppi / liscio come l'olio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Everything ran without a hitch!",
+    "example_it": "Tutto è filato liscio come l'olio!",
     "tags": [
       "base"
     ],
@@ -2533,8 +2533,8 @@ const EN_VOCAB = [
     "emoji": "🥕",
     "simple": "",
     "it": "È tutto finito / non c'è più nulla da fare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The jig is up — I know you hid it!",
+    "example_it": "È tutto finito — so che l'hai nascosto!",
     "tags": [
       "problemi"
     ],
@@ -2548,8 +2548,8 @@ const EN_VOCAB = [
     "emoji": "🙈",
     "simple": "",
     "it": "Dare qualcosa per scontato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't take good weather for granted here!",
+    "example_it": "Non dare per scontato il bel tempo qui!",
     "tags": [
       "bambini"
     ],
@@ -2563,8 +2563,8 @@ const EN_VOCAB = [
     "emoji": "⚔️",
     "simple": "",
     "it": "Affrontare un problema con determinazione",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's tackle this issue together.",
+    "example_it": "Affrontiamo questo problema insieme.",
     "tags": [
       "base"
     ],
@@ -2578,8 +2578,8 @@ const EN_VOCAB = [
     "emoji": "🧮",
     "simple": "",
     "it": "Tenere conto di / considerare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Take the kids' allergies into account.",
+    "example_it": "Tieni conto delle allergie dei bambini.",
     "tags": [
       "lavoro"
     ],
@@ -2593,8 +2593,8 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "Mettere pressione a qualcuno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't put pressure on him — he'll learn.",
+    "example_it": "Non mettergli pressione — imparerà.",
     "tags": [
       "bambini"
     ],
@@ -2608,8 +2608,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Avere talento/attitudine per",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "She has a knack for calming kids down.",
+    "example_it": "Ha un talento per calmare i bambini.",
     "tags": [
       "bambini"
     ],
@@ -2623,8 +2623,8 @@ const EN_VOCAB = [
     "emoji": "👀",
     "simple": "",
     "it": "Sembra che / ha l'aria di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It looks like it might rain later.",
+    "example_it": "Sembra che potrebbe piovere più tardi.",
     "tags": [
       "base"
     ],
@@ -2638,8 +2638,8 @@ const EN_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "Un vero piacere per gli occhi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The kids on the beach are a sight for sore eyes.",
+    "example_it": "I bambini in spiaggia sono un piacere per gli occhi.",
     "tags": [
       "bambini"
     ],
@@ -2653,8 +2653,8 @@ const EN_VOCAB = [
     "emoji": "🌧️",
     "simple": "",
     "it": "Non sentirsi bene / stare male",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm feeling a bit under the weather today.",
+    "example_it": "Oggi mi sento un po' giù.",
     "tags": [
       "bambini"
     ],
@@ -2668,8 +2668,8 @@ const EN_VOCAB = [
     "emoji": "🦁",
     "simple": "",
     "it": "Buttarsi nella tana del leone",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "They threw the new animator into the lion's den.",
+    "example_it": "Hanno buttato il nuovo animatore nella tana del leone.",
     "tags": [
       "bambini"
     ],
@@ -2683,8 +2683,8 @@ const EN_VOCAB = [
     "emoji": "🧺",
     "simple": "",
     "it": "Mettere tutte le uova nello stesso paniere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Put all your eggs in one basket",
+    "example_it": "Mettere tutte le uova nello stesso paniere",
     "tags": [
       "bambini"
     ],
@@ -2698,8 +2698,8 @@ const EN_VOCAB = [
     "emoji": "🌾",
     "simple": "",
     "it": "Sfogare i propri istinti da giovane",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "He's young and still sowing his wild oats.",
+    "example_it": "È giovane e sta ancora facendo le sue esperienze.",
     "tags": [
       "bambini"
     ],
@@ -2713,8 +2713,8 @@ const EN_VOCAB = [
     "emoji": "🎬",
     "simple": "",
     "it": "Trattamento rosso-carpeto / grande accoglienza",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Red carpet treatment — that's just the way it is.",
+    "example_it": "Trattamento rosso-carpeto — è così che stanno le cose.",
     "tags": [
       "genitori"
     ],
@@ -2728,8 +2728,8 @@ const EN_VOCAB = [
     "emoji": "📋",
     "simple": "",
     "it": "Burocrazia / procedure lente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Red tape — that's just the way it is.",
+    "example_it": "Burocrazia — è così che stanno le cose.",
     "tags": [
       "lavoro"
     ],
@@ -2743,8 +2743,8 @@ const EN_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "In rosso / con debiti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In the red — that's just the way it is.",
+    "example_it": "In rosso — è così che stanno le cose.",
     "tags": [
       "base"
     ],
@@ -2758,8 +2758,8 @@ const EN_VOCAB = [
     "emoji": "😡",
     "simple": "",
     "it": "Andare su tutte le furie / arrabbiarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "See red — that's just the way it is.",
+    "example_it": "Andare su tutte le furie — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -2773,8 +2773,8 @@ const EN_VOCAB = [
     "emoji": "💙",
     "simple": "",
     "it": "Sentirsi triste / melanconico",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Feel blue — that's just the way it is.",
+    "example_it": "Sentirsi triste — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -2788,8 +2788,8 @@ const EN_VOCAB = [
     "emoji": "🌙",
     "simple": "",
     "it": "Una volta nella vita blu / raramente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "He actually behaves once in a blue moon.",
+    "example_it": "Si comporta bene ogni morte di papa.",
     "tags": [
       "base"
     ],
@@ -2803,8 +2803,8 @@ const EN_VOCAB = [
     "emoji": "👑",
     "simple": "",
     "it": "Sangue blu / nobiltà",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Blue blood — that's just the way it is.",
+    "example_it": "Sangue blu — è così che stanno le cose.",
     "tags": [
       "base"
     ],
@@ -2818,8 +2818,8 @@ const EN_VOCAB = [
     "emoji": "☁️",
     "simple": "",
     "it": "Dal nulla / inaspettatamente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Out of the blue, she started crying.",
+    "example_it": "All'improvviso, ha iniziato a piangere.",
     "tags": [
       "base"
     ],
@@ -2833,8 +2833,8 @@ const EN_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "L'ultima goccia che fa traboccare il vaso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That was the last straw — time to call the parents.",
+    "example_it": "È stata la goccia che ha fatto traboccare il vaso — è ora di chiamare i genitori.",
     "tags": [
       "bambini"
     ],
@@ -2848,8 +2848,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Non cogliere il punto / perdere il significato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Miss the point — that's just the way it is.",
+    "example_it": "Non cogliere il punto — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -2863,8 +2863,8 @@ const EN_VOCAB = [
     "emoji": "🤑",
     "simple": "",
     "it": "Ricco sfondato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Filthy rich — that's just the way it is.",
+    "example_it": "Ricco sfondato — è così che stanno le cose.",
     "tags": [
       "base"
     ],
@@ -2878,8 +2878,8 @@ const EN_VOCAB = [
     "emoji": "☔",
     "simple": "",
     "it": "Fare un gruzzoletto / risparmiare per i momenti difficili",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Save money for a rainy day",
+    "example_it": "Fare un gruzzoletto",
     "tags": [
       "base"
     ],
@@ -2893,8 +2893,8 @@ const EN_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "Avere le mani bucate / sperperare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Spend money like water — that's just the way it is.",
+    "example_it": "Avere le mani bucate — è così che stanno le cose.",
     "tags": [
       "base"
     ],
@@ -2908,8 +2908,8 @@ const EN_VOCAB = [
     "emoji": "🚗",
     "simple": "",
     "it": "Mettersi in viaggio / andarsene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hit the road — that's just the way it is.",
+    "example_it": "Mettersi in viaggio — è così che stanno le cose.",
     "tags": [
       "base"
     ],
@@ -2923,8 +2923,8 @@ const EN_VOCAB = [
     "emoji": "😴",
     "simple": "",
     "it": "Andare a letto / crollare dal sonno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Time to hit the sack, kids!",
+    "example_it": "È ora di andare a nanna, bambini!",
     "tags": [
       "bambini"
     ],
@@ -2938,8 +2938,8 @@ const EN_VOCAB = [
     "emoji": "🥜",
     "simple": "",
     "it": "In poche parole / in sintesi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In a nutshell: breakfast, activity, lunch, beach!",
+    "example_it": "In parole povere: colazione, attività, pranzo, spiaggia!",
     "tags": [
       "base"
     ],
@@ -2953,8 +2953,8 @@ const EN_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "Tenere d'occhio / sorvegliare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Keep an eye on — that's just the way it is.",
+    "example_it": "Tenere d'occhio — è così che stanno le cose.",
     "tags": [
       "bambini",
       "sicurezza"
@@ -2969,8 +2969,8 @@ const EN_VOCAB = [
     "emoji": "🐱",
     "simple": "",
     "it": "Svelare un segreto / non saper tenere un segreto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let the cat out of the bag",
+    "example_it": "Svelare un segreto",
     "tags": [
       "bambini"
     ],
@@ -2984,8 +2984,8 @@ const EN_VOCAB = [
     "emoji": "⛵",
     "simple": "",
     "it": "Perdere l'occasione / arrivare tardi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "If you don't sign up now, you'll miss the boat.",
+    "example_it": "Se non ti iscrivi adesso, perdi il treno.",
     "tags": [
       "base"
     ],
@@ -2999,8 +2999,8 @@ const EN_VOCAB = [
     "emoji": "🌿",
     "simple": "",
     "it": "Girare intorno alla questione / menare il can per l'aia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Stop beating around the bush — what's wrong?",
+    "example_it": "Smettila di girare intorno — cosa c'è che non va?",
     "tags": [
       "comunicazione"
     ],
@@ -3014,8 +3014,8 @@ const EN_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "Darsi una mossa / sbrigarsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Get a move on — that's just the way it is.",
+    "example_it": "Darsi una mossa — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -3029,8 +3029,8 @@ const EN_VOCAB = [
     "emoji": "🦵",
     "simple": "",
     "it": "In bocca al lupo! / buona fortuna!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Break a leg at the talent show tonight!",
+    "example_it": "In bocca al lupo per lo spettacolo stasera!",
     "tags": [
       "bambini"
     ],
@@ -3044,8 +3044,8 @@ const EN_VOCAB = [
     "emoji": "🌅",
     "simple": "",
     "it": "Smettere per oggi / finirla qui",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's call it a day — great work everyone!",
+    "example_it": "Chiudiamola qui — ottimo lavoro a tutti!",
     "tags": [
       "attività"
     ],
@@ -3059,8 +3059,8 @@ const EN_VOCAB = [
     "emoji": "🤞",
     "simple": "",
     "it": "Incrociare le dita / sperare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Cross your fingers — that's just the way it is.",
+    "example_it": "Incrociare le dita — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -3074,8 +3074,8 @@ const EN_VOCAB = [
     "emoji": "🎬",
     "simple": "",
     "it": "Andare al sodo / venire al punto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's cut to the chase — what happened?",
+    "example_it": "Veniamo al punto — cosa è successo?",
     "tags": [
       "comunicazione"
     ],
@@ -3089,8 +3089,8 @@ const EN_VOCAB = [
     "emoji": "🌊",
     "simple": "",
     "it": "Facile a venire, facile ad andare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Easy come, easy go — that's just the way it is.",
+    "example_it": "Facile a venire, facile ad andare — è così che stanno le cose.",
     "tags": [
       "base"
     ],
@@ -3104,8 +3104,8 @@ const EN_VOCAB = [
     "emoji": "🎵",
     "simple": "",
     "it": "Affrontare le conseguenze / pagare le conseguenze",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "You'll have to face the music eventually.",
+    "example_it": "Dovrai prima o poi fare i conti con le conseguenze.",
     "tags": [
       "bambini"
     ],
@@ -3119,8 +3119,8 @@ const EN_VOCAB = [
     "emoji": "🥶",
     "simple": "",
     "it": "Avere paura all'ultimo momento / tirarsi indietro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Get cold feet — that's just the way it is.",
+    "example_it": "Avere paura all'ultimo momento — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -3134,8 +3134,8 @@ const EN_VOCAB = [
     "emoji": "💚",
     "simple": "",
     "it": "Verde dall'invidia / morire d'invidia",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Green with envy — that's just the way it is.",
+    "example_it": "Verde dall'invidia — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -3149,8 +3149,8 @@ const EN_VOCAB = [
     "emoji": "🌱",
     "simple": "",
     "it": "L'erba del vicino è sempre più verde",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The grass is always greener — that's just the way it is.",
+    "example_it": "L'erba del vicino è sempre più verde — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -3164,8 +3164,8 @@ const EN_VOCAB = [
     "emoji": "🌈",
     "simple": "",
     "it": "Non tutto il male vien per nuocere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Every cloud has a silver lining",
+    "example_it": "Non tutto il male vien per nuocere",
     "tags": [
       "bambini"
     ],
@@ -3179,8 +3179,8 @@ const EN_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "Nessun rancore / senza rancori",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No hard feelings — that's just the way it is.",
+    "example_it": "Nessun rancore — è così che stanno le cose.",
     "tags": [
       "bambini"
     ],
@@ -3194,8 +3194,8 @@ const EN_VOCAB = [
     "emoji": "♨️",
     "simple": "",
     "it": "Nei guai / in una situazione difficile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In hot water — that's just the way it is.",
+    "example_it": "Nei guai — è così che stanno le cose.",
     "tags": [
       "problemi"
     ],
@@ -3209,8 +3209,8 @@ const EN_VOCAB = [
     "emoji": "🌪️",
     "simple": "",
     "it": "essere una peste / difficile da gestire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "be a handful — that's just the way it is.",
+    "example_it": "essere una peste — è così che stanno le cose.",
     "tags": [
       "bambini",
       "genitori"
@@ -3225,8 +3225,8 @@ const EN_VOCAB = [
     "emoji": "🔁",
     "simple": "",
     "it": "Puoi ripetere, per favore?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Could you repeat, please?",
+    "example_it": "Puoi ripetere, per favore?",
     "tags": [
       "bambini"
     ],
@@ -3240,8 +3240,8 @@ const EN_VOCAB = [
     "emoji": "📢",
     "simple": "",
     "it": "Puoi alzare la voce, per favore?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Could you speak up, please?",
+    "example_it": "Puoi alzare la voce, per favore?",
     "tags": [
       "bambini"
     ],
@@ -3255,8 +3255,8 @@ const EN_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "Puoi ripetere?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Say that again, please?",
+    "example_it": "Puoi ripetere?",
     "tags": [
       "bambini"
     ],
@@ -3270,8 +3270,8 @@ const EN_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "Puoi parafrasare?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Could you paraphrase this?",
+    "example_it": "Puoi parafrasare?",
     "tags": [
       "bambini"
     ],
@@ -3285,8 +3285,8 @@ const EN_VOCAB = [
     "emoji": "🗣️",
     "simple": "",
     "it": "Puoi spiegarlo in modo diverso?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Could you explain this differently?",
+    "example_it": "Puoi spiegarlo in modo diverso?",
     "tags": [
       "bambini"
     ],
@@ -3300,8 +3300,8 @@ const EN_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "Puoi dirlo in un altro modo?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Can you say it in another way, please?",
+    "example_it": "Puoi dirlo in un altro modo?",
     "tags": [
       "bambini"
     ],
@@ -3315,8 +3315,8 @@ const EN_VOCAB = [
     "emoji": "🙏",
     "simple": "",
     "it": "Le dispiacerebbe ripetere un'ultima volta?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Would you mind repeating that one last time?",
+    "example_it": "Le dispiacerebbe ripetere un'ultima volta?",
     "tags": [
       "genitori"
     ],
@@ -3330,8 +3330,8 @@ const EN_VOCAB = [
     "emoji": "❓",
     "simple": "",
     "it": "Potrebbe chiarire? Non ho ben capito.",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Could you clarify? I didn't quite catch that.",
+    "example_it": "Potrebbe chiarire? Non ho ben capito.",
     "tags": [
       "bambini"
     ],
@@ -3345,8 +3345,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Ho capito bene che...?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Do I understand you correctly, that...?",
+    "example_it": "Ho capito bene che...?",
     "tags": [
       "bambini"
     ],
@@ -3360,8 +3360,8 @@ const EN_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "Scusa, non ho capito.",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sorry, I didn't catch that. — did everyone understand?",
+    "example_it": "Scusa, non ho capito. — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3375,8 +3375,8 @@ const EN_VOCAB = [
     "emoji": "😕",
     "simple": "",
     "it": "Cosa hai appena detto?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "What did you just say?",
+    "example_it": "Cosa hai appena detto?",
     "tags": [
       "bambini"
     ],
@@ -3390,8 +3390,8 @@ const EN_VOCAB = [
     "emoji": "🎧",
     "simple": "",
     "it": "Ho sentito bene?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Did I hear you right?",
+    "example_it": "Ho sentito bene?",
     "tags": [
       "bambini"
     ],
@@ -3405,8 +3405,8 @@ const EN_VOCAB = [
     "emoji": "🔗",
     "simple": "",
     "it": "perché",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Because — did everyone understand?",
+    "example_it": "perché — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3420,8 +3420,8 @@ const EN_VOCAB = [
     "emoji": "📅",
     "simple": "",
     "it": "poiché",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Since — did everyone understand?",
+    "example_it": "poiché — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3435,8 +3435,8 @@ const EN_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "poiché / dato che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "As — did everyone understand?",
+    "example_it": "poiché — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3450,8 +3450,8 @@ const EN_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "a causa di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Due to — did everyone understand?",
+    "example_it": "a causa di — tutti hanno capito?",
     "tags": [
       "lavoro"
     ],
@@ -3465,8 +3465,8 @@ const EN_VOCAB = [
     "emoji": "🧭",
     "simple": "",
     "it": "in considerazione di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In view of — did everyone understand?",
+    "example_it": "in considerazione di — tutti hanno capito?",
     "tags": [
       "lavoro"
     ],
@@ -3480,8 +3480,8 @@ const EN_VOCAB = [
     "emoji": "💡",
     "simple": "",
     "it": "considerando che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Given that — did everyone understand?",
+    "example_it": "considerando che — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3495,8 +3495,8 @@ const EN_VOCAB = [
     "emoji": "📋",
     "simple": "",
     "it": "a causa di / in seguito a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Owing to — did everyone understand?",
+    "example_it": "a causa di — tutti hanno capito?",
     "tags": [
       "lavoro"
     ],
@@ -3510,8 +3510,8 @@ const EN_VOCAB = [
     "emoji": "🙏",
     "simple": "",
     "it": "grazie a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Thanks to — did everyone understand?",
+    "example_it": "grazie a — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3525,8 +3525,8 @@ const EN_VOCAB = [
     "emoji": "➡️",
     "simple": "",
     "it": "per questo motivo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "For this reason — did everyone understand?",
+    "example_it": "per questo motivo — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3540,8 +3540,8 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "considerando che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Considering that — did everyone understand?",
+    "example_it": "considerando che — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3555,8 +3555,8 @@ const EN_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "in pratica",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Basically — did everyone understand?",
+    "example_it": "in pratica — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3570,8 +3570,8 @@ const EN_VOCAB = [
     "emoji": "💡",
     "simple": "",
     "it": "in realtà",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Actually — did everyone understand?",
+    "example_it": "in realtà — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3585,8 +3585,8 @@ const EN_VOCAB = [
     "emoji": "📌",
     "simple": "",
     "it": "infatti / in realtà",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In fact, we start a bit earlier today.",
+    "example_it": "In effetti, oggi iniziamo un po' prima.",
     "tags": [
       "bambini"
     ],
@@ -3600,8 +3600,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "per esempio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "For instance — did everyone understand?",
+    "example_it": "per esempio — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3615,8 +3615,8 @@ const EN_VOCAB = [
     "emoji": "📋",
     "simple": "",
     "it": "come / ad esempio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Such as — did everyone understand?",
+    "example_it": "come — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3630,8 +3630,8 @@ const EN_VOCAB = [
     "emoji": "🔄",
     "simple": "",
     "it": "in altre parole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In other words, the activity starts at 9.",
+    "example_it": "In altre parole, l'attività inizia alle 9.",
     "tags": [
       "bambini"
     ],
@@ -3645,8 +3645,8 @@ const EN_VOCAB = [
     "emoji": "🗣️",
     "simple": "",
     "it": "cioè",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That is (to say) — did everyone understand?",
+    "example_it": "cioè — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3660,8 +3660,8 @@ const EN_VOCAB = [
     "emoji": "✏️",
     "simple": "",
     "it": "per dirla semplicemente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "To put it simply — did everyone understand?",
+    "example_it": "per dirla semplicemente — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3675,8 +3675,8 @@ const EN_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "inoltre",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Moreover — did everyone understand?",
+    "example_it": "inoltre — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3690,8 +3690,8 @@ const EN_VOCAB = [
     "emoji": "📢",
     "simple": "",
     "it": "inoltre / per di più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Furthermore — did everyone understand?",
+    "example_it": "inoltre — tutti hanno capito?",
     "tags": [
       "lavoro"
     ],
@@ -3705,8 +3705,8 @@ const EN_VOCAB = [
     "emoji": "➕",
     "simple": "",
     "it": "in aggiunta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In addition — did everyone understand?",
+    "example_it": "in aggiunta — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3720,8 +3720,8 @@ const EN_VOCAB = [
     "emoji": "📝",
     "simple": "",
     "it": "inoltre",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Additionally — did everyone understand?",
+    "example_it": "inoltre — tutti hanno capito?",
     "tags": [
       "lavoro"
     ],
@@ -3735,8 +3735,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "anche",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Also — did everyone understand?",
+    "example_it": "anche — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3750,8 +3750,8 @@ const EN_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "anche / pure",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "As well — did everyone understand?",
+    "example_it": "anche — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3765,8 +3765,8 @@ const EN_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "per non parlare di",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let alone — did everyone understand?",
+    "example_it": "per non parlare di — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3780,8 +3780,8 @@ const EN_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "inoltre / tra l'altro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Besides — did everyone understand?",
+    "example_it": "inoltre — tutti hanno capito?",
     "tags": [
       "base"
     ],
@@ -3795,8 +3795,8 @@ const EN_VOCAB = [
     "emoji": "🔝",
     "simple": "",
     "it": "per di più / oltretutto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "What's more — did everyone understand?",
+    "example_it": "per di più — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3810,8 +3810,8 @@ const EN_VOCAB = [
     "emoji": "😕",
     "simple": "",
     "it": "Non capisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I don't understand — did everyone understand?",
+    "example_it": "Non capisco — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3825,8 +3825,8 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "Non ha senso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That doesn't make sense — did everyone understand?",
+    "example_it": "Non ha senso — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3840,8 +3840,8 @@ const EN_VOCAB = [
     "emoji": "😵",
     "simple": "",
     "it": "Sono confuso/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm confused — did everyone understand?",
+    "example_it": "Sono confuso — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3855,8 +3855,8 @@ const EN_VOCAB = [
     "emoji": "👂",
     "simple": "",
     "it": "Non riesco a seguire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I can't follow — did everyone understand?",
+    "example_it": "Non riesco a seguire — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3870,8 +3870,8 @@ const EN_VOCAB = [
     "emoji": "💡",
     "simple": "",
     "it": "Capito / ho capito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I get it — did everyone understand?",
+    "example_it": "Capito — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3885,8 +3885,8 @@ const EN_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "Vedo / capisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I see — did everyone understand?",
+    "example_it": "Vedo — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3900,8 +3900,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Ha senso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That makes sense — did everyone understand?",
+    "example_it": "Ha senso — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3915,8 +3915,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Lo capisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I understand it — did everyone understand?",
+    "example_it": "Lo capisco — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3930,8 +3930,8 @@ const EN_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "Aspetta un attimo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Wait a minute — did everyone understand?",
+    "example_it": "Aspetta un attimo — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3945,8 +3945,8 @@ const EN_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "Aspetta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hold on — did everyone understand?",
+    "example_it": "Aspetta — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3960,8 +3960,8 @@ const EN_VOCAB = [
     "emoji": "⏱️",
     "simple": "",
     "it": "Un secondo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Just a second — did everyone understand?",
+    "example_it": "Un secondo — tutti hanno capito?",
     "tags": [
       "bambini"
     ],
@@ -3975,8 +3975,8 @@ const EN_VOCAB = [
     "emoji": "👌",
     "simple": "",
     "it": "Nessun problema / Non è niente di che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No big deal, it happens to everyone!",
+    "example_it": "Non è niente di che, capita a tutti!",
     "tags": [
       "bambini"
     ],
@@ -3990,8 +3990,8 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "Più o meno / In un certo senso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's kind of hot today, right?",
+    "example_it": "Fa un po' caldo oggi, vero?",
     "tags": [
       "bambini"
     ],
@@ -4005,8 +4005,8 @@ const EN_VOCAB = [
     "emoji": "🙏",
     "simple": "",
     "it": "Senza offesa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No offense, but that's not quite right.",
+    "example_it": "Senza offesa, ma non è proprio così.",
     "tags": [
       "bambini"
     ],
@@ -4020,8 +4020,8 @@ const EN_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "Passo / Non ci sto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm out!",
+    "example_it": "Passo!",
     "tags": [
       "bambini"
     ],
@@ -4035,8 +4035,8 @@ const EN_VOCAB = [
     "emoji": "😜",
     "simple": "",
     "it": "Stavo scherzando",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Just kidding!",
+    "example_it": "Stavo scherzando!",
     "tags": [
       "bambini"
     ],
@@ -4050,8 +4050,8 @@ const EN_VOCAB = [
     "emoji": "🙈",
     "simple": "",
     "it": "Colpa mia / Scusa, mi sono sbagliato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "My bad — I forgot the sunscreen!",
+    "example_it": "Colpa mia — ho dimenticato la crema!",
     "tags": [
       "bambini"
     ],
@@ -4065,8 +4065,8 @@ const EN_VOCAB = [
     "emoji": "🤚",
     "simple": "",
     "it": "È colpa mia / me ne assumo io",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's on me, I made a mistake.",
+    "example_it": "È colpa mia, ho sbagliato.",
     "tags": [
       "bambini"
     ],
@@ -4080,8 +4080,8 @@ const EN_VOCAB = [
     "emoji": "😳",
     "simple": "",
     "it": "Che diavolo? / Ma cosa...?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "What the hell?",
+    "example_it": "Che diavolo?",
     "tags": [
       "bambini"
     ],
@@ -4095,8 +4095,8 @@ const EN_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "Non esagerare / non stressare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't push it, Marco — enough!",
+    "example_it": "Non esagerare, Marco — basta!",
     "tags": [
       "bambini"
     ],
@@ -4110,8 +4110,8 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "A chi importa / chi se ne frega",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Who cares, let's just have fun!",
+    "example_it": "E chi se ne frega, divertiamoci!",
     "tags": [
       "bambini"
     ],
@@ -4125,8 +4125,8 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "Ma dai! / Fammi il piacere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Give me a break, that's not fair!",
+    "example_it": "Ma dai, non è giusto!",
     "tags": [
       "bambini"
     ],
@@ -4140,8 +4140,8 @@ const EN_VOCAB = [
     "emoji": "😏",
     "simple": "",
     "it": "Magari / Sì, come no",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "You wish — that spot is mine!",
+    "example_it": "Magari — quel posto è mio!",
     "tags": [
       "bambini"
     ],
@@ -4155,8 +4155,8 @@ const EN_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "Scendi dal piedistallo / non tirartela",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Get over yourself and join the group.",
+    "example_it": "Non tirartela e unisciti al gruppo.",
     "tags": [
       "bambini"
     ],
@@ -4170,8 +4170,8 @@ const EN_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "Il fatto è che / la verità è che",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The thing is, I forgot my towel.",
+    "example_it": "Il fatto è che ho dimenticato l'asciugamano.",
     "tags": [
       "bambini"
     ],
@@ -4185,8 +4185,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Il punto è che / in sostanza",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The point is, safety comes first.",
+    "example_it": "Il punto è che la sicurezza viene prima.",
     "tags": [
       "bambini"
     ],
@@ -4200,8 +4200,8 @@ const EN_VOCAB = [
     "emoji": "💫",
     "simple": "",
     "it": "E cose del genere / eccetera",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Bring your towel, sunscreen and stuff.",
+    "example_it": "Porta asciugamano, crema solare e roba del genere.",
     "tags": [
       "bambini"
     ],
@@ -4215,8 +4215,8 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "O qualcosa del genere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ask your mum or something!",
+    "example_it": "Chiedi a tua mamma o qualcosa del genere!",
     "tags": [
       "bambini"
     ],
@@ -4230,8 +4230,8 @@ const EN_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "Ero tipo / ho fatto tipo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I was like, wow — amazing!",
+    "example_it": "Ero tipo, wow — fantastico!",
     "tags": [
       "bambini"
     ],
@@ -4245,8 +4245,8 @@ const EN_VOCAB = [
     "emoji": "➡️",
     "simple": "",
     "it": "Comunque / in ogni caso",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Anyway, let's start the activity!",
+    "example_it": "Comunque, iniziamo l'attività!",
     "tags": [
       "bambini"
     ],
@@ -4260,8 +4260,8 @@ const EN_VOCAB = [
     "emoji": "📍",
     "simple": "",
     "it": "Letteralmente / davvero",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I literally have no idea what happened.",
+    "example_it": "Letteralmente non so cosa è successo.",
     "tags": [
       "bambini"
     ],
@@ -4275,8 +4275,8 @@ const EN_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "Per niente / assolutamente no",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Not at all — it was no trouble!",
+    "example_it": "Per niente — non è stato un problema!",
     "tags": [
       "bambini"
     ],
@@ -4290,8 +4290,8 @@ const EN_VOCAB = [
     "emoji": "😂",
     "simple": "",
     "it": "Macché! / Ma no!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Nah, I don't want to swim today.",
+    "example_it": "Macché, oggi non voglio nuotare.",
     "tags": [
       "bambini"
     ],
@@ -4305,8 +4305,8 @@ const EN_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "Mi sto bene / va bene per me",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Beach games? I'm down!",
+    "example_it": "Giochi in spiaggia? Ci sto!",
     "tags": [
       "bambini"
     ],
@@ -4320,8 +4320,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Va bene per me / sto bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Thanks, I'm good with water for now.",
+    "example_it": "Grazie, per ora va bene l'acqua.",
     "tags": [
       "bambini"
     ],
@@ -4335,8 +4335,8 @@ const EN_VOCAB = [
     "emoji": "🚀",
     "simple": "",
     "it": "Vai! / Fatti! / Prova!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Go for it!",
+    "example_it": "Vai!!",
     "tags": [
       "bambini"
     ],
@@ -4350,8 +4350,8 @@ const EN_VOCAB = [
     "emoji": "🤝",
     "simple": "",
     "it": "Va bene / è giusto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Fair enough, we'll do it your way.",
+    "example_it": "Va bene, lo facciamo a modo tuo.",
     "tags": [
       "bambini"
     ],
@@ -4365,8 +4365,8 @@ const EN_VOCAB = [
     "emoji": "💯",
     "simple": "",
     "it": "Certamente! / Certo che sì!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "You bet — we'll have so much fun!",
+    "example_it": "Certo che sì — ci divertiremo un sacco!",
     "tags": [
       "bambini"
     ],
@@ -4380,8 +4380,8 @@ const EN_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "Lo dico davvero / ero serio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I meant it — great job today!",
+    "example_it": "Lo dico davvero — ottimo lavoro oggi!",
     "tags": [
       "bambini"
     ],
@@ -4395,8 +4395,8 @@ const EN_VOCAB = [
     "emoji": "⚖️",
     "simple": "",
     "it": "Dipende / dipende dalle circostanze",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It depends on the weather tomorrow.",
+    "example_it": "Dipende dal tempo domani.",
     "tags": [
       "bambini"
     ],
@@ -4410,8 +4410,8 @@ const EN_VOCAB = [
     "emoji": "🤨",
     "simple": "",
     "it": "Come? / Scusa, ripeti?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Come again?",
+    "example_it": "Come?",
     "tags": [
       "bambini"
     ],
@@ -4425,8 +4425,8 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "Dai! / Vai!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Come on — let's go swimming!",
+    "example_it": "Dai — andiamo a nuotare!",
     "tags": [
       "bambini"
     ],
@@ -4440,8 +4440,8 @@ const EN_VOCAB = [
     "emoji": "💘",
     "simple": "",
     "it": "Mi piaci (romanticamente)",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I think he has a crush on her.",
+    "example_it": "Penso che lui ci provi con lei.",
     "tags": [
       "bambini"
     ],
@@ -4455,8 +4455,8 @@ const EN_VOCAB = [
     "emoji": "🥹",
     "simple": "",
     "it": "Sto prendendo una cotta",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "She's catching feelings for her teammate.",
+    "example_it": "Lei sta prendendo una cotta per il suo compagno.",
     "tags": [
       "bambini"
     ],
@@ -4470,8 +4470,8 @@ const EN_VOCAB = [
     "emoji": "🌹",
     "simple": "",
     "it": "Sono completamente innamorato/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "He's head over heels for that girl.",
+    "example_it": "È completamente innamorato di quella ragazza.",
     "tags": [
       "bambini"
     ],
@@ -4485,8 +4485,8 @@ const EN_VOCAB = [
     "emoji": "😍",
     "simple": "",
     "it": "Mi piaci molto / sei il mio tipo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I can tell she's really into him.",
+    "example_it": "Si vede che lei è presa da lui.",
     "tags": [
       "bambini"
     ],
@@ -4500,8 +4500,8 @@ const EN_VOCAB = [
     "emoji": "👻",
     "simple": "",
     "it": "Sparire senza spiegazioni",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "He just ghosted her after camp.",
+    "example_it": "L'ha semplicemente ignorata dopo il campo.",
     "tags": [
       "bambini"
     ],
@@ -4515,8 +4515,8 @@ const EN_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "Avere una storia / avventura breve",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "They had a summer fling at camp.",
+    "example_it": "Hanno avuto una storia estiva al campo.",
     "tags": [
       "bambini"
     ],
@@ -4530,8 +4530,8 @@ const EN_VOCAB = [
     "emoji": "🎣",
     "simple": "",
     "it": "Avere un'avventura",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "They hooked up at the end of camp.",
+    "example_it": "Si sono messi insieme alla fine del campo.",
     "tags": [
       "bambini"
     ],
@@ -4545,8 +4545,8 @@ const EN_VOCAB = [
     "emoji": "🏀",
     "simple": "",
     "it": "Provarci / tentare la fortuna",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Just shoot your shot — what's the worst?",
+    "example_it": "Prova tanto — cosa può succedere di male?",
     "tags": [
       "bambini"
     ],
@@ -4560,8 +4560,8 @@ const EN_VOCAB = [
     "emoji": "🌅",
     "simple": "",
     "it": "Allontanarsi gradualmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "He's doing the slow fade on her.",
+    "example_it": "Sta gradualmente scomparendo dalla sua vita.",
     "tags": [
       "bambini"
     ],
@@ -4575,8 +4575,8 @@ const EN_VOCAB = [
     "emoji": "💔",
     "simple": "",
     "it": "Smettere di amare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "They fell out of love after the summer.",
+    "example_it": "Hanno smesso di amarsi dopo l'estate.",
     "tags": [
       "bambini"
     ],
@@ -4590,8 +4590,8 @@ const EN_VOCAB = [
     "emoji": "😘",
     "simple": "",
     "it": "Fare la corte a qualcuno / flirtare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That parent was totally hitting on me!",
+    "example_it": "Quel genitore mi stava decisamente corteggiando!",
     "tags": [
       "bambini"
     ],
@@ -4605,8 +4605,8 @@ const EN_VOCAB = [
     "emoji": "🪙",
     "simple": "",
     "it": "Sono al verde / non ho soldi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm broke until payday.",
+    "example_it": "Sono al verde fino al giorno di paga.",
     "tags": [
       "bambini"
     ],
@@ -4620,8 +4620,8 @@ const EN_VOCAB = [
     "emoji": "📱",
     "simple": "",
     "it": "Rimaniamo in contatto / teniamoci aggiornati",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's keep in touch after the summer!",
+    "example_it": "Rimaniamo in contatto dopo l'estate!",
     "tags": [
       "genitori"
     ],
@@ -4635,8 +4635,8 @@ const EN_VOCAB = [
     "emoji": "🛑",
     "simple": "",
     "it": "Smettila! / Piantala!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Knock it off!",
+    "example_it": "Smettila!!",
     "tags": [
       "bambini"
     ],
@@ -4650,8 +4650,8 @@ const EN_VOCAB = [
     "emoji": "📬",
     "simple": "",
     "it": "Tienmi aggiornato / aggiornare qualcuno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Keep me posted if anything changes.",
+    "example_it": "Tienimi aggiornato se qualcosa cambia.",
     "tags": [
       "genitori"
     ],
@@ -4665,8 +4665,8 @@ const EN_VOCAB = [
     "emoji": "🕊️",
     "simple": "",
     "it": "Lascia andare / non pensarci più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's over — just let it go.",
+    "example_it": "È finita — lascia andare.",
     "tags": [
       "bambini"
     ],
@@ -4680,8 +4680,8 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "Non ne ho idea / boh / chi lo sa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Beats me where he put the ball.",
+    "example_it": "Non ne ho idea dove ha messo il pallone.",
     "tags": [
       "bambini"
     ],
@@ -4695,8 +4695,8 @@ const EN_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "Come vuoi / quel che dici tu",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Whatever you say, but I disagree.",
+    "example_it": "Come vuoi, ma non sono d'accordo.",
     "tags": [
       "bambini"
     ],
@@ -4710,8 +4710,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "È così / esatto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's right!",
+    "example_it": "È così!",
     "tags": [
       "bambini"
     ],
@@ -4725,8 +4725,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Provarci / fare un tentativo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Never tried it? Give it a shot!",
+    "example_it": "Non l'hai mai provato? Fai un tentativo!",
     "tags": [
       "bambini"
     ],
@@ -4740,8 +4740,8 @@ const EN_VOCAB = [
     "emoji": "🎉",
     "simple": "",
     "it": "Divertirsi un sacco / spassarsela",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hope you have a blast today!",
+    "example_it": "Spero che vi divertiate un sacco oggi!",
     "tags": [
       "bambini"
     ],
@@ -4755,8 +4755,8 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "Avere ripensamenti / non essere più sicuro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm having second thoughts about this game.",
+    "example_it": "Sto avendo ripensamenti su questo gioco.",
     "tags": [
       "bambini"
     ],
@@ -4770,8 +4770,8 @@ const EN_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "Datti una calmata / riprenditi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Get a grip — it's just a game!",
+    "example_it": "Datti una calmata — è solo un gioco!",
     "tags": [
       "bambini"
     ],
@@ -4785,8 +4785,8 @@ const EN_VOCAB = [
     "emoji": "🦋",
     "simple": "",
     "it": "Anima della festa / persona molto socievole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "She's such a social butterfly at camp.",
+    "example_it": "È davvero l'anima del miniclub.",
     "tags": [
       "bambini"
     ],
@@ -4800,8 +4800,8 @@ const EN_VOCAB = [
     "emoji": "😍",
     "simple": "",
     "it": "Qualcosa/qualcuno di molto piacevole da guardare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The new brochure is total eye candy!",
+    "example_it": "La nuova brochure è davvero bella da vedere!",
     "tags": [
       "bambini"
     ],
@@ -4815,8 +4815,8 @@ const EN_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "Come va?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "How's it going?",
+    "example_it": "Come va?",
     "tags": [
       "bambini"
     ],
@@ -4830,8 +4830,8 @@ const EN_VOCAB = [
     "emoji": "🤗",
     "simple": "",
     "it": "Come sei stato/a?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "How've you been?",
+    "example_it": "Come sei stato",
     "tags": [
       "genitori"
     ],
@@ -4845,8 +4845,8 @@ const EN_VOCAB = [
     "emoji": "🆕",
     "simple": "",
     "it": "Ehi, che c'è di nuovo?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hey, what's new?",
+    "example_it": "Ehi, che c'è di nuovo?",
     "tags": [
       "bambini"
     ],
@@ -4860,8 +4860,8 @@ const EN_VOCAB = [
     "emoji": "😎",
     "simple": "",
     "it": "Che si dice?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sup?",
+    "example_it": "Che si dice?",
     "tags": [
       "bambini"
     ],
@@ -4875,8 +4875,8 @@ const EN_VOCAB = [
     "emoji": "🙌",
     "simple": "",
     "it": "Che succede?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "What's up?",
+    "example_it": "Che succede?",
     "tags": [
       "bambini"
     ],
@@ -4890,8 +4890,8 @@ const EN_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "Ehi / Ciao",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hey there — ready for another fun day?",
+    "example_it": "Ehi ciao — pronti per un'altra giornata?",
     "tags": [
       "bambini"
     ],
@@ -4905,8 +4905,8 @@ const EN_VOCAB = [
     "emoji": "⏳",
     "simple": "",
     "it": "È da tanto che non ci vediamo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Long time no see — how was your winter?",
+    "example_it": "È da tanto che non ci vediamo — com'è stato l'inverno?",
     "tags": [
       "genitori"
     ],
@@ -4920,8 +4920,8 @@ const EN_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "Piacere di vederti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Nice to see you!",
+    "example_it": "Piacere di vederti!",
     "tags": [
       "genitori"
     ],
@@ -4935,8 +4935,8 @@ const EN_VOCAB = [
     "emoji": "🥰",
     "simple": "",
     "it": "Felice di vederti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Good to see you!",
+    "example_it": "Felice di vederti!",
     "tags": [
       "genitori"
     ],
@@ -4950,8 +4950,8 @@ const EN_VOCAB = [
     "emoji": "🤨",
     "simple": "",
     "it": "Che succede? / Che storia è questa?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "What's the deal with today's activity?",
+    "example_it": "Che storia è con l'attività di oggi?",
     "tags": [
       "bambini"
     ],
@@ -4965,8 +4965,8 @@ const EN_VOCAB = [
     "emoji": "🔁",
     "simple": "",
     "it": "Eccoci di nuovo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "He forgot his towel — here we go again!",
+    "example_it": "Ha dimenticato l'asciugamano — eccoci di nuovo!",
     "tags": [
       "bambini"
     ],
@@ -4980,8 +4980,8 @@ const EN_VOCAB = [
     "emoji": "🙄",
     "simple": "",
     "it": "Era prevedibile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lost again? That figures.",
+    "example_it": "Ha perso di nuovo? Era prevedibile.",
     "tags": [
       "bambini"
     ],
@@ -4995,8 +4995,8 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "Fai come vuoi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't want to swim? Suit yourself!",
+    "example_it": "Non vuoi nuotare? Fai come vuoi!",
     "tags": [
       "bambini"
     ],
@@ -5010,8 +5010,8 @@ const EN_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "Non iniziare nemmeno",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't even — we're not doing that today.",
+    "example_it": "Non iniziare nemmeno — oggi non lo facciamo.",
     "tags": [
       "bambini"
     ],
@@ -5025,8 +5025,8 @@ const EN_VOCAB = [
     "emoji": "👉",
     "simple": "",
     "it": "Decidi tu",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Stay or leave early? That's your call.",
+    "example_it": "Restare o andare prima? Decidi tu.",
     "tags": [
       "bambini"
     ],
@@ -5040,8 +5040,8 @@ const EN_VOCAB = [
     "emoji": "😐",
     "simple": "",
     "it": "Ne dubito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Will it rain? I doubt it.",
+    "example_it": "Pioverà? Ne dubito.",
     "tags": [
       "bambini"
     ],
@@ -5055,8 +5055,8 @@ const EN_VOCAB = [
     "emoji": "😢",
     "simple": "",
     "it": "Povero te / Poverina",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "You fell down? Poor you!",
+    "example_it": "Sei caduto? Poveretto!",
     "tags": [
       "bambini"
     ],
@@ -5070,8 +5070,8 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "Lasciami stare / Levati",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Back off — let him try alone first.",
+    "example_it": "Lascialo stare — lascialo provare da solo prima.",
     "tags": [
       "bambini"
     ],
@@ -5085,8 +5085,8 @@ const EN_VOCAB = [
     "emoji": "💅",
     "simple": "",
     "it": "Perfetto / impeccabile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Your costume looks absolutely snatched!",
+    "example_it": "Il tuo costume è assolutamente perfetto!",
     "tags": [
       "bambini"
     ],
@@ -5100,8 +5100,8 @@ const EN_VOCAB = [
     "emoji": "😒",
     "simple": "",
     "it": "Offeso / risentito",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "She's still salty about losing the game.",
+    "example_it": "È ancora offesa per aver perso il gioco.",
     "tags": [
       "bambini"
     ],
@@ -5115,8 +5115,8 @@ const EN_VOCAB = [
     "emoji": "🧢",
     "simple": "",
     "it": "Senza scherzi / davvero",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No cap, that was the best day ever!",
+    "example_it": "Senza scherzi, è stato il giorno migliore di sempre!",
     "tags": [
       "bambini"
     ],
@@ -5130,8 +5130,8 @@ const EN_VOCAB = [
     "emoji": "🔊",
     "simple": "",
     "it": "Davvero / molto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm high-key obsessed with this game.",
+    "example_it": "Sono davvero ossessionato da questo gioco.",
     "tags": [
       "bambini"
     ],
@@ -5145,8 +5145,8 @@ const EN_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "Devo andare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I gotta go!",
+    "example_it": "Devo andare!",
     "tags": [
       "bambini"
     ],
@@ -5160,8 +5160,8 @@ const EN_VOCAB = [
     "emoji": "👋",
     "simple": "",
     "it": "A dopo / ci vediamo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Catch you later!",
+    "example_it": "A dopo!",
     "tags": [
       "genitori"
     ],
@@ -5175,8 +5175,8 @@ const EN_VOCAB = [
     "emoji": "📱",
     "simple": "",
     "it": "Ci sentiamo dopo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Talk to you later!",
+    "example_it": "Ci sentiamo dopo!",
     "tags": [
       "genitori"
     ],
@@ -5190,8 +5190,8 @@ const EN_VOCAB = [
     "emoji": "🚶",
     "simple": "",
     "it": "Mi avvio / vado",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'll get going!",
+    "example_it": "Mi avvio!",
     "tags": [
       "genitori"
     ],
@@ -5205,8 +5205,8 @@ const EN_VOCAB = [
     "emoji": "🙌",
     "simple": "",
     "it": "Ci vediamo in giro",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "See you around!",
+    "example_it": "Ci vediamo in giro!",
     "tags": [
       "genitori"
     ],
@@ -5220,8 +5220,8 @@ const EN_VOCAB = [
     "emoji": "🚪",
     "simple": "",
     "it": "Vado / me ne vado",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm off!",
+    "example_it": "Vado!",
     "tags": [
       "bambini"
     ],
@@ -5235,8 +5235,8 @@ const EN_VOCAB = [
     "emoji": "🌅",
     "simple": "",
     "it": "Chiudiamola qui per oggi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's call it a day!",
+    "example_it": "Chiudiamola qui per oggi!",
     "tags": [
       "bambini"
     ],
@@ -5250,8 +5250,8 @@ const EN_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "Me ne vado",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'll head out!",
+    "example_it": "Me ne vado!",
     "tags": [
       "genitori"
     ],
@@ -5265,8 +5265,8 @@ const EN_VOCAB = [
     "emoji": "🤗",
     "simple": "",
     "it": "Abbi cura di te",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Take care!",
+    "example_it": "Abbi cura di te!",
     "tags": [
       "genitori"
     ],
@@ -5280,8 +5280,8 @@ const EN_VOCAB = [
     "emoji": "⏰",
     "simple": "",
     "it": "È ora di andare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Time to head out!",
+    "example_it": "È ora di andare!",
     "tags": [
       "genitori"
     ],
@@ -5295,8 +5295,8 @@ const EN_VOCAB = [
     "emoji": "☕",
     "simple": "",
     "it": "Ci aggiorniamo dopo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'll catch up with you later at the beach!",
+    "example_it": "Ci aggiorniamo dopo in spiaggia!",
     "tags": [
       "genitori"
     ],
@@ -5310,8 +5310,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Sono pronto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm ready!",
+    "example_it": "Sono pronto!",
     "tags": [
       "bambini"
     ],
@@ -5325,8 +5325,8 @@ const EN_VOCAB = [
     "emoji": "🚀",
     "simple": "",
     "it": "Sono pronto/a a partire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm good to go!",
+    "example_it": "Sono pronto!",
     "tags": [
       "bambini"
     ],
@@ -5340,8 +5340,8 @@ const EN_VOCAB = [
     "emoji": "🎒",
     "simple": "",
     "it": "Sono preparato/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm prepared!",
+    "example_it": "Sono preparato!",
     "tags": [
       "bambini"
     ],
@@ -5355,8 +5355,8 @@ const EN_VOCAB = [
     "emoji": "⚙️",
     "simple": "",
     "it": "Sono attrezzato/a / pronto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm geared up!",
+    "example_it": "Sono attrezzato!",
     "tags": [
       "bambini"
     ],
@@ -5370,8 +5370,8 @@ const EN_VOCAB = [
     "emoji": "🆗",
     "simple": "",
     "it": "Va bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's fine!",
+    "example_it": "Va bene!",
     "tags": [
       "bambini"
     ],
@@ -5385,8 +5385,8 @@ const EN_VOCAB = [
     "emoji": "😌",
     "simple": "",
     "it": "Nessun problema",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No worries!",
+    "example_it": "Nessun problema!",
     "tags": [
       "bambini"
     ],
@@ -5400,8 +5400,8 @@ const EN_VOCAB = [
     "emoji": "✅",
     "simple": "",
     "it": "Tutto a posto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "All good!",
+    "example_it": "Tutto a posto!",
     "tags": [
       "bambini"
     ],
@@ -5415,8 +5415,8 @@ const EN_VOCAB = [
     "emoji": "👌",
     "simple": "",
     "it": "Va tutto bene",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's alright!",
+    "example_it": "Va tutto bene!",
     "tags": [
       "bambini"
     ],
@@ -5430,8 +5430,8 @@ const EN_VOCAB = [
     "emoji": "🤗",
     "simple": "",
     "it": "Non preoccuparti",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't worry about it!",
+    "example_it": "Non preoccuparti!",
     "tags": [
       "bambini"
     ],
@@ -5445,8 +5445,8 @@ const EN_VOCAB = [
     "emoji": "🤏",
     "simple": "",
     "it": "Non è niente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's nothing!",
+    "example_it": "Non è niente!",
     "tags": [
       "bambini"
     ],
@@ -5460,8 +5460,8 @@ const EN_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "Ma dai! / Impossibile!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No way!",
+    "example_it": "Ma dai!",
     "tags": [
       "bambini"
     ],
@@ -5475,8 +5475,8 @@ const EN_VOCAB = [
     "emoji": "🐴",
     "simple": "",
     "it": "Pazienza! / Piano!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hold your horses!",
+    "example_it": "Pazienza!",
     "tags": [
       "bambini"
     ],
@@ -5490,8 +5490,8 @@ const EN_VOCAB = [
     "emoji": "🧠",
     "simple": "",
     "it": "Non perdere la testa!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't lose your head!",
+    "example_it": "Non perdere la testa!",
     "tags": [
       "bambini"
     ],
@@ -5505,8 +5505,8 @@ const EN_VOCAB = [
     "emoji": "✋",
     "simple": "",
     "it": "Ne ho fin sopra i capelli",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I've had it up to here",
+    "example_it": "Ne ho fin sopra i capelli",
     "tags": [
       "bambini"
     ],
@@ -5520,8 +5520,8 @@ const EN_VOCAB = [
     "emoji": "🌍",
     "simple": "",
     "it": "Non è la fine del mondo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's not the end of the world",
+    "example_it": "Non è la fine del mondo",
     "tags": [
       "bambini"
     ],
@@ -5535,8 +5535,8 @@ const EN_VOCAB = [
     "emoji": "😵",
     "simple": "",
     "it": "Non so più che fare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm at my wits' end today.",
+    "example_it": "Mi sento davvero non so più che fare oggi.",
     "tags": [
       "bambini"
     ],
@@ -5550,8 +5550,8 @@ const EN_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "È assurdo! / È pazzesco!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's insane!",
+    "example_it": "È assurdo!",
     "tags": [
       "bambini"
     ],
@@ -5565,8 +5565,8 @@ const EN_VOCAB = [
     "emoji": "🧠",
     "simple": "",
     "it": "È pazzesco! / È assurdo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's mental!",
+    "example_it": "È pazzesco!",
     "tags": [
       "bambini"
     ],
@@ -5580,8 +5580,8 @@ const EN_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "È fantastico!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's awesome!",
+    "example_it": "È fantastico!",
     "tags": [
       "bambini"
     ],
@@ -5595,8 +5595,8 @@ const EN_VOCAB = [
     "emoji": "😮",
     "simple": "",
     "it": "Oddio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Oh my God!",
+    "example_it": "Oddio!",
     "tags": [
       "bambini"
     ],
@@ -5610,8 +5610,8 @@ const EN_VOCAB = [
     "emoji": "🌀",
     "simple": "",
     "it": "È pazzesco!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's crazy!",
+    "example_it": "È pazzesco!",
     "tags": [
       "bambini"
     ],
@@ -5625,8 +5625,8 @@ const EN_VOCAB = [
     "emoji": "🤦",
     "simple": "",
     "it": "Che casino!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "What a mess!",
+    "example_it": "Che casino!",
     "tags": [
       "bambini"
     ],
@@ -5640,8 +5640,8 @@ const EN_VOCAB = [
     "emoji": "😞",
     "simple": "",
     "it": "Che schifo! / Che peccato!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That sucks!",
+    "example_it": "Che schifo!",
     "tags": [
       "bambini"
     ],
@@ -5655,8 +5655,8 @@ const EN_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "Ma davvero?!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No kidding!",
+    "example_it": "Ma davvero?!",
     "tags": [
       "bambini"
     ],
@@ -5670,8 +5670,8 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "Ma sei serio?!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Are you serious?!",
+    "example_it": "Ma sei serio?!",
     "tags": [
       "bambini"
     ],
@@ -5685,8 +5685,8 @@ const EN_VOCAB = [
     "emoji": "🦁",
     "simple": "",
     "it": "È assurdo! / È incredibile!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "This is wild!",
+    "example_it": "È assurdo!",
     "tags": [
       "bambini"
     ],
@@ -5700,8 +5700,8 @@ const EN_VOCAB = [
     "emoji": "🫢",
     "simple": "",
     "it": "Ma va?!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "You don't say!",
+    "example_it": "Ma va?!",
     "tags": [
       "bambini"
     ],
@@ -5715,8 +5715,8 @@ const EN_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "È fortissimo! / È pazzesco!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "That's sick!",
+    "example_it": "È fortissimo!",
     "tags": [
       "bambini"
     ],
@@ -5730,8 +5730,8 @@ const EN_VOCAB = [
     "emoji": "😒",
     "simple": "",
     "it": "È irritante",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really this is annoying today.",
+    "example_it": "Mi sento davvero è irritante oggi.",
     "tags": [
       "bambini"
     ],
@@ -5745,8 +5745,8 @@ const EN_VOCAB = [
     "emoji": "😩",
     "simple": "",
     "it": "Sono stufo/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm fed up today.",
+    "example_it": "Mi sento davvero sono stufo oggi.",
     "tags": [
       "bambini"
     ],
@@ -5760,8 +5760,8 @@ const EN_VOCAB = [
     "emoji": "🛑",
     "simple": "",
     "it": "Ne ho abbastanza",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i've had enough today.",
+    "example_it": "Mi sento davvero ne ho abbastanza oggi.",
     "tags": [
       "bambini"
     ],
@@ -5775,8 +5775,8 @@ const EN_VOCAB = [
     "emoji": "😣",
     "simple": "",
     "it": "È insopportabile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really this is unbearable today.",
+    "example_it": "Mi sento davvero è insopportabile oggi.",
     "tags": [
       "bambini"
     ],
@@ -5790,8 +5790,8 @@ const EN_VOCAB = [
     "emoji": "🤢",
     "simple": "",
     "it": "Sono stufo/a di questa cosa",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm sick of this today.",
+    "example_it": "Mi sento davvero sono stufo oggi.",
     "tags": [
       "bambini"
     ],
@@ -5805,8 +5805,8 @@ const EN_VOCAB = [
     "emoji": "🌪️",
     "simple": "",
     "it": "Mi sta facendo impazzire",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really this is driving me crazy today.",
+    "example_it": "Mi sento davvero mi sta facendo impazzire oggi.",
     "tags": [
       "bambini"
     ],
@@ -5820,8 +5820,8 @@ const EN_VOCAB = [
     "emoji": "😰",
     "simple": "",
     "it": "Non riesco a gestirlo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i can't deal with this today.",
+    "example_it": "Mi sento davvero non riesco a gestirlo oggi.",
     "tags": [
       "bambini"
     ],
@@ -5835,8 +5835,8 @@ const EN_VOCAB = [
     "emoji": "🙌",
     "simple": "",
     "it": "Ne ho abbastanza / l'ho superata",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm over it today.",
+    "example_it": "Mi sento davvero ne ho abbastanza oggi.",
     "tags": [
       "bambini"
     ],
@@ -5850,8 +5850,8 @@ const EN_VOCAB = [
     "emoji": "🙃",
     "simple": "",
     "it": "È ridicolo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really this is ridiculous today.",
+    "example_it": "Mi sento davvero è ridicolo! oggi.",
     "tags": [
       "bambini"
     ],
@@ -5865,8 +5865,8 @@ const EN_VOCAB = [
     "emoji": "🌋",
     "simple": "",
     "it": "Sono al limite",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm at my limit today.",
+    "example_it": "Mi sento davvero sono al limite oggi.",
     "tags": [
       "bambini"
     ],
@@ -5880,8 +5880,8 @@ const EN_VOCAB = [
     "emoji": "😬",
     "simple": "",
     "it": "Mi dà sui nervi / mi irrita",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really it gets on my nerves today.",
+    "example_it": "Mi sento davvero mi dà sui nervi oggi.",
     "tags": [
       "bambini"
     ],
@@ -5895,8 +5895,8 @@ const EN_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "Non ce la faccio più",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i can't take it anymore today.",
+    "example_it": "Mi sento davvero non ce la faccio più oggi.",
     "tags": [
       "bambini"
     ],
@@ -5910,8 +5910,8 @@ const EN_VOCAB = [
     "emoji": "🤬",
     "simple": "",
     "it": "Mi ha fatto incazzare",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really it pissed me off today.",
+    "example_it": "Mi sento davvero mi ha fatto incazzare oggi.",
     "tags": [
       "bambini"
     ],
@@ -5925,8 +5925,8 @@ const EN_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "Sono tesissimo/a / sulle spine",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm on edge today.",
+    "example_it": "Mi sento davvero sono tesissimo oggi.",
     "tags": [
       "bambini"
     ],
@@ -5940,8 +5940,8 @@ const EN_VOCAB = [
     "emoji": "😬",
     "simple": "",
     "it": "Sono teso/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm tense today.",
+    "example_it": "Mi sento davvero sono teso oggi.",
     "tags": [
       "bambini"
     ],
@@ -5955,8 +5955,8 @@ const EN_VOCAB = [
     "emoji": "💥",
     "simple": "",
     "it": "Ho i nervi a pezzi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really my nerves are shot today.",
+    "example_it": "Mi sento davvero ho i nervi a pezzi oggi.",
     "tags": [
       "bambini"
     ],
@@ -5970,8 +5970,8 @@ const EN_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "Sto andando nel panico / impazzisco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm freaking out today.",
+    "example_it": "Mi sento davvero sto andando nel panico oggi.",
     "tags": [
       "bambini"
     ],
@@ -5985,8 +5985,8 @@ const EN_VOCAB = [
     "emoji": "🌪️",
     "simple": "",
     "it": "Non riesco a calmarmi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i can't calm down today.",
+    "example_it": "Mi sento davvero non riesco a calmarmi oggi.",
     "tags": [
       "bambini"
     ],
@@ -6000,8 +6000,8 @@ const EN_VOCAB = [
     "emoji": "🫠",
     "simple": "",
     "it": "Sto perdendo il controllo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm losing it today.",
+    "example_it": "Mi sento davvero sto perdendo il controllo oggi.",
     "tags": [
       "bambini"
     ],
@@ -6015,8 +6015,8 @@ const EN_VOCAB = [
     "emoji": "💔",
     "simple": "",
     "it": "Mi sento a pezzi / distrutto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i feel crushed today.",
+    "example_it": "Mi sento davvero mi sento a pezzi oggi.",
     "tags": [
       "bambini"
     ],
@@ -6030,8 +6030,8 @@ const EN_VOCAB = [
     "emoji": "🥺",
     "simple": "",
     "it": "Ho un nodo alla gola",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I have a lump in my throat",
+    "example_it": "Ho un nodo alla gola",
     "tags": [
       "bambini"
     ],
@@ -6045,8 +6045,8 @@ const EN_VOCAB = [
     "emoji": "🪫",
     "simple": "",
     "it": "Sono emotivamente sfinito/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i'm emotionally drained today.",
+    "example_it": "Mi sento davvero sono emotivamente sfinito oggi.",
     "tags": [
       "bambini"
     ],
@@ -6060,8 +6060,8 @@ const EN_VOCAB = [
     "emoji": "😢",
     "simple": "",
     "it": "Mi viene da piangere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i feel like crying today.",
+    "example_it": "Mi sento davvero mi viene da piangere oggi.",
     "tags": [
       "bambini"
     ],
@@ -6075,8 +6075,8 @@ const EN_VOCAB = [
     "emoji": "😭",
     "simple": "",
     "it": "Sono sul punto di piangere",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm on the verge of tears",
+    "example_it": "Sono sul punto di piangere",
     "tags": [
       "bambini"
     ],
@@ -6090,8 +6090,8 @@ const EN_VOCAB = [
     "emoji": "🙋",
     "simple": "",
     "it": "Lo voglio",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i want it today.",
+    "example_it": "Mi sento davvero lo voglio oggi.",
     "tags": [
       "bambini"
     ],
@@ -6105,8 +6105,8 @@ const EN_VOCAB = [
     "emoji": "👎",
     "simple": "",
     "it": "Non mi piace",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel really i don't like it today.",
+    "example_it": "Mi sento davvero non mi piace oggi.",
     "tags": [
       "bambini"
     ],
@@ -6120,8 +6120,8 @@ const EN_VOCAB = [
     "emoji": "💭",
     "simple": "",
     "it": "Secondo me",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "In my opinion, the morning slot works best.",
+    "example_it": "Secondo me, la mattina funziona meglio.",
     "tags": [
       "bambini"
     ],
@@ -6135,8 +6135,8 @@ const EN_VOCAB = [
     "emoji": "🔭",
     "simple": "",
     "it": "Per quanto ne so",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "As far as I know, the pool opens at 10.",
+    "example_it": "Per quanto ne so, la piscina apre alle 10.",
     "tags": [
       "bambini"
     ],
@@ -6150,8 +6150,8 @@ const EN_VOCAB = [
     "emoji": "🙋",
     "simple": "",
     "it": "Se lo chiedi a me",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "If you ask me, add more water breaks.",
+    "example_it": "Se lo chiedi a me, aggiungi più pause acqua.",
     "tags": [
       "bambini"
     ],
@@ -6165,8 +6165,8 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "Immagino... / Suppongo...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I guess..., this is the right decision.",
+    "example_it": "Immagino..., questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6180,8 +6180,8 @@ const EN_VOCAB = [
     "emoji": "💫",
     "simple": "",
     "it": "Ho l'impressione che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I feel like..., this is the right decision.",
+    "example_it": "Ho l'impressione che..., questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6195,8 +6195,8 @@ const EN_VOCAB = [
     "emoji": "👤",
     "simple": "",
     "it": "Personalmente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Personally speaking, this is the right decision.",
+    "example_it": "Personalmente, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6210,8 +6210,8 @@ const EN_VOCAB = [
     "emoji": "👁️",
     "simple": "",
     "it": "Per come la vedo io...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The way I see it..., this is the right decision.",
+    "example_it": "Per come la vedo io..., questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6225,8 +6225,8 @@ const EN_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "Direi che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'd say..., this is the right decision.",
+    "example_it": "Direi che..., questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6240,8 +6240,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Sono abbastanza sicuro che...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm pretty sure..., this is the right decision.",
+    "example_it": "Sono abbastanza sicuro che..., questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6255,8 +6255,8 @@ const EN_VOCAB = [
     "emoji": "💯",
     "simple": "",
     "it": "Ad essere onesto...",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "To be honest..., this is the right decision.",
+    "example_it": "Ad essere onesto..., questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6270,8 +6270,8 @@ const EN_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "Mi piace un sacco / mi appassiona",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm into it, this is the right decision.",
+    "example_it": "Mi piace un sacco, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6285,8 +6285,8 @@ const EN_VOCAB = [
     "emoji": "🎸",
     "simple": "",
     "it": "Mi piace un sacco",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I dig it, this is the right decision.",
+    "example_it": "Mi piace un sacco, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6300,8 +6300,8 @@ const EN_VOCAB = [
     "emoji": "⭐",
     "simple": "",
     "it": "Ne sono fan",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm a fan of it, this is the right decision.",
+    "example_it": "Ne sono fan, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6315,8 +6315,8 @@ const EN_VOCAB = [
     "emoji": "💫",
     "simple": "",
     "it": "Mi piace davvero / mi appassiona molto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm really into that, this is the right decision.",
+    "example_it": "Mi piace davvero, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6330,8 +6330,8 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "Fa per me / è il mio campo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "It's my thing, this is the right decision.",
+    "example_it": "Fa per me, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6345,8 +6345,8 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "Non sono sicuro/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm not sure, this is the right decision.",
+    "example_it": "Non sono sicuro, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6360,8 +6360,8 @@ const EN_VOCAB = [
     "emoji": "😐",
     "simple": "",
     "it": "Non sono certo/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm not certain, this is the right decision.",
+    "example_it": "Non sono certo, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6375,8 +6375,8 @@ const EN_VOCAB = [
     "emoji": "🧐",
     "simple": "",
     "it": "Non sono convinto/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm not convinced, this is the right decision.",
+    "example_it": "Non sono convinto, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6390,8 +6390,8 @@ const EN_VOCAB = [
     "emoji": "⚖️",
     "simple": "",
     "it": "Sono indeciso/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "I'm on the fence, this is the right decision.",
+    "example_it": "Sono indeciso, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6405,8 +6405,8 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "Difficile a dirsi",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hard to say, this is the right decision.",
+    "example_it": "Difficile a dirsi, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6420,8 +6420,8 @@ const EN_VOCAB = [
     "emoji": "📊",
     "simple": "",
     "it": "In generale / tutto sommato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "All in all, this is the right decision.",
+    "example_it": "In generale, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6435,8 +6435,8 @@ const EN_VOCAB = [
     "emoji": "😍",
     "simple": "",
     "it": "Bello/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Beautiful, this is the right decision.",
+    "example_it": "Bello, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6450,8 +6450,8 @@ const EN_VOCAB = [
     "emoji": "🌟",
     "simple": "",
     "it": "Splendido/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Gorgeous, this is the right decision.",
+    "example_it": "Splendido, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6465,8 +6465,8 @@ const EN_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "Mozzafiato",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Stunning, this is the right decision.",
+    "example_it": "Mozzafiato, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6480,8 +6480,8 @@ const EN_VOCAB = [
     "emoji": "💕",
     "simple": "",
     "it": "Adorabile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Lovely, this is the right decision.",
+    "example_it": "Adorabile, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6495,8 +6495,8 @@ const EN_VOCAB = [
     "emoji": "🌸",
     "simple": "",
     "it": "Carino/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Pretty, this is the right decision.",
+    "example_it": "Carino, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6510,8 +6510,8 @@ const EN_VOCAB = [
     "emoji": "💫",
     "simple": "",
     "it": "Attraente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Attractive, this is the right decision.",
+    "example_it": "Attraente, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6525,8 +6525,8 @@ const EN_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "Fantastico/a",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Amazing, this is the right decision.",
+    "example_it": "Fantastico, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6540,8 +6540,8 @@ const EN_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "Buono",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Good, this is the right decision.",
+    "example_it": "Buono, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6555,8 +6555,8 @@ const EN_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "Piacevole",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Nice, this is the right decision.",
+    "example_it": "Piacevole, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6570,8 +6570,8 @@ const EN_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "Fantastico",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Awesome, this is the right decision.",
+    "example_it": "Fantastico, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6585,8 +6585,8 @@ const EN_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "Valido",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Solid, this is the right decision.",
+    "example_it": "Valido, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6600,8 +6600,8 @@ const EN_VOCAB = [
     "emoji": "🆗",
     "simple": "",
     "it": "Decente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Decent, this is the right decision.",
+    "example_it": "Decente, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6615,8 +6615,8 @@ const EN_VOCAB = [
     "emoji": "⭐",
     "simple": "",
     "it": "Eccellente",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Excellent, this is the right decision.",
+    "example_it": "Eccellente, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6630,8 +6630,8 @@ const EN_VOCAB = [
     "emoji": "👏",
     "simple": "",
     "it": "Impressionante",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Impressive, this is the right decision.",
+    "example_it": "Impressionante, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6645,8 +6645,8 @@ const EN_VOCAB = [
     "emoji": "👎",
     "simple": "",
     "it": "Cattivo / brutto",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Bad, this is the right decision.",
+    "example_it": "Cattivo, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6660,8 +6660,8 @@ const EN_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "Terribile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Terrible, this is the right decision.",
+    "example_it": "Terribile, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6675,8 +6675,8 @@ const EN_VOCAB = [
     "emoji": "🤢",
     "simple": "",
     "it": "Pessimo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Awful, this is the right decision.",
+    "example_it": "Pessimo, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6690,8 +6690,8 @@ const EN_VOCAB = [
     "emoji": "😣",
     "simple": "",
     "it": "Orribile",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Horrible, this is the right decision.",
+    "example_it": "Orribile, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6705,8 +6705,8 @@ const EN_VOCAB = [
     "emoji": "💩",
     "simple": "",
     "it": "Fa schifo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Sucks, this is the right decision.",
+    "example_it": "Fa schifo, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6720,8 +6720,8 @@ const EN_VOCAB = [
     "emoji": "🙃",
     "simple": "",
     "it": "Ridicolo",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Ridiculous, this is the right decision.",
+    "example_it": "Ridicolo, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6735,8 +6735,8 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "Patetico",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Pathetic, this is the right decision.",
+    "example_it": "Patetico, questa è la decisione giusta.",
     "tags": [
       "bambini"
     ],
@@ -6750,8 +6750,8 @@ const EN_VOCAB = [
     "emoji": "💧",
     "simple": "",
     "it": "L'acqua è meravigliosa!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The water's lovely!",
+    "example_it": "L'acqua è meravigliosa!",
     "tags": [
       "mare"
     ],
@@ -6765,8 +6765,8 @@ const EN_VOCAB = [
     "emoji": "🤿",
     "simple": "",
     "it": "Buttati!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Dive in!",
+    "example_it": "Buttati!",
     "tags": [
       "mare"
     ],
@@ -6780,8 +6780,8 @@ const EN_VOCAB = [
     "emoji": "🥚",
     "simple": "",
     "it": "L'ultimo che entra è un uovo marcio!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Last one in is a rotten egg!",
+    "example_it": "L'ultimo che entra è un uovo marcio!",
     "tags": [
       "mare"
     ],
@@ -6795,8 +6795,8 @@ const EN_VOCAB = [
     "emoji": "🤸",
     "simple": "",
     "it": "Prima facciamo riscaldamento!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's warm up first!",
+    "example_it": "Prima facciamo riscaldamento!",
     "tags": [
       "mare"
     ],
@@ -6810,8 +6810,8 @@ const EN_VOCAB = [
     "emoji": "🚩",
     "simple": "",
     "it": "Controlla la bandiera prima di entrare!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Check the flag before you go in!",
+    "example_it": "Controlla la bandiera prima di entrare!",
     "tags": [
       "mare",
       "sicurezza"
@@ -6826,8 +6826,8 @@ const EN_VOCAB = [
     "emoji": "🦶",
     "simple": "",
     "it": "Bagnati i piedi prima!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Wet your feet first!",
+    "example_it": "Bagnati i piedi prima!",
     "tags": [
       "mare"
     ],
@@ -6841,8 +6841,8 @@ const EN_VOCAB = [
     "emoji": "📏",
     "simple": "",
     "it": "Resta nella parte bassa!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Stay in the shallow end!",
+    "example_it": "Resta nella parte bassa!",
     "tags": [
       "mare",
       "sicurezza"
@@ -6857,8 +6857,8 @@ const EN_VOCAB = [
     "emoji": "👫",
     "simple": "",
     "it": "A coppie — nessuno nuota da solo!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Buddy up — no one swims alone!",
+    "example_it": "A coppie — nessuno nuota da solo!",
     "tags": [
       "mare",
       "sicurezza"
@@ -6873,8 +6873,8 @@ const EN_VOCAB = [
     "emoji": "🧴",
     "simple": "",
     "it": "Metti la crema solare!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Put your sunscreen on!",
+    "example_it": "Metti la crema solare!",
     "tags": [
       "mare"
     ],
@@ -6888,8 +6888,8 @@ const EN_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "Non correre in piscina!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Don't run by the pool!",
+    "example_it": "Non correre in piscina!",
     "tags": [
       "mare",
       "sicurezza"
@@ -6904,8 +6904,8 @@ const EN_VOCAB = [
     "emoji": "🍕",
     "simple": "",
     "it": "Non nuotate subito dopo aver mangiato!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "No swimming right after eating!",
+    "example_it": "Non nuotate subito dopo aver mangiato!",
     "tags": [
       "mare"
     ],
@@ -6919,8 +6919,8 @@ const EN_VOCAB = [
     "emoji": "🌊",
     "simple": "",
     "it": "Attenzione alle onde!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Watch out for the waves!",
+    "example_it": "Attenzione alle onde!",
     "tags": [
       "mare",
       "sicurezza"
@@ -6935,8 +6935,8 @@ const EN_VOCAB = [
     "emoji": "⛵",
     "simple": "",
     "it": "Il mare è molto mosso oggi.",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "The sea is really choppy today.",
+    "example_it": "Il mare è molto mosso oggi.",
     "tags": [
       "mare"
     ],
@@ -6950,8 +6950,8 @@ const EN_VOCAB = [
     "emoji": "🔢",
     "simple": "",
     "it": "Contiamoci tutti!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's do a head count!",
+    "example_it": "Contiamoci tutti!",
     "tags": [
       "mare"
     ],
@@ -6965,8 +6965,8 @@ const EN_VOCAB = [
     "emoji": "🏁",
     "simple": "",
     "it": "Chi arriva primo al galleggiante!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Race you to the buoy!",
+    "example_it": "Chi arriva primo al galleggiante!",
     "tags": [
       "mare"
     ],
@@ -6980,8 +6980,8 @@ const EN_VOCAB = [
     "emoji": "🏊",
     "simple": "",
     "it": "Sai fare il morto a galla?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Can you float on your back?",
+    "example_it": "Sai fare il morto a galla?",
     "tags": [
       "mare"
     ],
@@ -6995,8 +6995,8 @@ const EN_VOCAB = [
     "emoji": "💦",
     "simple": "",
     "it": "Battaglia d'acqua!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Splash fight!",
+    "example_it": "Battaglia d'acqua!",
     "tags": [
       "mare"
     ],
@@ -7010,8 +7010,8 @@ const EN_VOCAB = [
     "emoji": "🤐",
     "simple": "",
     "it": "Tieni il respiro!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Hold your breath!",
+    "example_it": "Tieni il respiro!",
     "tags": [
       "mare"
     ],
@@ -7025,8 +7025,8 @@ const EN_VOCAB = [
     "emoji": "💣",
     "simple": "",
     "it": "Bomba!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Cannonball!",
+    "example_it": "Bomba!",
     "tags": [
       "mare"
     ],
@@ -7040,8 +7040,8 @@ const EN_VOCAB = [
     "emoji": "🏖️",
     "simple": "",
     "it": "Asciugati o prendi il raffreddore!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Towel off before you catch a cold!",
+    "example_it": "Asciugati o prendi il raffreddore!",
     "tags": [
       "mare"
     ],
@@ -7055,8 +7055,8 @@ const EN_VOCAB = [
     "emoji": "❓",
     "simple": "",
     "it": "Com'era l'acqua?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "How was the water?",
+    "example_it": "Com'era l'acqua?",
     "tags": [
       "mare"
     ],
@@ -7070,8 +7070,8 @@ const EN_VOCAB = [
     "emoji": "🧴",
     "simple": "",
     "it": "Ora rimetti la crema solare!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Time to reapply sunscreen!",
+    "example_it": "Ora rimetti la crema solare!",
     "tags": [
       "mare"
     ],
@@ -7085,8 +7085,8 @@ const EN_VOCAB = [
     "emoji": "🔴",
     "simple": "",
     "it": "Ti sei preso un po' di sole!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "You've caught a bit of sun!",
+    "example_it": "Ti sei preso un po' di sole!",
     "tags": [
       "mare"
     ],
@@ -7100,8 +7100,8 @@ const EN_VOCAB = [
     "emoji": "🚿",
     "simple": "",
     "it": "Andiamo a sciacquarci alla doccia!",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Let's rinse off in the shower!",
+    "example_it": "Andiamo a sciacquarci alla doccia!",
     "tags": [
       "mare"
     ],
@@ -7115,8 +7115,8 @@ const EN_VOCAB = [
     "emoji": "🔍",
     "simple": "",
     "it": "Hai perso qualcosa in acqua?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Did you lose anything in the water?",
+    "example_it": "Hai perso qualcosa in acqua?",
     "tags": [
       "mare"
     ],
@@ -7130,8 +7130,8 @@ const EN_VOCAB = [
     "emoji": "🪼",
     "simple": "",
     "it": "Qualcuno è stato punto da una medusa?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Anyone get stung by a jellyfish?",
+    "example_it": "Qualcuno è stato punto da una medusa?",
     "tags": [
       "mare"
     ],
@@ -7145,8 +7145,8 @@ const EN_VOCAB = [
     "emoji": "🍉",
     "simple": "",
     "it": "Chi ha fame dopo tutta quella nuotata?",
-    "example_en": "",
-    "example_it": "",
+    "example_en": "Who's hungry after all that swimming?",
+    "example_it": "Chi ha fame dopo tutta quella nuotata?",
     "tags": [
       "mare"
     ],
@@ -7282,8 +7282,7 @@ const EN_VOCAB = [
     ],
     "context_note": "",
     "concept": "pv_pulling_leg"
-  }
-,
+  },
   {
     "language": "en",
     "type": "emotion",
@@ -7291,9 +7290,11 @@ const EN_VOCAB = [
     "emoji": "😄",
     "simple": "",
     "it": "che gioia!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["emozioni"],
+    "example_en": "What a joy!",
+    "example_it": "che gioia!",
+    "tags": [
+      "emozioni"
+    ],
     "context_note": "",
     "concept": "what_joy"
   },
@@ -7304,9 +7305,11 @@ const EN_VOCAB = [
     "emoji": "😳",
     "simple": "",
     "it": "che imbarazzo!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["emozioni"],
+    "example_en": "How embarrassing!",
+    "example_it": "che imbarazzo!",
+    "tags": [
+      "emozioni"
+    ],
     "context_note": "",
     "concept": "how_embarrassing"
   },
@@ -7317,9 +7320,11 @@ const EN_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "dai, su di giri!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["emozioni"],
+    "example_en": "Come on, cheer up!",
+    "example_it": "dai, su di giri!",
+    "tags": [
+      "emozioni"
+    ],
     "context_note": "",
     "concept": "cheer_up_em"
   },
@@ -7330,9 +7335,11 @@ const EN_VOCAB = [
     "emoji": "😔",
     "simple": "",
     "it": "mi dispiace",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["emozioni"],
+    "example_en": "I feel really i'm sorry. today.",
+    "example_it": "Mi sento davvero mi dispiace oggi.",
+    "tags": [
+      "emozioni"
+    ],
     "context_note": "",
     "concept": "im_sorry_em"
   },
@@ -7343,9 +7350,11 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "perché no?",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["emozioni"],
+    "example_en": "Why not?",
+    "example_it": "perché no?",
+    "tags": [
+      "emozioni"
+    ],
     "context_note": "",
     "concept": "why_not_em"
   },
@@ -7356,13 +7365,14 @@ const EN_VOCAB = [
     "emoji": "👍",
     "simple": "",
     "it": "meglio così!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["emozioni"],
+    "example_en": "All the better!",
+    "example_it": "meglio così!",
+    "tags": [
+      "emozioni"
+    ],
     "context_note": "",
     "concept": "relief_good_news"
-  }
-,
+  },
   {
     "language": "en",
     "type": "opinion",
@@ -7370,9 +7380,11 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "mi sembra che...",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["opinioni"],
+    "example_en": "It seems to me..., this is the right decision.",
+    "example_it": "mi sembra che..., questa è la decisione giusta.",
+    "tags": [
+      "opinioni"
+    ],
     "context_note": "",
     "concept": "it_seems_to_me"
   },
@@ -7383,13 +7395,14 @@ const EN_VOCAB = [
     "emoji": "🗣️",
     "simple": "",
     "it": "a dire il vero...",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["opinioni"],
+    "example_en": "To tell the truth..., this is the right decision.",
+    "example_it": "a dire il vero..., questa è la decisione giusta.",
+    "tags": [
+      "opinioni"
+    ],
     "context_note": "",
     "concept": "to_tell_the_truth"
-  }
-,
+  },
   {
     "language": "en",
     "type": "colloquial",
@@ -7397,9 +7410,11 @@ const EN_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "dai!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Come on!",
+    "example_it": "dai!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "come_on_colloquial"
   },
@@ -7410,9 +7425,11 @@ const EN_VOCAB = [
     "emoji": "😎",
     "simple": "",
     "it": "che fico!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "How cool!",
+    "example_it": "che fico!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "how_cool"
   },
@@ -7423,9 +7440,11 @@ const EN_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "è davvero figo",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "That's really cool!",
+    "example_it": "è davvero figo!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "really_cool"
   },
@@ -7436,9 +7455,11 @@ const EN_VOCAB = [
     "emoji": "🤔",
     "simple": "",
     "it": "vediamo...",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Let me see...!",
+    "example_it": "vediamo...!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "let_me_see"
   },
@@ -7449,9 +7470,11 @@ const EN_VOCAB = [
     "emoji": "🤷",
     "simple": "",
     "it": "nessuna idea",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "No idea!",
+    "example_it": "nessuna idea!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "no_idea"
   },
@@ -7462,9 +7485,11 @@ const EN_VOCAB = [
     "emoji": "🤙",
     "simple": "",
     "it": "amico / tipo",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Dude / Mate!",
+    "example_it": "amico!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "dude_mate"
   },
@@ -7475,9 +7500,11 @@ const EN_VOCAB = [
     "emoji": "🔥",
     "simple": "",
     "it": "andare a tutto gas",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Going all out!",
+    "example_it": "andare a tutto gas!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "going_hard"
   },
@@ -7488,9 +7515,11 @@ const EN_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "attenzione!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Watch out!",
+    "example_it": "attenzione!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "watch_out_coll"
   },
@@ -7501,9 +7530,11 @@ const EN_VOCAB = [
     "emoji": "🙅",
     "simple": "",
     "it": "manco per sogno",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "No way!",
+    "example_it": "manco per sogno!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "no_way_coll"
   },
@@ -7514,9 +7545,11 @@ const EN_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "davvero?",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Oh really?",
+    "example_it": "davvero?",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "really_now"
   },
@@ -7527,9 +7560,11 @@ const EN_VOCAB = [
     "emoji": "🍕",
     "simple": "",
     "it": "sto morendo di fame",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "I'm starving!",
+    "example_it": "sto morendo di fame!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "im_starving"
   },
@@ -7540,9 +7575,11 @@ const EN_VOCAB = [
     "emoji": "😴",
     "simple": "",
     "it": "sono esausto/a",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "I'm exhausted!",
+    "example_it": "sono esausto!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "im_exhausted"
   },
@@ -7553,9 +7590,11 @@ const EN_VOCAB = [
     "emoji": "😮",
     "simple": "",
     "it": "figurati!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "You don't say!",
+    "example_it": "figurati!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "you_dont_say_coll"
   },
@@ -7566,9 +7605,11 @@ const EN_VOCAB = [
     "emoji": "💢",
     "simple": "",
     "it": "al diavolo!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Screw it!",
+    "example_it": "al diavolo!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "screw_it"
   },
@@ -7579,9 +7620,11 @@ const EN_VOCAB = [
     "emoji": "👮",
     "simple": "",
     "it": "sbirro (slang)",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Cop (slang)!",
+    "example_it": "sbirro!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "cop_slang"
   },
@@ -7592,9 +7635,11 @@ const EN_VOCAB = [
     "emoji": "💋",
     "simple": "",
     "it": "baciare sulla guancia",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Do the cheek kiss!",
+    "example_it": "baciare sulla guancia!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "do_the_bise"
   },
@@ -7605,9 +7650,11 @@ const EN_VOCAB = [
     "emoji": "🤒",
     "simple": "",
     "it": "non mi sento bene",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "I'm not feeling well!",
+    "example_it": "non mi sento bene!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "not_feeling_well"
   },
@@ -7618,9 +7665,11 @@ const EN_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "con piacere",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "With pleasure!",
+    "example_it": "con piacere!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "with_pleasure"
   },
@@ -7631,9 +7680,11 @@ const EN_VOCAB = [
     "emoji": "😊",
     "simple": "",
     "it": "col sorriso",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "With a smile!",
+    "example_it": "col sorriso!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "with_a_smile"
   },
@@ -7644,9 +7695,11 @@ const EN_VOCAB = [
     "emoji": "💯",
     "simple": "",
     "it": "assolutamente",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Absolutely!",
+    "example_it": "assolutamente!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "absolutely"
   },
@@ -7657,9 +7710,11 @@ const EN_VOCAB = [
     "emoji": "🤯",
     "simple": "",
     "it": "che assurdità!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "What nonsense!",
+    "example_it": "che assurdità!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "what_nonsense"
   },
@@ -7670,9 +7725,11 @@ const EN_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "mamma mia!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Oh my goodness!",
+    "example_it": "mamma mia!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "oh_la_la"
   },
@@ -7683,9 +7740,11 @@ const EN_VOCAB = [
     "emoji": "😑",
     "simple": "",
     "it": "boh / così così",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Meh!",
+    "example_it": "boh!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "meh"
   },
@@ -7696,13 +7755,14 @@ const EN_VOCAB = [
     "emoji": "😤",
     "simple": "",
     "it": "è una seccatura",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "It's a drag!",
+    "example_it": "è una seccatura!",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "",
     "concept": "its_annoying_coll"
-  }
-,
+  },
   {
     "language": "en",
     "type": "idiom",
@@ -7710,9 +7770,11 @@ const EN_VOCAB = [
     "emoji": "🎯",
     "simple": "",
     "it": "cogliere nel segno",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Nail it / Hit the nail on the head",
+    "example_it": "cogliere nel segno",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "trovare esattamente la soluzione",
     "concept": "idiom_hit_on_nail"
   },
@@ -7723,9 +7785,11 @@ const EN_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "restare di stucco",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Be left speechless / Be dumbstruck",
+    "example_it": "restare di stucco",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "restare senza parole per la sorpresa",
     "concept": "idiom_thunderstruck"
   },
@@ -7736,9 +7800,11 @@ const EN_VOCAB = [
     "emoji": "😱",
     "simple": "",
     "it": "è finita",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "It's all over — that's just the way it is.",
+    "example_it": "è finita — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "situazione disperata senza più speranza",
     "concept": "idiom_all_over"
   },
@@ -7749,9 +7815,11 @@ const EN_VOCAB = [
     "emoji": "🤩",
     "simple": "",
     "it": "era fantastico!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "It was amazing!",
+    "example_it": "era fantastico!",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "entusiasmo per qualcosa di straordinario",
     "concept": "idiom_amazing"
   },
@@ -7762,9 +7830,11 @@ const EN_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "è incredibile!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "It's incredible!",
+    "example_it": "è incredibile!",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "stupore per qualcosa di incredibile",
     "concept": "idiom_incredible"
   },
@@ -7775,9 +7845,11 @@ const EN_VOCAB = [
     "emoji": "💥",
     "simple": "",
     "it": "che disastro!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "What a disaster!",
+    "example_it": "che disastro!",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "esclamazione di fronte a un disastro",
     "concept": "idiom_what_a_mess"
   },
@@ -7788,9 +7860,11 @@ const EN_VOCAB = [
     "emoji": "🚫",
     "simple": "",
     "it": "neanche per sogno!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "No way! / Out of the question!",
+    "example_it": "neanche per sogno!",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "rifiuto categorico",
     "concept": "idiom_no_way"
   },
@@ -7801,9 +7875,11 @@ const EN_VOCAB = [
     "emoji": "✈️",
     "simple": "",
     "it": "buon viaggio!",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Have a good trip!",
+    "example_it": "buon viaggio!",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "augurare un buon viaggio",
     "concept": "idiom_safe_trip"
   },
@@ -7814,9 +7890,11 @@ const EN_VOCAB = [
     "emoji": "🏃",
     "simple": "",
     "it": "devo andare",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "I've got to go / I need to go.",
+    "example_it": "devo andare",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "doversi congedare in modo educato",
     "concept": "idiom_gotta_go"
   },
@@ -7827,9 +7905,11 @@ const EN_VOCAB = [
     "emoji": "💬",
     "simple": "",
     "it": "dobbiamo parlare",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "We need to talk. — that's just the way it is.",
+    "example_it": "dobbiamo parlare — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "avviare una conversazione seria",
     "concept": "idiom_we_need_talk"
   },
@@ -7840,9 +7920,11 @@ const EN_VOCAB = [
     "emoji": "🐰",
     "simple": "",
     "it": "dare buca / piantare in asso",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Stand someone up — that's just the way it is.",
+    "example_it": "dare buca — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "non presentarsi a un appuntamento",
     "concept": "idiom_stand_up"
   },
@@ -7853,9 +7935,11 @@ const EN_VOCAB = [
     "emoji": "😵",
     "simple": "",
     "it": "svenire",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Pass out / Faint — that's just the way it is.",
+    "example_it": "svenire — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "svenire / perdere i sensi",
     "concept": "idiom_faint"
   },
@@ -7866,9 +7950,11 @@ const EN_VOCAB = [
     "emoji": "🐟",
     "simple": "",
     "it": "avere di meglio da fare",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Have bigger fish to fry — that's just the way it is.",
+    "example_it": "avere di meglio da fare — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "avere cose più importanti di cui occuparsi",
     "concept": "idiom_busy"
   },
@@ -7879,9 +7965,11 @@ const EN_VOCAB = [
     "emoji": "🥕",
     "simple": "",
     "it": "è fatta / siamo fritti",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "It's all over / We're done for",
+    "example_it": "è fatta",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "situazione senza più speranza, inevitabile",
     "concept": "idiom_done_for"
   },
@@ -7892,9 +7980,11 @@ const EN_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "colpo di fulmine",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Fall in love at first sight",
+    "example_it": "colpo di fulmine",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "innamorarsi all'improvviso / a prima vista",
     "concept": "idiom_love_first_sight"
   },
@@ -7905,9 +7995,11 @@ const EN_VOCAB = [
     "emoji": "⚠️",
     "simple": "",
     "it": "non esagerare",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Don't push your luck — that's just the way it is.",
+    "example_it": "non esagerare — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "non esagerare / non approfittare della situazione",
     "concept": "idiom_dont_push_it"
   },
@@ -7918,9 +8010,11 @@ const EN_VOCAB = [
     "emoji": "🐱",
     "simple": "",
     "it": "arrendersi a indovinare",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Give up trying to guess — that's just the way it is.",
+    "example_it": "arrendersi a indovinare — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "arrendersi a trovare la risposta",
     "concept": "idiom_give_up"
   },
@@ -7931,9 +8025,11 @@ const EN_VOCAB = [
     "emoji": "🧈",
     "simple": "",
     "it": "avere la botte piena e la moglie ubriaca",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Have it both ways / Have your cake and eat it",
+    "example_it": "avere la botte piena e la moglie ubriaca",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "volere tutto senza dover scegliere",
     "concept": "idiom_have_it_all"
   },
@@ -7944,9 +8040,11 @@ const EN_VOCAB = [
     "emoji": "3️⃣",
     "simple": "",
     "it": "non c'è due senza tre",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Bad things come in threes — that's just the way it is.",
+    "example_it": "non c'è due senza tre — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "le cose brutte tendono a ripetersi tre volte",
     "concept": "idiom_no_two_no_three"
   },
@@ -7957,13 +8055,14 @@ const EN_VOCAB = [
     "emoji": "🌧️",
     "simple": "",
     "it": "non c'è limite al peggio",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Adding insult to injury / It never rains but it pours",
+    "example_it": "non c'è limite al peggio",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "quando le cose già brutte peggiorano",
     "concept": "idiom_adding_insult"
-  }
-,
+  },
   {
     "language": "en",
     "type": "idiom",
@@ -7971,9 +8070,11 @@ const EN_VOCAB = [
     "emoji": "☁️",
     "simple": "",
     "it": "essere con la testa tra le nuvole",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Have your head in the clouds",
+    "example_it": "essere con la testa tra le nuvole",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "non stare attento alla realtà",
     "concept": "daydreaming"
   },
@@ -7984,9 +8085,11 @@ const EN_VOCAB = [
     "emoji": "💸",
     "simple": "",
     "it": "costare un occhio della testa",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Cost an arm and a leg",
+    "example_it": "costare un occhio della testa",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "costare moltissimo",
     "concept": "expensive"
   },
@@ -7997,9 +8100,11 @@ const EN_VOCAB = [
     "emoji": "💪",
     "simple": "",
     "it": "darsi una mossa / organizzarsi",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Get your act together — that's just the way it is.",
+    "example_it": "darsi una mossa — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "darsi da fare / organizzarsi",
     "concept": "get_moving"
   },
@@ -8010,9 +8115,11 @@ const EN_VOCAB = [
     "emoji": "🌤️",
     "simple": "",
     "it": "ogni avversità porta qualcosa di buono",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Every setback has a silver lining",
+    "example_it": "ogni avversità porta qualcosa di buono",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "trovare il lato positivo",
     "concept": "silver_lining"
   },
@@ -8023,9 +8130,11 @@ const EN_VOCAB = [
     "emoji": "😲",
     "simple": "",
     "it": "restare senza parole",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Be left speechless — that's just the way it is.",
+    "example_it": "restare senza parole — è così che stanno le cose.",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "restare di stucco per la sorpresa",
     "concept": "in_trouble"
   },
@@ -8036,9 +8145,11 @@ const EN_VOCAB = [
     "emoji": "😞",
     "simple": "",
     "it": "sentirsi giù / blues",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Have the blues / Feel down",
+    "example_it": "sentirsi giù",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "sentirsi triste o depresso",
     "concept": "feeling_down"
   },
@@ -8049,9 +8160,11 @@ const EN_VOCAB = [
     "emoji": "🥕",
     "simple": "",
     "it": "è fatta / siamo fritti",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "It's all over / We're toast",
+    "example_it": "è fatta",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "situazione senza più speranza",
     "concept": "game_over"
   },
@@ -8062,9 +8175,11 @@ const EN_VOCAB = [
     "emoji": "⚡",
     "simple": "",
     "it": "colpo di fulmine",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["idiomi"],
+    "example_en": "Love at first sight / Thunderstruck by love",
+    "example_it": "colpo di fulmine",
+    "tags": [
+      "idiomi"
+    ],
     "context_note": "innamorarsi all'improvviso",
     "concept": "love_at_first_sight"
   },
@@ -8075,142 +8190,1947 @@ const EN_VOCAB = [
     "emoji": "🙅",
     "simple": "",
     "it": "no di certo / macché",
-    "example_en": "",
-    "example_it": "",
-    "tags": ["colloquiale"],
+    "example_en": "Not at all / No way (mild)",
+    "example_it": "no di certo",
+    "tags": [
+      "colloquiale"
+    ],
     "context_note": "negazione mild, non enfatica",
     "concept": "no_way_mild"
   },
-
-  // ── VERBI IRREGOLARI ──────────────────────────────────────
-  { language:"en", type:"verb", verb:"break",      emoji:"💥", it:"rompere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_break" },
-  { language:"en", type:"verb", verb:"tear",       emoji:"😢", it:"strappare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_tear" },
-  { language:"en", type:"verb", verb:"split",      emoji:"✂️", it:"dividere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_split" },
-  { language:"en", type:"verb", verb:"burst",      emoji:"💢", it:"scoppiare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_burst" },
-  { language:"en", type:"verb", verb:"shrink",     emoji:"🔽", it:"restringere",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_shrink" },
-  { language:"en", type:"verb", verb:"shake",      emoji:"🤝", it:"scuotere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_shake" },
-  { language:"en", type:"verb", verb:"strike",     emoji:"⚡", it:"colpire",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_strike" },
-  { language:"en", type:"verb", verb:"bleed",      emoji:"🩸", it:"sanguinare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bleed" },
-  { language:"en", type:"verb", verb:"grind",      emoji:"⚙️", it:"macinare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_grind" },
-  { language:"en", type:"verb", verb:"throw",      emoji:"🎯", it:"lanciare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_throw" },
-  { language:"en", type:"verb", verb:"catch",      emoji:"🫳", it:"prendere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_catch" },
-  { language:"en", type:"verb", verb:"hold",       emoji:"🤲", it:"tenere",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hold" },
-  { language:"en", type:"verb", verb:"cling",      emoji:"🧲", it:"aggrapparsi",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cling" },
-  { language:"en", type:"verb", verb:"stick",      emoji:"📌", it:"attaccarsi",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_stick" },
-  { language:"en", type:"verb", verb:"hang",       emoji:"🪝", it:"appendere",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hang" },
-  { language:"en", type:"verb", verb:"swing",      emoji:"🌊", it:"oscillare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_swing" },
-  { language:"en", type:"verb", verb:"bind",       emoji:"🔗", it:"legare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bind" },
-  { language:"en", type:"verb", verb:"fling",      emoji:"🚀", it:"scagliare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_fling" },
-  { language:"en", type:"verb", verb:"sling",      emoji:"🪃", it:"lanciare con fionda",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sling" },
-  { language:"en", type:"verb", verb:"thrust",     emoji:"👊", it:"spingere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_thrust" },
-  { language:"en", type:"verb", verb:"spill",      emoji:"💧", it:"versare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_spill" },
-  { language:"en", type:"verb", verb:"steal",      emoji:"🦹", it:"rubare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_steal" },
-  { language:"en", type:"verb", verb:"freeze",     emoji:"🧊", it:"congelare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_freeze" },
-  { language:"en", type:"verb", verb:"cut",        emoji:"✂️", it:"tagliare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cut" },
-  { language:"en", type:"verb", verb:"hit",        emoji:"🥊", it:"colpire",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hit" },
-  { language:"en", type:"verb", verb:"hurt",       emoji:"🤕", it:"ferire",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hurt" },
-  { language:"en", type:"verb", verb:"shut",       emoji:"🚪", it:"chiudere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_shut" },
-  { language:"en", type:"verb", verb:"put",        emoji:"📥", it:"mettere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_put" },
-  { language:"en", type:"verb", verb:"ride",       emoji:"🚴", it:"cavalcare / andare in",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_ride" },
-  { language:"en", type:"verb", verb:"drive",      emoji:"🚗", it:"guidare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_drive" },
-  { language:"en", type:"verb", verb:"fly",        emoji:"✈️", it:"volare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_fly" },
-  { language:"en", type:"verb", verb:"fall",       emoji:"🍂", it:"cadere",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_fall" },
-  { language:"en", type:"verb", verb:"rise",       emoji:"⬆️", it:"salire / sorgere",  simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_rise" },
-  { language:"en", type:"verb", verb:"sit",        emoji:"🪑", it:"sedersi",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sit" },
-  { language:"en", type:"verb", verb:"stand",      emoji:"🧍", it:"stare in piedi",    simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_stand" },
-  { language:"en", type:"verb", verb:"go",         emoji:"🚶", it:"andare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_go" },
-  { language:"en", type:"verb", verb:"come",       emoji:"🏃", it:"venire",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_come" },
-  { language:"en", type:"verb", verb:"run",        emoji:"🏃", it:"correre",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_run" },
-  { language:"en", type:"verb", verb:"sleep",      emoji:"😴", it:"dormire",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sleep" },
-  { language:"en", type:"verb", verb:"awake",      emoji:"⏰", it:"svegliarsi",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_awake" },
-  { language:"en", type:"verb", verb:"arise",      emoji:"🌅", it:"sorgere / emergere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_arise" },
-  { language:"en", type:"verb", verb:"wear",       emoji:"👕", it:"indossare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_wear" },
-  { language:"en", type:"verb", verb:"keep",       emoji:"🔒", it:"mantenere / tenere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_keep" },
-  { language:"en", type:"verb", verb:"leave",      emoji:"🚪", it:"lasciare / partire",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_leave" },
-  { language:"en", type:"verb", verb:"feel",       emoji:"❤️", it:"sentire / provare", simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_feel" },
-  { language:"en", type:"verb", verb:"deal",       emoji:"🤝", it:"gestire / trattare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_deal" },
-  { language:"en", type:"verb", verb:"eat",        emoji:"🍽️", it:"mangiare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_eat" },
-  { language:"en", type:"verb", verb:"drink",      emoji:"🥤", it:"bere",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_drink" },
-  { language:"en", type:"verb", verb:"spit",       emoji:"🤮", it:"sputare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_spit" },
-  { language:"en", type:"verb", verb:"swim",       emoji:"🏊", it:"nuotare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_swim" },
-  { language:"en", type:"verb", verb:"build",      emoji:"🏗️", it:"costruire",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_build" },
-  { language:"en", type:"verb", verb:"make",       emoji:"🔨", it:"fare / costruire",  simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_make" },
-  { language:"en", type:"verb", verb:"draw",       emoji:"✏️", it:"disegnare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_draw" },
-  { language:"en", type:"verb", verb:"grow",       emoji:"🌱", it:"crescere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_grow" },
-  { language:"en", type:"verb", verb:"buy",        emoji:"🛍️", it:"comprare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_buy" },
-  { language:"en", type:"verb", verb:"sell",       emoji:"💰", it:"vendere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_sell" },
-  { language:"en", type:"verb", verb:"pay",        emoji:"💳", it:"pagare",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_pay" },
-  { language:"en", type:"verb", verb:"lend",       emoji:"🤲", it:"prestare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lend" },
-  { language:"en", type:"verb", verb:"send",       emoji:"📨", it:"mandare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_send" },
-  { language:"en", type:"verb", verb:"spend",      emoji:"💸", it:"spendere / trascorrere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_spend" },
-  { language:"en", type:"verb", verb:"cost",       emoji:"🏷️", it:"costare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cost" },
-  { language:"en", type:"verb", verb:"take",       emoji:"🤏", it:"prendere",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_take" },
-  { language:"en", type:"verb", verb:"give",       emoji:"🎁", it:"dare",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_give" },
-  { language:"en", type:"verb", verb:"bring",      emoji:"📦", it:"portare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bring" },
-  { language:"en", type:"verb", verb:"know",       emoji:"🧠", it:"sapere / conoscere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_know" },
-  { language:"en", type:"verb", verb:"think",      emoji:"💭", it:"pensare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_think" },
-  { language:"en", type:"verb", verb:"understand", emoji:"💡", it:"capire",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_understand" },
-  { language:"en", type:"verb", verb:"swear",      emoji:"🤬", it:"giurare / imprecare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_swear" },
-  { language:"en", type:"verb", verb:"seek",       emoji:"🔍", it:"cercare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_seek" },
-  { language:"en", type:"verb", verb:"find",       emoji:"🎯", it:"trovare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_find" },
-  { language:"en", type:"verb", verb:"lose",       emoji:"😞", it:"perdere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lose" },
-  { language:"en", type:"verb", verb:"win",        emoji:"🏆", it:"vincere",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_win" },
-  { language:"en", type:"verb", verb:"meet",       emoji:"👋", it:"incontrare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_meet" },
-  { language:"en", type:"verb", verb:"learn",      emoji:"📚", it:"imparare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_learn" },
-  { language:"en", type:"verb", verb:"teach",      emoji:"👩‍🏫", it:"insegnare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_teach" },
-  { language:"en", type:"verb", verb:"mean",       emoji:"❓", it:"significare",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_mean" },
-  { language:"en", type:"verb", verb:"forgive",    emoji:"🕊️", it:"perdonare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_forgive" },
-  { language:"en", type:"verb", verb:"say",        emoji:"💬", it:"dire",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_say" },
-  { language:"en", type:"verb", verb:"tell",       emoji:"📢", it:"raccontare / dire", simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_tell" },
-  { language:"en", type:"verb", verb:"speak",      emoji:"🗣️", it:"parlare",           simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_speak" },
-  { language:"en", type:"verb", verb:"hear",       emoji:"👂", it:"sentire / udire",   simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hear" },
-  { language:"en", type:"verb", verb:"begin",      emoji:"🚦", it:"iniziare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_begin" },
-  { language:"en", type:"verb", verb:"become",     emoji:"🦋", it:"diventare",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_become" },
-  { language:"en", type:"verb", verb:"get",        emoji:"✅", it:"ottenere / diventare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_get" },
-  { language:"en", type:"verb", verb:"have",       emoji:"🏠", it:"avere",             simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_have" },
-  { language:"en", type:"verb", verb:"be",         emoji:"💫", it:"essere",            simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_be" },
-  { language:"en", type:"verb", verb:"do",         emoji:"✔️", it:"fare",              simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_do" },
-  { language:"en", type:"verb", verb:"show",       emoji:"🎭", it:"mostrare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_show" },
-  { language:"en", type:"verb", verb:"hide",       emoji:"🙈", it:"nascondere",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_hide" },
-  { language:"en", type:"verb", verb:"choose",     emoji:"🎲", it:"scegliere",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_choose" },
-  { language:"en", type:"verb", verb:"forget",     emoji:"💭", it:"dimenticare",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_forget" },
-  { language:"en", type:"verb", verb:"lay",        emoji:"🛏️", it:"posare / deporre",  simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lay" },
-  { language:"en", type:"verb", verb:"lie",        emoji:"🛋️", it:"stendersi / mentire",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_lie" },
-  { language:"en", type:"verb", verb:"light",      emoji:"💡", it:"accendere",         simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_light" },
-  { language:"en", type:"verb", verb:"set",        emoji:"⚙️", it:"impostare / fissare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_set" },
-  { language:"en", type:"verb", verb:"upset",      emoji:"😤", it:"turbare / sconvolgere",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_upset" },
-  { language:"en", type:"verb", verb:"bet",        emoji:"🎰", it:"scommettere",       simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_bet" },
-  { language:"en", type:"verb", verb:"cast",       emoji:"🎣", it:"gettare / lanciare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_cast" },
-  { language:"en", type:"verb", verb:"overcome",   emoji:"💪", it:"superare",          simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_overcome" },
-  { language:"en", type:"verb", verb:"overtake",   emoji:"🏎️", it:"sorpassare",        simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_overtake" },
-  { language:"en", type:"verb", verb:"withdraw",   emoji:"🏧", it:"ritirare / prelevare",simple:"", example_en:"", example_it:"", tags:["verbi-irregolari"], context_note:"", concept:"verb_withdraw" }
-,
-  {"language":"en","type":"colloquial","verb":"Anyone get stung by a jellyfish?","emoji":"📝","simple":"","it":"Qualcuno è stato punto da una medusa?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Buddy up — no one swims alone!","emoji":"📝","simple":"","it":"A coppie — nessuno nuota da solo!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Can you float on your back?","emoji":"📝","simple":"","it":"Sai fare il morto a galla?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Cannonball!","emoji":"📝","simple":"","it":"Bomba!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Check the flag before you go in!","emoji":"📝","simple":"","it":"Controlla la bandiera prima di entrare!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Did you lose anything in the water?","emoji":"📝","simple":"","it":"Hai perso qualcosa in acqua?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Dive in!","emoji":"📝","simple":"","it":"Buttati!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Don't run by the pool!","emoji":"📝","simple":"","it":"Non correre in piscina!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Hold your breath!","emoji":"📝","simple":"","it":"Tieni il respiro!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"How was the water?","emoji":"📝","simple":"","it":"Com'era l'acqua?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"How's good?","emoji":"📝","simple":"","it":"Come va?","example_en":"","example_it":"","tags":["colloquiale"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Last one in is a rotten egg!","emoji":"📝","simple":"","it":"L'ultimo che entra è un uovo marcio!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Let's do a head count!","emoji":"📝","simple":"","it":"Contiamoci tutti!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Let's rinse off in the shower!","emoji":"📝","simple":"","it":"Andiamo a sciacquarci alla doccia!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Let's warm up first!","emoji":"📝","simple":"","it":"Prima facciamo riscaldamento!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"No swimming right after eating!","emoji":"📝","simple":"","it":"Non nuotate subito dopo aver mangiato!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Put your sunscreen on!","emoji":"📝","simple":"","it":"Metti la crema solare!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Race you to the buoy!","emoji":"📝","simple":"","it":"Chi arriva primo al galleggiante!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Splash fight!","emoji":"📝","simple":"","it":"Battaglia d'acqua!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Stay in the shallow end!","emoji":"📝","simple":"","it":"Resta nella parte bassa!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"The sea is really choppy today.","emoji":"📝","simple":"","it":"Il mare è molto mosso oggi.","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"The water's lovely!","emoji":"📝","simple":"","it":"L'acqua è meravigliosa!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Time to reapply sunscreen!","emoji":"📝","simple":"","it":"Ora rimetti la crema solare!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Towel off before you catch a cold!","emoji":"📝","simple":"","it":"Asciugati o prendi il raffreddore!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Watch out for the waves!","emoji":"📝","simple":"","it":"Attenzione alle onde!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Wet your feet first!","emoji":"📝","simple":"","it":"Bagnati i piedi prima!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"Who's hungry after all that swimming?","emoji":"📝","simple":"","it":"Chi ha fame dopo tutta quella nuotata?","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""},
-  {"language":"en","type":"colloquial","verb":"You've caught a bit of sun!","emoji":"📝","simple":"","it":"Ti sei preso un po' di sole!","example_en":"","example_it":"","tags":["mare"],"context_note":"","concept":""}
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "break",
+    "emoji": "💥",
+    "it": "rompere",
+    "simple": "",
+    "example_en": "Let's break together!",
+    "example_it": "rompere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_break"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "tear",
+    "emoji": "😢",
+    "it": "strappare",
+    "simple": "",
+    "example_en": "Let's tear together!",
+    "example_it": "strappare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_tear"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "split",
+    "emoji": "✂️",
+    "it": "dividere",
+    "simple": "",
+    "example_en": "Let's split into two teams.",
+    "example_it": "Dividiamoci in due squadre.",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_split"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "burst",
+    "emoji": "💢",
+    "it": "scoppiare",
+    "simple": "",
+    "example_en": "Let's burst together!",
+    "example_it": "scoppiare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_burst"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "shrink",
+    "emoji": "🔽",
+    "it": "restringere",
+    "simple": "",
+    "example_en": "Let's shrink together!",
+    "example_it": "restringere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_shrink"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "shake",
+    "emoji": "🤝",
+    "it": "scuotere",
+    "simple": "",
+    "example_en": "Let's shake together!",
+    "example_it": "scuotere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_shake"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "strike",
+    "emoji": "⚡",
+    "it": "colpire",
+    "simple": "",
+    "example_en": "Let's strike together!",
+    "example_it": "colpire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_strike"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "bleed",
+    "emoji": "🩸",
+    "it": "sanguinare",
+    "simple": "",
+    "example_en": "Let's bleed together!",
+    "example_it": "sanguinare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_bleed"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "grind",
+    "emoji": "⚙️",
+    "it": "macinare",
+    "simple": "",
+    "example_en": "Let's grind together!",
+    "example_it": "macinare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_grind"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "throw",
+    "emoji": "🎯",
+    "it": "lanciare",
+    "simple": "",
+    "example_en": "Let's throw together!",
+    "example_it": "lanciare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_throw"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "catch",
+    "emoji": "🫳",
+    "it": "prendere",
+    "simple": "",
+    "example_en": "Let's catch together!",
+    "example_it": "prendere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_catch"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "hold",
+    "emoji": "🤲",
+    "it": "tenere",
+    "simple": "",
+    "example_en": "Let's hold together!",
+    "example_it": "tenere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_hold"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "cling",
+    "emoji": "🧲",
+    "it": "aggrapparsi",
+    "simple": "",
+    "example_en": "Let's cling together!",
+    "example_it": "aggrapparsi insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_cling"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "stick",
+    "emoji": "📌",
+    "it": "attaccarsi",
+    "simple": "",
+    "example_en": "Let's stick together!",
+    "example_it": "attaccarsi insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_stick"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "hang",
+    "emoji": "🪝",
+    "it": "appendere",
+    "simple": "",
+    "example_en": "Let's hang together!",
+    "example_it": "appendere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_hang"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "swing",
+    "emoji": "🌊",
+    "it": "oscillare",
+    "simple": "",
+    "example_en": "Let's swing together!",
+    "example_it": "oscillare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_swing"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "bind",
+    "emoji": "🔗",
+    "it": "legare",
+    "simple": "",
+    "example_en": "Let's bind together!",
+    "example_it": "legare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_bind"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "fling",
+    "emoji": "🚀",
+    "it": "scagliare",
+    "simple": "",
+    "example_en": "Let's fling together!",
+    "example_it": "scagliare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_fling"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "sling",
+    "emoji": "🪃",
+    "it": "lanciare con fionda",
+    "simple": "",
+    "example_en": "Let's sling together!",
+    "example_it": "lanciare con fionda insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_sling"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "thrust",
+    "emoji": "👊",
+    "it": "spingere",
+    "simple": "",
+    "example_en": "Let's thrust together!",
+    "example_it": "spingere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_thrust"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "spill",
+    "emoji": "💧",
+    "it": "versare",
+    "simple": "",
+    "example_en": "Let's spill together!",
+    "example_it": "versare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_spill"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "steal",
+    "emoji": "🦹",
+    "it": "rubare",
+    "simple": "",
+    "example_en": "Let's steal together!",
+    "example_it": "rubare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_steal"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "freeze",
+    "emoji": "🧊",
+    "it": "congelare",
+    "simple": "",
+    "example_en": "Let's freeze together!",
+    "example_it": "congelare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_freeze"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "cut",
+    "emoji": "✂️",
+    "it": "tagliare",
+    "simple": "",
+    "example_en": "Let's cut together!",
+    "example_it": "tagliare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_cut"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "hit",
+    "emoji": "🥊",
+    "it": "colpire",
+    "simple": "",
+    "example_en": "Let's hit together!",
+    "example_it": "colpire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_hit"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "hurt",
+    "emoji": "🤕",
+    "it": "ferire",
+    "simple": "",
+    "example_en": "Let's hurt together!",
+    "example_it": "ferire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_hurt"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "shut",
+    "emoji": "🚪",
+    "it": "chiudere",
+    "simple": "",
+    "example_en": "Let's shut together!",
+    "example_it": "chiudere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_shut"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "put",
+    "emoji": "📥",
+    "it": "mettere",
+    "simple": "",
+    "example_en": "Let's put together!",
+    "example_it": "mettere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_put"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "ride",
+    "emoji": "🚴",
+    "it": "cavalcare / andare in",
+    "simple": "",
+    "example_en": "Let's ride together!",
+    "example_it": "cavalcare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_ride"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "drive",
+    "emoji": "🚗",
+    "it": "guidare",
+    "simple": "",
+    "example_en": "Let's drive together!",
+    "example_it": "guidare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_drive"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "fly",
+    "emoji": "✈️",
+    "it": "volare",
+    "simple": "",
+    "example_en": "Let's fly together!",
+    "example_it": "volare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_fly"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "fall",
+    "emoji": "🍂",
+    "it": "cadere",
+    "simple": "",
+    "example_en": "Let's fall together!",
+    "example_it": "cadere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_fall"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "rise",
+    "emoji": "⬆️",
+    "it": "salire / sorgere",
+    "simple": "",
+    "example_en": "Let's rise together!",
+    "example_it": "salire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_rise"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "sit",
+    "emoji": "🪑",
+    "it": "sedersi",
+    "simple": "",
+    "example_en": "Let's sit together!",
+    "example_it": "sedersi insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_sit"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "stand",
+    "emoji": "🧍",
+    "it": "stare in piedi",
+    "simple": "",
+    "example_en": "Let's stand together!",
+    "example_it": "stare in piedi insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_stand"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "go",
+    "emoji": "🚶",
+    "it": "andare",
+    "simple": "",
+    "example_en": "Let's go together!",
+    "example_it": "andare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_go"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "come",
+    "emoji": "🏃",
+    "it": "venire",
+    "simple": "",
+    "example_en": "Let's come together!",
+    "example_it": "venire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_come"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "run",
+    "emoji": "🏃",
+    "it": "correre",
+    "simple": "",
+    "example_en": "You can run on the sand, not by the pool!",
+    "example_it": "Puoi correre sulla sabbia, non vicino alla piscina!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_run"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "sleep",
+    "emoji": "😴",
+    "it": "dormire",
+    "simple": "",
+    "example_en": "Let's sleep together!",
+    "example_it": "dormire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_sleep"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "awake",
+    "emoji": "⏰",
+    "it": "svegliarsi",
+    "simple": "",
+    "example_en": "Let's awake together!",
+    "example_it": "svegliarsi insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_awake"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "arise",
+    "emoji": "🌅",
+    "it": "sorgere / emergere",
+    "simple": "",
+    "example_en": "Let's arise together!",
+    "example_it": "sorgere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_arise"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "wear",
+    "emoji": "👕",
+    "it": "indossare",
+    "simple": "",
+    "example_en": "Let's wear together!",
+    "example_it": "indossare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_wear"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "keep",
+    "emoji": "🔒",
+    "it": "mantenere / tenere",
+    "simple": "",
+    "example_en": "Let's keep together!",
+    "example_it": "mantenere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_keep"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "leave",
+    "emoji": "🚪",
+    "it": "lasciare / partire",
+    "simple": "",
+    "example_en": "Let's leave together!",
+    "example_it": "lasciare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_leave"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "feel",
+    "emoji": "❤️",
+    "it": "sentire / provare",
+    "simple": "",
+    "example_en": "Let's feel together!",
+    "example_it": "sentire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_feel"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "deal",
+    "emoji": "🤝",
+    "it": "gestire / trattare",
+    "simple": "",
+    "example_en": "Let's deal together!",
+    "example_it": "gestire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_deal"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "eat",
+    "emoji": "🍽️",
+    "it": "mangiare",
+    "simple": "",
+    "example_en": "Let's eat together!",
+    "example_it": "mangiare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_eat"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "drink",
+    "emoji": "🥤",
+    "it": "bere",
+    "simple": "",
+    "example_en": "Let's drink together!",
+    "example_it": "bere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_drink"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "spit",
+    "emoji": "🤮",
+    "it": "sputare",
+    "simple": "",
+    "example_en": "Let's spit together!",
+    "example_it": "sputare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_spit"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "swim",
+    "emoji": "🏊",
+    "it": "nuotare",
+    "simple": "",
+    "example_en": "Only swim where you can touch the bottom!",
+    "example_it": "Nuota solo dove tocchi il fondo!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_swim"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "build",
+    "emoji": "🏗️",
+    "it": "costruire",
+    "simple": "",
+    "example_en": "Let's build together!",
+    "example_it": "costruire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_build"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "make",
+    "emoji": "🔨",
+    "it": "fare / costruire",
+    "simple": "",
+    "example_en": "Let's make together!",
+    "example_it": "fare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_make"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "draw",
+    "emoji": "✏️",
+    "it": "disegnare",
+    "simple": "",
+    "example_en": "Let's draw together!",
+    "example_it": "disegnare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_draw"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "grow",
+    "emoji": "🌱",
+    "it": "crescere",
+    "simple": "",
+    "example_en": "Let's grow together!",
+    "example_it": "crescere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_grow"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "buy",
+    "emoji": "🛍️",
+    "it": "comprare",
+    "simple": "",
+    "example_en": "Let's buy together!",
+    "example_it": "comprare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_buy"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "sell",
+    "emoji": "💰",
+    "it": "vendere",
+    "simple": "",
+    "example_en": "Let's sell together!",
+    "example_it": "vendere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_sell"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "pay",
+    "emoji": "💳",
+    "it": "pagare",
+    "simple": "",
+    "example_en": "Let's pay together!",
+    "example_it": "pagare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_pay"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "lend",
+    "emoji": "🤲",
+    "it": "prestare",
+    "simple": "",
+    "example_en": "Let's lend together!",
+    "example_it": "prestare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_lend"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "send",
+    "emoji": "📨",
+    "it": "mandare",
+    "simple": "",
+    "example_en": "Let's send together!",
+    "example_it": "mandare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_send"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "spend",
+    "emoji": "💸",
+    "it": "spendere / trascorrere",
+    "simple": "",
+    "example_en": "Let's spend together!",
+    "example_it": "spendere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_spend"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "cost",
+    "emoji": "🏷️",
+    "it": "costare",
+    "simple": "",
+    "example_en": "Let's cost together!",
+    "example_it": "costare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_cost"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "take",
+    "emoji": "🤏",
+    "it": "prendere",
+    "simple": "",
+    "example_en": "Let's take together!",
+    "example_it": "prendere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_take"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "give",
+    "emoji": "🎁",
+    "it": "dare",
+    "simple": "",
+    "example_en": "Let's give together!",
+    "example_it": "dare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_give"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "bring",
+    "emoji": "📦",
+    "it": "portare",
+    "simple": "",
+    "example_en": "Let's bring together!",
+    "example_it": "portare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_bring"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "know",
+    "emoji": "🧠",
+    "it": "sapere / conoscere",
+    "simple": "",
+    "example_en": "Let's know together!",
+    "example_it": "sapere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_know"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "think",
+    "emoji": "💭",
+    "it": "pensare",
+    "simple": "",
+    "example_en": "Let's think together!",
+    "example_it": "pensare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_think"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "understand",
+    "emoji": "💡",
+    "it": "capire",
+    "simple": "",
+    "example_en": "Do you understand the rules of the game?",
+    "example_it": "Capisci le regole del gioco?",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_understand"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "swear",
+    "emoji": "🤬",
+    "it": "giurare / imprecare",
+    "simple": "",
+    "example_en": "Let's swear together!",
+    "example_it": "giurare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_swear"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "seek",
+    "emoji": "🔍",
+    "it": "cercare",
+    "simple": "",
+    "example_en": "Let's seek together!",
+    "example_it": "cercare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_seek"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "find",
+    "emoji": "🎯",
+    "it": "trovare",
+    "simple": "",
+    "example_en": "Let's find together!",
+    "example_it": "trovare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_find"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "lose",
+    "emoji": "😞",
+    "it": "perdere",
+    "simple": "",
+    "example_en": "Let's lose together!",
+    "example_it": "perdere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_lose"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "win",
+    "emoji": "🏆",
+    "it": "vincere",
+    "simple": "",
+    "example_en": "Play fair — winning isn't everything!",
+    "example_it": "Gioca lealmente — vincere non è tutto!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_win"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "meet",
+    "emoji": "👋",
+    "it": "incontrare",
+    "simple": "",
+    "example_en": "Let's meet together!",
+    "example_it": "incontrare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_meet"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "learn",
+    "emoji": "📚",
+    "it": "imparare",
+    "simple": "",
+    "example_en": "Today we learn something new about the ocean!",
+    "example_it": "Oggi impariamo qualcosa di nuovo sull'oceano!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_learn"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "teach",
+    "emoji": "👩‍🏫",
+    "it": "insegnare",
+    "simple": "",
+    "example_en": "Today I'll teach you a new beach game.",
+    "example_it": "Oggi vi insegnerò un nuovo gioco in spiaggia.",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_teach"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "mean",
+    "emoji": "❓",
+    "it": "significare",
+    "simple": "",
+    "example_en": "Let's mean together!",
+    "example_it": "significare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_mean"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "forgive",
+    "emoji": "🕊️",
+    "it": "perdonare",
+    "simple": "",
+    "example_en": "Let's forgive together!",
+    "example_it": "perdonare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_forgive"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "say",
+    "emoji": "💬",
+    "it": "dire",
+    "simple": "",
+    "example_en": "Let's say together!",
+    "example_it": "dire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_say"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "tell",
+    "emoji": "📢",
+    "it": "raccontare / dire",
+    "simple": "",
+    "example_en": "Let's tell together!",
+    "example_it": "raccontare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_tell"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "speak",
+    "emoji": "🗣️",
+    "it": "parlare",
+    "simple": "",
+    "example_en": "Let's speak together!",
+    "example_it": "parlare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_speak"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "hear",
+    "emoji": "👂",
+    "it": "sentire / udire",
+    "simple": "",
+    "example_en": "Let's hear together!",
+    "example_it": "sentire insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_hear"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "begin",
+    "emoji": "🚦",
+    "it": "iniziare",
+    "simple": "",
+    "example_en": "Let's begin together!",
+    "example_it": "iniziare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_begin"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "become",
+    "emoji": "🦋",
+    "it": "diventare",
+    "simple": "",
+    "example_en": "Let's become together!",
+    "example_it": "diventare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_become"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "get",
+    "emoji": "✅",
+    "it": "ottenere / diventare",
+    "simple": "",
+    "example_en": "Let's get together!",
+    "example_it": "ottenere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_get"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "have",
+    "emoji": "🏠",
+    "it": "avere",
+    "simple": "",
+    "example_en": "Let's have together!",
+    "example_it": "avere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_have"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "be",
+    "emoji": "💫",
+    "it": "essere",
+    "simple": "",
+    "example_en": "Let's be together!",
+    "example_it": "essere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_be"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "do",
+    "emoji": "✔️",
+    "it": "fare",
+    "simple": "",
+    "example_en": "Let's do together!",
+    "example_it": "fare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_do"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "show",
+    "emoji": "🎭",
+    "it": "mostrare",
+    "simple": "",
+    "example_en": "Let's show together!",
+    "example_it": "mostrare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_show"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "hide",
+    "emoji": "🙈",
+    "it": "nascondere",
+    "simple": "",
+    "example_en": "Let's hide together!",
+    "example_it": "nascondere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_hide"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "choose",
+    "emoji": "🎲",
+    "it": "scegliere",
+    "simple": "",
+    "example_en": "Let's choose together!",
+    "example_it": "scegliere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_choose"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "forget",
+    "emoji": "💭",
+    "it": "dimenticare",
+    "simple": "",
+    "example_en": "Let's forget together!",
+    "example_it": "dimenticare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_forget"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "lay",
+    "emoji": "🛏️",
+    "it": "posare / deporre",
+    "simple": "",
+    "example_en": "Let's lay together!",
+    "example_it": "posare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_lay"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "lie",
+    "emoji": "🛋️",
+    "it": "stendersi / mentire",
+    "simple": "",
+    "example_en": "Let's lie together!",
+    "example_it": "stendersi insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_lie"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "light",
+    "emoji": "💡",
+    "it": "accendere",
+    "simple": "",
+    "example_en": "Let's light together!",
+    "example_it": "accendere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_light"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "set",
+    "emoji": "⚙️",
+    "it": "impostare / fissare",
+    "simple": "",
+    "example_en": "Let's set together!",
+    "example_it": "impostare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_set"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "upset",
+    "emoji": "😤",
+    "it": "turbare / sconvolgere",
+    "simple": "",
+    "example_en": "Let's upset together!",
+    "example_it": "turbare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_upset"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "bet",
+    "emoji": "🎰",
+    "it": "scommettere",
+    "simple": "",
+    "example_en": "Let's bet together!",
+    "example_it": "scommettere insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_bet"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "cast",
+    "emoji": "🎣",
+    "it": "gettare / lanciare",
+    "simple": "",
+    "example_en": "Let's cast together!",
+    "example_it": "gettare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_cast"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "overcome",
+    "emoji": "💪",
+    "it": "superare",
+    "simple": "",
+    "example_en": "Let's overcome together!",
+    "example_it": "superare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_overcome"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "overtake",
+    "emoji": "🏎️",
+    "it": "sorpassare",
+    "simple": "",
+    "example_en": "Let's overtake together!",
+    "example_it": "sorpassare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_overtake"
+  },
+  {
+    "language": "en",
+    "type": "verb",
+    "verb": "withdraw",
+    "emoji": "🏧",
+    "it": "ritirare / prelevare",
+    "simple": "",
+    "example_en": "Let's withdraw together!",
+    "example_it": "ritirare insieme!",
+    "tags": [
+      "verbi-irregolari"
+    ],
+    "context_note": "",
+    "concept": "verb_withdraw"
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Anyone get stung by a jellyfish?",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Qualcuno è stato punto da una medusa?",
+    "example_en": "Anyone get stung by a jellyfish?",
+    "example_it": "Qualcuno è stato punto da una medusa?",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Buddy up — no one swims alone!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "A coppie — nessuno nuota da solo!",
+    "example_en": "Buddy up — no one swims alone!",
+    "example_it": "A coppie — nessuno nuota da solo!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Can you float on your back?",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Sai fare il morto a galla?",
+    "example_en": "Can you float on your back?",
+    "example_it": "Sai fare il morto a galla?",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Cannonball!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Bomba!",
+    "example_en": "Cannonball!",
+    "example_it": "Bomba!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Check the flag before you go in!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Controlla la bandiera prima di entrare!",
+    "example_en": "Check the flag before you go in!",
+    "example_it": "Controlla la bandiera prima di entrare!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Did you lose anything in the water?",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Hai perso qualcosa in acqua?",
+    "example_en": "Did you lose anything in the water?",
+    "example_it": "Hai perso qualcosa in acqua?",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Dive in!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Buttati!",
+    "example_en": "Dive in!",
+    "example_it": "Buttati!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Don't run by the pool!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Non correre in piscina!",
+    "example_en": "Don't run by the pool!",
+    "example_it": "Non correre in piscina!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Hold your breath!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Tieni il respiro!",
+    "example_en": "Hold your breath!",
+    "example_it": "Tieni il respiro!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "How was the water?",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Com'era l'acqua?",
+    "example_en": "How was the water?",
+    "example_it": "Com'era l'acqua?",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "How's good?",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Come va?",
+    "example_en": "How's good?",
+    "example_it": "Come va?",
+    "tags": [
+      "colloquiale"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Last one in is a rotten egg!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "L'ultimo che entra è un uovo marcio!",
+    "example_en": "Last one in is a rotten egg!",
+    "example_it": "L'ultimo che entra è un uovo marcio!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Let's do a head count!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Contiamoci tutti!",
+    "example_en": "Let's do a head count!",
+    "example_it": "Contiamoci tutti!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Let's rinse off in the shower!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Andiamo a sciacquarci alla doccia!",
+    "example_en": "Let's rinse off in the shower!",
+    "example_it": "Andiamo a sciacquarci alla doccia!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Let's warm up first!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Prima facciamo riscaldamento!",
+    "example_en": "Let's warm up first!",
+    "example_it": "Prima facciamo riscaldamento!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "No swimming right after eating!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Non nuotate subito dopo aver mangiato!",
+    "example_en": "No swimming right after eating!",
+    "example_it": "Non nuotate subito dopo aver mangiato!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Put your sunscreen on!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Metti la crema solare!",
+    "example_en": "Put your sunscreen on!",
+    "example_it": "Metti la crema solare!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Race you to the buoy!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Chi arriva primo al galleggiante!",
+    "example_en": "Race you to the buoy!",
+    "example_it": "Chi arriva primo al galleggiante!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Splash fight!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Battaglia d'acqua!",
+    "example_en": "Splash fight!",
+    "example_it": "Battaglia d'acqua!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Stay in the shallow end!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Resta nella parte bassa!",
+    "example_en": "Stay in the shallow end!",
+    "example_it": "Resta nella parte bassa!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "The sea is really choppy today.",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Il mare è molto mosso oggi.",
+    "example_en": "The sea is really choppy today.",
+    "example_it": "Il mare è molto mosso oggi.",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "The water's lovely!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "L'acqua è meravigliosa!",
+    "example_en": "The water's lovely!",
+    "example_it": "L'acqua è meravigliosa!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Time to reapply sunscreen!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Ora rimetti la crema solare!",
+    "example_en": "Time to reapply sunscreen!",
+    "example_it": "Ora rimetti la crema solare!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Towel off before you catch a cold!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Asciugati o prendi il raffreddore!",
+    "example_en": "Towel off before you catch a cold!",
+    "example_it": "Asciugati o prendi il raffreddore!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Watch out for the waves!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Attenzione alle onde!",
+    "example_en": "Watch out for the waves!",
+    "example_it": "Attenzione alle onde!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Wet your feet first!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Bagnati i piedi prima!",
+    "example_en": "Wet your feet first!",
+    "example_it": "Bagnati i piedi prima!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "Who's hungry after all that swimming?",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Chi ha fame dopo tutta quella nuotata?",
+    "example_en": "Who's hungry after all that swimming?",
+    "example_it": "Chi ha fame dopo tutta quella nuotata?",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  },
+  {
+    "language": "en",
+    "type": "colloquial",
+    "verb": "You've caught a bit of sun!",
+    "emoji": "📝",
+    "simple": "",
+    "it": "Ti sei preso un po' di sole!",
+    "example_en": "You've caught a bit of sun!",
+    "example_it": "Ti sei preso un po' di sole!",
+    "tags": [
+      "mare"
+    ],
+    "context_note": "",
+    "concept": ""
+  }
 ];

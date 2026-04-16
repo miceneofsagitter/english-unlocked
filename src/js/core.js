@@ -81,6 +81,7 @@
         renderTensesGrid(currentTenseFilter)
         renderMiniclub()
         if (miniclubMode === 'practice') renderPracticeCard()
+        if (typeof reinitVoices === 'function') reinitVoices()
         document
           .querySelectorAll('.lang-btn')
           .forEach((b) => b.classList.toggle('active', b.dataset.lang === lang))
