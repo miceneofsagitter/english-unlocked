@@ -5,7 +5,7 @@
       let currentSpeed = 'med'
       let sentenceIndex = -1
       let currentMode = 'standard' // 'standard' | 'progressivo' | 'shadowing'
-      // selectedVoice rimosso — voce gestita globalmente da Settings + getBestVoice()
+      let selectedVoice = null  // override sessione (null = usa Settings/Auto)
       let isSpeakingMulti = false
       let phoneticPreviewOn = false
 
@@ -76,16 +76,59 @@
         return SENTENCES.filter(s => (s.lang || 'en') === currentLang)
       }
 
-      // Voce configurata globalmente in Impostazioni → getBestVoice() la legge
+      // ── Selettore accento con bandierine ─────────────────────────
+      // Ogni pill = accent region → sceglie la voce migliore (Enhanced first) per quella regione
+      // "Auto" pill = usa Settings/getBestVoice() senza override
+      function _getBestVoiceForRegion(key) {
+        const voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith(key))
+        return voices.find(v => /enhanced|premium/i.test(v.name)) || voices[0] || null
+      }
+
+      function _renderAccentPills() {
+        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
+        const row = document.getElementById('voiceAccentRow')
+        if (!row) return
+        selectedVoice = null
+        row.innerHTML = ''
+        // Trova quali regioni hanno almeno una voce disponibile
+        const available = cfg.keys.filter(key =>
+          speechSynthesis.getVoices().some(v => v.lang.startsWith(key))
+        )
+        if (!available.length) return
+
+        // Pill "Auto" (attiva di default)
+        const autoBtn = document.createElement('button')
+        autoBtn.className = 'voice-pill active'
+        autoBtn.textContent = '⚙ Auto'
+        autoBtn.onclick = () => {
+          selectedVoice = null
+          row.querySelectorAll('.voice-pill').forEach(b => b.classList.remove('active'))
+          autoBtn.classList.add('active')
+        }
+        row.appendChild(autoBtn)
+
+        // Pill per ogni regione disponibile
+        available.forEach(key => {
+          const btn = document.createElement('button')
+          btn.className = 'voice-pill'
+          btn.textContent = (cfg.flags[key] || '🌐') + ' ' + key.split('-')[1]
+          btn.onclick = () => {
+            selectedVoice = _getBestVoiceForRegion(key)
+            row.querySelectorAll('.voice-pill').forEach(b => b.classList.remove('active'))
+            btn.classList.add('active')
+          }
+          row.appendChild(btn)
+        })
+      }
+
       function initVoices() {
-        // Pre-carica voci (evita silenzio al primo click)
-        speechSynthesis.getVoices()
-        speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices()
+        speechSynthesis.onvoiceschanged = _renderAccentPills
+        _renderAccentPills()
       }
       function reinitVoices() {
         sentenceIndex = -1
         currentSentence = null
-        // aggiorna label "scrivi in ..."
+        _renderAccentPills()
         const lbl = document.getElementById('listeningLangLabel')
         if (lbl) {
           const names = { en: 'inglese', es: 'spagnolo', fr: 'francese' }
@@ -147,7 +190,7 @@
           const u = new SpeechSynthesisUtterance(text)
           u.lang = getLangCode()
           u.rate = rate
-          const v = getBestVoice(); if (v) u.voice = v
+          const v = getBestVoice(selectedVoice); if (v) u.voice = v
           u.onend = resolve
           u.onerror = resolve
           speechSynthesis.speak(u)
@@ -221,7 +264,7 @@
         u.lang = getLangCode()
         u.rate =
           currentSpeed === 'slow' ? 0.65 : currentSpeed === 'fast' ? 1.25 : 0.95
-        const vStd = getBestVoice(); if (vStd) u.voice = vStd
+        const vStd = getBestVoice(selectedVoice); if (vStd) u.voice = vStd
         u.onend = () => resetSpeakBtn()
         speechSynthesis.speak(u)
       }

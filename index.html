@@ -944,6 +944,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
             </button>
           </div>
 
+          <!-- Override accento per sessione (popolato da JS) -->
+          <div id="voiceAccentRow" style="display:flex;align-items:center;gap:8px;margin-bottom:12px;min-height:20px"></div>
+
           <!-- Anteprima fonetica toggle -->
           <label
             style="
