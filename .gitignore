@@ -7,3 +7,8 @@ docs/superpowers/specs/2026-04-14-cross-lang-links-design.md
 docs/superpowers/specs/2026-04-14-vocab-split-by-language-design.md
 CLAUDE.md
 verbs.md
+fill-examples.js
+fix-colloquial.js
+gen-examples-local.js
+check-vocab-links.js
+sync-supabase-vocab.js
