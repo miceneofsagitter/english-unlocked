@@ -207,8 +207,6 @@
         sbSyncLearned(idx, chk.checked)
       }
 
-      const LANG_VOICE = { en: 'en-US', es: 'es-ES', fr: 'fr-FR' }
-
       // Pre-carica voci per evitare silenzio al primo click
       if (typeof speechSynthesis !== 'undefined') {
         speechSynthesis.getVoices()
@@ -220,12 +218,9 @@
         speechSynthesis.cancel()
         const doSpeak = () => {
           const u = new SpeechSynthesisUtterance(text)
-          u.lang = LANG_VOICE[currentLang] || 'en-US'
+          u.lang = getLangCode()
           u.rate = rate || 0.9
-          const voices = speechSynthesis.getVoices()
-          const langCode = (LANG_VOICE[currentLang] || 'en-US').split('-')[0]
-          const voice = voices.find((v) => v.lang.startsWith(langCode)) || null
-          if (voice) u.voice = voice
+          const v = getBestVoice(); if (v) u.voice = v
           speechSynthesis.speak(u)
         }
         if (speechSynthesis.getVoices().length === 0) {

@@ -1,3 +1,29 @@
+      // ── Voci sintetiche — condiviso da vocab / miniclub / listening ─
+      const LANG_VOICE_CFG = {
+        en: { prefix: 'en', keys: ['en-US','en-GB','en-AU'], flags: {'en-US':'🇺🇸','en-GB':'🇬🇧','en-AU':'🇦🇺'}, fallback: 'en-US' },
+        es: { prefix: 'es', keys: ['es-ES','es-MX','es-US'], flags: {'es-ES':'🇪🇸','es-MX':'🇲🇽','es-US':'🇺🇸'}, fallback: 'es-ES' },
+        fr: { prefix: 'fr', keys: ['fr-FR','fr-CA','fr-BE'], flags: {'fr-FR':'🇫🇷','fr-CA':'🇨🇦','fr-BE':'🇧🇪'}, fallback: 'fr-FR' },
+      }
+      function getLangCode() {
+        return (LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en).fallback
+      }
+      // Restituisce la voce migliore disponibile per currentLang.
+      // Preferisce Enhanced/Premium (qualità superiore su iOS/macOS).
+      // Se `preferred` è passato lo usa direttamente (override manuale).
+      function getBestVoice(preferred) {
+        if (preferred) return preferred
+        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
+        const voices = speechSynthesis.getVoices()
+        const candidates = voices.filter(v => v.lang.startsWith(cfg.prefix))
+        const enhanced = candidates.find(v => /enhanced|premium/i.test(v.name))
+        if (enhanced) return enhanced
+        for (const key of cfg.keys) {
+          const v = candidates.find(v => v.lang.startsWith(key))
+          if (v) return v
+        }
+        return candidates[0] || null
+      }
+
       function escHtml(s) {
         return String(s || '')
           .replace(/&/g, '&amp;')

@@ -146,11 +146,9 @@
         const doSpeak = () => {
           speechSynthesis.cancel()
           const u = new SpeechSynthesisUtterance(text)
-          const targetLang = currentLang === 'es' ? 'es' : currentLang === 'fr' ? 'fr' : 'en'
-          const voices = speechSynthesis.getVoices()
-          const match = voices.find(v => v.lang.toLowerCase().startsWith(targetLang))
-          if (match) u.voice = match
+          u.lang = getLangCode()
           u.rate = 0.9
+          const v = getBestVoice(); if (v) u.voice = v
           speechSynthesis.speak(u)
         }
         if (speechSynthesis.getVoices().length) {

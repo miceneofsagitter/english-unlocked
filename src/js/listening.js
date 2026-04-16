@@ -71,25 +71,8 @@
         btn.textContent = '🔊'
       }
 
-      // ── Config voci per lingua ────────────────────────────────────
-      const LANG_VOICE_CFG = {
-        en: { prefix: 'en', keys: ['en-US','en-GB','en-AU'], flags: {'en-US':'🇺🇸','en-GB':'🇬🇧','en-AU':'🇦🇺'}, fallback: 'en-US' },
-        es: { prefix: 'es', keys: ['es-ES','es-MX','es-US'], flags: {'es-ES':'🇪🇸','es-MX':'🇲🇽','es-US':'🇺🇸'}, fallback: 'es-ES' },
-        fr: { prefix: 'fr', keys: ['fr-FR','fr-CA','fr-BE'], flags: {'fr-FR':'🇫🇷','fr-CA':'🇨🇦','fr-BE':'🇧🇪'}, fallback: 'fr-FR' },
-      }
-      function getLangCode() {
-        return (LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en).fallback
-      }
-      function getBestVoice() {
-        if (selectedVoice) return selectedVoice
-        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
-        const voices = speechSynthesis.getVoices()
-        for (const key of cfg.keys) {
-          const v = voices.find(v => v.lang.startsWith(key))
-          if (v) return v
-        }
-        return voices.find(v => v.lang.startsWith(cfg.prefix)) || null
-      }
+      // LANG_VOICE_CFG / getLangCode / getBestVoice → definiti in core.js
+      // getBestVoice(preferred?) — usa selectedVoice come override manuale
       function getSentences() {
         return SENTENCES.filter(s => (s.lang || 'en') === currentLang)
       }
@@ -198,7 +181,7 @@
           const u = new SpeechSynthesisUtterance(text)
           u.lang = getLangCode()
           u.rate = rate
-          const v = getBestVoice(); if (v) u.voice = v
+          const v = getBestVoice(selectedVoice); if (v) u.voice = v
           u.onend = resolve
           u.onerror = resolve
           speechSynthesis.speak(u)
@@ -272,7 +255,7 @@
         u.lang = getLangCode()
         u.rate =
           currentSpeed === 'slow' ? 0.65 : currentSpeed === 'fast' ? 1.25 : 0.95
-        if (selectedVoice) u.voice = selectedVoice
+        const vStd = getBestVoice(selectedVoice); if (vStd) u.voice = vStd
         u.onend = () => resetSpeakBtn()
         speechSynthesis.speak(u)
       }
