@@ -80,18 +80,22 @@
       // Ogni pill = accent region → sceglie la voce migliore (Enhanced first) per quella regione
       // "Auto" pill = usa Settings/getBestVoice() senza override
       function _getBestVoiceForRegion(key) {
-        const all = speechSynthesis.getVoices()
-        const candidates = all.filter(v => v.lang.startsWith(key))
-        // 1. Voce salvata in Settings, se appartiene a questa regione (è quella Enhanced scelta dall'utente)
+        const candidates = speechSynthesis.getVoices().filter(v => v.lang.startsWith(key))
+        // 1. Voce preferita curata per questa regione (iOS Enhanced senza bisogno del nome)
+        const prefName = PREFERRED_VOICES[key]
+        if (prefName) {
+          const v = candidates.find(v => v.name === prefName)
+          if (v) return v
+        }
+        // 2. Voce salvata in Settings se è di questa regione
         const savedName = localStorage.getItem('eu_voice_' + currentLang)
         if (savedName) {
           const saved = candidates.find(v => v.name === savedName)
           if (saved) return saved
         }
-        // 2. Enhanced/Premium nel nome (funziona su macOS)
+        // 3. Enhanced/Premium (macOS)
         const enhanced = candidates.find(v => /enhanced|premium/i.test(v.name))
         if (enhanced) return enhanced
-        // 3. Prima disponibile per questa regione
         return candidates[0] || null
       }
 
@@ -101,10 +105,12 @@
         if (!row) return
         selectedVoice = null
         row.innerHTML = ''
-        // Trova quali regioni hanno almeno una voce disponibile
-        const available = cfg.keys.filter(key =>
-          speechSynthesis.getVoices().some(v => v.lang.startsWith(key))
-        )
+        // Mostra pill solo per regioni con voce preferita installata (Audrey, Amélie, Monica, Samantha)
+        const voices = speechSynthesis.getVoices()
+        const available = cfg.keys.filter(key => {
+          const prefName = PREFERRED_VOICES[key]
+          return prefName && voices.some(v => v.name === prefName && v.lang.startsWith(key))
+        })
         if (!available.length) return
 
         // Pill "Auto" (attiva di default)
