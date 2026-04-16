@@ -5,7 +5,7 @@
       let currentSpeed = 'med'
       let sentenceIndex = -1
       let currentMode = 'standard' // 'standard' | 'progressivo' | 'shadowing'
-      let selectedVoice = null
+      // selectedVoice rimosso — voce gestita globalmente da Settings + getBestVoice()
       let isSpeakingMulti = false
       let phoneticPreviewOn = false
 
@@ -72,50 +72,19 @@
       }
 
       // LANG_VOICE_CFG / getLangCode / getBestVoice → definiti in core.js
-      // getBestVoice(preferred?) — usa selectedVoice come override manuale
       function getSentences() {
         return SENTENCES.filter(s => (s.lang || 'en') === currentLang)
       }
 
-      // ── Selettore voce ────────────────────────────────────────────
-      // iOS non espone "Enhanced" nel nome voce via Web API → dropdown manuale
-      function _renderVoiceSelect() {
-        const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
-        const all = speechSynthesis.getVoices().filter(v => v.lang.startsWith(cfg.prefix))
-        const row = document.getElementById('voicePillRow')
-        if (!row) return
-        selectedVoice = null
-        row.innerHTML = ''
-        if (!all.length) return
-        const lbl = document.createElement('span')
-        lbl.style.cssText = 'font-size:0.65rem;font-family:"JetBrains Mono",monospace;color:var(--muted);align-self:center;white-space:nowrap'
-        lbl.textContent = 'VOCE:'
-        row.appendChild(lbl)
-        const sel = document.createElement('select')
-        sel.style.cssText = 'background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:0.7rem;font-family:"JetBrains Mono",monospace;cursor:pointer;max-width:240px'
-        const optAuto = document.createElement('option')
-        optAuto.value = ''
-        optAuto.textContent = '🔊 Auto'
-        sel.appendChild(optAuto)
-        all.forEach((v, i) => {
-          const opt = document.createElement('option')
-          opt.value = i
-          opt.textContent = v.name + ' [' + v.lang + ']'
-          sel.appendChild(opt)
-        })
-        sel.onchange = () => {
-          selectedVoice = sel.value === '' ? null : all[parseInt(sel.value)]
-        }
-        row.appendChild(sel)
-      }
+      // Voce configurata globalmente in Impostazioni → getBestVoice() la legge
       function initVoices() {
-        speechSynthesis.onvoiceschanged = _renderVoiceSelect
-        _renderVoiceSelect()
+        // Pre-carica voci (evita silenzio al primo click)
+        speechSynthesis.getVoices()
+        speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices()
       }
       function reinitVoices() {
         sentenceIndex = -1
         currentSentence = null
-        _renderVoiceSelect()
         // aggiorna label "scrivi in ..."
         const lbl = document.getElementById('listeningLangLabel')
         if (lbl) {
@@ -178,7 +147,7 @@
           const u = new SpeechSynthesisUtterance(text)
           u.lang = getLangCode()
           u.rate = rate
-          const v = getBestVoice(selectedVoice); if (v) u.voice = v
+          const v = getBestVoice(); if (v) u.voice = v
           u.onend = resolve
           u.onerror = resolve
           speechSynthesis.speak(u)
@@ -252,7 +221,7 @@
         u.lang = getLangCode()
         u.rate =
           currentSpeed === 'slow' ? 0.65 : currentSpeed === 'fast' ? 1.25 : 0.95
-        const vStd = getBestVoice(selectedVoice); if (vStd) u.voice = vStd
+        const vStd = getBestVoice(); if (vStd) u.voice = vStd
         u.onend = () => resetSpeakBtn()
         speechSynthesis.speak(u)
       }

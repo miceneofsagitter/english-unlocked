@@ -93,6 +93,14 @@
               Salva credenziali
             </button>
             <div class="settings-status" id="settings-status"></div>
+
+            <div class="settings-group" style="margin-top:16px">
+              <label class="settings-label">🔊 Voce sintetica
+                <span style="color:var(--muted)">(per tutte le lingue — scegli Enhanced per qualità migliore)</span>
+              </label>
+              <div id="voiceSettingsRow" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"></div>
+              <div class="settings-status" id="voice-settings-status"></div>
+            </div>
           </div>
 
           <!-- TAB: Vocabolario -->
@@ -935,19 +943,6 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
               ↻ Nuova
             </button>
           </div>
-
-          <!-- Selettore voce (popolato da JS) -->
-          <div
-            id="voicePillRow"
-            style="
-              display: flex;
-              align-items: center;
-              gap: 6px;
-              flex-wrap: wrap;
-              margin-bottom: 12px;
-              min-height: 20px;
-            "
-          ></div>
 
           <!-- Anteprima fonetica toggle -->
           <label

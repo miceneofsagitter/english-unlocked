@@ -7,16 +7,24 @@
       function getLangCode() {
         return (LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en).fallback
       }
-      // Restituisce la voce migliore disponibile per currentLang.
-      // Preferisce Enhanced/Premium (qualità superiore su iOS/macOS).
-      // Se `preferred` è passato lo usa direttamente (override manuale).
+      // Restituisce la voce migliore per currentLang.
+      // Priorità: 1) scelta salvata in Settings  2) Enhanced/Premium  3) prima disponibile
+      // Se `preferred` è passato (override sessione) lo usa direttamente.
       function getBestVoice(preferred) {
         if (preferred) return preferred
         const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
         const voices = speechSynthesis.getVoices()
         const candidates = voices.filter(v => v.lang.startsWith(cfg.prefix))
+        // 1. Voce salvata in Settings
+        const savedName = localStorage.getItem('eu_voice_' + currentLang)
+        if (savedName) {
+          const saved = candidates.find(v => v.name === savedName)
+          if (saved) return saved
+        }
+        // 2. Enhanced / Premium (macOS nomina così le voci di qualità)
         const enhanced = candidates.find(v => /enhanced|premium/i.test(v.name))
         if (enhanced) return enhanced
+        // 3. Prima voce per regione preferita
         for (const key of cfg.keys) {
           const v = candidates.find(v => v.lang.startsWith(key))
           if (v) return v

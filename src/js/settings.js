@@ -21,6 +21,58 @@
           currentLang.toUpperCase()
         const el = document.getElementById('resetLangLabel')
         if (el) el.textContent = lbl
+        renderVoiceSettings()
+      }
+
+      function renderVoiceSettings() {
+        const row = document.getElementById('voiceSettingsRow')
+        if (!row) return
+        const langs = ['en', 'es', 'fr']
+        const labels = { en: '🇬🇧 EN', es: '🇪🇸 ES', fr: '🇫🇷 FR' }
+        row.innerHTML = ''
+        // Attendi voci disponibili
+        const voices = speechSynthesis.getVoices()
+        if (!voices.length) {
+          row.textContent = 'Caricamento voci...'
+          speechSynthesis.onvoiceschanged = () => { speechSynthesis.onvoiceschanged = null; renderVoiceSettings() }
+          return
+        }
+        langs.forEach(lang => {
+          const cfg = LANG_VOICE_CFG[lang] || LANG_VOICE_CFG.en
+          const candidates = voices.filter(v => v.lang.startsWith(cfg.prefix))
+          if (!candidates.length) return
+          const wrap = document.createElement('div')
+          wrap.style.cssText = 'display:flex;align-items:center;gap:6px;margin-bottom:6px;width:100%'
+          const lbl = document.createElement('span')
+          lbl.style.cssText = 'font-size:0.7rem;font-family:"JetBrains Mono",monospace;color:var(--muted);min-width:42px'
+          lbl.textContent = labels[lang]
+          wrap.appendChild(lbl)
+          const sel = document.createElement('select')
+          sel.style.cssText = 'background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:0.7rem;font-family:"JetBrains Mono",monospace;cursor:pointer;flex:1'
+          const optAuto = document.createElement('option')
+          optAuto.value = ''
+          optAuto.textContent = '🔊 Auto'
+          sel.appendChild(optAuto)
+          const savedName = localStorage.getItem('eu_voice_' + lang)
+          candidates.forEach(v => {
+            const opt = document.createElement('option')
+            opt.value = v.name
+            opt.textContent = v.name + ' [' + v.lang + ']'
+            if (v.name === savedName) opt.selected = true
+            sel.appendChild(opt)
+          })
+          sel.onchange = () => {
+            if (sel.value) {
+              localStorage.setItem('eu_voice_' + lang, sel.value)
+            } else {
+              localStorage.removeItem('eu_voice_' + lang)
+            }
+            const st = document.getElementById('voice-settings-status')
+            if (st) { st.style.color = 'var(--success)'; st.textContent = '✓ Salvata'; setTimeout(() => { st.textContent = '' }, 1500) }
+          }
+          wrap.appendChild(sel)
+          row.appendChild(wrap)
+        })
       }
       function closeSettings() {
         document.getElementById('settingsOverlay').classList.remove('open')
