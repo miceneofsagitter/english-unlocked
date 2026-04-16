@@ -80,8 +80,19 @@
       // Ogni pill = accent region → sceglie la voce migliore (Enhanced first) per quella regione
       // "Auto" pill = usa Settings/getBestVoice() senza override
       function _getBestVoiceForRegion(key) {
-        const voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith(key))
-        return voices.find(v => /enhanced|premium/i.test(v.name)) || voices[0] || null
+        const all = speechSynthesis.getVoices()
+        const candidates = all.filter(v => v.lang.startsWith(key))
+        // 1. Voce salvata in Settings, se appartiene a questa regione (è quella Enhanced scelta dall'utente)
+        const savedName = localStorage.getItem('eu_voice_' + currentLang)
+        if (savedName) {
+          const saved = candidates.find(v => v.name === savedName)
+          if (saved) return saved
+        }
+        // 2. Enhanced/Premium nel nome (funziona su macOS)
+        const enhanced = candidates.find(v => /enhanced|premium/i.test(v.name))
+        if (enhanced) return enhanced
+        // 3. Prima disponibile per questa regione
+        return candidates[0] || null
       }
 
       function _renderAccentPills() {
