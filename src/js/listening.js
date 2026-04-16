@@ -78,47 +78,44 @@
       }
 
       // ── Selettore voce ────────────────────────────────────────────
-      function _renderVoicePills() {
+      // iOS non espone "Enhanced" nel nome voce via Web API → dropdown manuale
+      function _renderVoiceSelect() {
         const cfg = LANG_VOICE_CFG[currentLang] || LANG_VOICE_CFG.en
         const all = speechSynthesis.getVoices().filter(v => v.lang.startsWith(cfg.prefix))
         const row = document.getElementById('voicePillRow')
         if (!row) return
         selectedVoice = null
-        const seen = new Set()
-        const picks = []
-        for (const v of all) {
-          const key = cfg.keys.find(k => v.lang.startsWith(k))
-          if (key && !seen.has(key)) { seen.add(key); picks.push({ key, v }) }
-        }
-        // selectedVoice rimane null → getBestVoice() sceglie Enhanced automaticamente
-        // Le pill sono solo override manuale accent (US/GB/AU), non qualità
-        if (picks.length === 0) { row.innerHTML = ''; return }
-        if (picks.length === 1) { row.innerHTML = ''; return }
         row.innerHTML = ''
+        if (!all.length) return
         const lbl = document.createElement('span')
-        lbl.style.cssText = 'font-size:0.65rem;font-family:"JetBrains Mono",monospace;color:var(--muted);align-self:center'
+        lbl.style.cssText = 'font-size:0.65rem;font-family:"JetBrains Mono",monospace;color:var(--muted);align-self:center;white-space:nowrap'
         lbl.textContent = 'VOCE:'
         row.appendChild(lbl)
-        picks.forEach(({ key, v }) => {
-          const btn = document.createElement('button')
-          btn.className = 'voice-pill'
-          btn.textContent = (cfg.flags[key] || '🌐') + ' ' + key
-          btn.onclick = () => {
-            selectedVoice = v
-            row.querySelectorAll('.voice-pill').forEach(b => b.classList.remove('active'))
-            btn.classList.add('active')
-          }
-          row.appendChild(btn)
+        const sel = document.createElement('select')
+        sel.style.cssText = 'background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:0.7rem;font-family:"JetBrains Mono",monospace;cursor:pointer;max-width:240px'
+        const optAuto = document.createElement('option')
+        optAuto.value = ''
+        optAuto.textContent = '🔊 Auto'
+        sel.appendChild(optAuto)
+        all.forEach((v, i) => {
+          const opt = document.createElement('option')
+          opt.value = i
+          opt.textContent = v.name + ' [' + v.lang + ']'
+          sel.appendChild(opt)
         })
+        sel.onchange = () => {
+          selectedVoice = sel.value === '' ? null : all[parseInt(sel.value)]
+        }
+        row.appendChild(sel)
       }
       function initVoices() {
-        speechSynthesis.onvoiceschanged = _renderVoicePills
-        _renderVoicePills()
+        speechSynthesis.onvoiceschanged = _renderVoiceSelect
+        _renderVoiceSelect()
       }
       function reinitVoices() {
         sentenceIndex = -1
         currentSentence = null
-        _renderVoicePills()
+        _renderVoiceSelect()
         // aggiorna label "scrivi in ..."
         const lbl = document.getElementById('listeningLangLabel')
         if (lbl) {
