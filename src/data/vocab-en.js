@@ -10132,5 +10132,18 @@ const EN_VOCAB = [
     ],
     "context_note": "",
     "concept": ""
-  }
+  },
+  { verb: "move on", emoji: "➡️", simple: "go forward / leave behind", it: "andare avanti / voltare pagina", type: "phrasal", language: "en", example_en: "It's time to move on.", example_it: "È ora di andare avanti.", tags: [], context_note: "" },
+  { verb: "go on", emoji: "▶️", simple: "continue / happen", it: "continuare / succedere", type: "phrasal", language: "en", example_en: "Go on, I'm listening.", example_it: "Continua, ti ascolto.", tags: [], context_note: "" },
+  { verb: "put up with", emoji: "😤", simple: "tolerate / stand", it: "sopportare / tollerare", type: "phrasal", language: "en", example_en: "I can't put up with this anymore.", example_it: "Non posso più sopportarlo.", tags: [], context_note: "" },
+  { verb: "stand out", emoji: "⭐", simple: "be different / shine", it: "distinguersi / risaltare", type: "phrasal", language: "en", example_en: "She really stands out in the group.", example_it: "Si distingue davvero nel gruppo.", tags: [], context_note: "" },
+  { verb: "blow up", emoji: "💥", simple: "explode / lose temper", it: "esplodere / arrabbiarsi", type: "phrasal", language: "en", example_en: "He blew up at me for no reason.", example_it: "Si è arrabbiato con me senza motivo.", tags: [], context_note: "" },
+  { verb: "manage to", emoji: "✅", it: "riuscire a", type: "verb", language: "en", example_en: "I managed to finish it on time.", example_it: "Sono riuscito a finirlo in tempo.", tags: [], context_note: "manage to + V infinitive" },
+  { verb: "seem / appear to", emoji: "🤔", it: "sembrare", type: "verb", language: "en", example_en: "He seems to be tired.", example_it: "Sembra stanco.", tags: [], context_note: "seem/appear to + V infinitive" },
+  { verb: "there's no point in", emoji: "🚫", it: "non ha senso", type: "idiom", language: "en", example_en: "There's no point in worrying.", example_it: "Non ha senso preoccuparsi.", tags: [], context_note: "there's no point in + V-ing" },
+  { verb: "fall behind", emoji: "🐢", simple: "lag / lose ground", it: "rimanere indietro", type: "phrasal", language: "en", example_en: "I'm falling behind in my studies.", example_it: "Sto rimanendo indietro negli studi.", tags: [], context_note: "" },
+  { verb: "stick to", emoji: "📌", simple: "follow / keep to", it: "attenersi a / rispettare", type: "phrasal", language: "en", example_en: "I'm trying to stick to my plan.", example_it: "Sto cercando di attenermi al mio piano.", tags: [], context_note: "" },
+  { verb: "look down on", emoji: "👆", simple: "disrespect / judge", it: "guardare dall'alto in basso", type: "phrasal", language: "en", example_en: "Don't look down on people.", example_it: "Non guardare le persone dall'alto in basso.", tags: [], context_note: "" },
+  { verb: "be meant to", emoji: "🎯", it: "essere fatto per / essere destinato a", type: "verb", language: "en", example_en: "This place is meant to be quiet.", example_it: "Questo posto è pensato per essere tranquillo.", tags: [], context_note: "be meant to + V infinitive" },
+  { verb: "be supposed to", emoji: "📋", it: "dovere / essere previsto", type: "verb", language: "en", example_en: "I was supposed to call her.", example_it: "Dovevo chiamarla.", tags: [], context_note: "be supposed to + V infinitive" }
 ];
