@@ -99,8 +99,21 @@ vocabIds        // {idx: uuid} mapping per Supabase
 2. Impostazioni → "Sync vocabolario" → fa upsert su Supabase
 Oppure direttamente da Impostazioni → form "Aggiungi nuovo vocabolo"
 
+### Script di manutenzione vocabolario
+- `check-vocab-links.js` — verifica concept IDs cross-lingua (`node check-vocab-links.js`)
+- `fill-examples.js` — genera example_en/it via API (`ANTHROPIC_API_KEY=sk-... node fill-examples.js [en|es|fr|all]`)
+- `gen-examples-local.js` — stessa cosa, senza API key (`node gen-examples-local.js [en|es|fr|all]`)
+- `fix-colloquial.js` — fix one-shot esempi colloquial non sensati
+- `phrasal_verbs_animator.html` — pagina standalone phrasal verbs (non collegata all'app principale)
+
+### Script Python (content discovery, non parte dell'app)
+- `src/data/analizza_canale.py` + `trova_nuovi_vocaboli.py` — scrape YouTube channel per trovare nuovi vocaboli
+- `src/data/cookies.txt` — cookies per YouTube scraping (gitignore consigliato)
+- `src/data/nuovi_vocaboli.md` — output analisi (generato, non committare)
+
 ### Campi vocab card
 - Tutti i tipi: `verb, emoji, it, type, language, tags[], context_note`
+- Campo opzionale `concept` — ID cross-lingua per `CROSS_LANG_INDEX` (es. `"pv_calm_down"`)
 - Phrasal verbs aggiuntivi: `simple` (alternativa semplice, es. "take / grab"), `example_en`, `example_it`
 - Emoji watermark in alto a destra sulla card (opaco a riposo, visibile al hover)
 - Riga `≈ simple` mostrata sotto il verbo (solo se `simple` presente)
