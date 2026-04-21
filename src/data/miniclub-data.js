@@ -1071,6 +1071,97 @@
             },
           ],
         },
+        {
+          audience: 'parents',
+          scenario: 'minikart-parents',
+          label: '🏎️ Minikart a Pedali',
+          exchanges: [
+            {
+              it: 'Abbiamo i minikart a pedali — suo figlio li ha già provati?',
+              en: 'We have pedal karts — has your child tried them yet?',
+              es: '¡Tenemos karts de pedales — ¿su hijo ya los ha probado?',
+              fr: 'On a des karts à pédales — votre enfant les a déjà essayés?',
+              variants: {
+                en: ['We\'ve got pedal karts here — does your child know about them?', 'Have you seen our pedal karts? They\'re very popular with the kids!'],
+                es: ['¿Ha visto nuestros karts de pedales? ¡Son muy populares entre los niños!', '¿Conoce los karts de pedales? ¡A los niños les encantan!'],
+                fr: ['Vous avez vu nos karts à pédales? Ils ont beaucoup de succès!', 'On a des karts à pédales — très populaires chez les enfants!'],
+              },
+            },
+            {
+              it: 'I bambini usano il casco — glielo mettiamo noi prima di partire',
+              en: 'The children wear a helmet — we put it on for them before they set off',
+              es: 'Los niños llevan casco — se lo ponemos nosotros antes de salir',
+              fr: 'Les enfants portent un casque — on le leur met avant le départ',
+              variants: {
+                en: ['Helmets on before every ride — we take care of that for you', 'We always fit the helmet ourselves — safety first!'],
+                es: ['Casco antes de cada carrera — nosotros nos encargamos', 'Siempre ponemos el casco nosotros mismos — ¡la seguridad primero!'],
+                fr: ['Casque avant chaque tour — on s\'en occupe nous-mêmes', 'On met toujours le casque nous-mêmes — sécurité d\'abord!'],
+              },
+            },
+            {
+              it: 'La pista è sorvegliata — un animatore è sempre presente durante l\'attività',
+              en: 'The track is supervised — an animator is always present during the activity',
+              es: 'La pista está vigilada — siempre hay un animador presente durante la actividad',
+              fr: 'La piste est surveillée — un animateur est toujours présent pendant l\'activité',
+              variants: {
+                en: ['There\'s always one of us on the track — your child is in safe hands', 'We supervise the whole time — no need to worry!'],
+                es: ['Siempre hay alguien de nosotros en la pista — su hijo está en buenas manos', 'Vigilamos todo el tiempo — ¡no hay de qué preocuparse!'],
+                fr: ['Il y a toujours quelqu\'un de nous sur la piste — votre enfant est en bonnes mains', 'On surveille tout le temps — pas d\'inquiétude!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'minikart-kids',
+          label: '🏎️ Minikart a Pedali',
+          exchanges: [
+            {
+              it: 'Hai visto i minikart? Oggi tocca a te — sei pronto a gareggiare?',
+              en: 'Have you seen the karts? Today it\'s your turn — ready to race?',
+              es: '¿Has visto los karts? Hoy te toca a ti — ¿listo para competir?',
+              fr: 'T\'as vu les karts? Aujourd\'hui c\'est ton tour — prêt à faire la course?',
+              variants: {
+                en: ['Kart time! Are you going to be the fastest today?', 'Your turn on the karts — think you can beat the track record?'],
+                es: ['¡Hora de los karts! ¿Vas a ser el más rápido hoy?', 'Tu turno en los karts — ¿crees que puedes batir el récord?'],
+                fr: ['C\'est l\'heure des karts! Tu vas être le plus rapide aujourd\'hui?', 'Ton tour sur les karts — tu penses que tu peux battre le record?'],
+              },
+            },
+            {
+              it: 'Prima ti metto il casco — è obbligatorio, e poi diventi un vero pilota!',
+              en: 'First I\'ll put your helmet on — it\'s compulsory, and then you become a real driver!',
+              es: '¡Primero te pongo el casco — es obligatorio, y así te conviertes en un piloto de verdad!',
+              fr: 'D\'abord je te mets le casque — c\'est obligatoire, et après tu deviens un vrai pilote!',
+              variants: {
+                en: ['Helmet on — rules say so, plus it makes you look like a proper racing driver!', 'Let me get your helmet on — every real driver wears one. Ready to go?'],
+                es: ['Casco puesto — las reglas lo dicen, ¡y además pareces un piloto de verdad!', 'Te pongo el casco — todo piloto de verdad lleva uno. ¿Listo para salir?'],
+                fr: ['Casque d\'abord — c\'est obligatoire, et en plus tu ressembles à un vrai pilote!', 'Je te mets le casque — tous les vrais pilotes en portent un. Prêt à partir?'],
+              },
+            },
+            {
+              it: 'Regola principale: si pedala sempre in un senso solo — mai in senso contrario!',
+              en: 'Main rule: always drive in one direction only — never go the wrong way!',
+              es: 'Regla principal: siempre se pedalea en un solo sentido — ¡nunca al revés!',
+              fr: 'Règle principale: on roule toujours dans un seul sens — jamais à contre-sens!',
+              variants: {
+                en: ['One direction on the track — that\'s the rule. No going backwards or against traffic!', 'Always go the right way round — if everyone goes the same way nobody crashes!'],
+                es: ['Un solo sentido en la pista — esa es la regla. ¡Nada de ir al revés!', 'Siempre en el mismo sentido — si todos van igual, ¡nadie choca!'],
+                fr: ['Un seul sens sur la piste — c\'est la règle. Jamais à contre-sens!', 'Toujours dans le bon sens — si tout le monde va pareil personne se rentre dedans!'],
+              },
+            },
+            {
+              it: 'Via! Forza, pedala! Dai che ce la fai!',
+              en: 'Go! Come on, pedal! You can do it!',
+              es: '¡Venga! ¡Vamos, pedalea! ¡Tú puedes!',
+              fr: 'Allez! Pédale! Tu peux le faire!',
+              variants: {
+                en: ['Go go go! Pedal harder — you\'re almost there!', 'Come on! Full speed — you\'ve got this!'],
+                es: ['¡Vamos vamos vamos! Pedalea más fuerte — ¡casi estás!', '¡Venga! A toda velocidad — ¡tú puedes!'],
+                fr: ['Allez allez allez! Pédale plus fort — t\'y es presque!', 'Vas-y! À toute vitesse — t\'as ce qu\'il faut!'],
+              },
+            },
+          ],
+        },
       ]
 
       const MINICLUB_PRACTICE = [
@@ -1698,6 +1789,88 @@
             en: ['It\'s a fairy tale show after dinner — music, dancing, costumes! Every evening at 19:30.', 'Baby Dance is the best — fairy tale characters come alive after dinner! Every night at 7:30.'],
             es: ['¡Es un show de cuentos después de cenar — música, baile, disfraces! Todas las noches a las 19:30.', 'La Baby Dance es lo mejor — ¡los personajes de cuentos cobran vida después de cenar! Cada noche a las 19:30.'],
             fr: ['C\'est un show de contes après le dîner — musique, danse, costumes! Tous les soirs à 19h30.', 'La Baby Dance c\'est génial — des personnages de contes qui prennent vie après le dîner! Chaque soir à 19h30.'],
+          },
+        },
+
+        // ===== MINIKART =====
+        {
+          who: 'parents',
+          category: 'minikart',
+          parent_asks: {
+            en: 'Are the karts safe for small children?',
+            es: '¿Los karts son seguros para niños pequeños?',
+            fr: 'Les karts sont sûrs pour les petits enfants?',
+            it: 'I kart sono sicuri per i bambini piccoli?',
+          },
+          you_reply: {
+            en: 'Absolutely — they\'re pedal karts, no engine. Every child wears a helmet that we fit ourselves, and an animator supervises the track the whole time.',
+            es: 'Por supuesto — son karts de pedales, sin motor. Cada niño lleva casco que le ponemos nosotros, y un animador vigila la pista todo el tiempo.',
+            fr: 'Absolument — ce sont des karts à pédales, sans moteur. Chaque enfant porte un casque qu\'on lui met nous-mêmes, et un animateur surveille la piste tout le temps.',
+          },
+          variants: {
+            en: ['Totally safe — pedal power only, helmets on every child, and we watch the track non-stop.', 'Yes — pedal karts, compulsory helmets fitted by us, constant supervision. Very safe!'],
+            es: ['Totalmente seguros — solo pedales, casco obligatorio que ponemos nosotros, vigilancia constante.', 'Sí — karts de pedales, casco obligatorio que ponemos nosotros, supervisión constante. ¡Muy seguros!'],
+            fr: ['Totalement sûrs — que des pédales, casque obligatoire qu\'on met nous-mêmes, surveillance constante.', 'Oui — karts à pédales, casque obligatoire posé par nous, surveillance non-stop. Très sécurisé!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'minikart',
+          parent_asks: {
+            en: 'Can my daughter do the karts? She\'s 4.',
+            es: '¿Mi hija puede hacer los karts? Tiene 4 años.',
+            fr: 'Ma fille peut faire les karts? Elle a 4 ans.',
+            it: 'Mia figlia può fare i kart? Ha 4 anni.',
+          },
+          you_reply: {
+            en: 'Yes, she can! The pedal karts are for all the club kids. I\'ll make sure she has a helmet and I\'ll stay close to her.',
+            es: '¡Sí puede! Los karts de pedales son para todos los niños del club. Me aseguro de que lleve casco y me quedo cerca de ella.',
+            fr: 'Oui elle peut! Les karts à pédales sont pour tous les enfants du club. Je m\'assure qu\'elle a son casque et je reste près d\'elle.',
+          },
+          variants: {
+            en: ['Of course! Pedal karts are for all ages in the club — helmet on, I\'ll keep an eye on her.', 'Absolutely — karts are for everyone. I\'ll pop her helmet on and stay nearby.'],
+            es: ['¡Claro! Los karts de pedales son para todos — casco puesto y yo cerca de ella.', 'Por supuesto — los karts son para todos. Le pongo el casco y me quedo al lado.'],
+            fr: ['Bien sûr! Les karts à pédales c\'est pour tous — casque mis et je reste près d\'elle.', 'Absolument — les karts c\'est pour tout le monde. Je lui mets le casque et je reste à côté.'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'minikart',
+          parent_asks: {
+            en: 'I want to go on the karts!',
+            es: '¡Quiero subirme a los karts!',
+            fr: 'Je veux monter dans les karts!',
+            it: 'Voglio salire sui kart!',
+          },
+          you_reply: {
+            en: 'Let\'s go! First I put your helmet on — then you\'re a real racing driver. Ready?',
+            es: '¡Vamos! Primero te pongo el casco — y entonces eres un piloto de verdad. ¿Listo?',
+            fr: 'On y va! D\'abord je te mets le casque — et là tu es un vrai pilote. Prêt?',
+          },
+          variants: {
+            en: ['Yes! Helmet first, then race time — are you going to be the fastest?', 'On we go! Let me get your helmet sorted and then it\'s race time!'],
+            es: ['¡Sí! Primero el casco, luego la carrera — ¿vas a ser el más rápido?', '¡Vamos allá! Déjame poner el casco y ¡a correr!'],
+            fr: ['Oui! Casque d\'abord, puis course — tu vas être le plus rapide?', 'Allez! Je te mets le casque et c\'est parti pour la course!'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'minikart',
+          parent_asks: {
+            en: 'I don\'t know how to steer!',
+            es: '¡No sé cómo girar!',
+            fr: 'Je sais pas comment tourner!',
+            it: 'Non so come girare!',
+          },
+          you_reply: {
+            en: 'Easy! Turn the wheel the way you want to go — left to go left, right to go right. I\'ll run alongside you the first lap!',
+            es: '¡Fácil! Gira el volante hacia donde quieres ir — a la izquierda para ir a la izquierda, a la derecha para ir a la derecha. ¡Corro a tu lado en la primera vuelta!',
+            fr: 'Facile! Tourne le volant dans le sens où tu veux aller — à gauche pour aller à gauche, à droite pour aller à droite. Je cours à côté de toi pour le premier tour!',
+          },
+          variants: {
+            en: ['Wheel goes where you want to go — I\'ll jog next to you till you get the hang of it!', 'Left = go left, right = go right! Simple. I\'ll run beside you for the first lap.'],
+            es: ['¡El volante va donde quieres ir — troto a tu lado hasta que le cojas el truco!', 'Izquierda = ir a la izquierda, derecha = ir a la derecha. ¡Simple! Corro a tu lado en la primera vuelta.'],
+            fr: ['Le volant va où tu veux aller — je cours à côté de toi jusqu\'à ce que tu maîtrises!', 'Gauche = aller à gauche, droite = aller à droite. Simple! Je cours à côté pour le premier tour.'],
           },
         },
       ]

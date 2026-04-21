@@ -11,7 +11,7 @@
         allergie: '💊 Allergie', programma: '📅 Programma', iscrizione: '📋 Iscrizione',
         serata: '🌙 Serata', 'attivita-junior': '🏹 Junior/Teen', babysitting: '👶 Babysitting',
         emozioni: '💛 Emozioni', attività: '🎯 Attività', regole: '📏 Regole',
-        pasti: '🥗 Pasti', luoghi: '🏕️ Luoghi',
+        pasti: '🥗 Pasti', luoghi: '🏕️ Luoghi', minikart: '🏎️ Minikart',
       }
 
       function renderMiniclub() {
