@@ -701,6 +701,376 @@
             },
           ],
         },
+
+        // ===== RESORT LE DUNE — PARENTS =====
+        {
+          audience: 'parents',
+          scenario: 'iscrizione-club',
+          label: '📋 Iscrizione al Club',
+          exchanges: [
+            {
+              it: 'Quanti anni ha suo figlio?',
+              en: 'How old is your child?',
+              es: '¿Cuántos años tiene su hijo?',
+              fr: 'Quel âge a votre enfant?',
+              variants: {
+                en: ["How old is your little one?", "Can I ask your child's age?"],
+                es: ['¿Qué edad tiene su hijo/a?', '¿Me puede decir cuántos años tiene?'],
+                fr: ["Quel est l'âge de votre enfant?", 'Il a quel âge, votre petit?'],
+              },
+            },
+            {
+              it: '3-4 anni → Baby Club · 5-8 → Mini Club · 9-13 → Junior Club · 14-17 → Teen Club',
+              en: '3-4 years → Baby Club · 5-8 → Mini Club · 9-13 → Junior Club · 14-17 → Teen Club',
+              es: '3-4 años → Baby Club · 5-8 → Mini Club · 9-13 → Junior Club · 14-17 → Teen Club',
+              fr: '3-4 ans → Baby Club · 5-8 → Mini Club · 9-13 → Junior Club · 14-17 → Teen Club',
+            },
+            {
+              it: 'Il club è aperto tutti i giorni dalle 9:30 alle 18:30, tranne il sabato',
+              en: 'The club is open every day from 9:30 to 18:30, except Saturday',
+              es: 'El club está abierto todos los días de 9:30 a 18:30, excepto el sábado',
+              fr: 'Le club est ouvert tous les jours de 9h30 à 18h30, sauf le samedi',
+              variants: {
+                en: ['We run Monday to Friday plus Sunday — we take Saturday off', 'Open six days a week, 9:30 till 6:30 — not Saturday though'],
+                es: ['Abrimos de lunes a viernes y domingo — el sábado descansamos', 'Abiertos seis días a la semana, de 9:30 a 18:30 — excepto el sábado'],
+                fr: ['On ouvre du lundi au vendredi plus le dimanche — le samedi on est fermés', 'Ouvert six jours sur sept, de 9h30 à 18h30 — sauf le samedi'],
+              },
+            },
+            {
+              it: 'Per il Baby Club (3-4 anni) serve il certificato medico — ce l\'ha?',
+              en: 'For the Baby Club (3-4 years) we need a medical certificate — do you have one?',
+              es: 'Para el Baby Club (3-4 años) necesitamos un certificado médico — ¿lo tiene?',
+              fr: 'Pour le Baby Club (3-4 ans) il nous faut un certificat médical — vous l\'avez?',
+              variants: {
+                en: ['The Baby Club requires a medical certificate from your doctor — did you bring it?', 'Just for 3 and 4 year olds: we need a medical certificate. Have you got one?'],
+                es: ['El Baby Club requiere un certificado médico del pediatra — ¿lo trajo?', 'Solo para los de 3 y 4 años: necesitamos un certificado médico. ¿Lo tiene?'],
+                fr: ['Le Baby Club demande un certificat médical — vous en avez un?', 'Uniquement pour les 3-4 ans: il nous faut un certificat médical. Vous l\'avez apporté?'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'serata-babydance',
+          label: '🌙 Serata e Baby Dance',
+          exchanges: [
+            {
+              it: 'Vuole prenotare la supervisione serale? È dalle 19:30 alle 22:00',
+              en: 'Would you like to book evening supervision? It runs from 19:30 to 22:00',
+              es: '¿Quiere reservar la supervisión nocturna? Es de 19:30 a 22:00',
+              fr: 'Vous voulez réserver la surveillance du soir? C\'est de 19h30 à 22h00',
+              variants: {
+                en: ['Are you interested in the evening programme? We go from 7:30 till 10pm', 'Want to sign up for the evening session? It\'s 19:30 to 22:00'],
+                es: ['¿Le interesa el programa de tarde-noche? Va de 19:30 a 22:00', '¿Quiere apuntarse a la sesión nocturna? De 19:30 a 22:00'],
+                fr: ['Vous êtes intéressés par le programme du soir? De 19h30 à 22h00', 'On peut vous inscrire pour le soir? C\'est de 19h30 à 22h'],
+              },
+            },
+            {
+              it: 'La cena al Peter Pan Restaurant è inclusa — prenoto il suo posto?',
+              en: 'Dinner at the Peter Pan Restaurant is included — shall I book a spot for your child?',
+              es: 'La cena en el Restaurante Peter Pan está incluida — ¿reservo el sitio?',
+              fr: 'Le dîner au Restaurant Peter Pan est inclus — je réserve une place?',
+              variants: {
+                en: ['Dinner\'s included at the Peter Pan Restaurant — want me to reserve a seat?', 'There\'s dinner at Peter Pan Restaurant — should I put your child down for it?'],
+                es: ['La cena está incluida en el Restaurante Peter Pan — ¿apunto a su hijo?', 'Hay cena en el Restaurante Peter Pan incluida — ¿lo anoto?'],
+                fr: ['Le dîner est inclus au Restaurant Peter Pan — je l\'inscris?', 'Il y a un dîner au Restaurant Peter Pan inclus — je réserve?'],
+              },
+            },
+            {
+              it: 'Dopo cena c\'è la Baby Dance — spettacolo ispirato alle favole, adorano!',
+              en: 'After dinner there\'s Baby Dance — a fairy tale show, they love it!',
+              es: 'Después de cenar hay Baby Dance — un espectáculo de cuentos, ¡les encanta!',
+              fr: 'Après le dîner il y a la Baby Dance — un spectacle inspiré des contes, ils adorent!',
+              variants: {
+                en: ['Then we do Baby Dance — it\'s a fairy tale show after dinner, really popular!', 'The evening ends with Baby Dance — fairy tale themed, the kids absolutely love it'],
+                es: ['Luego tenemos la Baby Dance — show de cuentos después de cenar, ¡les encanta!', 'Al final de la noche hay Baby Dance — temática de cuentos, los niños la adoran'],
+                fr: ['Ensuite c\'est la Baby Dance — spectacle contes de fées, très populaire!', 'La soirée se finit avec la Baby Dance — thème contes, les enfants adorent ça'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'ristorante-peterpan',
+          label: '🍽️ Peter Pan Restaurant',
+          exchanges: [
+            {
+              it: 'Il pranzo è al Ristorante Peter Pan — dedicato ai bambini del club',
+              en: 'Lunch is at the Peter Pan Restaurant — it\'s just for club kids',
+              es: 'El almuerzo es en el Restaurante Peter Pan — solo para los niños del club',
+              fr: 'Le déjeuner c\'est au Restaurant Peter Pan — réservé aux enfants du club',
+              variants: {
+                en: ['We eat at the Peter Pan Restaurant — it\'s our dedicated kids\' dining room', 'Your child will have lunch at Peter Pan Restaurant, our kids-only dining space'],
+                es: ['Comemos en el Restaurante Peter Pan — es nuestro comedor dedicado para niños', 'Su hijo almorzará en el Restaurante Peter Pan, solo para niños del club'],
+                fr: ['On mange au Restaurant Peter Pan — c\'est notre salle de repas pour les enfants', 'Votre enfant déjeunera au Restaurant Peter Pan, réservé aux enfants du club'],
+              },
+            },
+            {
+              it: 'I prodotti vengono dall\'orto del resort — tutto fresco e locale',
+              en: 'The produce comes from the resort\'s garden — all fresh and local',
+              es: 'Los productos vienen del huerto del resort — todo fresco y local',
+              fr: 'Les produits viennent du jardin du resort — tout est frais et local',
+              variants: {
+                en: ['The food is grown right here in our own garden — fresh every day', 'Everything is locally sourced from our resort\'s garden — really fresh'],
+                es: ['La comida se cultiva aquí mismo, en nuestro huerto — fresca cada día', 'Todo viene de nuestro huerto del resort — muy fresco'],
+                fr: ['Les légumes viennent de notre propre potager ici — vraiment frais', 'Tout est cultivé dans notre jardin du resort — du frais chaque jour'],
+              },
+            },
+            {
+              it: 'Per prenotare il pranzo mi dica entro la mattina, grazie',
+              en: 'To book lunch just let me know by morning, thanks',
+              es: 'Para reservar el almuerzo dígame antes de la mañana, gracias',
+              fr: 'Pour réserver le déjeuner dites-le moi le matin, merci',
+              variants: {
+                en: ['Just give me a heads up in the morning if your child is staying for lunch', 'Let us know before midday if you want to book lunch'],
+                es: ['Avíseme por la mañana si su hijo se queda a comer', 'Díganos antes del mediodía si quiere reservar el almuerzo'],
+                fr: ['Prévenez-moi le matin si votre enfant reste déjeuner', 'Dites-nous avant midi si vous voulez réserver le repas'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'attivita-junior',
+          label: '🏹 Attività Junior e Teen',
+          exchanges: [
+            {
+              it: 'Junior (9-13 anni): tiro con l\'arco, calcio, beach volley, basket, tennis',
+              en: 'Junior (9-13): archery, football, beach volleyball, basketball, tennis',
+              es: 'Junior (9-13): tiro con arco, fútbol, vóley playa, baloncesto, tenis',
+              fr: 'Junior (9-13): tir à l\'arc, football, beach volley, basket, tennis',
+              variants: {
+                en: ['For 9 to 13 year olds we run archery, football, beach volleyball, basketball and tennis', 'Junior Club sports: archery, football, beach volley, basketball and tennis'],
+                es: ['Para los de 9 a 13 años: tiro con arco, fútbol, vóley playa, baloncesto y tenis', 'Deportes del Junior Club: tiro con arco, fútbol, vóley playa, baloncesto y tenis'],
+                fr: ['Pour les 9-13 ans: tir à l\'arc, football, beach volley, basket et tennis', 'Sports du Junior Club: tir à l\'arc, football, beach volley, basket et tennis'],
+              },
+            },
+            {
+              it: 'Organizziamo mini tornei negli spazi verdi del resort',
+              en: 'We run mini tournaments in the resort\'s outdoor green spaces',
+              es: 'Organizamos minitorneos en las zonas verdes del resort',
+              fr: 'On organise des mini-tournois dans les espaces verts du resort',
+              variants: {
+                en: ['We hold little tournaments outside — the kids get really competitive!', 'Mini tournaments happen outdoors — great fun and teamwork'],
+                es: ['Hacemos pequeños torneos al aire libre — ¡se lo pasan genial!', 'Mini torneos al exterior — mucha diversión y trabajo en equipo'],
+                fr: ['On fait des petits tournois dehors — ils adorent la compétition!', 'Des mini-tournois en plein air — beaucoup de fun et d\'esprit d\'équipe'],
+              },
+            },
+            {
+              it: 'Teen (14-17 anni): stesse attività + scuola vela opzionale (a pagamento)',
+              en: 'Teen (14-17): same activities + optional sailing school (paid extra)',
+              es: 'Teen (14-17): mismas actividades + escuela de vela opcional (de pago)',
+              fr: 'Teen (14-17): mêmes activités + école de voile en option (payant)',
+              variants: {
+                en: ['Teens do all the same sports plus there\'s a sailing school — that one costs extra', 'For 14-17 there\'s also a sailing school on top of the usual sports — it\'s optional and paid'],
+                es: ['Los teen hacen los mismos deportes más una escuela de vela — esa tiene coste adicional', 'Para 14-17 también hay escuela de vela además de los deportes normales — opcional y de pago'],
+                fr: ['Les ados font les mêmes sports plus une école de voile — celle-là est payante', 'Pour les 14-17 il y a aussi une école de voile en plus des sports habituels — optionnelle et payante'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'babysitting',
+          label: '👶 Babysitting',
+          exchanges: [
+            {
+              it: 'Suo figlio ha meno di 2 anni? C\'è un servizio dedicato a pagamento su prenotazione',
+              en: 'Is your child under 2? There\'s a dedicated paid service — booking required',
+              es: '¿Su hijo tiene menos de 2 años? Hay un servicio dedicado de pago — requiere reserva',
+              fr: 'Votre enfant a moins de 2 ans? Il y a un service dédié payant — sur réservation',
+              variants: {
+                en: ['For children under 2 we have a dedicated care service — it\'s paid and needs advance booking', 'Under 2 years old? We have a special service for them — it\'s extra and must be booked ahead'],
+                es: ['Para menores de 2 años tenemos un servicio especial — de pago y con reserva previa', '¿Menos de 2 años? Hay un servicio especial para ellos — tiene coste y hay que reservar'],
+                fr: ['Pour les moins de 2 ans on a un service spécial — c\'est payant et sur réservation', 'Moins de 2 ans? On a un service dédié — payant et à réserver à l\'avance'],
+              },
+            },
+            {
+              it: 'Il babysitting individuale è disponibile dai 3 mesi — bisogna prenotare in anticipo',
+              en: 'Individual babysitting is available from 3 months old — must be booked in advance',
+              es: 'El cuidado individual está disponible desde los 3 meses — hay que reservar con antelación',
+              fr: 'La garde individuelle est disponible dès 3 mois — à réserver à l\'avance',
+              variants: {
+                en: ['One-to-one babysitting starts from 3 months — just book ahead and we\'ll sort it', 'We offer individual babysitting from 3 months old — advance booking only'],
+                es: ['Cuidado uno a uno desde los 3 meses — solo hay que reservar con antelación', 'Ofrecemos cuidado individual desde los 3 meses — solo con reserva previa'],
+                fr: ['Garde individuelle dès 3 mois — il suffit de réserver à l\'avance', 'On propose une garde individuelle dès 3 mois — uniquement sur réservation'],
+              },
+            },
+            {
+              it: 'Per prenotare si rivolga alla reception — loro gestiscono il servizio',
+              en: 'To book please go to reception — they handle that service',
+              es: 'Para reservar diríjase a recepción — ellos gestionan ese servicio',
+              fr: 'Pour réserver adressez-vous à la réception — c\'est eux qui gèrent ça',
+              variants: {
+                en: ['Reception takes care of the babysitting bookings — just pop over and ask', 'Head to reception to book — they\'ll sort everything out for you'],
+                es: ['La recepción gestiona las reservas de cuidado — pase por allí y pregunte', 'Vaya a recepción para reservar — ellos se encargan de todo'],
+                fr: ['La réception s\'occupe des réservations de baby-sitting — passez les voir', 'Allez à la réception pour réserver — ils s\'occupent de tout'],
+              },
+            },
+          ],
+        },
+
+        // ===== RESORT LE DUNE — KIDS =====
+        {
+          audience: 'kids',
+          scenario: 'villaggio-fantasia',
+          label: '🏕️ Villaggio Fantasia',
+          exchanges: [
+            {
+              it: 'Benvenuto al Villaggio Fantasia! Qui ci sono due mondi: il campo indiano e Fort Crok!',
+              en: 'Welcome to Villaggio Fantasia! There are two worlds here: the Indian camp and Fort Crok!',
+              es: '¡Bienvenido al Villaggio Fantasia! ¡Hay dos mundos aquí: el campamento indio y Fort Crok!',
+              fr: 'Bienvenue au Villaggio Fantasia! Il y a deux mondes ici: le camp indien et Fort Crok!',
+              variants: {
+                en: ['This is Villaggio Fantasia — you choose: Indian camp or Fort Crok the cowboy fort?', 'Welcome! Two worlds await you — an Indian camp and a cowboy fort. Which do you pick?'],
+                es: ['Aquí es el Villaggio Fantasia — ¿eliges: campamento indio o Fort Crok el fuerte vaquero?', '¡Bienvenido! Dos mundos te esperan — campamento indio y fuerte vaquero. ¿Cuál eliges?'],
+                fr: ['Bienvenue! Deux mondes t\'attendent — un camp indien et un fort cowboy. Tu choisis lequel?', 'C\'est le Villaggio Fantasia — camp indien ou Fort Crok le fort cowboy?'],
+              },
+            },
+            {
+              it: 'Sei un coraggioso guerriero indiano o uno sceriffo cowboy?',
+              en: 'Are you a brave Indian warrior or a cowboy sheriff?',
+              es: '¿Eres un valiente guerrero indio o un sheriff vaquero?',
+              fr: 'Tu es un courageux guerrier indien ou un shérif cowboy?',
+              variants: {
+                en: ['Warrior or sheriff — you decide! Both are awesome', 'Indian warrior or cowboy? Tell me and we\'ll get you kitted out!'],
+                es: ['¿Guerrero o sheriff? ¡Tú decides! Los dos molan', '¿Indio o vaquero? ¡Dímelo y te equipamos!'],
+                fr: ['Guerrier ou shérif — c\'est toi qui choisis! Les deux c\'est trop bien', 'Indien ou cowboy? Dis-moi et on t\'équipe!'],
+              },
+            },
+            {
+              it: 'Guarda! Abbiamo una piscina enorme solo per voi bambini — 10.000 mq!',
+              en: 'Look! We have a huge pool just for you kids — 10,000 square metres!',
+              es: '¡Mira! Tenemos una piscina enorme solo para vosotros, los niños — ¡10.000 m²!',
+              fr: 'Regarde! On a une piscine immense rien que pour vous les enfants — 10 000 m²!',
+              variants: {
+                en: ['We\'ve got a massive kids\' pool — 10,000 square metres, just for us!', 'Our pool is 10,000 square metres — and it\'s all ours!'],
+                es: ['¡Nuestra piscina tiene 10.000 metros cuadrados y es toda para nosotros!', '¡La piscina es enorme — 10.000 m² y solo para los niños!'],
+                fr: ['Notre piscine fait 10 000 m² et elle est rien qu\'à nous!', 'La piscine fait 10 000 mètres carrés — et elle est rien que pour nous!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'duneland-castle',
+          label: '🎡 Duneland Castle',
+          exchanges: [
+            {
+              it: 'Oggi andiamo a Duneland Castle! Ci sono laboratori creativi e il soft play',
+              en: 'Today we\'re going to Duneland Castle! There are creative labs and a soft play area',
+              es: '¡Hoy vamos a Duneland Castle! Hay talleres creativos y zona de soft play',
+              fr: 'Aujourd\'hui on va au Duneland Castle! Il y a des ateliers créatifs et un espace soft play',
+              variants: {
+                en: ['We\'re heading to Duneland Castle — creative workshops and a giant soft play!', 'Duneland Castle today! You can do crafts or bounce around in the soft play'],
+                es: ['¡Vamos al Duneland Castle! Talleres de manualidades y zona blanda gigante', '¡Duneland Castle hoy! Puedes hacer manualidades o jugar en la zona blanda'],
+                fr: ['On va au Duneland Castle! Des ateliers créatifs et un super espace soft play', 'Direction Duneland Castle! Ateliers créatifs ou zone de jeux rembourrée'],
+              },
+            },
+            {
+              it: 'Vedi quella nave pirata gonfiabile? Ci saliamo dopo!',
+              en: 'See that inflatable pirate ship? We\'re climbing on it later!',
+              es: '¿Ves ese barco pirata hinchable? ¡Subimos después!',
+              fr: 'Tu vois ce bateau pirate gonflable? On monte dessus tout à l\'heure!',
+              variants: {
+                en: ['That inflatable pirate ship over there — we get to go on it! Ready to be a pirate?', 'See the pirate ship? We\'re going on it — are you a pirate or a captain?'],
+                es: ['¡Ese barco pirata hinchable es para nosotros! ¿Listo para ser pirata?', '¿Ves el barco pirata? ¡Subimos — eres pirata o capitán?'],
+                fr: ['Ce bateau pirate gonflable là-bas c\'est pour nous! T\'es prêt à être un pirate?', 'Le bateau pirate là — on y va! Tu es pirate ou capitaine?'],
+              },
+            },
+            {
+              it: 'Vuoi provare la parete di arrampicata? Ti metto l\'imbragatura e sei al sicuro',
+              en: 'Want to try the climbing wall? I\'ll put your harness on and you\'re totally safe',
+              es: '¿Quieres probar el muro de escalada? Te pongo el arnés y estás completamente seguro',
+              fr: 'Tu veux essayer le mur d\'escalade? Je te mets le harnais et t\'es en sécurité totale',
+              variants: {
+                en: ['Fancy the climbing wall? I\'ll get you harnessed up — totally safe, I promise!', 'The climbing wall looks scary but it\'s really safe — want to give it a go? I\'ll be right here'],
+                es: ['¿Te animas con el muro de escalada? Te pongo el arnés — es totalmente seguro, ¡te lo juro!', 'El muro parece difícil pero es muy seguro — ¿quieres intentarlo? Yo estoy aquí'],
+                fr: ['Le mur d\'escalade ça fait peur mais c\'est super sécurisé — tu veux essayer? Je suis là', 'T\'oses le mur d\'escalade? Je t\'attache le harnais — t\'es en sécurité totale, promis!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'orto-aviary',
+          label: '🌱 Orto e Animali',
+          exchanges: [
+            {
+              it: 'Andiamo all\'Orto Il Peperone a coltivare piante mediterranee — sei il mio aiuto-giardiniere!',
+              en: 'We\'re going to Orto Il Peperone to grow Mediterranean plants — you\'re my assistant gardener!',
+              es: '¡Vamos al Orto Il Peperone a cultivar plantas mediterráneas — eres mi ayudante jardinero!',
+              fr: 'On va à l\'Orto Il Peperone cultiver des plantes méditerranéennes — tu es mon assistant jardinier!',
+              variants: {
+                en: ['Time to visit our vegetable garden! You get to plant things and be a real gardener', 'We\'re going to the garden — Il Peperone — to grow some Mediterranean plants. Ready?'],
+                es: ['¡Hora de visitar nuestro huerto! Puedes plantar cosas y ser un jardinero de verdad', 'Vamos al huerto Il Peperone a plantar plantas mediterráneas. ¿Preparado?'],
+                fr: ['On va au jardin! Tu vas planter des choses et être un vrai jardinier', 'Direction le potager Il Peperone pour cultiver des plantes méditerranéennes. Prêt?'],
+              },
+            },
+            {
+              it: 'Ora andiamo al Puddaggiju — c\'è un aviario con pavoni, anatre e galline!',
+              en: 'Now we\'re going to the Puddaggiju — there\'s an aviary with peacocks, ducks and hens!',
+              es: '¡Ahora vamos al Puddaggiju — hay un aviario con pavos reales, patos y gallinas!',
+              fr: 'Maintenant on va au Puddaggiju — il y a un volière avec des paons, des canards et des poules!',
+              variants: {
+                en: ['Next stop: the Puddaggiju aviary! Peacocks, ducks, chickens — the lot!', 'We\'re visiting the Puddaggiju now — it\'s an aviary with peacocks and loads of birds!'],
+                es: ['Próxima parada: ¡el aviario Puddaggiju! Pavos reales, patos, gallinas — ¡de todo!', '¡Visitamos el Puddaggiju ahora — es un aviario con pavos reales y muchas aves!'],
+                fr: ['Prochaine étape: la volière Puddaggiju! Paons, canards, poules — tout y est!', 'On visite le Puddaggiju maintenant — une volière avec des paons et plein d\'oiseaux!'],
+              },
+            },
+            {
+              it: 'Vuoi raccogliere le uova con me? Le galline le hanno deposte stamattina!',
+              en: 'Want to collect the eggs with me? The hens laid them this morning!',
+              es: '¿Quieres recoger los huevos conmigo? ¡Las gallinas los han puesto esta mañana!',
+              fr: 'Tu veux ramasser les œufs avec moi? Les poules les ont pondus ce matin!',
+              variants: {
+                en: ['The hens laid fresh eggs this morning — want to come and collect them?', 'Fresh eggs this morning! Come with me to pick them up — careful now, they\'re fragile!'],
+                es: ['¡Las gallinas han puesto huevos frescos esta mañana — quieres venir a recogerlos?', '¡Huevos frescos esta mañana! Ven conmigo a recogerlos — ¡con cuidado, son frágiles!'],
+                fr: ['Les poules ont pondu des œufs frais ce matin — tu viens les ramasser?', 'Des œufs frais ce matin! Viens avec moi les chercher — doucement, ils sont fragiles!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'arco-sport',
+          label: '🏹 Tiro con l\'arco e Sport',
+          exchanges: [
+            {
+              it: 'Oggi facciamo tiro con l\'arco! Prima le regole di sicurezza — pronto ad ascoltare?',
+              en: 'Today we\'re doing archery! First the safety rules — ready to listen?',
+              es: '¡Hoy hacemos tiro con arco! Primero las reglas de seguridad — ¿listo para escuchar?',
+              fr: 'Aujourd\'hui on fait du tir à l\'arc! D\'abord les règles de sécurité — prêt à écouter?',
+              variants: {
+                en: ['Archery time! But safety first — I need you to listen carefully for one minute', 'We\'re doing archery today — quick safety briefing first, then we shoot!'],
+                es: ['¡Hora del tiro con arco! Pero primero la seguridad — necesito que escuches un momento', 'Hoy hacemos tiro con arco — primero un repaso rápido de seguridad, ¡luego disparamos!'],
+                fr: ['C\'est l\'heure du tir à l\'arc! Mais d\'abord la sécurité — écoute-moi bien une minute', 'On fait du tir à l\'arc — petit briefing sécurité d\'abord, puis on tire!'],
+              },
+            },
+            {
+              it: 'Regola n°1: non puntare mai l\'arco verso una persona — mai, mai, mai!',
+              en: 'Rule number 1: never point the bow at a person — never, ever!',
+              es: 'Regla número 1: nunca apuntes el arco hacia una persona — ¡nunca, jamás!',
+              fr: 'Règle numéro 1: ne jamais pointer l\'arc vers une personne — jamais, jamais, jamais!',
+              variants: {
+                en: ['Number one rule: the bow never points at people — only at the target. Deal?', 'Most important rule: bow stays pointed at the target, never at a person. Got it?'],
+                es: ['Regla número uno: el arco nunca apunta a personas — solo al blanco. ¿Trato?', 'Regla más importante: el arco apunta al blanco, nunca a una persona. ¿Entendido?'],
+                fr: ['Règle numéro un: l\'arc pointe vers la cible, jamais vers une personne. Marché?', 'La règle la plus importante: l\'arc vise la cible, jamais une personne. Compris?'],
+              },
+            },
+            {
+              it: 'Oggi pomeriggio torneo di beach volley — vuoi essere nella mia squadra?',
+              en: 'This afternoon there\'s a beach volleyball tournament — want to be on my team?',
+              es: 'Esta tarde hay torneo de vóley playa — ¿quieres estar en mi equipo?',
+              fr: 'Cet après-midi il y a un tournoi de beach volley — tu veux être dans mon équipe?',
+              variants: {
+                en: ['Beach volley tournament this afternoon — I\'m picking my team, you in?', 'We\'ve got a beach volley competition later — fancy joining my team?'],
+                es: ['Torneo de vóley playa esta tarde — elijo equipo, ¿te apuntas?', '¡Competición de vóley playa después — ¿quieres unirte a mi equipo?'],
+                fr: ['Tournoi de beach volley cet après-midi — je choisis mon équipe, t\'es partant?', 'On a une compétition de beach volley plus tard — tu rejoins mon équipe?'],
+              },
+            },
+          ],
+        },
       ]
 
       const MINICLUB_PRACTICE = [
@@ -1084,6 +1454,250 @@
             en: ["That's okay — just tell me and I'll sort you out with something you like!", "No worries — point to what you don't want and we'll find you something better"],
             es: ['Está bien — ¡dímelo y te doy algo que te guste!', 'Sin problema — señala lo que no quieres y te buscamos algo mejor'],
             fr: ["C'est pas grave — dis-moi et je te trouve quelque chose que tu aimes!", "Pas de souci — montre-moi ce que tu veux pas et on te trouve autre chose"],
+          },
+        },
+
+        // ===== RESORT LE DUNE — PARENTS =====
+        {
+          who: 'parents',
+          category: 'iscrizione',
+          parent_asks: {
+            en: 'Which club is my child in? She\'s 6.',
+            es: '¿En qué club está mi hija? Tiene 6 años.',
+            fr: 'Mon enfant est dans quel club? Elle a 6 ans.',
+            it: 'In quale club è mia figlia? Ha 6 anni.',
+          },
+          you_reply: {
+            en: 'Six years old means Mini Club — that\'s 5 to 8 year olds. She\'s in the right place!',
+            es: 'Con 6 años va al Mini Club — es para los de 5 a 8 años. ¡Está en el sitio correcto!',
+            fr: '6 ans c\'est le Mini Club — c\'est pour les 5 à 8 ans. Elle est au bon endroit!',
+          },
+          variants: {
+            en: ['At 6 she\'s in the Mini Club — ages 5 to 8. Perfect fit!', 'Mini Club is for 5 to 8 year olds, so she\'s right here with us!'],
+            es: ['Con 6 años está en el Mini Club — de 5 a 8 años. ¡Está perfecta aquí!', 'El Mini Club es para los de 5 a 8 años — ¡está en el lugar correcto!'],
+            fr: ['À 6 ans elle est au Mini Club — de 5 à 8 ans. Elle est parfaitement à sa place!', 'Le Mini Club c\'est pour les 5-8 ans — elle est exactement là où il faut!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'iscrizione',
+          parent_asks: {
+            en: 'Do I need to bring anything to enrol my child?',
+            es: '¿Necesito traer algo para inscribir a mi hijo?',
+            fr: 'Je dois apporter quelque chose pour inscrire mon enfant?',
+            it: 'Devo portare qualcosa per iscrivere mio figlio?',
+          },
+          you_reply: {
+            en: 'For the Baby Club — 3 and 4 year olds — we need a medical certificate from your doctor. For all other clubs, nothing extra needed.',
+            es: 'Para el Baby Club — niños de 3 y 4 años — necesitamos un certificado médico del pediatra. Para los demás clubes no hace falta nada más.',
+            fr: 'Pour le Baby Club — les 3 et 4 ans — il nous faut un certificat médical. Pour les autres clubs, rien de spécial.',
+          },
+          variants: {
+            en: ['Only the Baby Club (3-4 year olds) requires a medical certificate — other clubs, you\'re good to go!', 'If your child is 3 or 4, we need a medical certificate. Older kids? Just show up!'],
+            es: ['Solo el Baby Club (3-4 años) pide certificado médico — para los demás clubes no hace falta nada.', 'Si tiene 3 o 4 años necesitamos certificado médico. ¿Mayor? ¡Solo aparecerse!'],
+            fr: ['Uniquement le Baby Club (3-4 ans) demande un certificat médical — pour les autres clubs rien de spécial.', 'Si votre enfant a 3 ou 4 ans il nous faut un certificat. Pour les plus grands rien du tout!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'serata',
+          parent_asks: {
+            en: 'Is there something for the kids in the evening?',
+            es: '¿Hay algo para los niños por la noche?',
+            fr: 'Il y a quelque chose pour les enfants le soir?',
+            it: 'C\'è qualcosa per i bambini la sera?',
+          },
+          you_reply: {
+            en: 'Yes! Evening supervision from 19:30 to 22:00 — dinner at the Peter Pan Restaurant is included, and after dinner there\'s Baby Dance, a fairy tale show the kids love.',
+            es: '¡Sí! Supervisión nocturna de 19:30 a 22:00 — la cena en el Restaurante Peter Pan está incluida, y después hay Baby Dance, un espectáculo de cuentos que les encanta.',
+            fr: 'Oui! Surveillance du soir de 19h30 à 22h — le dîner au Restaurant Peter Pan est inclus, et après il y a la Baby Dance, un spectacle de contes que les enfants adorent.',
+          },
+          variants: {
+            en: ['Evening programme: 7:30 to 10pm, dinner at Peter Pan Restaurant included, then Baby Dance — fairy tale show, very popular!', 'We do evenings too! 19:30 to 22:00 with dinner and Baby Dance after — needs booking though.'],
+            es: ['Programa de tarde: 19:30 a 22:00, cena en Peter Pan incluida y Baby Dance después — ¡muy popular!', '¡También hacemos sesión nocturna! 19:30 a 22:00 con cena y Baby Dance — hay que reservar.'],
+            fr: ['Programme du soir: 19h30 à 22h, dîner au Peter Pan inclus et Baby Dance après — très populaire!', 'On fait aussi le soir! 19h30 à 22h avec dîner et Baby Dance — sur réservation.'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'serata',
+          parent_asks: {
+            en: 'Does the evening have to be booked in advance?',
+            es: '¿Hay que reservar la sesión nocturna con antelación?',
+            fr: 'Il faut réserver la soirée à l\'avance?',
+            it: 'Bisogna prenotare la serata in anticipo?',
+          },
+          you_reply: {
+            en: 'Yes, the evening supervision needs to be booked — just let me know and I\'ll sort it out for you.',
+            es: 'Sí, la supervisión nocturna hay que reservarla — dígame y se lo gestiono.',
+            fr: 'Oui, la surveillance du soir est sur réservation — dites-le moi et je m\'en occupe.',
+          },
+          variants: {
+            en: ['It\'s reservation only — tell me now and I\'ll put your child down for tonight.', 'Yes, booking required — shall I add your child to the list right now?'],
+            es: ['Solo con reserva — dígame ahora y apunto a su hijo para esta noche.', 'Sí, requiere reserva — ¿lo apunto ahora mismo?'],
+            fr: ['Sur réservation uniquement — dites-le moi maintenant et j\'inscris votre enfant pour ce soir.', 'Oui, réservation obligatoire — je l\'inscris tout de suite?'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'attivita-junior',
+          parent_asks: {
+            en: 'My son is 11 — what activities does he have?',
+            es: 'Mi hijo tiene 11 años — ¿qué actividades tiene?',
+            fr: 'Mon fils a 11 ans — quelles activités il a?',
+            it: 'Mio figlio ha 11 anni — che attività ha?',
+          },
+          you_reply: {
+            en: 'Junior Club at 11! He gets archery, football, beach volleyball, basketball and tennis — plus mini tournaments in the outdoor spaces.',
+            es: '¡Junior Club con 11 años! Tiene tiro con arco, fútbol, vóley playa, baloncesto y tenis — más minitorneos al aire libre.',
+            fr: 'Junior Club à 11 ans! Il a le tir à l\'arc, le football, le beach volley, le basket et le tennis — plus des mini-tournois en extérieur.',
+          },
+          variants: {
+            en: ['At 11 he\'s in Junior Club — archery, football, beach volley, basketball, tennis and outdoor tournaments!', 'Junior Club for him — lots of sport: archery, football, beach volley, basketball, tennis. Real mini-athlete stuff!'],
+            es: ['Con 11 años está en Junior Club — tiro con arco, fútbol, vóley playa, baloncesto, tenis y torneos. ¡Un auténtico deportista!', 'Junior Club para él — mucho deporte: arco, fútbol, vóley, baloncesto, tenis. ¡Lo mejor!'],
+            fr: ['À 11 ans c\'est le Junior Club — tir à l\'arc, foot, beach volley, basket, tennis et tournois. Un vrai sportif!', 'Junior Club pour lui — plein de sports: tir à l\'arc, foot, beach volley, basket, tennis. Super programme!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'attivita-junior',
+          parent_asks: {
+            en: 'Is there a sailing school for teenagers?',
+            es: '¿Hay escuela de vela para los adolescentes?',
+            fr: 'Il y a une école de voile pour les ados?',
+            it: 'C\'è una scuola di vela per i ragazzi?',
+          },
+          you_reply: {
+            en: 'Yes, for 14 to 17 year olds there\'s an optional sailing school — it\'s a paid extra, you book it separately.',
+            es: 'Sí, para los de 14 a 17 años hay una escuela de vela opcional — tiene coste adicional, se reserva aparte.',
+            fr: 'Oui, pour les 14-17 ans il y a une école de voile en option — c\'est payant en plus, ça se réserve séparément.',
+          },
+          variants: {
+            en: ['Teen Club has a sailing school as an optional extra — paid, needs separate booking.', 'For teens 14-17 there\'s sailing — it\'s optional and paid, ask at reception to book it.'],
+            es: ['El Teen Club tiene escuela de vela como extra opcional — de pago, reserva aparte.', 'Para los teens de 14-17 hay vela — opcional y de pago, reservar en recepción.'],
+            fr: ['Le Teen Club a une école de voile en option — payant, réservation séparée.', 'Pour les 14-17 ans il y a la voile — en option et payant, à réserver à la réception.'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'babysitting',
+          parent_asks: {
+            en: 'My baby is only 18 months — can he join the club?',
+            es: 'Mi bebé tiene solo 18 meses — ¿puede ir al club?',
+            fr: 'Mon bébé a seulement 18 mois — il peut venir au club?',
+            it: 'Il mio bambino ha solo 18 mesi — può venire al club?',
+          },
+          you_reply: {
+            en: 'The clubs start from 3 years old. For children under 2 there\'s a dedicated care service — it\'s paid and needs to be booked. Please ask at reception.',
+            es: 'Los clubes empiezan a partir de los 3 años. Para menores de 2 años hay un servicio dedicado — es de pago y requiere reserva. Por favor pregunte en recepción.',
+            fr: 'Les clubs commencent à partir de 3 ans. Pour les moins de 2 ans il y a un service dédié — c\'est payant et sur réservation. Demandez à la réception.',
+          },
+          variants: {
+            en: ['Under 2s have their own service — paid, needs booking. Reception will sort you out!', 'Clubs are from age 3. For under 2 there\'s a special paid service — just head to reception.'],
+            es: ['Los menores de 2 tienen su propio servicio — de pago y con reserva. ¡Recepción se lo gestiona!', 'Los clubes son desde los 3 años. Para menos de 2 hay servicio especial de pago — en recepción.'],
+            fr: ['Les moins de 2 ans ont leur propre service — payant et sur réservation. La réception s\'en occupe!', 'Les clubs c\'est à partir de 3 ans. Pour les moins de 2 ans un service spécial payant — à la réception.'],
+          },
+        },
+
+        // ===== RESORT LE DUNE — KIDS =====
+        {
+          who: 'kids',
+          category: 'luoghi',
+          parent_asks: {
+            en: 'What\'s Fort Crok?',
+            es: '¿Qué es Fort Crok?',
+            fr: 'C\'est quoi Fort Crok?',
+            it: 'Cos\'è Fort Crok?',
+          },
+          you_reply: {
+            en: 'Fort Crok is our cowboy fort! You can be a sheriff, defend the fort and go on adventures. It\'s in Villaggio Fantasia — want to go?',
+            es: '¡Fort Crok es nuestro fuerte vaquero! Puedes ser sheriff, defender el fuerte y ir de aventuras. Está en el Villaggio Fantasia — ¿quieres ir?',
+            fr: 'Fort Crok c\'est notre fort de cowboys! Tu peux être shérif, défendre le fort et partir à l\'aventure. C\'est dans le Villaggio Fantasia — on y va?',
+          },
+          variants: {
+            en: ['It\'s the cowboy fort in Villaggio Fantasia — sheriff badges, adventures, the whole thing! Ready?', 'Our cowboy fort! Defend it, be a sheriff, have an adventure. In Villaggio Fantasia — shall we head there?'],
+            es: ['¡Es el fuerte vaquero del Villaggio Fantasia — insignias de sheriff, aventuras, de todo! ¿Preparado?', '¡Nuestro fuerte vaquero! Defiéndelo, sé sheriff, vive una aventura. En el Villaggio Fantasia — ¿vamos?'],
+            fr: ['C\'est le fort de cowboys du Villaggio Fantasia — badge de shérif, aventures, tout ça! Prêt?', 'Notre fort cowboy! Défends-le, sois shérif, pars à l\'aventure. Dans le Villaggio Fantasia — on y va?'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'luoghi',
+          parent_asks: {
+            en: 'Can I go on the climbing wall?',
+            es: '¿Puedo subir al muro de escalada?',
+            fr: 'Je peux aller sur le mur d\'escalade?',
+            it: 'Posso andare sulla parete di arrampicata?',
+          },
+          you_reply: {
+            en: 'Yes! I\'ll put the harness on you first — it keeps you totally safe. Then you climb as high as you want!',
+            es: '¡Sí! Primero te pongo el arnés — así estás completamente seguro. ¡Luego subes todo lo que quieras!',
+            fr: 'Oui! Je te mets le harnais d\'abord — comme ça t\'es en sécurité totale. Ensuite tu montes aussi haut que tu veux!',
+          },
+          variants: {
+            en: ['Of course — harness on first, then you\'re free to climb! It\'s safer than it looks.', 'Let\'s do it! I\'ll strap you in and you\'ll be amazed how easy it is once you\'re up there.'],
+            es: ['¡Claro que sí — primero el arnés y luego a escalar! Es más fácil de lo que parece.', '¡Vamos! Te engancho el arnés y verás lo fácil que es una vez arriba.'],
+            fr: ['Bien sûr — harnais d\'abord, ensuite tu grimpes! C\'est plus facile que ça en a l\'air.', 'On y va! Je t\'attache et tu vas voir comme c\'est facile une fois là-haut.'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'luoghi',
+          parent_asks: {
+            en: 'Can I collect the eggs?',
+            es: '¿Puedo recoger los huevos?',
+            fr: 'Je peux ramasser les œufs?',
+            it: 'Posso raccogliere le uova?',
+          },
+          you_reply: {
+            en: 'Yes — come with me to the Puddaggiju! The hens laid fresh eggs this morning. Be very gentle, they break easily!',
+            es: '¡Sí — ven conmigo al Puddaggiju! Las gallinas han puesto huevos frescos esta mañana. ¡Con mucho cuidado, se rompen fácil!',
+            fr: 'Oui — viens avec moi au Puddaggiju! Les poules ont pondu des œufs frais ce matin. Très doucement, ils se cassent facilement!',
+          },
+          variants: {
+            en: ['Absolutely! Fresh eggs this morning at the Puddaggiju — hold them gently, they\'re fragile!', 'Let\'s go to the Puddaggiju together — fresh eggs waiting for us! Careful now, nice and gentle.'],
+            es: ['¡Claro! Huevos frescos esta mañana en el Puddaggiju — ¡sujétalos con cuidado, son frágiles!', '¡Vamos juntos al Puddaggiju — hay huevos frescos esperándonos! Con cuidado, suavecito.'],
+            fr: ['Bien sûr! Des œufs frais ce matin au Puddaggiju — tiens-les doucement, ils sont fragiles!', 'On va ensemble au Puddaggiju — des œufs frais nous attendent! Attention, tout doucement.'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'attività',
+          parent_asks: {
+            en: 'Is archery dangerous?',
+            es: '¿El tiro con arco es peligroso?',
+            fr: 'Le tir à l\'arc c\'est dangereux?',
+            it: 'Il tiro con l\'arco è pericoloso?',
+          },
+          you_reply: {
+            en: 'Not at all — as long as we follow the rules! Rule number one: never point the bow at a person, only at the target. Got it?',
+            es: '¡Para nada — siempre que sigamos las reglas! Regla número uno: nunca apuntes el arco hacia una persona, solo al blanco. ¿Entendido?',
+            fr: 'Pas du tout — tant qu\'on respecte les règles! Règle numéro un: on ne pointe jamais l\'arc vers une personne, seulement vers la cible. Compris?',
+          },
+          variants: {
+            en: ['It\'s totally safe with the rules — and rule one is: bow at the target, never at people. Promise me?', 'Safe as can be! Just remember: bow points at the target only. Never at a person. Deal?'],
+            es: ['Es totalmente seguro con las reglas — y la regla uno es: arco al blanco, nunca a las personas. ¿Me lo prometes?', '¡Muy seguro! Solo recuerda: el arco apunta al blanco solamente. Nunca a una persona. ¿Trato?'],
+            fr: ['Totalement sûr avec les règles — et la règle un c\'est: arc vers la cible, jamais vers les gens. Tu me le promets?', 'Super sécurisé! Juste retiens: l\'arc pointe vers la cible uniquement. Jamais vers quelqu\'un. Marché?'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'attività',
+          parent_asks: {
+            en: 'What\'s Baby Dance?',
+            es: '¿Qué es la Baby Dance?',
+            fr: 'C\'est quoi la Baby Dance?',
+            it: 'Cos\'è la Baby Dance?',
+          },
+          you_reply: {
+            en: 'Baby Dance is a show after dinner — fairy tale characters, music, dancing! It happens every evening from 19:30. You\'re going to love it!',
+            es: '¡La Baby Dance es un espectáculo después de cenar — personajes de cuentos, música, baile! Pasa todas las noches a partir de las 19:30. ¡Te va a encantar!',
+            fr: 'La Baby Dance c\'est un spectacle après le dîner — personnages de contes, musique, danse! Ça a lieu tous les soirs à partir de 19h30. Tu vas adorer!',
+          },
+          variants: {
+            en: ['It\'s a fairy tale show after dinner — music, dancing, costumes! Every evening at 19:30.', 'Baby Dance is the best — fairy tale characters come alive after dinner! Every night at 7:30.'],
+            es: ['¡Es un show de cuentos después de cenar — música, baile, disfraces! Todas las noches a las 19:30.', 'La Baby Dance es lo mejor — ¡los personajes de cuentos cobran vida después de cenar! Cada noche a las 19:30.'],
+            fr: ['C\'est un show de contes après le dîner — musique, danse, costumes! Tous les soirs à 19h30.', 'La Baby Dance c\'est génial — des personnages de contes qui prennent vie après le dîner! Chaque soir à 19h30.'],
           },
         },
       ]

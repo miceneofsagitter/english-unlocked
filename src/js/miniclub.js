@@ -4,6 +4,15 @@
       let practiceIdx = 0
       let practiceRevealed = false
       let practiceWho = 'both'
+      let practiceCategory = 'all'
+
+      const PRACTICE_CATEGORY_LABELS = {
+        pranzo: '🍽️ Pranzo', orari: '🕐 Orari', 'drop-pickup': '🚗 Arrivi/Uscite',
+        allergie: '💊 Allergie', programma: '📅 Programma', iscrizione: '📋 Iscrizione',
+        serata: '🌙 Serata', 'attivita-junior': '🏹 Junior/Teen', babysitting: '👶 Babysitting',
+        emozioni: '💛 Emozioni', attività: '🎯 Attività', regole: '📏 Regole',
+        pasti: '🥗 Pasti', luoghi: '🏕️ Luoghi',
+      }
 
       function renderMiniclub() {
         const container = document.getElementById('miniclub-content')
@@ -191,15 +200,27 @@
       }
 
       function getPracticeList() {
-        if (practiceWho === 'both') return MINICLUB_PRACTICE
-        return MINICLUB_PRACTICE.filter(c => c.who === practiceWho)
+        let list = MINICLUB_PRACTICE
+        if (practiceWho !== 'both') list = list.filter(c => c.who === practiceWho)
+        if (practiceCategory !== 'all') list = list.filter(c => c.category === practiceCategory)
+        return list
       }
 
       function filterPracticeWho(who, btn) {
         practiceWho = who
+        practiceCategory = 'all'
         practiceIdx = 0
         practiceRevealed = false
         document.querySelectorAll('.mc-practice-who-btn').forEach(b => b.classList.remove('active'))
+        btn.classList.add('active')
+        renderPracticeCard()
+      }
+
+      function filterPracticeCategory(cat, btn) {
+        practiceCategory = cat
+        practiceIdx = 0
+        practiceRevealed = false
+        document.querySelectorAll('.mc-practice-cat-btn').forEach(b => b.classList.remove('active'))
         btn.classList.add('active')
         renderPracticeCard()
       }
@@ -208,11 +229,25 @@
         const section = document.getElementById('miniclub-practice-section')
         if (!section) return
 
+        const availableCats = [...new Set(
+          MINICLUB_PRACTICE
+            .filter(c => practiceWho === 'both' || c.who === practiceWho)
+            .map(c => c.category)
+        )]
+        const catPills = availableCats.map(cat => {
+          const label = PRACTICE_CATEGORY_LABELS[cat] || cat
+          return `<button class="filter-pill mc-practice-cat-btn${practiceCategory === cat ? ' active' : ''}" onclick="filterPracticeCategory('${cat}', this)">${escHtml(label)}</button>`
+        }).join('')
+
         const whoFilterHtml = `
-          <div class="filter-pills" style="margin-bottom:1.25rem;">
+          <div class="filter-pills" style="margin-bottom:0.75rem;">
             <button class="filter-pill mc-practice-who-btn${practiceWho === 'both' ? ' active' : ''}" onclick="filterPracticeWho('both', this)">Tutti</button>
             <button class="filter-pill mc-practice-who-btn${practiceWho === 'parents' ? ' active' : ''}" onclick="filterPracticeWho('parents', this)">👨‍👩‍👧‍👦 Genitori</button>
             <button class="filter-pill mc-practice-who-btn${practiceWho === 'kids' ? ' active' : ''}" onclick="filterPracticeWho('kids', this)">👧 Bambini</button>
+          </div>
+          <div class="filter-pills" style="margin-bottom:1.25rem;">
+            <button class="filter-pill mc-practice-cat-btn${practiceCategory === 'all' ? ' active' : ''}" onclick="filterPracticeCategory('all', this)">Tutti i temi</button>
+            ${catPills}
           </div>`
 
         const list = getPracticeList()

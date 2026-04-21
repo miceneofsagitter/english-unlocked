@@ -12,3 +12,5 @@ fix-colloquial.js
 gen-examples-local.js
 check-vocab-links.js
 sync-supabase-vocab.js
+src/data/cookies.txt
+.DS_Store
