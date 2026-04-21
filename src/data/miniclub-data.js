@@ -1162,6 +1162,368 @@
             },
           ],
         },
+
+        // ===== NUOVI SCENARI =====
+        {
+          audience: 'parents',
+          scenario: 'eta-minima',
+          label: '👶 Età Minima',
+          exchanges: [
+            {
+              it: 'Quanti anni ha il suo bambino?',
+              en: 'How old is your child?',
+              es: '¿Cuántos años tiene su hijo?',
+              fr: 'Quel âge a votre enfant?',
+              variants: {
+                en: ['How old is your little one?', 'Can I ask how old your child is?'],
+                es: ['¿Cuántos años tiene su niño?', '¿Me puede decir la edad de su hijo?'],
+                fr: ['Quel âge a votre petit?', 'Puis-je vous demander l\'âge de votre enfant?'],
+              },
+            },
+            {
+              it: 'L\'età minima per il miniclub è 3 anni compiuti',
+              en: 'The minimum age for the miniclub is 3 years old',
+              es: 'La edad mínima para el miniclub es 3 años cumplidos',
+              fr: 'L\'âge minimum pour le miniclub est 3 ans révolus',
+              variants: {
+                en: ['Our minimum age is 3 — they need to have already had their third birthday.', 'We require children to be at least 3 years old.'],
+                es: ['El mínimo son 3 años cumplidos — tienen que haber tenido ya su tercer cumpleaños.', 'Necesitamos que el niño tenga al menos 3 años.'],
+                fr: ['L\'âge minimum c\'est 3 ans révolus — il faut qu\'ils aient déjà eu leur troisième anniversaire.', 'Nos enfants doivent avoir au moins 3 ans.'],
+              },
+            },
+            {
+              it: 'Mi dispiace, per motivi di sicurezza non possiamo accettare bambini sotto i 3 anni',
+              en: 'I\'m sorry, for safety reasons we can\'t accept children under 3',
+              es: 'Lo siento, por razones de seguridad no podemos aceptar niños menores de 3 años',
+              fr: 'Je suis désolé, pour des raisons de sécurité nous ne pouvons pas accepter les enfants de moins de 3 ans',
+              variants: {
+                en: ['I understand, but it\'s a safety rule we can\'t make exceptions to.', 'Unfortunately we\'re not able to take children under 3 — it\'s a strict safety policy.'],
+                es: ['Lo entiendo, pero es una norma de seguridad con la que no podemos hacer excepciones.', 'Por desgracia no podemos aceptar menores de 3 años — es una norma estricta de seguridad.'],
+                fr: ['Je comprends, mais c\'est une règle de sécurité sans exception possible.', 'Malheureusement on ne peut pas accepter les moins de 3 ans — c\'est une règle stricte.'],
+              },
+            },
+            {
+              it: 'Capisco, ma è una regola che vale per tutti i bambini — non possiamo fare eccezioni',
+              en: 'I understand, but it\'s a rule that applies to all children — we can\'t make exceptions',
+              es: 'Lo entiendo, pero es una regla que aplica a todos los niños — no podemos hacer excepciones',
+              fr: 'Je comprends, mais c\'est une règle qui s\'applique à tous les enfants — on ne peut pas faire d\'exceptions',
+              variants: {
+                en: ['I completely understand, but I\'m not able to bend this rule for anyone.', 'It\'s the same rule for every family — I hope you understand.'],
+                es: ['Lo entiendo perfectamente, pero no puedo saltarme esta norma para nadie.', 'Es la misma regla para todas las familias — espero que lo comprendan.'],
+                fr: ['Je comprends tout à fait, mais je ne peux pas contourner cette règle pour qui que ce soit.', 'C\'est la même règle pour toutes les familles — j\'espère que vous comprenez.'],
+              },
+            },
+            {
+              it: 'Siete benvenuti a tornare l\'anno prossimo quando il bambino avrà 3 anni!',
+              en: 'You\'re very welcome to come back next year when your child turns 3!',
+              es: '¡Sois bienvenidos a volver el año que viene cuando el niño tenga 3 años!',
+              fr: 'Vous êtes les bienvenus pour revenir l\'année prochaine quand votre enfant aura 3 ans!',
+              variants: {
+                en: ['We\'d love to have them next year once they\'re 3!', 'Come back when they\'ve had their third birthday — we\'d love to see them!'],
+                es: ['¡Con mucho gusto los recibimos el año que viene cuando cumpla 3!', '¡Vuelvan cuando haya cumplido tres — estaremos encantados de recibirlo!'],
+                fr: ['On sera ravis de les accueillir l\'année prochaine quand ils auront 3 ans!', 'Revenez quand ils auront eu leurs 3 ans — on sera très contents de les accueillir!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'cinema',
+          label: '🎬 Cinema',
+          exchanges: [
+            {
+              it: 'Questa settimana abbiamo il cinema — le comunichiamo il giorno e l\'orario',
+              en: 'This week we have cinema — we\'ll let you know the day and time',
+              es: 'Esta semana tenemos cine — le avisaremos del día y la hora',
+              fr: 'Cette semaine on a cinéma — on vous préviendra du jour et de l\'heure',
+              variants: {
+                en: ['Cinema is on this week — I\'ll give you the details nearer the time.', 'We\'ve got a movie session this week — more details to follow!'],
+                es: ['Esta semana hay cine — les damos los detalles cuando los tengamos.', 'Tenemos sesión de cine esta semana — más detalles próximamente.'],
+                fr: ['On a une séance de cinéma cette semaine — plus de détails bientôt.', 'Il y a cinéma cette semaine — je vous donne les détails quand je les ai.'],
+              },
+            },
+            {
+              it: 'Il cinema è incluso nell\'attività del miniclub, non serve portare niente di speciale',
+              en: 'Cinema is included in the miniclub activity, no need to bring anything special',
+              es: 'El cine está incluido en la actividad del miniclub, no hace falta traer nada especial',
+              fr: 'Le cinéma est inclus dans l\'activité miniclub, pas besoin d\'apporter quoi que ce soit de spécial',
+              variants: {
+                en: ['It\'s all included — just bring your child and we\'ll handle the rest!', 'Nothing to prepare — cinema is all part of the programme.'],
+                es: ['Todo incluido — solo traigan a su hijo y nosotros nos encargamos del resto.', 'No hay que preparar nada — el cine forma parte del programa.'],
+                fr: ['Tout est inclus — amenez juste votre enfant et on s\'occupe du reste!', 'Rien à préparer — le cinéma fait partie du programme.'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'cinema',
+          label: '🎬 Cinema',
+          exchanges: [
+            {
+              it: 'Oggi andiamo al cinema! Guardiamo un film tutti insieme — sei pronto?',
+              en: 'Today we\'re going to the cinema! We\'re watching a movie all together — are you ready?',
+              es: '¡Hoy vamos al cine! Vemos una película todos juntos — ¿estás listo?',
+              fr: 'Aujourd\'hui on va au cinéma! On regarde un film tous ensemble — tu es prêt?',
+              variants: {
+                en: ['Movie time! We\'re all watching together — are you excited?', 'We\'re off to the cinema — grab your seat and let\'s go!'],
+                es: ['¡Hora de la película! Todos juntos — ¿estás emocionado?', '¡Vamos al cine — coge tu sitio y vamos!'],
+                fr: ['C\'est l\'heure du film! On regarde tous ensemble — tu es excité?', 'On va au cinéma — prends ta place et c\'est parti!'],
+              },
+            },
+            {
+              it: 'Silenzio durante il film e niente telefono — dobbiamo rispettare tutti',
+              en: 'Quiet during the film and no phones — we have to respect everyone',
+              es: 'Silencio durante la película y sin móvil — tenemos que respetar a todos',
+              fr: 'Silence pendant le film et pas de téléphone — on doit respecter tout le monde',
+              variants: {
+                en: ['Let\'s all be quiet so everyone can enjoy it — deal?', 'Voices off and screens away — ready to watch?'],
+                es: ['Todos en silencio para que todos puedan disfrutar — ¿trato?', 'Sin ruido y sin pantallas — ¿listos para ver?'],
+                fr: ['Tout le monde se tait pour que chacun puisse profiter — d\'accord?', 'Silence et téléphones rangés — on est prêts?'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'merenda',
+          label: '🍎 Merenda',
+          exchanges: [
+            {
+              it: 'La merenda è alle 16:00 ogni giorno — frutta, biscotti e succo',
+              en: 'Snack time is at 4pm every day — fruit, biscuits and juice',
+              es: 'La merienda es a las 16:00 todos los días — fruta, galletas y zumo',
+              fr: 'Le goûter est à 16h tous les jours — fruits, biscuits et jus',
+              variants: {
+                en: ['We have a snack every day at 4 — fruit, biscuits and drinks provided.', 'Snack is at 4pm daily: fruit, biscuits, juice.'],
+                es: ['Merienda diaria a las 4: fruta, galletas y bebidas.', 'Todos los días a las 16h tenemos merienda — fruta, galletas y zumo.'],
+                fr: ['Goûter quotidien à 16h: fruits, biscuits et boissons.', 'Chaque jour à 16h on a le goûter — fruits, biscuits, jus.'],
+              },
+            },
+            {
+              it: 'Vuole che il suo bambino rimanga per la merenda? È compresa',
+              en: 'Would you like your child to stay for snack? It\'s included',
+              es: '¿Quiere que su hijo se quede para la merienda? Está incluida',
+              fr: 'Voulez-vous que votre enfant reste pour le goûter? C\'est inclus',
+              variants: {
+                en: ['Your child is welcome to stay for snack — it\'s all part of the session.', 'Snack is included — shall we keep them for that?'],
+                es: ['Su hijo puede quedarse a merendar — está incluido en la sesión.', 'La merienda está incluida — ¿lo dejamos para ese momento?'],
+                fr: ['Votre enfant peut rester pour le goûter — c\'est inclus dans la session.', 'Le goûter est compris — on le garde pour ça?'],
+              },
+            },
+            {
+              it: 'Se il suo bambino ha allergie, me lo dica prima della merenda',
+              en: 'If your child has any allergies, please let me know before snack time',
+              es: 'Si su hijo tiene alguna alergia, por favor dígamelo antes de la merienda',
+              fr: 'Si votre enfant a des allergies, merci de me le dire avant le goûter',
+              variants: {
+                en: ['Any food allergies I should know about before snack?', 'Just checking — are there any allergies to flag before we eat?'],
+                es: ['¿Hay alguna alergia que deba saber antes de la merienda?', 'Solo para confirmar — ¿hay alguna alergia antes de que comamos?'],
+                fr: ['Des allergies alimentaires à signaler avant le goûter?', 'Juste pour vérifier — il y a des allergies avant qu\'on mange?'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'merenda',
+          label: '🍎 Merenda',
+          exchanges: [
+            {
+              it: 'Merenda! Oggi abbiamo frutta, biscotti e succo — mangiamo tutti insieme',
+              en: 'Snack time! Today we have fruit, biscuits and juice — we all eat together',
+              es: '¡Merienda! Hoy tenemos fruta, galletas y zumo — comemos todos juntos',
+              fr: 'C\'est le goûter! Aujourd\'hui on a des fruits, des biscuits et du jus — on mange tous ensemble',
+              variants: {
+                en: ['Snack time everyone! Fruit, biscuits and juice — come and sit down!', 'It\'s snack o\'clock! Come and grab your fruit and juice!'],
+                es: ['¡Hora de merendar! Fruta, galletas y zumo — ¡venid a sentaros!', '¡Es la hora del bocadillo! ¡Venid a coger vuestra fruta y zumo!'],
+                fr: ['C\'est l\'heure du goûter! Fruits, biscuits et jus — venez vous asseoir!', 'Goûter! Venez prendre vos fruits et votre jus!'],
+              },
+            },
+            {
+              it: 'Prima ci laviamo le mani, poi mangiamo — chi vuole cominciare?',
+              en: 'First we wash our hands, then we eat — who wants to go first?',
+              es: 'Primero nos lavamos las manos, luego comemos — ¿quién quiere ir primero?',
+              fr: 'D\'abord on se lave les mains, puis on mange — qui veut commencer?',
+              variants: {
+                en: ['Hands first, snack second — off we go!', 'Let\'s wash our hands before we eat — quick, then we dig in!'],
+                es: ['Manos primero, merienda después — ¡vamos!', '¡Lavamos las manos y luego a comer — rápido!'],
+                fr: ['Mains d\'abord, goûter ensuite — allez!', 'On se lave les mains et ensuite on mange — vite!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'gonfiabili',
+          label: '🎪 Gonfiabili & Tappeti',
+          exchanges: [
+            {
+              it: 'Questa sera ci sono i gonfiabili e i tappeti elastici — dalle 18:00 alle 20:00',
+              en: 'This evening there are inflatables and trampolines — from 6pm to 8pm',
+              es: 'Esta tarde hay hinchables y camas elásticas — de 18:00 a 20:00',
+              fr: 'Ce soir il y a des gonflables et des trampolines — de 18h à 20h',
+              variants: {
+                en: ['Tonight from 6 to 8 we\'ve got inflatables and trampolines — loads of fun!', 'Inflatables and trampolines this evening, 6 to 8pm!'],
+                es: ['Esta noche de 6 a 8 tenemos hinchables y camas elásticas — ¡un montón de diversión!', '¡Hinchables y camas elásticas esta tarde de 18 a 20h!'],
+                fr: ['Ce soir de 18h à 20h on a gonflables et trampolines — super fun!', 'Gonflables et trampolines ce soir, de 18h à 20h!'],
+              },
+            },
+            {
+              it: 'Per i tappeti elastici servono i calzini — può portarne un paio stasera',
+              en: 'For the trampolines socks are required — you can bring a pair this evening',
+              es: 'Para las camas elásticas se necesitan calcetines — puede traer un par esta tarde',
+              fr: 'Pour les trampolines les chaussettes sont obligatoires — vous pouvez en apporter une paire ce soir',
+              variants: {
+                en: ['Trampolines need socks — just a reminder for this evening!', 'Make sure they have socks for the trampolines tonight!'],
+                es: ['Para las camas elásticas necesitan calcetines — ¡recuérdelo para esta tarde!', '¡Asegúrense de que llevan calcetines para los trampolines esta noche!'],
+                fr: ['Pour les trampolines il faut des chaussettes — pensez-y ce soir!', 'Assurez-vous qu\'ils ont des chaussettes pour les trampolines ce soir!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'gonfiabili',
+          label: '🎪 Gonfiabili & Tappeti',
+          exchanges: [
+            {
+              it: 'Stasera ci sono i gonfiabili e i tappeti elastici — non vedi l\'ora?',
+              en: 'This evening we have inflatables and trampolines — can\'t wait!',
+              es: '¡Esta tarde tenemos hinchables y camas elásticas — ¿no puedes esperar?',
+              fr: 'Ce soir on a des gonflables et des trampolines — tu as hâte?',
+              variants: {
+                en: ['Tonight: inflatables AND trampolines — who\'s excited?!', 'Bounce time tonight — inflatables and trampolines! Ready?'],
+                es: ['¡Esta noche: hinchables Y camas elásticas — ¿quién está emocionado?!', '¡Noche de botes — hinchables y camas elásticas! ¿Listo?'],
+                fr: ['Ce soir: gonflables ET trampolines — qui est excité?!', 'Soirée rebond — gonflables et trampolines! Prêt?'],
+              },
+            },
+            {
+              it: 'Sui gonfiabili: niente spinte — a turno e ci divertiamo tutti',
+              en: 'On the inflatables: no pushing — take turns and we all have fun',
+              es: 'En los hinchables: nada de empujar — nos turnamos y nos divertimos todos',
+              fr: 'Sur les gonflables: pas de poussées — chacun son tour et on s\'amuse tous',
+              variants: {
+                en: ['No pushing on the inflatables — everyone gets a turn, it\'s more fun that way!', 'Inflatables rule: no shoving! Take turns and keep it safe.'],
+                es: ['Regla de los hinchables: ¡sin empujones! Nos turnamos y así es más divertido.', 'Sin empujar en los hinchables — a turnos y sin peleas.'],
+                fr: ['Règle des gonflables: pas de poussées! Chacun son tour c\'est plus fun.', 'Sur les gonflables: pas de bousculade — à tour de rôle et on s\'amuse mieux.'],
+              },
+            },
+            {
+              it: 'Per i tappeti elastici ci vogliono i calzini — ce li hai?',
+              en: 'For the trampolines you need socks — have you got them?',
+              es: 'Para las camas elásticas necesitas calcetines — ¿los tienes?',
+              fr: 'Pour les trampolines il te faut des chaussettes — tu les as?',
+              variants: {
+                en: ['Socks on for the trampolines — have you got a pair?', 'Trampolines need socks — go grab yours!'],
+                es: ['Calcetines para las camas elásticas — ¿tienes un par?', 'Para los trampolines necesitas calcetines — ¡ve a buscarlos!'],
+                fr: ['Chaussettes pour les trampolines — tu en as?', 'Pour les trampolines il faut des chaussettes — va les chercher!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
+          scenario: 'spettacoli',
+          label: '🎭 Spettacoli',
+          exchanges: [
+            {
+              it: 'Questa sera c\'è lo spettacolo — è per tutta la famiglia',
+              en: 'This evening there\'s a show — it\'s for the whole family',
+              es: 'Esta tarde hay espectáculo — es para toda la familia',
+              fr: 'Ce soir il y a un spectacle — c\'est pour toute la famille',
+              variants: {
+                en: ['There\'s a family show this evening — we\'d love to see you there!', 'Don\'t miss tonight\'s show — it\'s for everyone!'],
+                es: ['Esta noche hay espectáculo familiar — ¡nos encantaría verlos allí!', '¡No se pierdan el espectáculo de esta noche — es para todos!'],
+                fr: ['Il y a un spectacle familial ce soir — on espère vous y voir!', 'Ne ratez pas le spectacle ce soir — c\'est pour tout le monde!'],
+              },
+            },
+            {
+              it: 'Il ritrovo è in piazza principale — ci vediamo lì!',
+              en: 'We meet at the main square — see you there!',
+              es: 'La cita es en la plaza principal — ¡nos vemos allí!',
+              fr: 'On se retrouve sur la place principale — à tout à l\'heure!',
+              variants: {
+                en: ['Meet us at the main square tonight — bring the whole family!', 'Main square this evening — come along!'],
+                es: ['¡Plaza principal esta noche — vengan con toda la familia!', '¡Plaza principal esta tarde — ¡apúntense!'],
+                fr: ['Place principale ce soir — amenez toute la famille!', 'Rendez-vous place principale — venez!'],
+              },
+            },
+            {
+              it: 'Una volta a settimana c\'è lo spettacolo — controllate il programma settimanale',
+              en: 'There\'s a show once a week — check the weekly programme',
+              es: 'Hay espectáculo una vez a la semana — consulten el programa semanal',
+              fr: 'Il y a un spectacle une fois par semaine — consultez le programme hebdomadaire',
+              variants: {
+                en: ['We have a weekly show — it\'s always listed in the weekly programme.', 'One show per week — have a look at the programme for the exact day!'],
+                es: ['Un espectáculo por semana — está siempre en el programa semanal.', 'Un espectáculo a la semana — ¡echen un vistazo al programa para ver el día exacto!'],
+                fr: ['Un spectacle par semaine — c\'est toujours dans le programme hebdomadaire.', 'Un spectacle par semaine — regardez le programme pour le jour exact!'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
+          scenario: 'comportamento-bimbi',
+          label: '🤝 Comportamento',
+          exchanges: [
+            {
+              it: 'Ti chiedo di non aggrapparti a me — ho bisogno delle mani libere per aiutare tutti, ma sono qui vicino',
+              en: 'I need you to let go of me — I need my hands free to help everyone, but I\'m right here',
+              es: 'Necesito que me sueltes — necesito las manos libres para ayudar a todos, pero estoy aquí cerca',
+              fr: 'J\'ai besoin que tu me lâches — j\'ai besoin de mes mains pour aider tout le monde, mais je suis juste là',
+              variants: {
+                en: ['Can you let go? I\'ll stay close, I promise — I just need my hands free!', 'Let me go gently — I\'m not going far, I\'m right here with you.'],
+                es: ['¿Me sueltas? Me quedo cerca, te lo prometo — ¡solo necesito las manos libres!', 'Suéltame con cuidado — no me voy lejos, estoy aquí contigo.'],
+                fr: ['Tu peux me lâcher? Je reste proche, promis — j\'ai juste besoin de mes mains libres!', 'Lâche-moi doucement — je ne vais nulle part, je suis là avec toi.'],
+              },
+            },
+            {
+              it: 'Al miniclub non ci si aggrappa agli altri bambini — ognuno ha bisogno del suo spazio',
+              en: 'In the miniclub we don\'t hang onto other children — everyone needs their own space',
+              es: 'En el miniclub no nos agarramos a los otros niños — cada uno necesita su espacio',
+              fr: 'Au miniclub on ne s\'accroche pas aux autres enfants — chacun a besoin de son espace',
+              variants: {
+                en: ['Let\'s give each other some space — everyone likes a bit of room!', 'Other children need space too — can you give them a bit of room?'],
+                es: ['Démosle espacio a los demás — ¡a todos nos gusta tener un poco de sitio!', 'Los otros niños también necesitan espacio — ¿puedes dejarles un poco?'],
+                fr: ['Donnons de l\'espace à chacun — tout le monde aime avoir un peu de place!', 'Les autres enfants ont besoin d\'espace aussi — tu peux leur en laisser un peu?'],
+              },
+            },
+            {
+              it: 'Al miniclub non si spinge e non si fa del male — usiamo le parole',
+              en: 'In the miniclub we don\'t push or hurt each other — we use our words',
+              es: 'En el miniclub no empujamos ni nos hacemos daño — usamos las palabras',
+              fr: 'Au miniclub on ne pousse pas et on ne se fait pas de mal — on utilise les mots',
+              variants: {
+                en: ['No pushing or hitting — can you use your words instead?', 'Let\'s keep our hands to ourselves — use words, not hands.'],
+                es: ['Sin empujones ni golpes — ¿puedes usar las palabras en su lugar?', 'Las manos quietas — usa las palabras, no las manos.'],
+                fr: ['Pas de poussées ni de coups — tu peux utiliser tes mots?', 'On garde les mains pour soi — des mots, pas des mains.'],
+              },
+            },
+            {
+              it: 'Puoi dare un po\' di spazio a [nome]? Grazie — sei molto gentile',
+              en: 'Can you give [name] a bit of space? Thank you — that\'s very kind',
+              es: '¿Puedes darle un poco de espacio a [nombre]? Gracias — eso es muy amable',
+              fr: 'Tu peux laisser un peu de place à [nom]? Merci — c\'est très gentil',
+              variants: {
+                en: ['A little space for your friend — well done, that\'s really kind!', '[Name] needs a bit more room — can you move back a little? Great, thank you!'],
+                es: ['Un poco de espacio para tu amigo — ¡bien hecho, eso es muy amable!', '[Nombre] necesita un poco más de sitio — ¿puedes retroceder un poco? ¡Genial, gracias!'],
+                fr: ['Un peu de place pour ton ami — bravo, c\'est vraiment gentil!', '[Nom] a besoin d\'un peu plus de place — tu peux reculer un peu? Super, merci!'],
+              },
+            },
+            {
+              it: 'Se hai un problema con un altro bambino, vieni a dirmelo — risolviamo insieme',
+              en: 'If you have a problem with another child, come and tell me — we\'ll sort it out together',
+              es: 'Si tienes un problema con otro niño, ven a decírmelo — lo resolvemos juntos',
+              fr: 'Si tu as un problème avec un autre enfant, viens me le dire — on résout ça ensemble',
+              variants: {
+                en: ['Got a problem? Tell me and we\'ll fix it together — no need to fight!', 'Come to me if something\'s wrong — that\'s what I\'m here for!'],
+                es: ['¿Tienes un problema? Cuéntamelo y lo solucionamos juntos — ¡no hace falta pelear!', '¡Ven a mí si algo va mal — para eso estoy aquí!'],
+                fr: ['Un problème? Dis-le moi et on règle ça ensemble — pas besoin de se battre!', 'Viens me voir si quelque chose ne va pas — c\'est pour ça que je suis là!'],
+              },
+            },
+          ],
+        },
       ]
 
       const MINICLUB_PRACTICE = [
@@ -1871,6 +2233,228 @@
             en: ['Wheel goes where you want to go — I\'ll jog next to you till you get the hang of it!', 'Left = go left, right = go right! Simple. I\'ll run beside you for the first lap.'],
             es: ['¡El volante va donde quieres ir — troto a tu lado hasta que le cojas el truco!', 'Izquierda = ir a la izquierda, derecha = ir a la derecha. ¡Simple! Corro a tu lado en la primera vuelta.'],
             fr: ['Le volant va où tu veux aller — je cours à côté de toi jusqu\'à ce que tu maîtrises!', 'Gauche = aller à gauche, droite = aller à droite. Simple! Je cours à côté pour le premier tour.'],
+          },
+        },
+
+        // ===== NUOVE PRACTICE CARDS =====
+        {
+          who: 'parents',
+          category: 'eta-minima',
+          parent_asks: {
+            en: 'Can I leave my son here? He just turned 2.',
+            es: '¿Puedo dejar a mi hijo aquí? Acaba de cumplir 2 años.',
+            fr: 'Je peux laisser mon fils ici? Il vient d\'avoir 2 ans.',
+            it: 'Posso lasciare mio figlio qui? Ha appena compiuto 2 anni.',
+          },
+          you_reply: {
+            en: 'I\'m really sorry, our minimum age is 3 years old. For safety reasons we can\'t accept children under 3. You\'re very welcome to come back next year!',
+            es: 'Lo siento mucho, la edad mínima son 3 años cumplidos. Por razones de seguridad no podemos aceptar menores de 3 años. ¡Sois muy bienvenidos a volver el año que viene!',
+            fr: 'Je suis vraiment désolé, notre âge minimum est 3 ans. Pour des raisons de sécurité on ne peut pas accepter les moins de 3 ans. Vous êtes les bienvenus pour revenir l\'année prochaine!',
+          },
+          variants: {
+            en: ['I\'m sorry, we need children to be at least 3 — it\'s a strict safety rule.', 'Unfortunately our minimum age is 3 and we can\'t make exceptions. Come back next year!'],
+            es: ['Lo siento, necesitamos que los niños tengan al menos 3 años — es una norma de seguridad estricta.', 'Por desgracia el mínimo son 3 años y no podemos hacer excepciones. ¡Volved el año que viene!'],
+            fr: ['Désolé, il faut avoir au moins 3 ans — c\'est une règle de sécurité stricte.', 'Malheureusement le minimum c\'est 3 ans et on ne peut pas faire d\'exceptions. Revenez l\'année prochaine!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'eta-minima',
+          parent_asks: {
+            en: 'But she\'s very mature for her age — can\'t you make an exception?',
+            es: 'Pero es muy madura para su edad — ¿no pueden hacer una excepción?',
+            fr: 'Mais elle est très mature pour son âge — vous ne pouvez pas faire une exception?',
+            it: 'Ma è molto matura per la sua età — non potete fare un\'eccezione?',
+          },
+          you_reply: {
+            en: 'I completely understand, but it\'s a safety rule that applies to all children — I\'m not able to make exceptions for anyone. I hope you understand!',
+            es: 'Lo entiendo perfectamente, pero es una norma de seguridad que aplica a todos los niños — no puedo hacer excepciones para nadie. ¡Espero que lo comprendan!',
+            fr: 'Je comprends tout à fait, mais c\'est une règle de sécurité qui s\'applique à tous les enfants — je ne peux faire d\'exception pour personne. J\'espère que vous comprenez!',
+          },
+          variants: {
+            en: ['I know it\'s frustrating, but it\'s the same rule for every family — no exceptions possible.', 'I wish I could help, but this rule is non-negotiable for all children.'],
+            es: ['Sé que es frustrante, pero es la misma norma para todas las familias — no hay excepciones.', 'Me encantaría poder ayudar, pero esta norma no es negociable para ningún niño.'],
+            fr: ['Je sais que c\'est frustrant, mais c\'est la même règle pour toutes les familles — pas d\'exceptions.', 'J\'aimerais pouvoir aider, mais cette règle est non négociable pour tous les enfants.'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'cinema',
+          parent_asks: {
+            en: 'Is there cinema this week?',
+            es: '¿Hay cine esta semana?',
+            fr: 'Il y a cinéma cette semaine?',
+            it: 'C\'è il cinema questa settimana?',
+          },
+          you_reply: {
+            en: 'Yes! Cinema is on this week — I\'ll let you know the exact day and time. No need to bring anything, it\'s all included.',
+            es: '¡Sí! Esta semana hay cine — les avisaré del día y la hora exactos. No hace falta traer nada, está todo incluido.',
+            fr: 'Oui! Le cinéma est au programme cette semaine — je vous dirai le jour et l\'heure exacts. Rien à apporter, tout est inclus.',
+          },
+          variants: {
+            en: ['Yes, cinema is in the programme — details to follow!', 'We\'ve got cinema this week — I\'ll send the exact details soon.'],
+            es: ['Sí, el cine está en el programa — ¡los detalles próximamente!', 'Tenemos cine esta semana — en breve les mando los detalles exactos.'],
+            fr: ['Oui, le cinéma est au programme — détails à suivre!', 'On a cinéma cette semaine — je vous envoie les détails bientôt.'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'cinema',
+          parent_asks: {
+            en: 'Are we going to watch a movie?',
+            es: '¿Vamos a ver una película?',
+            fr: 'On va voir un film?',
+            it: 'Andiamo a vedere un film?',
+          },
+          you_reply: {
+            en: 'Yes! Today we\'re going to the cinema — we watch a movie all together. Are you excited?',
+            es: '¡Sí! Hoy vamos al cine — vemos una película todos juntos. ¿Estás emocionado?',
+            fr: 'Oui! Aujourd\'hui on va au cinéma — on regarde un film tous ensemble. Tu as hâte?',
+          },
+          variants: {
+            en: ['Movie time! We\'re all watching together — grab a seat!', 'Yes! Cinema day today — all together, it\'s going to be great!'],
+            es: ['¡Hora de la peli! Todos juntos — ¡coge un sitio!', '¡Sí! Hoy es día de cine — todos juntos, ¡va a ser genial!'],
+            fr: ['C\'est l\'heure du film! Tous ensemble — prends une place!', 'Oui! Jour de cinéma aujourd\'hui — tous ensemble, ça va être super!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'merenda',
+          parent_asks: {
+            en: 'What time is snack?',
+            es: '¿A qué hora es la merienda?',
+            fr: 'Le goûter est à quelle heure?',
+            it: 'A che ora è la merenda?',
+          },
+          you_reply: {
+            en: 'Snack time is at 4pm every day — we have fruit, biscuits and juice. Your child is welcome to stay!',
+            es: 'La merienda es a las 16:00 todos los días — tenemos fruta, galletas y zumo. ¡Su hijo puede quedarse!',
+            fr: 'Le goûter est à 16h tous les jours — on a des fruits, des biscuits et du jus. Votre enfant peut rester!',
+          },
+          variants: {
+            en: ['Every day at 4 — fruit, biscuits and drinks. Included in the session!', '4pm daily: fruit, biscuits, juice — it\'s all part of the programme.'],
+            es: ['Todos los días a las 4 — fruta, galletas y bebidas. ¡Incluido en la sesión!', 'A las 4 todos los días: fruta, galletas, zumo — forma parte del programa.'],
+            fr: ['Chaque jour à 16h — fruits, biscuits et boissons. Inclus dans la session!', '16h tous les jours: fruits, biscuits, jus — ça fait partie du programme.'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'merenda',
+          parent_asks: {
+            en: 'I\'m hungry!',
+            es: '¡Tengo hambre!',
+            fr: 'J\'ai faim!',
+            it: 'Ho fame!',
+          },
+          you_reply: {
+            en: 'Snack time is at 4! We\'re almost there — fruit, biscuits and juice coming up. Can you wait just a little bit?',
+            es: '¡La merienda es a las 4! Ya casi — fruta, galletas y zumo en camino. ¿Puedes esperar un poquito?',
+            fr: 'Le goûter c\'est à 16h! On y est presque — fruits, biscuits et jus arrivent. Tu peux attendre encore un peu?',
+          },
+          variants: {
+            en: ['Almost snack time — hang in there, fruit and biscuits are coming!', 'Not long now till snack — we\'ve got fruit, biscuits and juice waiting!'],
+            es: ['¡Casi es hora de merendar — aguanta un poco, fruta y galletas en camino!', '¡Ya casi es la merienda — tenemos fruta, galletas y zumo esperando!'],
+            fr: ['Presque l\'heure du goûter — tiens bon, fruits et biscuits arrivent!', 'Plus longtemps avant le goûter — on a des fruits, biscuits et jus qui attendent!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'gonfiabili',
+          parent_asks: {
+            en: 'What time are the inflatables?',
+            es: '¿A qué hora son los hinchables?',
+            fr: 'Les gonflables c\'est à quelle heure?',
+            it: 'A che ora ci sono i gonfiabili?',
+          },
+          you_reply: {
+            en: 'The inflatables and trampolines are this evening from 6pm to 8pm. Don\'t forget socks for the trampolines!',
+            es: 'Los hinchables y camas elásticas son esta tarde de 18:00 a 20:00. ¡No olviden los calcetines para las camas elásticas!',
+            fr: 'Les gonflables et trampolines c\'est ce soir de 18h à 20h. N\'oubliez pas les chaussettes pour les trampolines!',
+          },
+          variants: {
+            en: ['6 to 8 this evening — inflatables and trampolines. Socks needed for the trampolines!', 'This evening from 6 to 8: inflatables AND trampolines — bring socks for the trampoline!'],
+            es: ['De 6 a 8 esta tarde — hinchables y camas elásticas. ¡Calcetines para las camas!', 'Esta tarde de 18 a 20: hinchables Y camas elásticas — ¡traigan calcetines para el trampolín!'],
+            fr: ['De 18h à 20h ce soir — gonflables et trampolines. Chaussettes pour les trampos!', 'Ce soir de 18h à 20h: gonflables ET trampolines — pensez aux chaussettes pour les trampolines!'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'gonfiabili',
+          parent_asks: {
+            en: 'When are the inflatables?',
+            es: '¿Cuándo son los hinchables?',
+            fr: 'Les gonflables c\'est quand?',
+            it: 'Quando ci sono i gonfiabili?',
+          },
+          you_reply: {
+            en: 'This evening! From 6 to 8 we have inflatables AND trampolines — so excited! Remember to bring your socks!',
+            es: '¡Esta tarde! De 6 a 8 tenemos hinchables Y camas elásticas — ¡qué emoción! ¡Recuerda traer tus calcetines!',
+            fr: 'Ce soir! De 18h à 20h on a gonflables ET trampolines — trop hâte! N\'oublie pas tes chaussettes!',
+          },
+          variants: {
+            en: ['Tonight 6 to 8 — inflatables and trampolines! Grab your socks!', 'This evening! Inflatables AND trampolines — socks on and let\'s bounce!'],
+            es: ['¡Esta noche de 6 a 8 — hinchables y camas elásticas! ¡A por los calcetines!', '¡Esta tarde! Hinchables Y camas elásticas — ¡calcetines puestos y a botar!'],
+            fr: ['Ce soir 18h-20h — gonflables et trampolines! Prends tes chaussettes!', 'Ce soir! Gonflables ET trampolines — chaussettes et on saute!'],
+          },
+        },
+        {
+          who: 'parents',
+          category: 'spettacoli',
+          parent_asks: {
+            en: 'Is there a show this week?',
+            es: '¿Hay espectáculo esta semana?',
+            fr: 'Il y a un spectacle cette semaine?',
+            it: 'C\'è uno spettacolo questa settimana?',
+          },
+          you_reply: {
+            en: 'Yes! There\'s a show this evening — it\'s for the whole family. We meet at the main square. We\'d love to see you there!',
+            es: '¡Sí! Esta tarde hay espectáculo — es para toda la familia. Nos vemos en la plaza principal. ¡Nos encantaría verlos allí!',
+            fr: 'Oui! Il y a un spectacle ce soir — c\'est pour toute la famille. On se retrouve sur la place principale. On espère vous y voir!',
+          },
+          variants: {
+            en: ['There\'s a family show tonight — main square, don\'t miss it!', 'Yes, there\'s a show this evening — all welcome, main square!'],
+            es: ['¡Esta noche hay espectáculo familiar — plaza principal, ¡no se lo pierdan!', 'Sí, esta tarde hay espectáculo — todos bienvenidos, plaza principal.'],
+            fr: ['Il y a un spectacle familial ce soir — place principale, à ne pas rater!', 'Oui, spectacle ce soir — tous bienvenus, place principale!'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'comportamento',
+          parent_asks: {
+            en: '[clinging to your arm]',
+            es: '[se agarra a tu brazo]',
+            fr: '[s\'accroche à ton bras]',
+            it: '[si aggrappa al tuo braccio]',
+          },
+          you_reply: {
+            en: 'Can you let go of me? I\'m not going anywhere — I\'m right here! I need my hands free to help everyone, but I\'ll stay close.',
+            es: '¿Me sueltas? ¡No me voy a ningún lado — estoy aquí! Necesito las manos libres para ayudar a todos, pero me quedo cerca.',
+            fr: 'Tu peux me lâcher? Je ne vais nulle part — je suis là! J\'ai besoin de mes mains pour aider tout le monde, mais je reste près de toi.',
+          },
+          variants: {
+            en: ['Let me go gently — I promise I\'m staying close! I just need my hands free.', 'I\'ll stay right here, I promise — can you let go? I need to help the others too.'],
+            es: ['Suéltame con cuidado — ¡te prometo que me quedo cerca! Solo necesito las manos libres.', 'Me quedo aquí, te lo prometo — ¿me sueltas? También necesito ayudar a los demás.'],
+            fr: ['Lâche-moi doucement — je promets que je reste près de toi! J\'ai juste besoin de mes mains libres.', 'Je reste là, promis — tu peux me lâcher? J\'ai besoin d\'aider les autres aussi.'],
+          },
+        },
+        {
+          who: 'kids',
+          category: 'comportamento',
+          parent_asks: {
+            en: '[starts pushing another child]',
+            es: '[empieza a empujar a otro niño]',
+            fr: '[commence à pousser un autre enfant]',
+            it: '[inizia a spingere un altro bambino]',
+          },
+          you_reply: {
+            en: 'Hey — no pushing! In the miniclub we use our words, not our hands. Can you tell me what happened?',
+            es: '¡Eh — sin empujar! En el miniclub usamos las palabras, no las manos. ¿Puedes contarme qué pasó?',
+            fr: 'Hé — pas de poussées! Au miniclub on utilise les mots, pas les mains. Tu peux me dire ce qui s\'est passé?',
+          },
+          variants: {
+            en: ['No hands! Use your words — what\'s going on? Tell me.', 'Stop! We don\'t push here. Use your words and tell me what the problem is.'],
+            es: ['¡Sin manos! Usa las palabras — ¿qué pasa? Cuéntame.', '¡Para! Aquí no se empuja. Usa las palabras y dime cuál es el problema.'],
+            fr: ['Stop! On n\'utilise pas ses mains ici. Dis-moi avec des mots ce qui se passe.', 'Pas de mains! Les mots — dis-moi ce qui s\'est passé.'],
           },
         },
       ]

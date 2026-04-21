@@ -12,6 +12,8 @@
         serata: '🌙 Serata', 'attivita-junior': '🏹 Junior/Teen', babysitting: '👶 Babysitting',
         emozioni: '💛 Emozioni', attività: '🎯 Attività', regole: '📏 Regole',
         pasti: '🥗 Pasti', luoghi: '🏕️ Luoghi', minikart: '🏎️ Minikart',
+        'eta-minima': '👶 Età Minima', cinema: '🎬 Cinema', merenda: '🍎 Merenda',
+        gonfiabili: '🎪 Gonfiabili', spettacoli: '🎭 Spettacoli', comportamento: '🤝 Comportamento',
       }
 
       function renderMiniclub() {
