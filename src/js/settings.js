@@ -114,14 +114,7 @@
         saveSession()
         updateStatsUI()
         renderVocabGrid(activeFilter, activeSearch)
-        const st = document.getElementById('reset-status')
-        if (st) {
-          st.style.color = 'var(--success)'
-          st.textContent = '✓ Statistiche azzerate'
-          setTimeout(() => {
-            st.textContent = ''
-          }, 3000)
-        }
+        showStatus(document.getElementById('reset-status'), '✓ Statistiche azzerate', 'ok', 3000)
       }
 
       function saveSettings() {
@@ -410,12 +403,10 @@
       async function loadProgressFromSupabase() {
         const st = document.getElementById('sync-status')
         if (!sb || !vocabIds) {
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ Mancano credenziali o vocab non importato.'
+          showStatus(st, '❌ Mancano credenziali o vocab non importato.', 'err')
           return
         }
-        st.style.color = 'var(--muted)'
-        st.textContent = '⏳ Caricamento...'
+        showStatus(st, '⏳ Caricamento...', 'wait')
         const ids = Object.values(vocabIds)
         const { data, error } = await sb
           .from('vocab_stats')
@@ -443,19 +434,16 @@
         saveStats()
         updateStatsUI()
         renderVocabGrid('all')
-        st.style.color = 'var(--success)'
-        st.textContent = '✓ Progressi caricati (' + data.length + ' voci).'
+        showStatus(st, '✓ Progressi caricati (' + data.length + ' voci).')
       }
 
       async function pushAllProgressToSupabase() {
         const st = document.getElementById('sync-status')
         if (!sb || !vocabIds) {
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ Mancano credenziali o vocab non importato.'
+          showStatus(st, '❌ Mancano credenziali o vocab non importato.', 'err')
           return
         }
-        st.style.color = 'var(--muted)'
-        st.textContent = '⏳ Invio in corso...'
+        showStatus(st, '⏳ Invio in corso...', 'wait')
         const rows = Object.entries(vocabIds).map(([idx, id]) => {
           const s = stats[idx] || { seen: 0, correct: 0 }
           return {
@@ -470,12 +458,10 @@
           .from('vocab_stats')
           .upsert(rows, { onConflict: 'vocab_id' })
         if (error) {
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ ' + error.message
+          showStatus(st, '❌ ' + error.message, 'err')
           return
         }
-        st.style.color = 'var(--success)'
-        st.textContent = '✓ ' + rows.length + ' voci sincronizzate.'
+        showStatus(st, '✓ ' + rows.length + ' voci sincronizzate.')
       }
 
       // ── Diagnosi voci ─────────────────────────────────────────────
