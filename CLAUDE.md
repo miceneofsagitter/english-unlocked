@@ -81,6 +81,7 @@ Ogni voce in ALL_VOCAB ha: `verb, emoji, it, type, language, example_en, example
 - `eu_stats_{lang}` — oggetto {idx: {seen, correct}}
 - `eu_vocab_ids_{lang}` — mapping indice → UUID Supabase
 - `eu_session` — streak, correct, total sessione corrente
+- `eu_voice_{lang}` — voce TTS selezionata per lingua ('Samantha', 'Monica', 'Audrey', ecc.)
 
 ### Stato JS globale
 ```js
@@ -122,14 +123,19 @@ Oppure direttamente da Impostazioni → form "Aggiungi nuovo vocabolo"
 - **Tab Vocabolario**: grid card + ricerca IT/EN + filtri tipo/tag + emoji watermark + `≈ simple` + checkbox learned
 - **Tab Quiz**: traduzione / fill-in-blank (fallback a traduzione se no example_en) / abbinamento, spaced repetition locale
 - **Tab Listening**: frasi pre-salvate, velocità variabile, connected speech, genera con AI
+  - Selezione voce persistente per lingua (`eu_voice_{lang}` in localStorage)
+  - Pill bandierine accento per regione (iOS: Samantha/Monica/Audrey/Amélie — Enhanced first)
+  - `getBestVoice(selectedVoice)` + `_renderAccentPills()` in `listening.js`
 - **Tab Tempi Verbali**: 14 tempi completi con schede di riferimento + 58 esercizi fill-in-blank
   - Schede: filtrabili per Past / Present / Future / Conditional (array `VERB_TENSES`)
   - Esercizi: PP vs PS · Continuous · Used to · Future · Conditional (array `TENSES_EX`, `grp` field)
 - **Tab Coach**: chat con claude-sonnet-4-6, system prompt da animatore
-- **Tab Miniclub**: dialoghi botta-risposta EN/ES/FR per miniclub estivo
-  - Filtri: Genitori (drop-off/pick-up, orari, info) · Bambini (benvenuto, attività, regole, pranzo, incoraggiamento)
+- **Tab Miniclub**: dialoghi botta-risposta EN/ES/FR per miniclub estivo (`miniclub-data.js` 2460 righe)
+  - Filtro audience: Genitori / Bambini (`filterMiniclub()`)
+  - Filtro scenario per location: Resort Le Dune + altri (`filterMiniclubScenario()`)
+  - Filtro categoria pratica: pranzo, orari, drop-pickup, allergie, età-minima, cinema, merenda, gonfiabili, spettacoli, comportamento, ... (`filterPracticeCategory()`)
   - Tap frase → copia negli appunti, IT piccolo sopra, lingua attiva grande sotto
-  - Array `MINICLUB_DIALOGUES` in `src/data/miniclub-data.js`, rendering con `renderMiniclub()` + `filterMiniclub()`
+  - Ogni dialogo ha campi `scenario`, `category`, `audience` in `MINICLUB_DIALOGUES`
 - **Selettore lingua** (EN/ES/FR) in header — progressi separati per lingua, search si azzera al cambio
 - **Impostazioni**: credenziali Supabase/Anthropic, sync vocab (upsert), pull da Supabase (tutte e 3 le lingue, con validazione anti-intrusi), form aggiungi voce, SQL setup hint
 
