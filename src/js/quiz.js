@@ -10,6 +10,9 @@
       let currentQuiz = null
       let quizStartCorrect = 0
       let quizStartTotal = 0
+      let quizTypeFilter = new Set()
+      let quizTagFilter = new Set()
+      let quizPool = []
 
       function _v(vocab, field) {
         if (field === 'verb') {
@@ -44,10 +47,78 @@
         if (btn) btn.classList.add('active')
       }
 
+      function computeQuizPool() {
+        let pool = ALL_VOCAB
+        if (quizTypeFilter.size > 0) pool = pool.filter(v => quizTypeFilter.has(v.type))
+        if (quizTagFilter.size > 0) pool = pool.filter(v => v.tags && v.tags.some(t => quizTagFilter.has(t)))
+        return pool
+      }
+
+      function _flashPoolCount(color) {
+        const el = document.getElementById('quizPoolCount')
+        if (!el) return
+        el.style.color = color
+        setTimeout(() => { el.style.color = 'var(--muted)' }, 700)
+      }
+
+      function toggleQuizType(type, btn) {
+        const wasActive = quizTypeFilter.has(type)
+        if (wasActive) { quizTypeFilter.delete(type); btn.classList.remove('active') }
+        else { quizTypeFilter.add(type); btn.classList.add('active') }
+        if (computeQuizPool().length < 4) {
+          if (wasActive) { quizTypeFilter.add(type); btn.classList.add('active') }
+          else { quizTypeFilter.delete(type); btn.classList.remove('active') }
+          _flashPoolCount('var(--error)')
+          return
+        }
+        updateQuizPoolCount()
+      }
+
+      function toggleQuizTag(tag, btn) {
+        const wasActive = quizTagFilter.has(tag)
+        if (wasActive) { quizTagFilter.delete(tag); btn.classList.remove('active') }
+        else { quizTagFilter.add(tag); btn.classList.add('active') }
+        if (computeQuizPool().length < 4) {
+          if (wasActive) { quizTagFilter.add(tag); btn.classList.add('active') }
+          else { quizTagFilter.delete(tag); btn.classList.remove('active') }
+          _flashPoolCount('var(--error)')
+          return
+        }
+        updateQuizPoolCount()
+      }
+
+      function refreshQuizPillVisibility() {
+        document.querySelectorAll('[data-quiz-type]').forEach(btn => {
+          const type = btn.dataset.quizType
+          if (quizTypeFilter.has(type)) { btn.style.display = ''; return }
+          let pool = ALL_VOCAB.filter(v => v.type === type)
+          if (quizTagFilter.size > 0) pool = pool.filter(v => v.tags && v.tags.some(t => quizTagFilter.has(t)))
+          btn.style.display = pool.length >= 1 ? '' : 'none'
+        })
+        document.querySelectorAll('[data-quiz-tag]').forEach(btn => {
+          const tag = btn.dataset.quizTag
+          if (quizTagFilter.has(tag)) { btn.style.display = ''; return }
+          let pool = ALL_VOCAB.filter(v => v.tags && v.tags.includes(tag))
+          if (quizTypeFilter.size > 0) pool = pool.filter(v => quizTypeFilter.has(v.type))
+          btn.style.display = pool.length >= 1 ? '' : 'none'
+        })
+      }
+
+      function updateQuizPoolCount() {
+        const pool = computeQuizPool()
+        const n = pool.length
+        const el = document.getElementById('quizPoolCount')
+        if (el) el.textContent = n + ' vocaboli'
+        const btn = document.getElementById('quizStartBtn')
+        if (btn) btn.disabled = n < 4
+        refreshQuizPillVisibility()
+      }
+
       function showQuizStart() {
         document.getElementById('quizCard').style.display = 'none'
         document.getElementById('quizStartCard').style.display = 'block'
         document.getElementById('quizEndCard').style.display = 'none'
+        updateQuizPoolCount()
       }
 
       function stopQuiz() {
@@ -74,7 +145,8 @@
       }
 
       function pickNextVocab() {
-        return [...ALL_VOCAB].sort((a, b) => {
+        const pool = quizPool.length >= 4 ? quizPool : ALL_VOCAB
+        return [...pool].sort((a, b) => {
           const ia = ALL_VOCAB.indexOf(a),
             ib = ALL_VOCAB.indexOf(b)
           const sa = stats[ia] || { seen: 0, correct: 0 }
@@ -128,11 +200,10 @@
       }
 
       function generateMatchQuiz() {
-        const isPhrasal = ALL_VOCAB.some((v) => v.type === 'phrasal')
-        let pool = isPhrasal
-          ? ALL_VOCAB.filter((v) => v.type === 'phrasal')
-          : ALL_VOCAB
-        if (pool.length < 4) pool = ALL_VOCAB
+        const source = quizPool.length >= 4 ? quizPool : ALL_VOCAB
+        const isPhrasal = source.some((v) => v.type === 'phrasal')
+        let pool = isPhrasal ? source.filter((v) => v.type === 'phrasal') : source
+        if (pool.length < 4) pool = source
         
         // Remove duplicates by verb field - keep first occurrence
         const seen = new Set()
@@ -152,7 +223,9 @@
       }
 
       function startQuiz() {
-        if (ALL_VOCAB.length < 4) return
+        quizPool = computeQuizPool()
+        if (quizPool.length < 4) quizPool = ALL_VOCAB
+        if (quizPool.length < 4) return
         quizRunning = true
         quizSessionQ = 0
         quizStartCorrect = session.correct
@@ -434,4 +507,5 @@
       // Init quiz panel
       renderVocabGrid('all')
       renderTensesGrid('all')
+      updateQuizPoolCount()
 

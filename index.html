@@ -767,6 +767,29 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
               </button>
             </div>
           </div>
+          <div style="margin-bottom:14px;">
+            <div style="font-size:0.62rem;color:var(--muted);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">Tipo</div>
+            <div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;-webkit-overflow-scrolling:touch;">
+              <button class="filter-pill" data-quiz-type="phrasal" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('phrasal',this)">Phrasal</button>
+              <button class="filter-pill" data-quiz-type="idiom" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('idiom',this)">Idiom</button>
+              <button class="filter-pill" data-quiz-type="colloquial" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('colloquial',this)">Colloquial</button>
+              <button class="filter-pill" data-quiz-type="emotion" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('emotion',this)">Emotion</button>
+              <button class="filter-pill" data-quiz-type="opinion" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('opinion',this)">Opinion</button>
+              <button class="filter-pill" data-quiz-type="clarification" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('clarification',this)">Clarif.</button>
+              <button class="filter-pill" data-quiz-type="verb" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('verb',this)">Verb</button>
+              <button class="filter-pill" data-quiz-type="beach" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizType('beach',this)">🏖️ Beach</button>
+            </div>
+            <div style="font-size:0.62rem;color:var(--muted);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin:8px 0 4px;">Tag</div>
+            <div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;-webkit-overflow-scrolling:touch;">
+              <button class="filter-pill" data-quiz-tag="base" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizTag('base',this)">⭐ Base</button>
+              <button class="filter-pill" data-quiz-tag="bambini" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizTag('bambini',this)">👧 Bambini</button>
+              <button class="filter-pill" data-quiz-tag="genitori" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizTag('genitori',this)">👪 Genitori</button>
+              <button class="filter-pill" data-quiz-tag="evento" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizTag('evento',this)">🎉 Evento</button>
+              <button class="filter-pill" data-quiz-tag="sicurezza" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizTag('sicurezza',this)">🦺 Sicurezza</button>
+              <button class="filter-pill" data-quiz-tag="mare" style="padding:5px 10px;min-height:auto;font-size:0.75rem;flex-shrink:0;" onclick="toggleQuizTag('mare',this)">🏖️ Mare</button>
+            </div>
+            <div id="quizPoolCount" style="font-size:0.75rem;color:var(--muted);text-align:center;margin-top:8px;font-family:'JetBrains Mono',monospace;transition:color 0.3s;"></div>
+          </div>
           <div
             id="quizNoVocabMsg"
             style="

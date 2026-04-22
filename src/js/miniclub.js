@@ -5,6 +5,8 @@
       let practiceRevealed = false
       let practiceWho = 'both'
       let practiceCategory = 'all'
+      let practiceLearnedOnly = false
+      let miniclubLearned = new Set(JSON.parse(localStorage.getItem('eu_miniclub_learned') || '[]'))
 
       const PRACTICE_CATEGORY_LABELS = {
         pranzo: '🍽️ Pranzo', orari: '🕐 Orari', 'drop-pickup': '🚗 Arrivi/Uscite',
@@ -201,16 +203,40 @@
         }
       }
 
+      function saveMiniclubLearned() {
+        localStorage.setItem('eu_miniclub_learned', JSON.stringify([...miniclubLearned]))
+      }
+
+      function togglePracticeLearned(globalIdx) {
+        if (miniclubLearned.has(globalIdx)) miniclubLearned.delete(globalIdx)
+        else miniclubLearned.add(globalIdx)
+        saveMiniclubLearned()
+        const list = getPracticeList()
+        if (practiceIdx >= list.length) practiceIdx = Math.max(0, list.length - 1)
+        practiceRevealed = false
+        renderPracticeCard()
+      }
+
+      function filterPracticeLearnedOnly(btn) {
+        practiceLearnedOnly = !practiceLearnedOnly
+        practiceIdx = 0
+        practiceRevealed = false
+        btn.classList.toggle('active', practiceLearnedOnly)
+        renderPracticeCard()
+      }
+
       function getPracticeList() {
-        let list = MINICLUB_PRACTICE
+        let list = MINICLUB_PRACTICE.map((c, i) => ({ ...c, _idx: i }))
         if (practiceWho !== 'both') list = list.filter(c => c.who === practiceWho)
         if (practiceCategory !== 'all') list = list.filter(c => c.category === practiceCategory)
+        if (practiceLearnedOnly) list = list.filter(c => !miniclubLearned.has(c._idx))
         return list
       }
 
       function filterPracticeWho(who, btn) {
         practiceWho = who
         practiceCategory = 'all'
+        practiceLearnedOnly = false
         practiceIdx = 0
         practiceRevealed = false
         document.querySelectorAll('.mc-practice-who-btn').forEach(b => b.classList.remove('active'))
@@ -220,6 +246,7 @@
 
       function filterPracticeCategory(cat, btn) {
         practiceCategory = cat
+        practiceLearnedOnly = false
         practiceIdx = 0
         practiceRevealed = false
         document.querySelectorAll('.mc-practice-cat-btn').forEach(b => b.classList.remove('active'))
@@ -241,16 +268,24 @@
           return `<button class="filter-pill mc-practice-cat-btn${practiceCategory === cat ? ' active' : ''}" onclick="filterPracticeCategory('${cat}', this)">${escHtml(label)}</button>`
         }).join('')
 
+        const learnedTotal = [...MINICLUB_PRACTICE.keys()].filter(i => miniclubLearned.has(i)).length
+        const toLearnCount = MINICLUB_PRACTICE.length - learnedTotal
+
         const whoFilterHtml = `
-          <div class="filter-pills" style="margin-bottom:0.75rem;">
-            <button class="filter-pill mc-practice-who-btn${practiceWho === 'both' ? ' active' : ''}" onclick="filterPracticeWho('both', this)">Tutti</button>
-            <button class="filter-pill mc-practice-who-btn${practiceWho === 'parents' ? ' active' : ''}" onclick="filterPracticeWho('parents', this)">👨‍👩‍👧‍👦 Genitori</button>
-            <button class="filter-pill mc-practice-who-btn${practiceWho === 'kids' ? ' active' : ''}" onclick="filterPracticeWho('kids', this)">👧 Bambini</button>
+          <div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-bottom:0.5rem;padding-bottom:2px;">
+            <button class="filter-pill mc-practice-who-btn${practiceWho === 'both' ? ' active' : ''}" style="flex-shrink:0;" onclick="filterPracticeWho('both', this)">Tutti</button>
+            <button class="filter-pill mc-practice-who-btn${practiceWho === 'parents' ? ' active' : ''}" style="flex-shrink:0;" onclick="filterPracticeWho('parents', this)">👪 Genitori</button>
+            <button class="filter-pill mc-practice-who-btn${practiceWho === 'kids' ? ' active' : ''}" style="flex-shrink:0;" onclick="filterPracticeWho('kids', this)">👧 Bambini</button>
+            ${toLearnCount > 0
+              ? `<button class="filter-pill${practiceLearnedOnly ? ' active' : ''}" style="flex-shrink:0;" onclick="filterPracticeLearnedOnly(this)">${practiceLearnedOnly ? '✕ Solo da fare' : '📚 Da fare (' + toLearnCount + ')'}</button>`
+              : `<span style="font-size:0.75rem;color:var(--success);white-space:nowrap;align-self:center;flex-shrink:0;">🎉 Tutte imparate!</span>`
+            }
           </div>
-          <div class="filter-pills" style="margin-bottom:1.25rem;">
-            <button class="filter-pill mc-practice-cat-btn${practiceCategory === 'all' ? ' active' : ''}" onclick="filterPracticeCategory('all', this)">Tutti i temi</button>
-            ${catPills}
-          </div>`
+          <div class="mc-cat-scroll" style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-bottom:0.5rem;padding-bottom:2px;">
+            <button class="filter-pill mc-practice-cat-btn${practiceCategory === 'all' ? ' active' : ''}" style="flex-shrink:0;" onclick="filterPracticeCategory('all', this)">Tutti</button>
+            ${catPills.replace(/class="filter-pill/g, 'style="flex-shrink:0;" class="filter-pill')}
+          </div>
+          <div style="font-size:0.72rem;color:var(--muted);font-family:'JetBrains Mono',monospace;text-align:right;margin-bottom:0.75rem;">${learnedTotal} / ${MINICLUB_PRACTICE.length} imparate ✓</div>`
 
         const list = getPracticeList()
         if (!list || list.length === 0) {
@@ -317,9 +352,17 @@
             </div>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1.25rem;">
               <button onclick="navigatePractice(-1)" class="filter-pill" ${practiceIdx === 0 ? 'disabled style="opacity:0.3;"' : ''}>← Prec</button>
+              <button onclick="togglePracticeLearned(${card._idx})" style="background:${miniclubLearned.has(card._idx) ? 'rgba(0,229,160,0.15)' : 'none'};border:1px solid ${miniclubLearned.has(card._idx) ? 'rgba(0,229,160,0.5)' : 'rgba(255,255,255,0.15)'};color:${miniclubLearned.has(card._idx) ? 'var(--success)' : 'var(--muted)'};border-radius:20px;padding:0.4rem 0.9rem;font-size:0.85rem;cursor:pointer;transition:all 0.2s;">${miniclubLearned.has(card._idx) ? '✓ Imparata' : '○ Segna imparata'}</button>
               <button onclick="navigatePractice(1)" class="filter-pill" ${practiceIdx === total - 1 ? 'disabled style="opacity:0.3;"' : ''}>Pross →</button>
             </div>
           </div>`
+
+        // scroll active category pill into center
+        const catScroll = section.querySelector('.mc-cat-scroll')
+        const activeCat = section.querySelector('.mc-practice-cat-btn.active')
+        if (catScroll && activeCat) {
+          catScroll.scrollLeft = activeCat.offsetLeft - catScroll.offsetWidth / 2 + activeCat.offsetWidth / 2
+        }
       }
 
       function revealPracticeReply() {
