@@ -213,20 +213,5 @@
         speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices()
       }
 
-      function speakText(text, rate) {
-        if (typeof speechSynthesis === 'undefined') return
-        speechSynthesis.cancel()
-        const doSpeak = () => {
-          const u = new SpeechSynthesisUtterance(text)
-          u.lang = getLangCode()
-          u.rate = rate || 0.9
-          const v = getBestVoice(); if (v) u.voice = v
-          speechSynthesis.speak(u)
-        }
-        if (speechSynthesis.getVoices().length === 0) {
-          setTimeout(doSpeak, 250)
-        } else {
-          doSpeak()
-        }
-      }
+      function speakText(text, rate) { playSpeech(text, rate) }
 
