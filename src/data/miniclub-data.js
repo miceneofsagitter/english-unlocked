@@ -550,6 +550,134 @@
         },
         {
           audience: 'kids',
+          scenario: 'spostamenti',
+          label: '🚶 Spostamenti',
+          exchanges: [
+            {
+              it: 'Seguitemi!',
+              en: 'Follow me!',
+              es: '¡Seguidme!',
+              fr: 'Suivez-moi!',
+              variants: {
+                en: ["Come on, follow me — stay close!", "Everyone follow me, let's go!"],
+                es: ["¡Venga, seguidme — quedaos cerca!", "¡Todos detrás de mí, vamos!"],
+                fr: ["Allez, suivez-moi — restez proches!", "Tout le monde derrière moi, on y va!"],
+              },
+            },
+            {
+              it: 'Guarda avanti!',
+              en: 'Look ahead!',
+              es: '¡Mira al frente!',
+              fr: 'Regarde devant toi!',
+              variants: {
+                en: ["Eyes forward — don't look back!", "Keep your eyes ahead, okay?"],
+                es: ["¡Ojos al frente — no mires atrás!", "¡Mira hacia adelante, de acuerdo?"],
+                fr: ["Les yeux devant — ne regarde pas derrière!", "Garde les yeux devant toi, d'accord?"],
+              },
+            },
+            {
+              it: 'Non guardarti indietro!',
+              en: "Don't look back!",
+              es: '¡No mires atrás!',
+              fr: 'Ne regarde pas en arrière!',
+              variants: {
+                en: ["Keep moving, eyes forward!", "Forward only — no looking back!"],
+                es: ["¡Sigue adelante, ojos al frente!", "¡Hacia adelante — nada de mirar atrás!"],
+                fr: ["Avance, regarde devant toi!", "En avant seulement — pas question de regarder en arrière!"],
+              },
+            },
+            {
+              it: 'Non fermarti!',
+              en: "Don't stop!",
+              es: '¡No te pares!',
+              fr: "Ne t'arrête pas!",
+              variants: {
+                en: ["Keep going, don't stop!", "No stopping — keep walking!"],
+                es: ["¡Sigue, no te pares!", "¡Sin parar — sigue caminando!"],
+                fr: ["Continue, ne t'arrête pas!", "Pas d'arrêt — continue à marcher!"],
+              },
+            },
+            {
+              it: 'Non correte!',
+              en: "No running!",
+              es: '¡No corráis!',
+              fr: 'Pas de course!',
+              variants: {
+                en: ["Walk, don't run!", "Slow down — walking only!"],
+                es: ["¡Camina, no corras!", "¡Más despacio — solo se camina!"],
+                fr: ["Marche, ne cours pas!", "Doucement — on marche seulement!"],
+              },
+            },
+            {
+              it: 'Rallentate!',
+              en: 'Slow down!',
+              es: '¡Más despacio!',
+              fr: 'Ralentissez!',
+              variants: {
+                en: ["Easy, slow it down!", "Take it easy — not so fast!"],
+                es: ["¡Tranquilos, más despacio!", "¡Con calma — no tan rápido!"],
+                fr: ["Doucement, ralentissez!", "Du calme — pas si vite!"],
+              },
+            },
+            {
+              it: 'Andiamo di fretta!',
+              en: "We're in a hurry!",
+              es: '¡Tenemos prisa!',
+              fr: 'On est pressés!',
+              variants: {
+                en: ["Come on, we're running late!", "Quick, we need to hurry!"],
+                es: ["¡Venga, llevamos retraso!", "¡Rápido, hay que darse prisa!"],
+                fr: ["Allez, on est en retard!", "Vite, il faut se dépêcher!"],
+              },
+            },
+            {
+              it: 'State insieme!',
+              en: 'Stay together!',
+              es: '¡Quedaos juntos!',
+              fr: 'Restez ensemble!',
+              variants: {
+                en: ["Stick together — nobody goes off alone!", "All together, don't spread out!"],
+                es: ["¡Juntos — nadie se va solo!", "¡Todos juntos, no os separéis!"],
+                fr: ["Restez groupés — personne ne part seul!", "Tous ensemble, ne vous dispersez pas!"],
+              },
+            },
+            {
+              it: 'State in fila!',
+              en: 'Line up!',
+              es: '¡Poneos en fila!',
+              fr: 'Mettez-vous en file!',
+              variants: {
+                en: ["Get in a line, everyone!", "Form a line — one behind the other!"],
+                es: ["¡Formad una fila, todo el mundo!", "¡En fila — uno detrás del otro!"],
+                fr: ["Mettez-vous en ligne, tout le monde!", "En file — l'un derrière l'autre!"],
+              },
+            },
+            {
+              it: 'Aspettate qui',
+              en: 'Wait here',
+              es: 'Esperad aquí',
+              fr: 'Attendez ici',
+              variants: {
+                en: ["Stay right here, I'll be back!", "Don't move — wait here for me!"],
+                es: ["¡Quedaos aquí, ya vuelvo!", "¡No os mováis — esperadme aquí!"],
+                fr: ["Restez là, je reviens!", "Ne bougez pas — attendez-moi ici!"],
+              },
+            },
+            {
+              it: 'Tenetevi al corrimano',
+              en: 'Hold the handrail',
+              es: 'Agarraos a la barandilla',
+              fr: 'Tenez la rampe',
+              variants: {
+                en: ["Grab the handrail — safety first!", "One hand on the railing, please!"],
+                es: ["¡Agarrad el pasamanos — primero la seguridad!", "¡Una mano en la barandilla, por favor!"],
+                fr: ["Tenez la rampe — sécurité d'abord!", "Une main sur la rampe, s'il vous plaît!"],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'kids',
           scenario: 'meals',
           label: '🍽️ Pranzo e Merenda',
           exchanges: [
