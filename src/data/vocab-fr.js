@@ -10029,5 +10029,16 @@ const FR_VOCAB = [
     ],
     "context_note": "",
     "concept": "verb_withdraw"
-  }
+  },
+  { "verb": "Suivez-moi!", "emoji": "🫵", "it": "Seguitemi!", "type": "colloquial", "language": "fr", "example_en": "Suivez-moi! Restez proches.", "example_it": "Seguitemi! Restate vicini.", "tags": ["bambini", "spostamenti"], "context_note": "comando di gruppo durante spostamenti", "concept": "" },
+  { "verb": "Regarde devant toi!", "emoji": "👀", "it": "Guarda avanti!", "type": "colloquial", "language": "fr", "example_en": "Regarde devant toi! Ne regarde pas en arrière.", "example_it": "Guarda avanti! Non guardarti indietro.", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "", "concept": "" },
+  { "verb": "Ne regarde pas en arrière!", "emoji": "🙈", "it": "Non guardarti indietro!", "type": "colloquial", "language": "fr", "example_en": "Ne regarde pas en arrière — continue à marcher!", "example_it": "Non guardarti indietro — continua a camminare!", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Ne t'arrête pas!", "emoji": "⏩", "it": "Non fermarti!", "type": "colloquial", "language": "fr", "example_en": "Ne t'arrête pas — on y est presque!", "example_it": "Non fermarti — ci siamo quasi!", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Pas de course!", "emoji": "🚫", "it": "Non correte!", "type": "colloquial", "language": "fr", "example_en": "Pas de course! On marche, s'il vous plaît.", "example_it": "Non correte! Camminate, per favore.", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "", "concept": "" },
+  { "verb": "Ralentissez!", "emoji": "🐢", "it": "Rallentate!", "type": "colloquial", "language": "fr", "example_en": "Ralentissez! Pas si vite.", "example_it": "Rallentate! Non così veloci.", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "On est pressés!", "emoji": "⚡", "it": "Andiamo di fretta!", "type": "colloquial", "language": "fr", "example_en": "Allez, on est pressés!", "example_it": "Forza, andiamo di fretta!", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Restez ensemble!", "emoji": "🤝", "it": "State insieme!", "type": "colloquial", "language": "fr", "example_en": "Restez ensemble — personne ne part seul!", "example_it": "State insieme — nessuno si allontana da solo!", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "", "concept": "" },
+  { "verb": "Mettez-vous en file!", "emoji": "📏", "it": "State in fila!", "type": "colloquial", "language": "fr", "example_en": "Mettez-vous en file! L'un derrière l'autre.", "example_it": "State in fila! Uno dietro l'altro.", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Attendez ici", "emoji": "✋", "it": "Aspettate qui", "type": "colloquial", "language": "fr", "example_en": "Attendez ici — je reviens!", "example_it": "Aspettate qui — torno subito.", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Tenez la rampe", "emoji": "🪜", "it": "Tenetevi al corrimano", "type": "colloquial", "language": "fr", "example_en": "Tenez la rampe — sécurité d'abord!", "example_it": "Tenetevi al corrimano — prima la sicurezza!", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "sulle scale", "concept": "" }
 ];

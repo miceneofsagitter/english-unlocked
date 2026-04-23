@@ -10482,5 +10482,16 @@ const ES_VOCAB = [
     ],
     "context_note": "",
     "concept": ""
-  }
+  },
+  { "verb": "¡Seguidme!", "emoji": "🫵", "it": "Seguitemi!", "type": "colloquial", "language": "es", "example_en": "¡Seguidme! Quedaos cerca.", "example_it": "Seguitemi! Restate vicini.", "tags": ["bambini", "spostamenti"], "context_note": "comando di gruppo durante spostamenti", "concept": "" },
+  { "verb": "¡Mira al frente!", "emoji": "👀", "it": "Guarda avanti!", "type": "colloquial", "language": "es", "example_en": "¡Mira al frente! No mires atrás.", "example_it": "Guarda avanti! Non guardarti indietro.", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "", "concept": "" },
+  { "verb": "¡No mires atrás!", "emoji": "🙈", "it": "Non guardarti indietro!", "type": "colloquial", "language": "es", "example_en": "¡No mires atrás — sigue caminando!", "example_it": "Non guardarti indietro — continua a camminare!", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "¡No te pares!", "emoji": "⏩", "it": "Non fermarti!", "type": "colloquial", "language": "es", "example_en": "¡No te pares — ya casi llegamos!", "example_it": "Non fermarti — ci siamo quasi!", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "¡No corráis!", "emoji": "🚫", "it": "Non correte!", "type": "colloquial", "language": "es", "example_en": "¡No corráis! Caminad, por favor.", "example_it": "Non correte! Camminate, per favore.", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "", "concept": "" },
+  { "verb": "¡Más despacio!", "emoji": "🐢", "it": "Rallentate!", "type": "colloquial", "language": "es", "example_en": "¡Más despacio! No tan rápido.", "example_it": "Rallentate! Non così veloci.", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "¡Tenemos prisa!", "emoji": "⚡", "it": "Andiamo di fretta!", "type": "colloquial", "language": "es", "example_en": "¡Venga, tenemos prisa!", "example_it": "Forza, andiamo di fretta!", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "¡Quedaos juntos!", "emoji": "🤝", "it": "State insieme!", "type": "colloquial", "language": "es", "example_en": "¡Quedaos juntos — nadie se va solo!", "example_it": "State insieme — nessuno si allontana da solo!", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "", "concept": "" },
+  { "verb": "¡Poneos en fila!", "emoji": "📏", "it": "State in fila!", "type": "colloquial", "language": "es", "example_en": "¡Poneos en fila! Uno detrás del otro.", "example_it": "State in fila! Uno dietro l'altro.", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Esperad aquí", "emoji": "✋", "it": "Aspettate qui", "type": "colloquial", "language": "es", "example_en": "Esperad aquí — ya vuelvo.", "example_it": "Aspettate qui — torno subito.", "tags": ["bambini", "spostamenti"], "context_note": "", "concept": "" },
+  { "verb": "Agarraos a la barandilla", "emoji": "🪜", "it": "Tenetevi al corrimano", "type": "colloquial", "language": "es", "example_en": "Agarraos a la barandilla — ¡la seguridad primero!", "example_it": "Tenetevi al corrimano — prima la sicurezza!", "tags": ["bambini", "spostamenti", "sicurezza"], "context_note": "sulle scale", "concept": "" }
 ];
