@@ -138,6 +138,12 @@
         const flags = { en: '🇬🇧 EN', es: '🇪🇸 ES', fr: '🇫🇷 FR' }
         const togText = document.getElementById('langToggleText')
         if (togText) togText.textContent = flags[lang] || lang
+
+        const phrasalBtn = document.querySelector('[onclick="showPanel(\'phrasal\', this)"]')
+        if (phrasalBtn) phrasalBtn.style.display = lang === 'en' ? '' : 'none'
+        if (lang !== 'en' && document.getElementById('panel-phrasal')?.classList.contains('active')) {
+          showPanel('vocab', document.querySelector('[onclick="showPanel(\'vocab\', this)"]'))
+        }
       }
 
       const SEARCH_PLACEHOLDER = {
@@ -416,6 +422,7 @@
           document.getElementById('quizStartCard').style.display = 'block'
           document.getElementById('quizEndCard').style.display = 'none'
         }
+        if (name === 'phrasal') initPhrasalTab()
       }
 
       // ============================================================
