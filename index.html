@@ -443,6 +443,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
         <button class="tab-btn" onclick="showPanel('miniclub', this)">
           <span class="icon">🎠</span>Miniclub
         </button>
+        <button class="tab-btn" onclick="showPanel('phrasal', this)">
+          <span class="icon">🔗</span>Phrasal
+        </button>
       </div>
 
       <!-- ===== TAB 1: VOCABOLARIO ===== -->
@@ -1255,6 +1258,28 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
           <div id="miniclub-practice-section" style="display:none;"></div>
         </div>
       </div>
+      <!-- ===== TAB 7: PHRASAL VERB QUIZ ===== -->
+      <div id="panel-phrasal" class="panel">
+        <div class="panel-header">
+          <h2>🔗 Phrasal Verb Quiz</h2>
+          <p>Indovina la particella e il significato</p>
+        </div>
+        <div class="panel-content">
+          <div class="card" style="margin-bottom:1.25rem;">
+            <div class="progress-bar">
+              <div class="progress-fill" id="phrasal-progress-fill" style="width:0%"></div>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); margin-top:0.4rem;">
+              <span id="phrasal-progress-label">0 / 0</span>
+              <span id="phrasal-score-display">✅ 0  |  ❌ 0</span>
+            </div>
+          </div>
+          <div class="card" id="phrasal-card">
+            <div style="text-align:center; color:var(--muted); padding:2rem;">Caricamento...</div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- end .app -->
 
@@ -1276,5 +1301,6 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
     <script src="src/js/settings.js"></script>
     <script src="src/js/coach.js"></script>
     <script src="src/js/miniclub.js"></script>
+    <script src="src/js/phrasal.js"></script>
   </body>
 </html>
