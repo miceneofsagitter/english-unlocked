@@ -144,17 +144,42 @@
         document.getElementById('quizEndStreak').textContent = qStreak
       }
 
+      let _recentPicked = []
+
       function pickNextVocab() {
         const pool = quizPool.length >= 4 ? quizPool : ALL_VOCAB
-        return [...pool].sort((a, b) => {
-          const ia = ALL_VOCAB.indexOf(a),
-            ib = ALL_VOCAB.indexOf(b)
-          const sa = stats[ia] || { seen: 0, correct: 0 }
-          const sb = stats[ib] || { seen: 0, correct: 0 }
-          const scoreA = sa.seen === 0 ? -1 : sa.correct / sa.seen
-          const scoreB = sb.seen === 0 ? -1 : sb.correct / sb.seen
-          return scoreA - scoreB
-        })[0]
+        // Exclude last 3 picked to avoid consecutive repeats
+        const candidates = pool.filter(v => !_recentPicked.includes(ALL_VOCAB.indexOf(v)))
+        const src = candidates.length >= 4 ? candidates : pool
+
+        // Weight: unseen=2.0, weak(≤0.5)=1.5, ok(≤0.8)=0.7, strong>0.8=0.2
+        const weighted = src.map(v => {
+          const i = ALL_VOCAB.indexOf(v)
+          const s = stats[i] || { seen: 0, correct: 0 }
+          let w
+          if (s.seen === 0) w = 2.0
+          else {
+            const r = s.correct / s.seen
+            if (r <= 0.5) w = 1.5
+            else if (r <= 0.8) w = 0.7
+            else w = 0.2
+          }
+          return { v, w }
+        })
+
+        // Weighted random pick
+        const total = weighted.reduce((s, x) => s + x.w, 0)
+        let rnd = Math.random() * total
+        let pick = weighted[weighted.length - 1].v
+        for (const { v, w } of weighted) {
+          rnd -= w
+          if (rnd <= 0) { pick = v; break }
+        }
+
+        const idx = ALL_VOCAB.indexOf(pick)
+        _recentPicked.push(idx)
+        if (_recentPicked.length > 3) _recentPicked.shift()
+        return pick
       }
 
       function generateTranslationQuiz(target) {
@@ -230,6 +255,7 @@
         quizSessionQ = 0
         quizStartCorrect = session.correct
         quizStartTotal = session.total
+        _recentPicked = []
         document.getElementById('quizCard').style.display = 'block'
         document.getElementById('quizStartCard').style.display = 'none'
         document.getElementById('quizEndCard').style.display = 'none'
@@ -311,7 +337,12 @@
         document.getElementById('quizProgressFill').style.width =
           (((quizSessionQ - 1) / quizMaxQ) * 100).toFixed(1) + '%'
 
-        const type = ['translation', 'fill', 'match'][(quizSessionQ - 1) % 3]
+        // Weighted random type: match less frequent, prefer fill when examples exist
+        const typeRoll = Math.random()
+        let type
+        if (typeRoll < 0.15) type = 'match'
+        else if (typeRoll < 0.55) type = 'fill'
+        else type = 'translation'
         const target = pickNextVocab()
         const idx = ALL_VOCAB.indexOf(target)
         if (!stats[idx]) stats[idx] = { seen: 0, correct: 0 }
