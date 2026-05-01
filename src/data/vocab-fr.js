@@ -2876,16 +2876,17 @@ const FR_VOCAB = [
     "language": "fr",
     "type": "verb",
     "verb": "exclure",
-    "emoji": "📝",
+    "emoji": "🚫",
     "simple": "",
-    "it": "escludere",
+    "it": "escludere / lasciare fuori",
     "example_en": "On n'exclut personne du jeu.",
-    "example_it": "Escludiamo quell'opzione.",
+    "example_it": "Non escludiamo nessuno dal gioco.",
     "tags": [
-      "base"
+      "base",
+      "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_leave_out"
   },
   {
     "language": "fr",
@@ -2906,16 +2907,17 @@ const FR_VOCAB = [
     "language": "fr",
     "type": "verb",
     "verb": "se gaver / s'empiffrer",
-    "emoji": "📝",
+    "emoji": "🐺",
     "simple": "",
-    "it": "abbuffarsi",
+    "it": "abbuffarsi / ingoiare in fretta",
     "example_en": "N'empiffre pas le goûter !",
     "example_it": "Si è abbuffato di pizza.",
     "tags": [
-      "bambini"
+      "bambini",
+      "cibo"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_wolf_down"
   },
   {
     "language": "fr",
@@ -3056,16 +3058,17 @@ const FR_VOCAB = [
     "language": "fr",
     "type": "verb",
     "verb": "discuter / parler de",
-    "emoji": "📝",
+    "emoji": "💬",
     "simple": "",
-    "it": "discutere / parlare",
+    "it": "discutere / parlare di",
     "example_en": "On discute des règles ensemble.",
-    "example_it": "Discutiamo il tema.",
+    "example_it": "Parliamo insieme delle regole.",
     "tags": [
-      "base"
+      "base",
+      "comunicazione"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_talk_about"
   },
   {
     "language": "fr",
@@ -3146,16 +3149,17 @@ const FR_VOCAB = [
     "language": "fr",
     "type": "verb",
     "verb": "paniquer / avoir peur",
-    "emoji": "📝",
+    "emoji": "😱",
     "simple": "",
-    "it": "spaventarsi",
+    "it": "spaventarsi / andare nel panico",
     "example_en": "Ne panique pas, c'est normal !",
-    "example_it": "Si è spaventato molto.",
+    "example_it": "Non andare nel panico, è normale!",
     "tags": [
-      "bambini"
+      "bambini",
+      "emozioni"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_freak_out"
   },
   {
     "language": "fr",
@@ -3570,7 +3574,7 @@ const FR_VOCAB = [
     "language": "fr",
     "type": "verb",
     "verb": "se rafraîchir",
-    "emoji": "📝",
+    "emoji": "🍹",
     "simple": "",
     "it": "rinfrescarsi / calmarsi",
     "example_en": "Va te rafraîchir à l'ombre.",
@@ -3580,7 +3584,7 @@ const FR_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_cool_off"
   },
   {
     "language": "fr",

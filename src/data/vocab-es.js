@@ -1693,7 +1693,7 @@ const ES_VOCAB = [
       "bambini"
     ],
     "context_note": "",
-    "concept": ""
+    "concept": "pv_cool_off"
   },
   {
     "language": "es",
