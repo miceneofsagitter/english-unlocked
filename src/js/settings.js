@@ -164,59 +164,65 @@
         st.style.color = 'var(--muted)'
         st.textContent = '⏳ Sync in corso...'
 
-        const source =
-          typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined'
-            ? ALL_VOCAB_FOR_EXERCISES
-            : ALL_VOCAB
-        const rows = source.map((v) => ({
-          verb: v.verb || v.en,
-          type: v.type,
-          language: v.language || 'en',
-          it: v.it,
-          example_en: v.example_en || '',
-          example_it: v.example_it || '',
-          tags: v.tags || [],
-        }))
+        try {
+          const source =
+            typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined'
+              ? ALL_VOCAB_FOR_EXERCISES
+              : ALL_VOCAB
+          const rows = source.map((v) => ({
+            verb: v.verb || v.en,
+            type: v.type,
+            language: v.language || 'en',
+            it: v.it,
+            example_en: v.example_en || '',
+            example_it: v.example_it || '',
+            tags: v.tags || [],
+          }))
 
-        // Dedup by (verb, type, language)
-        const seen = new Map()
-        rows.forEach((r) => {
-          const k = r.verb + '|' + r.type + '|' + r.language
-          if (!seen.has(k)) seen.set(k, r)
-        })
-        const uniqueRows = [...seen.values()]
+          // Dedup by (verb, type, language)
+          const seen = new Map()
+          rows.forEach((r) => {
+            const k = r.verb + '|' + r.type + '|' + r.language
+            if (!seen.has(k)) seen.set(k, r)
+          })
+          const uniqueRows = [...seen.values()]
 
-        const { data, error } = await sb
-          .from('vocabulary')
-          .upsert(uniqueRows, { onConflict: 'verb,type,language' })
-          .select('id,verb,type,language')
-        if (error) {
+          const { data, error } = await sb
+            .from('vocabulary')
+            .upsert(uniqueRows, { onConflict: 'verb,type,language' })
+            .select('id,verb,type,language')
+          if (error) {
+            st.style.background = 'rgba(255,77,109,0.1)'
+            st.style.color = 'var(--error)'
+            st.textContent = '❌ ' + error.message
+            return
+          }
+
+          // Salva vocabIds per lingua
+          const byLang = {}
+          data.forEach((row) => {
+            const lang = row.language || 'en'
+            if (!byLang[lang]) byLang[lang] = {}
+            const idx = (
+              lang === currentLang
+                ? ALL_VOCAB
+                : source.filter((v) => v.language === lang)
+            ).findIndex((v) => v.verb === row.verb && v.type === row.type)
+            if (idx >= 0) byLang[lang][idx] = row.id
+          })
+          Object.entries(byLang).forEach(([lang, ids]) => {
+            localStorage.setItem('eu_vocab_ids_' + lang, JSON.stringify(ids))
+          })
+          vocabIds = byLang[currentLang] || null
+
+          st.style.background = 'rgba(0,229,160,0.1)'
+          st.style.color = 'var(--success)'
+          st.textContent = '✓ ' + data.length + ' voci sincronizzate.'
+        } catch (e) {
           st.style.background = 'rgba(255,77,109,0.1)'
           st.style.color = 'var(--error)'
-          st.textContent = '❌ ' + error.message
-          return
+          st.textContent = '❌ Errore rete: ' + (e.message || e)
         }
-
-        // Salva vocabIds per lingua
-        const byLang = {}
-        data.forEach((row) => {
-          const lang = row.language || 'en'
-          if (!byLang[lang]) byLang[lang] = {}
-          const idx = (
-            lang === currentLang
-              ? ALL_VOCAB
-              : source.filter((v) => v.language === lang)
-          ).findIndex((v) => v.verb === row.verb && v.type === row.type)
-          if (idx >= 0) byLang[lang][idx] = row.id
-        })
-        Object.entries(byLang).forEach(([lang, ids]) => {
-          localStorage.setItem('eu_vocab_ids_' + lang, JSON.stringify(ids))
-        })
-        vocabIds = byLang[currentLang] || null
-
-        st.style.background = 'rgba(0,229,160,0.1)'
-        st.style.color = 'var(--success)'
-        st.textContent = '✓ ' + data.length + ' voci sincronizzate.'
       }
 
       async function pullVocabFromSupabase() {
@@ -232,92 +238,98 @@
         st.style.color = 'var(--muted)'
         st.textContent = '⏳ Fetch da Supabase...'
 
-        const lang = currentLang
-        const varNames = { en: 'EN_VOCAB', es: 'ES_VOCAB', fr: 'FR_VOCAB' }
-        const fileNames = { en: 'vocab-en.js', es: 'vocab-es.js', fr: 'vocab-fr.js' }
+        try {
+          const lang = currentLang
+          const varNames = { en: 'EN_VOCAB', es: 'ES_VOCAB', fr: 'FR_VOCAB' }
+          const fileNames = { en: 'vocab-en.js', es: 'vocab-es.js', fr: 'vocab-fr.js' }
 
-        const { data, error } = await sb
-          .from('vocabulary')
-          .select('*')
-          .eq('language', lang)
+          const { data, error } = await sb
+            .from('vocabulary')
+            .select('*')
+            .eq('language', lang)
 
-        if (error) {
-          st.style.background = 'rgba(255,77,109,0.1)'
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ ' + error.message
-          return
-        }
+          if (error) {
+            st.style.background = 'rgba(255,77,109,0.1)'
+            st.style.color = 'var(--error)'
+            st.textContent = '❌ ' + error.message
+            return
+          }
 
-        const allVocabSource =
-          typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined'
-            ? ALL_VOCAB_FOR_EXERCISES
-            : ALL_VOCAB
+          const allVocabSource =
+            typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined'
+              ? ALL_VOCAB_FOR_EXERCISES
+              : ALL_VOCAB
 
-        const localSource = allVocabSource.filter((v) => v.language === lang)
+          const localSource = allVocabSource.filter((v) => v.language === lang)
 
-        // Set verbi EN per bloccare intrusi in file non-EN
-        const enVerbs = new Set(
-          allVocabSource
-            .filter((v) => v.language === 'en')
-            .map((v) => v.verb.toLowerCase().trim())
-        )
+          // Set verbi EN per bloccare intrusi in file non-EN
+          const enVerbs = new Set(
+            allVocabSource
+              .filter((v) => v.language === 'en')
+              .map((v) => v.verb.toLowerCase().trim())
+          )
 
-        const localKeys = new Set(
-          localSource.map((v) => v.verb + '|' + v.type + '|' + v.language),
-        )
+          const localKeys = new Set(
+            localSource.map((v) => v.verb + '|' + v.type + '|' + v.language),
+          )
 
-        const rejected = []
-        const newEntries = data
-          .filter((r) => {
-            if (localKeys.has(r.verb + '|' + r.type + '|' + r.language)) return false
-            if (!r.verb || !r.type || !r.it) { rejected.push(r.verb + ' (campi mancanti)'); return false }
-            if (lang !== 'en' && enVerbs.has(r.verb.toLowerCase().trim())) { rejected.push(r.verb + ' (verb EN in file non-EN)'); return false }
-            return true
-          })
-          .map((r) => ({
-            language: r.language,
-            type: r.type,
-            verb: r.verb,
-            emoji: r.emoji || '📝',
-            simple: r.simple || '',
-            it: r.it || '',
-            example_en: r.example_en || '',
-            example_it: r.example_it || '',
-            tags: Array.isArray(r.tags) ? r.tags : [r.type],
-            context_note: r.context_note || '',
-            concept: r.concept || '',
-          }))
+          const rejected = []
+          const newEntries = data
+            .filter((r) => {
+              if (localKeys.has(r.verb + '|' + r.type + '|' + r.language)) return false
+              if (!r.verb || !r.type || !r.it) { rejected.push(r.verb + ' (campi mancanti)'); return false }
+              if (lang !== 'en' && enVerbs.has(r.verb.toLowerCase().trim())) { rejected.push(r.verb + ' (verb EN in file non-EN)'); return false }
+              return true
+            })
+            .map((r) => ({
+              language: r.language,
+              type: r.type,
+              verb: r.verb,
+              emoji: r.emoji || '📝',
+              simple: r.simple || '',
+              it: r.it || '',
+              example_en: r.example_en || '',
+              example_it: r.example_it || '',
+              tags: Array.isArray(r.tags) ? r.tags : [r.type],
+              context_note: r.context_note || '',
+              concept: r.concept || '',
+            }))
 
-        if (rejected.length) {
-          console.warn('Pull: voci scartate dalla validazione:', rejected)
-        }
+          if (rejected.length) {
+            console.warn('Pull: voci scartate dalla validazione:', rejected)
+          }
 
-        if (newEntries.length === 0) {
+          if (newEntries.length === 0) {
+            st.style.background = 'rgba(0,229,160,0.1)'
+            st.style.color = 'var(--success)'
+            st.textContent = '✓ Nessuna voce mancante — già in sync.'
+            return
+          }
+
+          const all = [...localSource, ...newEntries]
+          const varName = varNames[lang]
+          const fileName = fileNames[lang]
+          const js =
+            `// VOCABOLARIO ${lang.toUpperCase()}\nconst ${varName} = ` +
+            JSON.stringify(all, null, 2) +
+            ';\n'
+          const blob = new Blob([js], { type: 'application/javascript' })
+          const a = document.createElement('a')
+          a.href = URL.createObjectURL(blob)
+          a.download = fileName
+          a.click()
+
           st.style.background = 'rgba(0,229,160,0.1)'
           st.style.color = 'var(--success)'
-          st.textContent = '✓ Nessuna voce mancante — già in sync.'
-          return
+          st.textContent =
+            '✓ ' +
+            newEntries.length +
+            ` voci nuove → ${fileName} scaricato. Sostituisci src/data/${fileName}`
+        } catch (e) {
+          st.style.background = 'rgba(255,77,109,0.1)'
+          st.style.color = 'var(--error)'
+          st.textContent = '❌ Errore rete: ' + (e.message || e)
         }
-
-        const all = [...localSource, ...newEntries]
-        const varName = varNames[lang]
-        const fileName = fileNames[lang]
-        const js =
-          `// VOCABOLARIO ${lang.toUpperCase()}\nconst ${varName} = ` +
-          JSON.stringify(all, null, 2) +
-          ';\n'
-        const blob = new Blob([js], { type: 'application/javascript' })
-        const a = document.createElement('a')
-        a.href = URL.createObjectURL(blob)
-        a.download = fileName
-        a.click()
-
-        st.style.background = 'rgba(0,229,160,0.1)'
-        st.style.color = 'var(--success)'
-        st.textContent =
-          '✓ ' +
-          newEntries.length +
-          ` voci nuove → ${fileName} scaricato. Sostituisci src/data/${fileName}`
       }
 
       async function addVocabEntry() {
@@ -347,10 +359,17 @@
             .map((t) => t.trim())
             .filter(Boolean),
         }
-        const { data, error } = await sb
-          .from('vocabulary')
-          .upsert([row], { onConflict: 'verb,type,language' })
-          .select('id,verb,type,language')
+        let data, error
+        try {
+          ;({ data, error } = await sb
+            .from('vocabulary')
+            .upsert([row], { onConflict: 'verb,type,language' })
+            .select('id,verb,type,language'))
+        } catch (e) {
+          st.style.color = 'var(--error)'
+          st.textContent = '❌ Errore rete: ' + (e.message || e)
+          return
+        }
         if (error) {
           st.style.color = 'var(--error)'
           st.textContent = '❌ ' + error.message
