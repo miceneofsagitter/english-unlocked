@@ -118,9 +118,14 @@
       }
 
       function saveSettings() {
-        const url = document.getElementById('sb-url').value.trim()
+        let url = document.getElementById('sb-url').value.trim()
         const key = document.getElementById('sb-key').value.trim()
         const ant = document.getElementById('ant-key').value.trim()
+        // Normalizza URL: aggiunge https:// se mancante
+        if (url && !url.startsWith('http://') && !url.startsWith('https://')) {
+          url = 'https://' + url
+          document.getElementById('sb-url').value = url
+        }
         if (url) localStorage.setItem('eu_sb_url', url)
         if (key) localStorage.setItem('eu_sb_key', key)
         if (ant) localStorage.setItem('eu_api_key', ant)
@@ -144,9 +149,15 @@
       function sbInit() {
         const url = localStorage.getItem('eu_sb_url')
         const key = localStorage.getItem('eu_sb_key')
-        if (url && key && window.supabase) {
-          sb = window.supabase.createClient(url, key)
-          return true
+        if (!window.supabase) return false
+        if (url && key) {
+          try {
+            sb = window.supabase.createClient(url, key)
+            return true
+          } catch (e) {
+            console.error('sbInit error:', e)
+            return false
+          }
         }
         return false
       }
@@ -154,10 +165,16 @@
       async function importVocabToSupabase() {
         const st = document.getElementById('import-status')
         st.style.display = 'block'
+        if (!window.supabase) {
+          st.style.background = 'rgba(255,77,109,0.1)'
+          st.style.color = 'var(--error)'
+          st.textContent = '❌ Libreria Supabase non caricata. Controlla connessione internet.'
+          return
+        }
         if (!sb) {
           st.style.background = 'rgba(255,77,109,0.1)'
           st.style.color = 'var(--error)'
-          st.textContent = '❌ Salva prima le credenziali Supabase.'
+          st.textContent = '❌ Salva prima le credenziali Supabase (URL + Anon Key).'
           return
         }
         st.style.background = 'rgba(255,190,11,0.08)'
@@ -228,10 +245,16 @@
       async function pullVocabFromSupabase() {
         const st = document.getElementById('pull-status')
         st.style.display = 'block'
+        if (!window.supabase) {
+          st.style.background = 'rgba(255,77,109,0.1)'
+          st.style.color = 'var(--error)'
+          st.textContent = '❌ Libreria Supabase non caricata. Controlla connessione internet.'
+          return
+        }
         if (!sb) {
           st.style.background = 'rgba(255,77,109,0.1)'
           st.style.color = 'var(--error)'
-          st.textContent = '❌ Salva prima le credenziali Supabase.'
+          st.textContent = '❌ Salva prima le credenziali Supabase (URL + Anon Key).'
           return
         }
         st.style.background = 'rgba(255,190,11,0.08)'
@@ -391,32 +414,36 @@
       async function sbSyncLearned(idx, isLearned) {
         if (!sb || !vocabIds || !vocabIds[idx]) return
         const s = stats[idx] || { seen: 0, correct: 0 }
-        await sb.from('vocab_stats').upsert(
-          {
-            vocab_id: vocabIds[idx],
-            learned: isLearned,
-            times_seen: s.seen,
-            times_correct: s.correct,
-            last_seen: new Date().toISOString(),
-          },
-          { onConflict: 'vocab_id' },
-        )
+        try {
+          await sb.from('vocab_stats').upsert(
+            {
+              vocab_id: vocabIds[idx],
+              learned: isLearned,
+              times_seen: s.seen,
+              times_correct: s.correct,
+              last_seen: new Date().toISOString(),
+            },
+            { onConflict: 'vocab_id' },
+          )
+        } catch (_) {}
       }
 
       async function sbSyncStat(idx) {
         if (!sb || !vocabIds || !vocabIds[idx]) return
         const s = stats[idx] || { seen: 0, correct: 0 }
         const isLearned = learned.has(idx)
-        await sb.from('vocab_stats').upsert(
-          {
-            vocab_id: vocabIds[idx],
-            learned: isLearned,
-            times_seen: s.seen,
-            times_correct: s.correct,
-            last_seen: new Date().toISOString(),
-          },
-          { onConflict: 'vocab_id' },
-        )
+        try {
+          await sb.from('vocab_stats').upsert(
+            {
+              vocab_id: vocabIds[idx],
+              learned: isLearned,
+              times_seen: s.seen,
+              times_correct: s.correct,
+              last_seen: new Date().toISOString(),
+            },
+            { onConflict: 'vocab_id' },
+          )
+        } catch (_) {}
       }
 
       async function loadProgressFromSupabase() {
@@ -427,10 +454,17 @@
         }
         showStatus(st, '⏳ Caricamento...', 'wait')
         const ids = Object.values(vocabIds)
-        const { data, error } = await sb
-          .from('vocab_stats')
-          .select('*')
-          .in('vocab_id', ids)
+        let data, error
+        try {
+          ;({ data, error } = await sb
+            .from('vocab_stats')
+            .select('*')
+            .in('vocab_id', ids))
+        } catch (e) {
+          st.style.color = 'var(--error)'
+          st.textContent = '❌ Errore rete: ' + (e.message || e)
+          return
+        }
         if (error) {
           st.style.color = 'var(--error)'
           st.textContent = '❌ ' + error.message
@@ -473,11 +507,18 @@
             last_seen: new Date().toISOString(),
           }
         })
-        const { error } = await sb
-          .from('vocab_stats')
-          .upsert(rows, { onConflict: 'vocab_id' })
-        if (error) {
-          showStatus(st, '❌ ' + error.message, 'err')
+        let err2
+        try {
+          const { error } = await sb
+            .from('vocab_stats')
+            .upsert(rows, { onConflict: 'vocab_id' })
+          err2 = error
+        } catch (e) {
+          showStatus(st, '❌ Errore rete: ' + (e.message || e), 'err')
+          return
+        }
+        if (err2) {
+          showStatus(st, '❌ ' + err2.message, 'err')
           return
         }
         showStatus(st, '✓ ' + rows.length + ' voci sincronizzate.')
