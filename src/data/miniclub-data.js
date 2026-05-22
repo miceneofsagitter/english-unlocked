@@ -879,6 +879,135 @@
         },
         {
           audience: 'parents',
+          scenario: 'accoglienza-completa',
+          label: '📝 Script Accoglienza Completo',
+          exchanges: [
+            {
+              it: 'Benvenuti! Siamo aperti tutti i giorni tranne sabato, dalle 9:30 alle 18:00',
+              en: 'Welcome! We\'re open every day except Saturday, from 9:30 to 6 PM',
+              es: '¡Bienvenidos! Estamos abiertos todos los días excepto el sábado, de 9:30 a 18:00',
+              fr: 'Bienvenue! Nous sommes ouverts tous les jours sauf le samedi, de 9h30 à 18h',
+              variants: {
+                en: ['Hi, welcome! We run every day except Saturday — 9:30 to 6.', 'Welcome to the miniclub! Open daily except Saturday, 9:30 to 6 PM.'],
+                es: ['¡Hola, bienvenidos! Abrimos todos los días menos el sábado, de 9:30 a 18:00.', '¡Bienvenidos al miniclub! Abierto cada día excepto el sábado, de 9:30 a 18:00.'],
+                fr: ['Bonjour, bienvenue! On est ouverts tous les jours sauf le samedi, de 9h30 à 18h.', 'Bienvenue au miniclub! Ouvert tous les jours sauf le samedi, 9h30–18h.'],
+              },
+            },
+            {
+              it: 'Per ora siamo tutti insieme, poi durante la mattina li dividiamo per età',
+              en: 'Right now all the kids are together, but during the morning we split them by age group',
+              es: 'Ahora mismo todos los niños están juntos, pero durante la mañana los dividimos por grupo de edad',
+              fr: 'Pour l\'instant tous les enfants sont ensemble, mais dans la matinée on les sépare par groupe d\'âge',
+              variants: {
+                en: ['We start all together, then we split into age groups as the morning goes on.', 'They all mix at first — then we separate by age during the morning.'],
+                es: ['Empezamos todos juntos y luego los separamos por edades durante la mañana.', 'Al principio están mezclados — luego los dividimos por edad.'],
+                fr: ['On commence tous ensemble, puis on sépare par âge au fil de la matinée.', 'Ils sont mélangés au début — ensuite on les sépare par âge.'],
+              },
+            },
+            {
+              it: '3-4 anni → Baby Club · 5-8 → Mini Club · 9-13 → Junior Club · 14-17 → Teen Club',
+              en: '3–4 years → Baby Club · 5–8 → Mini Club · 9–13 → Junior Club · 14–17 → Teen Club',
+              es: '3–4 años → Baby Club · 5–8 → Mini Club · 9–13 → Junior Club · 14–17 → Teen Club',
+              fr: '3–4 ans → Baby Club · 5–8 → Mini Club · 9–13 → Junior Club · 14–17 → Teen Club',
+            },
+            {
+              it: 'Per il Baby Club (3-4 anni) ci serve il certificato medico — ce l\'ha?',
+              en: 'For the Baby Club (3–4 year olds) we need a medical certificate — do you have one?',
+              es: 'Para el Baby Club (3–4 años) necesitamos un certificado médico — ¿lo tiene?',
+              fr: 'Pour le Baby Club (3–4 ans) il nous faut un certificat médical — vous l\'avez?',
+              variants: {
+                en: ['Just for the 3 and 4 year olds: we need a medical certificate. Did you bring it?', 'Baby Club requires a doctor\'s certificate — have you got one with you?'],
+                es: ['Solo para los de 3 y 4 años: necesitamos un certificado médico. ¿Lo trajo?', 'El Baby Club requiere un certificado del médico — ¿lo tiene consigo?'],
+                fr: ['Uniquement pour les 3–4 ans: il nous faut un certificat médical. Vous l\'avez apporté?', 'Le Baby Club demande un certificat médical — vous en avez un?'],
+              },
+            },
+            {
+              it: 'Il programma: attività dalle 10:30 alle 12, pranzo alle 12:30, cinema o laboratorio 14:00–15:30, piscina o laboratorio 16:00–17:00, merenda alle 17:00, gioco libero fino alle 18:00',
+              en: 'The schedule: activities 10:30–12, lunch at 12:30, cinema or workshop 2–3:30 PM, pool or lab 4–5 PM, snack at 5, free play until 6',
+              es: 'El programa: actividades 10:30–12, almuerzo a las 12:30, cine o taller 14:00–15:30, piscina o taller 16:00–17:00, merienda a las 17:00, juego libre hasta las 18:00',
+              fr: 'Le programme: activités 10h30–12h, déjeuner à 12h30, cinéma ou atelier 14h–15h30, piscine ou atelier 16h–17h, goûter à 17h, jeu libre jusqu\'à 18h',
+            },
+            {
+              it: 'Se mangia con noi, devo saperlo entro le 10:30 — non oltre',
+              en: 'If your child is having lunch with us, I need to know by 10:30 — no later',
+              es: 'Si su hijo come con nosotros, necesito saberlo antes de las 10:30 — sin excepción',
+              fr: 'Si votre enfant déjeune avec nous, je dois le savoir avant 10h30 — pas après',
+              variants: {
+                en: ['Lunch bookings close at 10:30 sharp — please let me know before then.', 'I need to confirm lunch before 10:30 — after that it\'s too late.'],
+                es: ['Las reservas para el almuerzo cierran a las 10:30 en punto — avíseme antes.', 'Necesito confirmar el almuerzo antes de las 10:30 — después ya no es posible.'],
+                fr: ['Les réservations pour le déjeuner ferment à 10h30 pile — prévenez-moi avant.', 'Je dois confirmer le déjeuner avant 10h30 — après c\'est trop tard.'],
+              },
+            },
+            {
+              it: 'Sono in mezza pensione o pensione completa? La mezza pensione si addebita sulla stanza',
+              en: 'Are you half board or full board? Half board means lunch is charged to your room',
+              es: '¿Están en media pensión o pensión completa? La media pensión se carga a la habitación',
+              fr: 'Vous êtes en demi-pension ou pension complète? La demi-pension, le déjeuner est facturé sur la chambre',
+              variants: {
+                en: ['Half board or full board? If half board, lunch goes on the room bill.', 'Are you HB or FB? HB means we charge the lunch to your room at the end.'],
+                es: ['¿Media pensión o pensión completa? Con media pensión el almuerzo va a la habitación.', '¿HB o FB? Con HB el almuerzo se añade a la cuenta de la habitación.'],
+                fr: ['Demi-pension ou pension complète? En demi-pension le déjeuner est sur la note de chambre.', 'HB ou FB? En HB le déjeuner est ajouté à la facture de la chambre.'],
+              },
+            },
+            {
+              it: 'Portate uno zainetto con tutto il necessario — la merenda la diamo noi, non serve portarla',
+              en: 'Please bring a small backpack with everything they need — no snack, we provide that',
+              es: 'Por favor traigan una mochilita con todo lo necesario — sin merienda, esa la ponemos nosotros',
+              fr: 'Apportez un petit sac avec tout le nécessaire — pas besoin de goûter, on le fournit',
+              variants: {
+                en: ['A little backpack with their stuff — we take care of the snack, no need to bring one.', 'Backpack with essentials, please. Snack is on us — don\'t bring one.'],
+                es: ['Una mochilita con sus cosas — la merienda la traemos nosotros, no hace falta.', 'Mochila con lo esencial, por favor. La merienda es nuestra — no la traigan.'],
+                fr: ['Un petit sac avec leurs affaires — le goûter c\'est nous, pas besoin d\'en apporter.', 'Sac avec l\'essentiel s\'il vous plaît. Le goûter est pour nous — n\'en apportez pas.'],
+              },
+            },
+            {
+              it: 'Per favore niente giochi personali — si perdono o si rompono e non vogliamo problemi',
+              en: 'Please no personal toys — they get lost or broken and we don\'t want any problems',
+              es: 'Por favor sin juguetes personales — se pierden o se rompen y no queremos problemas',
+              fr: 'S\'il vous plaît pas de jouets personnels — ils se perdent ou se cassent et on ne veut pas de problèmes',
+              variants: {
+                en: ['No personal toys please — they go missing or break, and it causes issues.', 'Leave toys at the room — things get lost or damaged here and it\'s a headache for everyone.'],
+                es: ['Nada de juguetes personales — se extravían o se rompen y crea problemas.', 'Dejen los juguetes en la habitación — se pierden o se estropean y complica las cosas.'],
+                fr: ['Pas de jouets personnels s\'il vous plaît — ils disparaissent ou se cassent et ça crée des problèmes.', 'Laissez les jouets dans la chambre — ils se perdent ou s\'abîment et c\'est compliqué.'],
+              },
+            },
+            {
+              it: 'Ha allergie alimentari o di altro tipo? Come dobbiamo comportarci se si verifica una reazione?',
+              en: 'Any food allergies or other allergies? What should we do if there\'s a reaction?',
+              es: '¿Tiene alguna alergia alimentaria u otra? ¿Cómo actuamos si hay una reacción?',
+              fr: 'Des allergies alimentaires ou autres? Qu\'est-ce qu\'on fait s\'il y a une réaction?',
+              variants: {
+                en: ['Does your child have any allergies — food or otherwise? And what\'s the protocol if something happens?', 'Any allergies I should know about? What do I do if there\'s a reaction?'],
+                es: ['¿Tiene alguna alergia — alimentaria o de otro tipo? ¿Y cuál es el protocolo si ocurre algo?', '¿Alguna alergia que deba saber? ¿Qué hago si hay una reacción?'],
+                fr: ['Votre enfant a des allergies — alimentaires ou autres? Et qu\'est-ce que je fais s\'il y a une réaction?', 'Des allergies à signaler? Quel est le protocole si quelque chose se passe?'],
+              },
+            },
+            {
+              it: 'Mi servono tutti i vostri numeri di telefono — non solo uno, dobbiamo potervi contattare in qualsiasi momento',
+              en: 'I\'ll need all your phone numbers — not just one, we need to reach you at any time',
+              es: 'Necesito todos sus números de teléfono — no solo uno, necesitamos poder contactarles en cualquier momento',
+              fr: 'J\'ai besoin de tous vos numéros — pas qu\'un seul, on doit pouvoir vous joindre à tout moment',
+              variants: {
+                en: ['All your numbers please, not just one — we need to be able to reach someone at any point.', 'Can I take all your phone numbers? We need at least two contacts, not just one.'],
+                es: ['Todos sus números, no solo uno — necesitamos poder contactar a alguien en cualquier momento.', '¿Me puede dar todos sus números? Necesitamos al menos dos contactos, no solo uno.'],
+                fr: ['Tous vos numéros s\'il vous plaît, pas qu\'un — on doit pouvoir joindre quelqu\'un à tout moment.', 'Vous pouvez me donner tous vos numéros? On a besoin d\'au moins deux contacts.'],
+              },
+            },
+            {
+              it: 'Potete venire a prendere o riportare il bambino in qualsiasi momento della giornata',
+              en: 'You\'re welcome to drop off and pick up whenever you like during the day',
+              es: 'Pueden traer y recoger al niño cuando quieran durante el día',
+              fr: 'Vous pouvez déposer et récupérer votre enfant quand vous voulez dans la journée',
+              variants: {
+                en: ['Feel free to come and go — drop off or pick up at any time.', 'No fixed times for drop-off and pick-up — come whenever suits you.'],
+                es: ['Pueden venir cuando quieran — sin horario fijo para dejar o recoger al niño.', 'No hay hora fija — pueden dejar y recoger a su hijo cuando les venga bien.'],
+                fr: ['Pas d\'heure fixe — vous pouvez déposer ou récupérer votre enfant quand vous voulez.', 'Venez quand ça vous arrange — pas d\'heure imposée pour déposer ou récupérer.'],
+              },
+            },
+          ],
+        },
+        {
+          audience: 'parents',
           scenario: 'serata-babydance',
           label: '🌙 Serata e Baby Dance',
           exchanges: [
