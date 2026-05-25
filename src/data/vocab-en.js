@@ -7285,6 +7285,40 @@ const EN_VOCAB = [
   },
   {
     "language": "en",
+    "type": "phrasal",
+    "verb": "call out",
+    "emoji": "📢",
+    "simple": "say / shout",
+    "it": "fare l'appello / chiamare ad alta voce",
+    "example_en": "I'll call out your name — answer 'here' when you hear it!",
+    "example_it": "Chiamo il tuo nome — rispondi 'presente' quando lo senti!",
+    "tags": [
+      "bambini",
+      "appello",
+      "routine"
+    ],
+    "context_note": "Usato per fare l'appello al mattino o prima di un'attività",
+    "concept": "pv_call_out"
+  },
+  {
+    "language": "en",
+    "type": "phrasal",
+    "verb": "check off",
+    "emoji": "✅",
+    "simple": "mark / tick",
+    "it": "spuntare dalla lista / segnare presente",
+    "example_en": "Let me check off your name on the list.",
+    "example_it": "Fammi spuntare il tuo nome sulla lista.",
+    "tags": [
+      "bambini",
+      "appello",
+      "routine"
+    ],
+    "context_note": "Spuntare i nomi mentre si fa l'appello",
+    "concept": "pv_check_off"
+  },
+  {
+    "language": "en",
     "type": "emotion",
     "verb": "What a joy!",
     "emoji": "😄",
