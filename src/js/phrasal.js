@@ -33,7 +33,7 @@
         const lang = typeof currentLang !== 'undefined' ? currentLang : 'en'
         return shuffle(
           (typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined' ? ALL_VOCAB_FOR_EXERCISES : [])
-            .filter(v => v.type === 'phrasal' && v.language === lang)
+            .filter(v => (v.type === 'phrasal' || (v.tags && v.tags.includes('verb-get'))) && v.language === lang)
         )
       }
 
