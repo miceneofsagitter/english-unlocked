@@ -1262,10 +1262,14 @@ CREATE UNIQUE INDEX IF NOT EXISTS vocab_unique ON vocabulary(verb, type, languag
       <div id="panel-phrasal" class="panel">
         <div class="panel-header">
           <h2>🔗 Phrasal Verb Quiz</h2>
-          <p>Indovina la particella e il significato</p>
+          <p id="phrasal-subtitle">Scegli un verbo o allenati su tutti</p>
         </div>
         <div class="panel-content">
-          <div class="card" style="margin-bottom:1.25rem;">
+          <div class="card" id="phrasal-progress-card" style="margin-bottom:1.25rem; display:none;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.5rem;">
+              <button onclick="initPhrasalTab()" style="background:none; border:none; color:var(--muted); font-size:0.8rem; cursor:pointer; padding:0; font-family:'JetBrains Mono',monospace;">← Scegli verbo</button>
+              <span id="phrasal-focus-label" style="font-size:0.78rem; color:var(--accent3); font-family:'JetBrains Mono',monospace;"></span>
+            </div>
             <div class="progress-bar">
               <div class="progress-fill" id="phrasal-progress-fill" style="width:0%"></div>
             </div>
