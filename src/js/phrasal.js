@@ -3,17 +3,17 @@
       // ============================================================
 
       let phrasalPool = []
-      let phrasalFullPool = []  // tutti i PV, usato per i distrattori
+      let phrasalFullPool = []
       let phrasalIdx = 0
       let phrasalScore = { correct: 0, total: 0 }
       let phrasalAnswered = false
       let phrasalSearchQuery = ''
-      let phrasalFocusMode = false  // true = quiz su verbo singolo
+      let phrasalFocusBase = ''  // base verb attiva (es. "get"), '' = tutti
 
-      const PHRASAL_ROUNDS_FOCUSED = 5  // quante volte testare il verbo scelto
+      const PHRASAL_ROUNDS_FOCUSED = 5
 
       function getBaseVerb(verb) {
-        return verb.split(' ')[0]
+        return verb.split(' ')[0].toLowerCase()
       }
 
       function getParticle(verb) {
@@ -38,7 +38,7 @@
       }
 
       function blankSentence(sentence, verb) {
-        const base = getBaseVerb(verb)
+        const base = verb.split(' ')[0]
         const re = new RegExp(verb.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'i')
         if (re.test(sentence)) {
           return sentence.replace(re, base + ' <span class="phrasal-blank">___</span>')
@@ -50,27 +50,32 @@
         return sentence + ' (' + base + ' <span class="phrasal-blank">___</span>)'
       }
 
-      function pick3WrongParticles(current, _pool) {
+      function pick3WrongParticles(current) {
         const correct = getParticle(current.verb)
-        // usa sempre il pool completo per avere abbastanza distrattori
-        const src = phrasalFullPool.length ? phrasalFullPool : _pool
-        const others = shuffle(src.filter(v => getParticle(v.verb) !== correct))
-        const seen = new Set()
+        const base = getBaseVerb(current.verb)
+        const seen = new Set([correct])
         const result = []
-        for (const v of others) {
+
+        // 1. Cerca distrattori tra PV con la stessa base (più sfidante)
+        const sameBase = phrasalFullPool.filter(v => getBaseVerb(v.verb) === base)
+        for (const v of shuffle(sameBase)) {
           const p = getParticle(v.verb)
-          if (!seen.has(p)) {
-            seen.add(p)
-            result.push(p)
-            if (result.length === 3) break
-          }
+          if (!seen.has(p)) { seen.add(p); result.push(p) }
+          if (result.length === 3) return result
         }
-        // fallback se ci sono meno di 3 particelle uniche
-        const fallback = ['up', 'down', 'off', 'out', 'on', 'in', 'back', 'away', 'over', 'through']
-        while (result.length < 3) {
-          const p = fallback.find(f => f !== correct && !result.includes(f))
-          if (p) result.push(p)
-          else break
+
+        // 2. Complementa con particelle da altri PV
+        for (const v of shuffle(phrasalFullPool)) {
+          const p = getParticle(v.verb)
+          if (!seen.has(p)) { seen.add(p); result.push(p) }
+          if (result.length === 3) return result
+        }
+
+        // 3. Fallback hardcoded
+        const fb = ['up', 'down', 'off', 'out', 'on', 'in', 'back', 'away', 'over', 'through']
+        for (const p of fb) {
+          if (!seen.has(p)) { seen.add(p); result.push(p) }
+          if (result.length === 3) return result
         }
         return result
       }
@@ -91,13 +96,14 @@
         phrasalAnswered = false
         const item = phrasalPool[phrasalIdx]
         const particle = getParticle(item.verb)
-        const wrongs = pick3WrongParticles(item, phrasalPool)
+        const wrongs = pick3WrongParticles(item)
         const options = shuffle([particle, ...wrongs])
         const correctOpt = options.indexOf(particle)
+        const isLast = phrasalIdx + 1 >= phrasalPool.length
 
         const sentence = item.example_en
           ? blankSentence(item.example_en, item.verb)
-          : getBaseVerb(item.verb) + ' <span class="phrasal-blank">___</span>'
+          : item.verb.split(' ')[0] + ' <span class="phrasal-blank">___</span>'
 
         document.getElementById('phrasal-card').innerHTML = `
           <div style="text-align:center; margin-bottom:1.5rem;">
@@ -121,7 +127,7 @@
 
           <div id="phrasal-feedback" style="min-height:1.5rem; text-align:center; font-size:0.95rem;"></div>
           <div id="phrasal-next-btn" style="display:none; text-align:center; margin-top:1rem;">
-            <button class="btn btn-accent" onclick="nextPhrasa()">${phrasalIdx + 1 >= phrasalPool.length ? 'Fine →' : 'Prossimo →'}</button>
+            <button class="btn btn-accent" onclick="nextPhrasa()">${isLast ? 'Fine →' : 'Prossimo →'}</button>
           </div>
         `
       }
@@ -152,8 +158,7 @@
           if (fb) fb.innerHTML = `<span style="color:#f87171;">❌ Era: <strong>${item.verb.toUpperCase()}</strong></span>${item.example_it ? `<div style="color:var(--muted);font-size:0.82rem;margin-top:0.3rem;">${item.example_it}</div>` : ''}`
         }
 
-        const nextBtn = document.getElementById('phrasal-next-btn')
-        if (nextBtn) nextBtn.style.display = 'block'
+        document.getElementById('phrasal-next-btn').style.display = 'block'
         updatePhrasalProgress()
       }
 
@@ -169,15 +174,19 @@
 
       function renderPhrasalEnd() {
         const pct = phrasalScore.total ? Math.round((phrasalScore.correct / phrasalScore.total) * 100) : 0
-        const focusItem = phrasalFocusMode ? phrasalPool[0] : null
+        const icon = pct >= 80 ? '🏆' : pct >= 50 ? '💪' : '📚'
+        const isFocus = !!phrasalFocusBase
         document.getElementById('phrasal-card').innerHTML = `
           <div style="text-align:center; padding:2rem 0;">
-            <div style="font-size:3rem; margin-bottom:1rem;">${pct >= 80 ? '🏆' : pct >= 50 ? '💪' : '📚'}</div>
-            <div style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">${phrasalFocusMode ? (focusItem ? focusItem.verb.toUpperCase() : '') : 'Pool completato!'}</div>
+            <div style="font-size:3rem; margin-bottom:1rem;">${icon}</div>
+            <div style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">${isFocus ? phrasalFocusBase.toUpperCase() + ' …' : 'Pool completato!'}</div>
             <div style="color:var(--muted); margin-bottom:2rem;">${phrasalScore.correct} / ${phrasalScore.total} corrette (${pct}%)</div>
             <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
-              ${phrasalFocusMode ? `<button class="btn btn-accent" onclick="startFocusedQuiz(phrasalPool[0])">Riprova ↺</button>` : `<button class="btn btn-accent" onclick="startAllQuiz()">Ricomincia 🔄</button>`}
-              <button class="btn" onclick="initPhrasalTab()" style="background:rgba(255,255,255,0.07);">← Scegli verbo</button>
+              ${isFocus
+                ? `<button class="btn btn-accent" onclick="startBaseQuiz('${phrasalFocusBase}')">Riprova ↺</button>`
+                : `<button class="btn btn-accent" onclick="startAllQuiz()">Ricomincia 🔄</button>`
+              }
+              <button class="btn" onclick="initPhrasalTab()" style="background:rgba(255,255,255,0.07);">← Scegli base</button>
             </div>
           </div>
         `
@@ -204,44 +213,69 @@
           return
         }
 
-        // ordine alfabetico per selezione
-        const sorted = [...phrasalFullPool].sort((a, b) => a.verb.localeCompare(b.verb))
+        // Raggruppa per base verb
+        const groups = {}
+        for (const v of phrasalFullPool) {
+          const base = getBaseVerb(v.verb)
+          if (!groups[base]) groups[base] = []
+          groups[base].push(v)
+        }
 
-        document.getElementById('phrasal-progress-card').style.display = 'none'
-        document.getElementById('phrasal-subtitle').textContent = 'Scegli un verbo o allenati su tutti'
+        // Ordina: prima più numerosi, poi alfabetico
+        const sortedBases = Object.keys(groups).sort((a, b) => {
+          const diff = groups[b].length - groups[a].length
+          return diff !== 0 ? diff : a.localeCompare(b)
+        })
 
         const q = phrasalSearchQuery.toLowerCase()
         const filtered = q
-          ? sorted.filter(v => v.verb.toLowerCase().includes(q) || v.it.toLowerCase().includes(q))
-          : sorted
+          ? sortedBases.filter(base =>
+              base.includes(q) ||
+              groups[base].some(v => v.it.toLowerCase().includes(q))
+            )
+          : sortedBases
+
+        document.getElementById('phrasal-progress-card').style.display = 'none'
+        document.getElementById('phrasal-subtitle').textContent = 'Scegli la base o allenati su tutti'
 
         document.getElementById('phrasal-card').innerHTML = `
           <div style="margin-bottom:1rem;">
             <input
               id="phrasal-search"
               type="text"
-              placeholder="Cerca verbo o significato IT…"
+              placeholder="Cerca base (get, look…) o significato IT…"
               value="${phrasalSearchQuery}"
               oninput="phrasalSearchQuery=this.value; renderPhrasalSelect()"
               style="width:100%; box-sizing:border-box; background:rgba(255,255,255,0.07); border:1.5px solid rgba(255,255,255,0.15); border-radius:10px; padding:0.6rem 0.9rem; color:var(--text); font-size:0.95rem; outline:none; font-family:'JetBrains Mono',monospace;"
             />
           </div>
 
-          <div style="max-height:55vh; overflow-y:auto; margin-bottom:1rem; scrollbar-width:thin;">
-            ${filtered.length === 0 ? `<div style="text-align:center; color:var(--muted); padding:1.5rem;">Nessun risultato</div>` :
-              filtered.map(v => `
-                <div onclick="startFocusedQuiz(phrasalFullPool.find(x=>x.verb===\`${v.verb.replace(/`/g, '\\`')}\`))"
-                  style="display:flex; align-items:center; gap:0.75rem; padding:0.65rem 0.75rem; border-radius:10px; cursor:pointer; transition:background 0.15s; margin-bottom:0.3rem;"
-                  onmouseover="this.style.background='rgba(255,255,255,0.08)'"
-                  onmouseout="this.style.background='transparent'">
-                  <span style="font-size:1.3rem; flex-shrink:0;">${v.emoji || '🔗'}</span>
-                  <div style="flex:1; min-width:0;">
-                    <div style="font-weight:600; color:var(--accent3); font-size:0.95rem;">${v.verb}</div>
-                    <div style="color:var(--muted); font-size:0.78rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${v.it}</div>
-                  </div>
-                  <span style="color:var(--muted); font-size:0.9rem; flex-shrink:0;">›</span>
-                </div>
-              `).join('')
+          <div style="max-height:52vh; overflow-y:auto; margin-bottom:1rem; scrollbar-width:thin;">
+            ${filtered.length === 0
+              ? `<div style="text-align:center; color:var(--muted); padding:1.5rem;">Nessun risultato</div>`
+              : filtered.map(base => {
+                  const items = groups[base]
+                  const count = items.length
+                  const particles = items.map(v => getParticle(v.verb)).slice(0, 4).join(' · ')
+                  const badge = count >= 2
+                    ? `<span style="background:rgba(139,92,246,0.25); color:var(--accent3); border-radius:6px; padding:1px 7px; font-size:0.72rem; font-family:'JetBrains Mono',monospace;">${count}</span>`
+                    : ''
+                  return `
+                    <div onclick="startBaseQuiz('${base}')"
+                      style="display:flex; align-items:center; gap:0.75rem; padding:0.65rem 0.75rem; border-radius:10px; cursor:pointer; transition:background 0.15s; margin-bottom:0.25rem;"
+                      onmouseover="this.style.background='rgba(255,255,255,0.08)'"
+                      onmouseout="this.style.background='transparent'">
+                      <div style="flex:1; min-width:0;">
+                        <div style="display:flex; align-items:center; gap:0.5rem;">
+                          <span style="font-weight:700; color:var(--accent3); font-size:1rem;">${base}</span>
+                          ${badge}
+                        </div>
+                        <div style="color:var(--muted); font-size:0.75rem; margin-top:1px;">${particles}</div>
+                      </div>
+                      <span style="color:var(--muted); font-size:0.9rem; flex-shrink:0;">›</span>
+                    </div>
+                  `
+                }).join('')
             }
           </div>
 
@@ -252,7 +286,6 @@
           </div>
         `
 
-        // focus automatico sulla search se già aveva testo
         if (phrasalSearchQuery) {
           const inp = document.getElementById('phrasal-search')
           if (inp) { inp.focus(); inp.selectionStart = inp.selectionEnd = inp.value.length }
@@ -261,26 +294,27 @@
 
       // ── AVVIO QUIZ ──────────────────────────────────────────────
 
-      function startFocusedQuiz(item) {
-        if (!item) return
-        phrasalFocusMode = true
-        // ripete il verbo N volte nel pool (distrattori sempre dal pool completo)
-        phrasalPool = Array(PHRASAL_ROUNDS_FOCUSED).fill(item)
+      function startBaseQuiz(base) {
+        phrasalFocusBase = base
+        const baseItems = phrasalFullPool.filter(v => getBaseVerb(v.verb) === base)
+        phrasalPool = shuffle(baseItems)
+        // se un solo PV, ripeti N volte
+        if (phrasalPool.length === 1) phrasalPool = Array(PHRASAL_ROUNDS_FOCUSED).fill(phrasalPool[0])
         phrasalIdx = 0
         phrasalScore = { correct: 0, total: 0 }
         phrasalAnswered = false
 
         const focusEl = document.getElementById('phrasal-focus-label')
-        if (focusEl) focusEl.textContent = item.verb
+        if (focusEl) focusEl.textContent = base + ' …'
+        document.getElementById('phrasal-subtitle').textContent = 'Focus: ' + base + ' …'
         document.getElementById('phrasal-progress-card').style.display = 'block'
-        document.getElementById('phrasal-subtitle').textContent = 'Focus: ' + item.verb
 
         updatePhrasalProgress()
         renderPhrasalQ()
       }
 
       function startAllQuiz() {
-        phrasalFocusMode = false
+        phrasalFocusBase = ''
         phrasalPool = buildPhrasalPool()
         phrasalIdx = 0
         phrasalScore = { correct: 0, total: 0 }
@@ -288,8 +322,8 @@
 
         const focusEl = document.getElementById('phrasal-focus-label')
         if (focusEl) focusEl.textContent = ''
-        document.getElementById('phrasal-progress-card').style.display = 'block'
         document.getElementById('phrasal-subtitle').textContent = 'Quiz su tutti'
+        document.getElementById('phrasal-progress-card').style.display = 'block'
 
         if (!phrasalPool.length) {
           document.getElementById('phrasal-card').innerHTML = `<div style="text-align:center; color:var(--muted); padding:2rem;">Nessun phrasal verb trovato.</div>`
@@ -302,5 +336,6 @@
 
       function initPhrasalTab() {
         phrasalSearchQuery = ''
+        phrasalFocusBase = ''
         renderPhrasalSelect()
       }
