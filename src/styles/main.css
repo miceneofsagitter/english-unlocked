@@ -1623,21 +1623,57 @@
         text-align: center;
       }
 
-      .verb-group-header {
+      /* Phrasal EN — accordion per base verbale */
+      .vg-jump-bar {
         grid-column: 1 / -1;
+        margin-bottom: 4px;
+      }
+      .vg-jump-bar select {
+        background: var(--card);
+        border: 1px solid var(--border);
+        color: var(--text);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        padding: 6px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 260px;
+        outline: none;
+      }
+      .verb-group {
+        grid-column: 1 / -1;
+      }
+      .verb-group-header {
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 4px 4px 6px;
-        margin-top: 14px;
+        padding: 8px 6px;
+        margin-top: 2px;
         border-bottom: 1px solid rgba(6, 214, 160, 0.18);
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.75rem;
         font-weight: 800;
         letter-spacing: 0.12em;
         color: var(--accent3);
+        cursor: pointer;
+        user-select: none;
       }
-      .verb-group-header:first-child { margin-top: 0; }
+      .verb-group-header:hover { background: rgba(6, 214, 160, 0.05); border-radius: 6px 6px 0 0; }
+      .vgh-arrow {
+        font-size: 0.55rem;
+        display: inline-block;
+        transition: transform 0.18s ease;
+        opacity: 0.7;
+      }
+      .verb-group.open .vgh-arrow { transform: rotate(90deg); }
+      .verb-group-body {
+        display: none;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 12px;
+        padding: 12px 0 4px;
+      }
+      .verb-group.open .verb-group-body { display: grid; }
       .vgh-count {
         display: inline-flex;
         align-items: center;
