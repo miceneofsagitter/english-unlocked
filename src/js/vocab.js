@@ -71,6 +71,21 @@
         return new Map([...map.entries()].sort((a, b) => a[0].localeCompare(b[0])))
       }
 
+      function toggleVerbGroup(base) {
+        const group = document.getElementById('vg-' + base)
+        if (group) group.classList.toggle('open')
+      }
+
+      function jumpToVerbGroup(base) {
+        if (!base) return
+        const group = document.getElementById('vg-' + base)
+        if (!group) return
+        if (!group.classList.contains('open')) group.classList.add('open')
+        group.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        const sel = document.getElementById('vgJumpSelect')
+        if (sel) setTimeout(() => { sel.value = '' }, 600)
+      }
+
       function renderVocabGrid(filter, search) {
         const grid = document.getElementById('vocabGrid')
         grid.innerHTML = ''
@@ -97,16 +112,37 @@
           return
         }
 
-        // Phrasal verbs EN: raggruppa per base verbale (prima parola), no paginazione
+        // Phrasal EN: accordion per base verbale + dropdown di salto
         if (filter === 'phrasal' && currentLang === 'en') {
           const groups = groupPhrasalByBase(items)
+
+          const jumpBar = document.createElement('div')
+          jumpBar.className = 'vg-jump-bar'
+          const opts = [...groups.keys()].map(b =>
+            `<option value="${b}">${b.toUpperCase()} (${groups.get(b).length})</option>`
+          ).join('')
+          jumpBar.innerHTML = `<select id="vgJumpSelect" onchange="jumpToVerbGroup(this.value)"><option value="">— salta a base —</option>${opts}</select>`
+          grid.appendChild(jumpBar)
+
           groups.forEach((groupItems, base) => {
+            const group = document.createElement('div')
+            group.className = 'verb-group'
+            group.id = 'vg-' + base
+
             const hdr = document.createElement('div')
             hdr.className = 'verb-group-header'
-            hdr.innerHTML = `${base.toUpperCase()} <span class="vgh-count">${groupItems.length}</span>`
-            grid.appendChild(hdr)
-            groupItems.forEach(item => grid.appendChild(buildVocabCardEl(item)))
+            hdr.setAttribute('onclick', `toggleVerbGroup('${base}')`)
+            hdr.innerHTML = `<span class="vgh-arrow">▶</span>${base.toUpperCase()} <span class="vgh-count">${groupItems.length}</span>`
+
+            const body = document.createElement('div')
+            body.className = 'verb-group-body'
+            groupItems.forEach(item => body.appendChild(buildVocabCardEl(item)))
+
+            group.appendChild(hdr)
+            group.appendChild(body)
+            grid.appendChild(group)
           })
+
           if (_pendingVerb) { const pv = _pendingVerb; _pendingVerb = null; _highlightVerbCard(pv) }
           return
         }
