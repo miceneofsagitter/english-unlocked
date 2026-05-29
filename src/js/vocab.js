@@ -1,3 +1,76 @@
+      const _VOCAB_COLORS = {
+        phrasal: 'var(--accent3)',
+        emotion: 'var(--accent2)',
+        opinion: 'var(--success)',
+        idiom: 'var(--accent)',
+        colloquial: '#a8ff78',
+        clarification: 'var(--muted)',
+        verb: '#60a5fa',
+        beach: '#22d3ee',
+      }
+      const _VOCAB_FLAGS = { en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷' }
+
+      function buildVocabCardEl(item) {
+        const idx = ALL_VOCAB.indexOf(item)
+        const isLearned = learned.has(idx)
+        const color = _VOCAB_COLORS[item.type] || 'var(--text)'
+        const displayVerb = item.verb || item[item.language] || item.en
+        const speakSrc = item.example_en || item[`example_${item.language}`] || displayVerb
+        const exampleHtml = item.example_en
+          ? `<div class="vc-example">${escHtml(item.example_en)}<br><span style="opacity:0.6;font-style:italic">${escHtml(item.example_it)}</span></div>`
+          : item.context_note
+            ? `<div class="vc-example" style="color:var(--muted);font-style:italic">${escHtml(item.context_note)}</div>`
+            : ''
+
+        let conceptRelatedHtml = ''
+        if (typeof CROSS_LANG_INDEX !== 'undefined') {
+          const key = (item.concept && item.concept.trim())
+            ? item.concept.trim().toLowerCase()
+            : (item.it ? item.it.trim().toLowerCase() : null)
+          if (key && CROSS_LANG_INDEX.has(key)) {
+            const _related = CROSS_LANG_INDEX.get(key).filter(v => v.language !== item.language)
+            const _seen = new Set()
+            const related = _related.filter(v => { if (_seen.has(v.language)) return false; _seen.add(v.language); return true })
+            if (related.length > 0) {
+              const pills = related.map(v => {
+                const verb = v.verb || v[v.language] || v.en || ''
+                const flag = _VOCAB_FLAGS[v.language] || ''
+                return `<button class="btn btn-ghost btn-sm" onclick="navigateToLangVerb('${v.language}','${escHtml(verb)}')" style="font-size:0.72rem;padding:2px 7px">${flag} ${escHtml(verb)}</button>`
+              }).join('')
+              conceptRelatedHtml = `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:4px;align-items:center"><span style="font-size:0.65rem;color:var(--muted);font-family:'JetBrains Mono',monospace">🔗</span>${pills}</div>`
+            }
+          }
+        }
+
+        const d = document.createElement('div')
+        d.className = 'vocab-card type-' + item.type + (isLearned ? ' learned' : '')
+        d.innerHTML = `
+    ${item.emoji ? `<div class="vc-emoji">${escHtml(item.emoji)}</div>` : ''}
+    <div class="vc-verb" style="color:${color}">${escHtml(displayVerb)}</div>
+    ${item.simple ? `<div style="font-size:0.68rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-bottom:2px">≈ ${escHtml(item.simple)}</div>` : ''}
+    <div class="vc-it">${escHtml(item.it)}</div>
+    ${exampleHtml}
+    ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag" style="cursor:pointer" onclick="filterByTag('${t}')" title="Filtra: ${t}">${escHtml(t)}</span>`).join('') + '</div>' : ''}
+    ${conceptRelatedHtml}
+    <div class="vc-actions">
+      <button class="btn btn-ghost btn-sm" onclick="speakText(this.dataset.t)" data-t="${escHtml(speakSrc)}">🔊</button>
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-left:4px">
+        <input type="checkbox" class="learned-check" ${isLearned ? 'checked' : ''} onchange="toggleLearned(${idx},this,event)"> imparata
+      </label>
+    </div>`
+        return d
+      }
+
+      function groupPhrasalByBase(items) {
+        const map = new Map()
+        items.forEach(item => {
+          const base = item.verb.split(' ')[0].toLowerCase()
+          if (!map.has(base)) map.set(base, [])
+          map.get(base).push(item)
+        })
+        return new Map([...map.entries()].sort((a, b) => a[0].localeCompare(b[0])))
+      }
+
       function renderVocabGrid(filter, search) {
         const grid = document.getElementById('vocabGrid')
         grid.innerHTML = ''
@@ -24,74 +97,25 @@
           return
         }
 
+        // Phrasal verbs EN: raggruppa per base verbale (prima parola), no paginazione
+        if (filter === 'phrasal' && currentLang === 'en') {
+          const groups = groupPhrasalByBase(items)
+          groups.forEach((groupItems, base) => {
+            const hdr = document.createElement('div')
+            hdr.className = 'verb-group-header'
+            hdr.innerHTML = `${base.toUpperCase()} <span class="vgh-count">${groupItems.length}</span>`
+            grid.appendChild(hdr)
+            groupItems.forEach(item => grid.appendChild(buildVocabCardEl(item)))
+          })
+          if (_pendingVerb) { const pv = _pendingVerb; _pendingVerb = null; _highlightVerbCard(pv) }
+          return
+        }
+
         const totalPages = Math.ceil(items.length / VOCAB_PAGE_SIZE)
         vocabPage = Math.min(vocabPage, Math.max(0, totalPages - 1))
         const paged = items.slice(vocabPage * VOCAB_PAGE_SIZE, (vocabPage + 1) * VOCAB_PAGE_SIZE)
 
-        const colors = {
-          phrasal: 'var(--accent3)',
-          emotion: 'var(--accent2)',
-          opinion: 'var(--success)',
-          idiom: 'var(--accent)',
-          colloquial: '#a8ff78',
-          clarification: 'var(--muted)',
-          verb: '#60a5fa',
-          beach: '#22d3ee',
-        }
-        const FLAGS = { en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷' }
-        const ALL_LANGS = ['en', 'es', 'fr']
-        paged.forEach((item) => {
-          const idx = ALL_VOCAB.indexOf(item)
-          const isLearned = learned.has(idx)
-          const color = colors[item.type] || 'var(--text)'
-          const displayVerb = item.verb || item[item.language] || item.en
-          const speakSrc = item.example_en || item[`example_${item.language}`] || displayVerb
-          const exampleHtml = item.example_en
-            ? `<div class="vc-example">${escHtml(item.example_en)}<br><span style="opacity:0.6;font-style:italic">${escHtml(item.example_it)}</span></div>`
-            : item.context_note
-              ? `<div class="vc-example" style="color:var(--muted);font-style:italic">${escHtml(item.context_note)}</div>`
-              : ''
-
-          // Widget connessioni cross-lingua via concept (priorità) o it (fallback)
-          let conceptRelatedHtml = ''
-          if (typeof CROSS_LANG_INDEX !== 'undefined') {
-            const key = (item.concept && item.concept.trim())
-              ? item.concept.trim().toLowerCase()
-              : (item.it ? item.it.trim().toLowerCase() : null)
-            if (key && CROSS_LANG_INDEX.has(key)) {
-              const _related = CROSS_LANG_INDEX.get(key).filter(v => v.language !== item.language)
-              const _seen = new Set()
-              const related = _related.filter(v => { if (_seen.has(v.language)) return false; _seen.add(v.language); return true })
-              if (related.length > 0) {
-                const pills = related.map(v => {
-                  const verb = v.verb || v[v.language] || v.en || ''
-                  const flag = FLAGS[v.language] || ''
-                  return `<button class="btn btn-ghost btn-sm" onclick="navigateToLangVerb('${v.language}','${escHtml(verb)}')" style="font-size:0.72rem;padding:2px 7px">${flag} ${escHtml(verb)}</button>`
-                }).join('')
-                conceptRelatedHtml = `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:4px;align-items:center"><span style="font-size:0.65rem;color:var(--muted);font-family:'JetBrains Mono',monospace">🔗</span>${pills}</div>`
-              }
-            }
-          }
-
-          const d = document.createElement('div')
-          d.className =
-            'vocab-card type-' + item.type + (isLearned ? ' learned' : '')
-          d.innerHTML = `
-      ${item.emoji ? `<div class="vc-emoji">${escHtml(item.emoji)}</div>` : ''}
-      <div class="vc-verb" style="color:${color}">${escHtml(displayVerb)}</div>
-      ${item.simple ? `<div style="font-size:0.68rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-bottom:2px">≈ ${escHtml(item.simple)}</div>` : ''}
-      <div class="vc-it">${escHtml(item.it)}</div>
-      ${exampleHtml}
-      ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag" style="cursor:pointer" onclick="filterByTag('${t}')" title="Filtra: ${t}">${escHtml(t)}</span>`).join('') + '</div>' : ''}
-      ${conceptRelatedHtml}
-      <div class="vc-actions">
-        <button class="btn btn-ghost btn-sm" onclick="speakText(this.dataset.t)" data-t="${escHtml(speakSrc)}">🔊</button>
-        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-left:4px">
-          <input type="checkbox" class="learned-check" ${isLearned ? 'checked' : ''} onchange="toggleLearned(${idx},this,event)"> imparata
-        </label>
-      </div>`
-          grid.appendChild(d)
-        })
+        paged.forEach(item => grid.appendChild(buildVocabCardEl(item)))
 
         // Highlight card se siamo arrivati qui tramite navigateToLangVerb
         if (_pendingVerb) {
@@ -214,4 +238,3 @@
       }
 
       function speakText(text, rate) { playSpeech(text, rate) }
-
