@@ -362,6 +362,12 @@
       // Chiamata dopo ogni cambio di learned/stats: learned.has(key) è già aggiornato
       async function sbSyncStat(key) {
         if (!sb || !vocabIds || !vocabIds[key]) return
+        // Prima legge la riga remota: se un altro device ha più lavoro, non lo sovrascrivo
+        const remote = await sbFetchAll(() => sb.from('vocab_stats').select('*').eq('vocab_id', vocabIds[key]))
+        if (remote.error) { console.warn('Sync progressi:', remote.error.message); return }
+        mergeRemoteProgress(stats, learned, remote.data, { [vocabIds[key]]: key })
+        saveLearned()
+        saveStats()
         const s = stats[key] || { seen: 0, correct: 0 }
         const { error } = await sb.from('vocab_stats').upsert(
           {
