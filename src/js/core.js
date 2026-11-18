@@ -53,6 +53,7 @@
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;')
           .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;')
       }
 
       // ============================================================
@@ -100,13 +101,7 @@
           typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined'
             ? ALL_VOCAB_FOR_EXERCISES.filter((v) => v.language === lang)
             : []
-        learned = new Set(
-          JSON.parse(localStorage.getItem('eu_learned_' + lang) || '[]'),
-        )
-        stats = JSON.parse(localStorage.getItem('eu_stats_' + lang) || '{}')
-        vocabIds = JSON.parse(
-          localStorage.getItem('eu_vocab_ids_' + lang) || 'null',
-        )
+        ;({ learned, stats, vocabIds } = loadProgress(lang))
         activeFilter = 'all'
         activeSearch = ''
         document
@@ -333,19 +328,29 @@
 
       function showStatus(el, msg, type, duration) {
         if (!el) return
+        el.style.background = type === 'err' ? 'rgba(255,77,109,0.1)' : type === 'wait' ? 'rgba(255,190,11,0.08)' : 'rgba(0,229,160,0.1)'
         el.style.color = type === 'err' ? 'var(--error)' : type === 'wait' ? 'var(--muted)' : 'var(--success)'
         el.textContent = msg
-        if (duration) setTimeout(() => { el.textContent = '' }, duration)
+        if (duration) setTimeout(() => { el.textContent = ''; el.style.background = '' }, duration)
       }
 
 
       // ============================================================
-      let learned = new Set(
-        JSON.parse(localStorage.getItem('eu_learned_' + currentLang) || '[]'),
-      )
-      let stats = JSON.parse(
-        localStorage.getItem('eu_stats_' + currentLang) || '{}',
-      )
+      // Progresso indicizzato per chiave stabile (lingua|verbo|tipo), non per posizione nell'array
+      function vkey(v) { return v.language + '|' + v.verb + '|' + v.type }
+      function progressKey(list, k) { return /^\d+$/.test(k) ? (list[+k] ? vkey(list[+k]) : null) : k }
+      function rekey(list, obj) { const out = {}; for (const k in obj) { const nk = progressKey(list, k); if (nk) out[nk] = obj[k] } return out }
+      function loadProgress(lang) {
+        const list = ALL_VOCAB_FOR_EXERCISES.filter(v => v.language === lang)
+        const get = (name, def) => JSON.parse(localStorage.getItem(name + lang) || JSON.stringify(def))
+        const rawVids = get('eu_vocab_ids_', null)
+        return {
+          learned: new Set(get('eu_learned_', []).map(k => progressKey(list, String(k))).filter(Boolean)),
+          stats: rekey(list, get('eu_stats_', {})),
+          vocabIds: rawVids ? rekey(list, rawVids) : null,
+        }
+      }
+      let { learned, stats } = loadProgress(currentLang)
       let session = JSON.parse(
         localStorage.getItem('eu_session') ||
           '{"streak":0,"correct":0,"total":0}',

@@ -1,6 +1,6 @@
 {
   "name": "english-unlocked",
   "scripts": {
-    "test": "node tests/quiz.test.js && node tests/vocab-integrity.test.js && node tests/cross-lang.test.js && node tests/core-utils.test.js"
+    "test": "node tests/quiz.test.js && node tests/vocab-integrity.test.js && node tests/cross-lang.test.js && node tests/core-utils.test.js && node tests/progress.test.js && node tests/paging.test.js && node tests/validate.test.js && node tests/merge.test.js"
   }
 }

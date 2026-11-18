@@ -34,6 +34,7 @@
 
       // Replace first occurrence of phrasal verb in sentence with "BASE ___"
       function blankSentence(sentence, verb) {
+        sentence = escHtml(sentence) // testo da JSON: escape prima di inserire lo span
         const base = getBaseVerb(verb)
         const re = new RegExp(verb.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'i')
         if (re.test(sentence)) {
@@ -90,8 +91,8 @@
         document.getElementById('phrasal-card').innerHTML = `
           <div style="text-align:center; margin-bottom:1.5rem;">
             <div style="font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.6rem;">Significato</div>
-            <div style="font-size:1.3rem; font-weight:700; color:var(--accent2);">${item.emoji || ''} ${item.it}</div>
-            ${item.simple ? `<div style="color:var(--muted); font-size:0.82rem; margin-top:0.25rem;">≈ ${item.simple}</div>` : ''}
+            <div style="font-size:1.3rem; font-weight:700; color:var(--accent2);">${escHtml(item.emoji || '')} ${escHtml(item.it)}</div>
+            ${item.simple ? `<div style="color:var(--muted); font-size:0.82rem; margin-top:0.25rem;">≈ ${escHtml(item.simple)}</div>` : ''}
           </div>
 
           <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:1rem 1.25rem; margin-bottom:1.5rem; font-size:1.05rem; line-height:1.6; color:var(--text);">
@@ -102,7 +103,7 @@
             ${options.map((opt, i) => `
               <button id="phrasal-opt-${i}" onclick="selectPhrasalOpt(${i}, ${correctOpt})"
                 style="background:rgba(255,255,255,0.07); border:1.5px solid rgba(255,255,255,0.13); border-radius:12px; padding:0.75rem 1rem; color:var(--text); font-size:1rem; cursor:pointer; transition:all 0.15s;">
-                ${opt}
+                ${escHtml(opt)}
               </button>
             `).join('')}
           </div>
@@ -135,11 +136,11 @@
         if (chosen === correct) {
           phrasalScore.correct++
           const item = phrasalPool[phrasalIdx]
-          const full = item.verb.toUpperCase()
-          if (fb) fb.innerHTML = `<span style="color:var(--success);">✅ ${full}</span>${item.example_it ? `<div style="color:var(--muted);font-size:0.82rem;margin-top:0.3rem;">${item.example_it}</div>` : ''}`
+          const full = escHtml(item.verb.toUpperCase())
+          if (fb) fb.innerHTML = `<span style="color:var(--success);">✅ ${full}</span>${item.example_it ? `<div style="color:var(--muted);font-size:0.82rem;margin-top:0.3rem;">${escHtml(item.example_it)}</div>` : ''}`
         } else {
           const item = phrasalPool[phrasalIdx]
-          if (fb) fb.innerHTML = `<span style="color:#f87171;">❌ Era: <strong>${item.verb.toUpperCase()}</strong></span>${item.example_it ? `<div style="color:var(--muted);font-size:0.82rem;margin-top:0.3rem;">${item.example_it}</div>` : ''}`
+          if (fb) fb.innerHTML = `<span style="color:#f87171;">❌ Era: <strong>${escHtml(item.verb.toUpperCase())}</strong></span>${item.example_it ? `<div style="color:var(--muted);font-size:0.82rem;margin-top:0.3rem;">${escHtml(item.example_it)}</div>` : ''}`
         }
 
         const nextBtn = document.getElementById('phrasal-next-btn')

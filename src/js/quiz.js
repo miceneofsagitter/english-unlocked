@@ -154,8 +154,8 @@
 
         // Weight: unseen=2.0, weak(≤0.5)=1.5, ok(≤0.8)=0.7, strong>0.8=0.2
         const weighted = src.map(v => {
-          const i = ALL_VOCAB.indexOf(v)
-          const s = stats[i] || { seen: 0, correct: 0 }
+          const k = vkey(v)
+          const s = stats[k] || { seen: 0, correct: 0 }
           let w
           if (s.seen === 0) w = 2.0
           else {
@@ -344,21 +344,21 @@
         else if (typeRoll < 0.55) type = 'fill'
         else type = 'translation'
         const target = pickNextVocab()
-        const idx = ALL_VOCAB.indexOf(target)
-        if (!stats[idx]) stats[idx] = { seen: 0, correct: 0 }
-        stats[idx].seen++
+        const key = vkey(target)
+        if (!stats[key]) stats[key] = { seen: 0, correct: 0 }
+        stats[key].seen++
         saveStats()
 
         if (type === 'match') {
           renderMatchQuiz(generateMatchQuiz())
         } else if (type === 'fill') {
-          renderChoiceQuiz(generateFillBlankQuiz(target), idx)
+          renderChoiceQuiz(generateFillBlankQuiz(target), key)
         } else {
-          renderChoiceQuiz(generateTranslationQuiz(target), idx)
+          renderChoiceQuiz(generateTranslationQuiz(target), key)
         }
       }
 
-      function renderChoiceQuiz(quiz, targetIdx) {
+      function renderChoiceQuiz(quiz, targetKey) {
         currentQuiz = quiz
         const badge = document.getElementById('quizTypeBadge')
         if (quiz.type === 'translation') {
@@ -403,12 +403,12 @@
               fb.textContent = '✅ Esatto! ' + quiz.correct
               session.correct++
               session.streak++
-              if (targetIdx !== undefined) {
-                if (!stats[targetIdx])
-                  stats[targetIdx] = { seen: 1, correct: 0 }
-                stats[targetIdx].correct++
+              if (targetKey !== undefined) {
+                if (!stats[targetKey])
+                  stats[targetKey] = { seen: 1, correct: 0 }
+                stats[targetKey].correct++
                 saveStats()
-                sbSyncStat(targetIdx)
+                sbSyncStat(targetKey)
               }
             } else {
               fb.className = 'feedback-box show feedback-wrong'

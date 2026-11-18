@@ -43,7 +43,7 @@ assertEqual(escHtml('<script>alert("xss")</script>'), '&lt;script&gt;alert(&quot
 section('2. escHtml — testo sicuro non modificato')
 assertEqual(escHtml('safe text'), 'safe text', 'testo normale invariato')
 assertEqual(escHtml('hello world 123'), 'hello world 123', 'lettere e numeri invariati')
-assertEqual(escHtml("it's fine"), "it's fine", 'apice singolo non escapato')
+assertEqual(escHtml("it's fine"), "it&#39;s fine", 'apice singolo escapato')
 
 section('3. escHtml — casi limite')
 assertEqual(escHtml(''), '', 'stringa vuota → stringa vuota')

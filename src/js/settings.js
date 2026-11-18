@@ -137,9 +137,7 @@
       })
 
       let sb = null
-      let vocabIds = JSON.parse(
-        localStorage.getItem('eu_vocab_ids_' + currentLang) || 'null',
-      ) // {idx: uuid}
+      let vocabIds = loadProgress(currentLang).vocabIds // {vkey: uuid}
 
       function sbInit() {
         const url = localStorage.getItem('eu_sb_url')
@@ -151,18 +149,26 @@
         return false
       }
 
+      // Supabase risponde max 1000 righe per richiesta: pagina fino in fondo
+      async function sbFetchAll(build) {
+        let all = [], from = 0
+        while (true) {
+          const { data, error } = await build().range(from, from + 999)
+          if (error) return { error }
+          all = all.concat(data)
+          if (data.length < 1000) return { data: all }
+          from += 1000
+        }
+      }
+
       async function importVocabToSupabase() {
         const st = document.getElementById('import-status')
         st.style.display = 'block'
         if (!sb) {
-          st.style.background = 'rgba(255,77,109,0.1)'
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ Salva prima le credenziali Supabase.'
+          showStatus(st, '❌ Salva prima le credenziali Supabase.', 'err')
           return
         }
-        st.style.background = 'rgba(255,190,11,0.08)'
-        st.style.color = 'var(--muted)'
-        st.textContent = '⏳ Sync in corso...'
+        showStatus(st, '⏳ Sync in corso...', 'wait')
 
         const source =
           typeof ALL_VOCAB_FOR_EXERCISES !== 'undefined'
@@ -176,6 +182,10 @@
           example_en: v.example_en || '',
           example_it: v.example_it || '',
           tags: v.tags || [],
+          emoji: v.emoji || '📝',
+          simple: v.simple || '',
+          context_note: v.context_note || '',
+          concept: v.concept || '',
         }))
 
         // Dedup by (verb, type, language)
@@ -191,9 +201,7 @@
           .upsert(uniqueRows, { onConflict: 'verb,type,language' })
           .select('id,verb,type,language')
         if (error) {
-          st.style.background = 'rgba(255,77,109,0.1)'
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ ' + error.message
+          showStatus(st, '❌ ' + error.message, 'err')
           return
         }
 
@@ -202,49 +210,36 @@
         data.forEach((row) => {
           const lang = row.language || 'en'
           if (!byLang[lang]) byLang[lang] = {}
-          const idx = (
-            lang === currentLang
-              ? ALL_VOCAB
-              : source.filter((v) => v.language === lang)
-          ).findIndex((v) => v.verb === row.verb && v.type === row.type)
-          if (idx >= 0) byLang[lang][idx] = row.id
+          byLang[lang][vkey(row)] = row.id
         })
         Object.entries(byLang).forEach(([lang, ids]) => {
           localStorage.setItem('eu_vocab_ids_' + lang, JSON.stringify(ids))
         })
         vocabIds = byLang[currentLang] || null
 
-        st.style.background = 'rgba(0,229,160,0.1)'
-        st.style.color = 'var(--success)'
-        st.textContent = '✓ ' + data.length + ' voci sincronizzate.'
+        showStatus(st, '✓ ' + data.length + ' voci sincronizzate.', 'ok')
       }
+
+      function validateRow(r, lang, enVerbs) { if (!r.verb || !r.type || !r.it) return 'campi mancanti'; if (lang !== 'en' && enVerbs.has(r.verb.toLowerCase().trim())) return 'verb EN in file non-EN'; return null }
 
       async function pullVocabFromSupabase() {
         const st = document.getElementById('pull-status')
         st.style.display = 'block'
         if (!sb) {
-          st.style.background = 'rgba(255,77,109,0.1)'
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ Salva prima le credenziali Supabase.'
+          showStatus(st, '❌ Salva prima le credenziali Supabase.', 'err')
           return
         }
-        st.style.background = 'rgba(255,190,11,0.08)'
-        st.style.color = 'var(--muted)'
-        st.textContent = '⏳ Fetch da Supabase...'
+        showStatus(st, '⏳ Fetch da Supabase...', 'wait')
 
         const lang = currentLang
         const varNames = { en: 'EN_VOCAB', es: 'ES_VOCAB', fr: 'FR_VOCAB' }
         const fileNames = { en: 'vocab-en.js', es: 'vocab-es.js', fr: 'vocab-fr.js' }
 
-        const { data, error } = await sb
-          .from('vocabulary')
-          .select('*')
-          .eq('language', lang)
+        const { data, error } = await sbFetchAll(() =>
+          sb.from('vocabulary').select('*').eq('language', lang).order('id'))
 
         if (error) {
-          st.style.background = 'rgba(255,77,109,0.1)'
-          st.style.color = 'var(--error)'
-          st.textContent = '❌ ' + error.message
+          showStatus(st, '❌ ' + error.message, 'err')
           return
         }
 
@@ -270,8 +265,8 @@
         const newEntries = data
           .filter((r) => {
             if (localKeys.has(r.verb + '|' + r.type + '|' + r.language)) return false
-            if (!r.verb || !r.type || !r.it) { rejected.push(r.verb + ' (campi mancanti)'); return false }
-            if (lang !== 'en' && enVerbs.has(r.verb.toLowerCase().trim())) { rejected.push(r.verb + ' (verb EN in file non-EN)'); return false }
+            const bad = validateRow(r, lang, enVerbs)
+            if (bad) { rejected.push(r.verb + ' (' + bad + ')'); return false }
             return true
           })
           .map((r) => ({
@@ -283,7 +278,7 @@
             it: r.it || '',
             example_en: r.example_en || '',
             example_it: r.example_it || '',
-            tags: Array.isArray(r.tags) ? r.tags : [r.type],
+            tags: Array.isArray(r.tags) ? r.tags : [],
             context_note: r.context_note || '',
             concept: r.concept || '',
           }))
@@ -293,9 +288,7 @@
         }
 
         if (newEntries.length === 0) {
-          st.style.background = 'rgba(0,229,160,0.1)'
-          st.style.color = 'var(--success)'
-          st.textContent = '✓ Nessuna voce mancante — già in sync.'
+          showStatus(st, '✓ Nessuna voce mancante — già in sync.', 'ok')
           return
         }
 
@@ -312,12 +305,9 @@
         a.download = fileName
         a.click()
 
-        st.style.background = 'rgba(0,229,160,0.1)'
-        st.style.color = 'var(--success)'
-        st.textContent =
-          '✓ ' +
+        showStatus(st, '✓ ' +
           newEntries.length +
-          ` voci nuove → ${fileName} scaricato. Sostituisci src/data/${fileName}`
+          ` voci nuove → ${fileName} scaricato. Sostituisci src/data/${fileName}`, 'ok')
       }
 
       async function addVocabEntry() {
@@ -369,35 +359,48 @@
         }
       }
 
-      async function sbSyncLearned(idx, isLearned) {
-        if (!sb || !vocabIds || !vocabIds[idx]) return
-        const s = stats[idx] || { seen: 0, correct: 0 }
-        await sb.from('vocab_stats').upsert(
+      // Chiamata dopo ogni cambio di learned/stats: learned.has(key) è già aggiornato
+      async function sbSyncStat(key) {
+        if (!sb || !vocabIds || !vocabIds[key]) return
+        const s = stats[key] || { seen: 0, correct: 0 }
+        const { error } = await sb.from('vocab_stats').upsert(
           {
-            vocab_id: vocabIds[idx],
-            learned: isLearned,
+            vocab_id: vocabIds[key],
+            learned: learned.has(key),
             times_seen: s.seen,
             times_correct: s.correct,
             last_seen: new Date().toISOString(),
           },
           { onConflict: 'vocab_id' },
         )
+        // 8: errore sync visibile nel pannello Impostazioni, non perso
+        if (error) { console.warn('Sync progressi:', error.message); showStatus(document.getElementById('sync-status'), '❌ Sync: ' + error.message, 'err', 5000) }
       }
 
-      async function sbSyncStat(idx) {
-        if (!sb || !vocabIds || !vocabIds[idx]) return
-        const s = stats[idx] || { seen: 0, correct: 0 }
-        const isLearned = learned.has(idx)
-        await sb.from('vocab_stats').upsert(
-          {
-            vocab_id: vocabIds[idx],
-            learned: isLearned,
-            times_seen: s.seen,
-            times_correct: s.correct,
-            last_seen: new Date().toISOString(),
-          },
-          { onConflict: 'vocab_id' },
-        )
+      // Righe vocab_stats per gli id dati, a blocchi di 200 (URL corto) e paginate
+      async function fetchStatsRows(ids) {
+        let data = []
+        for (let i = 0; i < ids.length; i += 200) {
+          const part = ids.slice(i, i + 200)
+          const r = await sbFetchAll(() =>
+            sb.from('vocab_stats').select('*').in('vocab_id', part).order('vocab_id'))
+          if (r.error) return { error: r.error }
+          data = data.concat(r.data)
+        }
+        return { data }
+      }
+
+      // Vince il conteggio più alto: times_seen cresce sempre, quindi è il lavoro più recente
+      function mergeRemoteProgress(stats, learned, rows, idToKey) {
+        for (const row of rows) {
+          const key = idToKey[row.vocab_id]
+          if (key === undefined) continue
+          if (row.times_seen > ((stats[key] || {}).seen || 0)) {
+            stats[key] = { seen: row.times_seen, correct: row.times_correct }
+            if (row.learned) learned.add(key)
+            else learned.delete(key)
+          }
+        }
       }
 
       async function loadProgressFromSupabase() {
@@ -407,28 +410,22 @@
           return
         }
         showStatus(st, '⏳ Caricamento...', 'wait')
-        const ids = Object.values(vocabIds)
-        const { data, error } = await sb
-          .from('vocab_stats')
-          .select('*')
-          .in('vocab_id', ids)
+        const { data, error } = await fetchStatsRows(Object.values(vocabIds))
         if (error) {
           st.style.color = 'var(--error)'
           st.textContent = '❌ ' + error.message
           return
         }
 
-        const idToIdx = {}
-        Object.entries(vocabIds).forEach(
-          ([i, id]) => (idToIdx[id] = parseInt(i)),
-        )
+        const idToKey = {}
+        Object.entries(vocabIds).forEach(([k, id]) => (idToKey[id] = k))
         learned = new Set()
         stats = {}
         data.forEach((row) => {
-          const idx = idToIdx[row.vocab_id]
-          if (idx === undefined) return
-          if (row.learned) learned.add(idx)
-          stats[idx] = { seen: row.times_seen, correct: row.times_correct }
+          const key = idToKey[row.vocab_id]
+          if (key === undefined) return
+          if (row.learned) learned.add(key)
+          stats[key] = { seen: row.times_seen, correct: row.times_correct }
         })
         saveLearned()
         saveStats()
@@ -444,11 +441,24 @@
           return
         }
         showStatus(st, '⏳ Invio in corso...', 'wait')
-        const rows = Object.entries(vocabIds).map(([idx, id]) => {
-          const s = stats[idx] || { seen: 0, correct: 0 }
+        // Prima unisce con Supabase, così un altro device non viene sovrascritto
+        const remote = await fetchStatsRows(Object.values(vocabIds))
+        if (remote.error) {
+          showStatus(st, '❌ ' + remote.error.message, 'err')
+          return
+        }
+        const idToKey = {}
+        Object.entries(vocabIds).forEach(([k, id]) => (idToKey[id] = k))
+        mergeRemoteProgress(stats, learned, remote.data, idToKey)
+        saveLearned()
+        saveStats()
+        updateStatsUI()
+        renderVocabGrid(activeFilter, activeSearch)
+        const rows = Object.entries(vocabIds).map(([key, id]) => {
+          const s = stats[key] || { seen: 0, correct: 0 }
           return {
             vocab_id: id,
-            learned: learned.has(parseInt(idx)),
+            learned: learned.has(key),
             times_seen: s.seen,
             times_correct: s.correct,
             last_seen: new Date().toISOString(),

@@ -76,6 +76,11 @@ const ctx = {
   Math,
 }
 
+// vkey lives in core.js; extract it so quiz.js sees the same key format
+const vkeyCtx = {}
+vm.runInNewContext(fs.readFileSync('src/js/core.js', 'utf8').match(/function vkey[^\n]*/)[0] + '; __k = vkey', vkeyCtx)
+ctx.vkey = vkeyCtx.__k
+
 const quizSrc = fs.readFileSync('src/js/quiz.js', 'utf8')
 vm.runInNewContext(quizSrc, ctx)
 
@@ -115,9 +120,9 @@ section('2. pickNextVocab — weight distribution (600 picks, tiny ALL_VOCAB)')
   // quizPool stays [] → pickNextVocab uses ALL_VOCAB (tiny)
 
   // 0-3: strong  (correct/seen = 0.9)
-  for (let i = 0; i < 4; i++) ctx.stats[i] = { seen: 10, correct: 9 }
+  for (let i = 0; i < 4; i++) ctx.stats[ctx.vkey(tiny[i])] = { seen: 10, correct: 9 }
   // 4-7: weak    (correct/seen = 0.3)
-  for (let i = 4; i < 8; i++) ctx.stats[i] = { seen: 10, correct: 3 }
+  for (let i = 4; i < 8; i++) ctx.stats[ctx.vkey(tiny[i])] = { seen: 10, correct: 3 }
   // 8-11: unseen (no stats entry)
 
   const counts = new Array(12).fill(0)

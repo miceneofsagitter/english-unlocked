@@ -42,7 +42,7 @@
         const ALL_LANGS = ['en', 'es', 'fr']
         paged.forEach((item) => {
           const idx = ALL_VOCAB.indexOf(item)
-          const isLearned = learned.has(idx)
+          const isLearned = learned.has(vkey(item))
           const color = colors[item.type] || 'var(--text)'
           const displayVerb = item.verb || item[item.language] || item.en
           const speakSrc = item.example_en || item[`example_${item.language}`] || displayVerb
@@ -66,7 +66,7 @@
                 const pills = related.map(v => {
                   const verb = v.verb || v[v.language] || v.en || ''
                   const flag = FLAGS[v.language] || ''
-                  return `<button class="btn btn-ghost btn-sm" onclick="navigateToLangVerb('${v.language}','${escHtml(verb)}')" style="font-size:0.72rem;padding:2px 7px">${flag} ${escHtml(verb)}</button>`
+                  return `<button class="btn btn-ghost btn-sm" onclick="navigateToLangVerb(this.dataset.lang,this.dataset.verb)" data-lang="${escHtml(v.language)}" data-verb="${escHtml(verb)}" style="font-size:0.72rem;padding:2px 7px">${flag} ${escHtml(verb)}</button>`
                 }).join('')
                 conceptRelatedHtml = `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:4px;align-items:center"><span style="font-size:0.65rem;color:var(--muted);font-family:'JetBrains Mono',monospace">🔗</span>${pills}</div>`
               }
@@ -82,7 +82,7 @@
       ${item.simple ? `<div style="font-size:0.68rem;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-bottom:2px">≈ ${escHtml(item.simple)}</div>` : ''}
       <div class="vc-it">${escHtml(item.it)}</div>
       ${exampleHtml}
-      ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag" style="cursor:pointer" onclick="filterByTag('${t}')" title="Filtra: ${t}">${escHtml(t)}</span>`).join('') + '</div>' : ''}
+      ${item.tags && item.tags.length ? '<div class="vc-tags">' + item.tags.map((t) => `<span class="vc-tag" style="cursor:pointer" onclick="filterByTag(this.dataset.t)" data-t="${escHtml(t)}" title="Filtra: ${escHtml(t)}">${escHtml(t)}</span>`).join('') + '</div>' : ''}
       ${conceptRelatedHtml}
       <div class="vc-actions">
         <button class="btn btn-ghost btn-sm" onclick="speakText(this.dataset.t)" data-t="${escHtml(speakSrc)}">🔊</button>
@@ -197,14 +197,15 @@
 
       function toggleLearned(idx, chk, e) {
         e.stopPropagation()
-        if (chk.checked) learned.add(idx)
-        else learned.delete(idx)
+        const key = vkey(ALL_VOCAB[idx])
+        if (chk.checked) learned.add(key)
+        else learned.delete(key)
         saveLearned()
         updateStatsUI()
         const card = chk.closest('.vocab-card')
         if (chk.checked) card.classList.add('learned')
         else card.classList.remove('learned')
-        sbSyncLearned(idx, chk.checked)
+        sbSyncStat(key)
       }
 
       // Pre-carica voci per evitare silenzio al primo click
